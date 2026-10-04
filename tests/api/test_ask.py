@@ -79,3 +79,21 @@ def test_rejects_empty_and_long_queries(client: TestClient) -> None:
     app.dependency_overrides[get_guardrail] = lambda: FakeGuardrail("tecnica")
     assert client.post("/api/perguntar", json={"query": ""}).status_code == 422
     assert client.post("/api/perguntar", json={"query": "x" * 1001}).status_code == 422
+
+
+def test_cors_preflight_allows_github_pages(client: TestClient) -> None:
+    response = client.options(
+        "/api/perguntar",
+        headers={
+            "Origin": "https://felipe-nr.github.io",
+            "Access-Control-Request-Method": "POST",
+            "Access-Control-Request-Headers": "content-type,ngrok-skip-browser-warning",
+        },
+    )
+    assert response.status_code == 200
+    assert response.headers["access-control-allow-origin"] == "https://felipe-nr.github.io"
+
+
+def test_page_and_config_are_served(client: TestClient) -> None:
+    assert "Judô Chat" in client.get("/").text
+    assert 'JUDO_CHAT_API_URL = ""' in client.get("/config.js").text

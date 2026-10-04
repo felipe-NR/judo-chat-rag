@@ -5,7 +5,8 @@ from pathlib import Path
 
 from anthropic import AsyncAnthropic
 from fastapi import FastAPI
-from fastapi.responses import FileResponse
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 from judo_chat.answer import Answerer
 from judo_chat.config import get_settings
@@ -32,10 +33,13 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
 
 
 app = FastAPI(title="Judô Chat", lifespan=lifespan)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=list(get_settings().cors_origins),
+    allow_methods=["POST"],
+    allow_headers=["Content-Type", "ngrok-skip-browser-warning"],
+)
 register_error_handlers(app)
 app.include_router(ask_router)
-
-
-@app.get("/", include_in_schema=False)
-async def index() -> FileResponse:
-    return FileResponse(_STATIC / "index.html")
+# Depois das rotas da API: serve index.html e config.js na raiz.
+app.mount("/", StaticFiles(directory=_STATIC, html=True), name="static")

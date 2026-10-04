@@ -16,6 +16,24 @@ uv run uvicorn judo_chat.main:app --reload
 A página de chat fica em http://localhost:8000 e a API em `POST /api/perguntar`
 (`{"query": "como faço o ashi barai?"}`).
 
+## Publicar (GitHub Pages + API local via ngrok)
+
+A página de chat fica em https://felipe-nr.github.io/judo-chat-rag/, publicada pelo
+workflow `.github/workflows/pages.yml` a cada push que mexe em `src/judo_chat/static/`.
+O GitHub Pages só serve arquivos estáticos, então a API roda nesta máquina e é exposta pelo
+domínio fixo do ngrok da conta (`https://quadrantal-glenda-interstream.ngrok-free.dev`):
+
+```bash
+./start-ngrok.sh   # sobe a API na porta 8000 e o túnel ngrok em background
+./stop-ngrok.sh    # derruba os dois
+```
+
+A chave da Anthropic fica só no `.env` local; a página nunca a vê. Com a API desligada, a
+página carrega mas avisa que não conseguiu falar com o servidor. A conta ngrok gratuita tem
+um túnel por vez: o script se recusa a subir se o túnel de outro projeto (por exemplo o
+`delivery-platform`) estiver no ar. Para usar outra URL de API, crie a variável de
+repositório `JUDO_CHAT_API_URL` e rode o workflow de novo.
+
 ## Como funciona
 
 1. `normalizer.Recognizer` acha nomes de técnica na pergunta: nome oficial, nome da IJF,

@@ -1,0 +1,47 @@
+# Publica a página de chat (src/judo_chat/static) no GitHub Pages.
+# A API não roda aqui: ela sobe na máquina local com ./start-ngrok.sh, e a página a chama
+# pelo domínio fixo do ngrok. Para trocar a URL, crie a variável de repositório
+# JUDO_CHAT_API_URL (Settings > Secrets and variables > Actions > Variables).
+name: Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/judo_chat/static/**"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Montar o site
+        env:
+          API_URL: ${{ vars.JUDO_CHAT_API_URL || 'https://quadrantal-glenda-interstream.ngrok-free.dev' }}
+        run: |
+          mkdir -p _site
+          cp src/judo_chat/static/* _site/
+          printf 'window.JUDO_CHAT_API_URL = "%s";\n' "$API_URL" > _site/config.js
+          cat _site/config.js
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

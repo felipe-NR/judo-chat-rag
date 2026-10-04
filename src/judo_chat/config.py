@@ -20,6 +20,8 @@ class Settings(BaseSettings):
     cache_ttl: Literal["5m", "1h"] = "1h"
     # Retry server-side num modelo alternativo quando o Sonnet 5.5 recusa por política.
     use_refusal_fallbacks: bool = True
+    # Origens que podem chamar a API pelo navegador (a página no GitHub Pages).
+    cors_origins: tuple[str, ...] = ("https://felipe-nr.github.io",)
 
 
 @lru_cache
