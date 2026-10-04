@@ -12,14 +12,21 @@ class Settings(BaseSettings):
 
     data_dir: Path = _ROOT / "data"
     guardrail_model: str = "claude-haiku-4-5"
-    answer_model: str = "claude-sonnet-5-5"
-    answer_effort: Literal["low", "medium", "high"] = "low"
+    # Haiku 4.5: o modelo mais barato disponível (US$ 1/M de entrada, metade do Sonnet 5.5) e
+    # tokenizador que conta o corpus com ~21% menos tokens. Para mais qualidade, use
+    # claude-sonnet-5-5 com JUDO_CHAT_ANSWER_EFFORT=low e JUDO_CHAT_USE_REFUSAL_FALLBACKS=true.
+    answer_model: str = "claude-haiku-4-5"
+    # O Haiku 4.5 rejeita `effort`; só é enviado quando definido.
+    answer_effort: Literal["low", "medium", "high"] | None = None
     answer_max_tokens: int = 4000
     guardrail_timeout_s: float = 15.0
     answer_timeout_s: float = 90.0
-    cache_ttl: Literal["5m", "1h"] = "1h"
-    # Retry server-side num modelo alternativo quando o Sonnet 5.5 recusa por política.
-    use_refusal_fallbacks: bool = True
+    # Uso esporádico (sessões a cada poucas horas) nunca reaproveita o cache de 1h; o de 5min
+    # grava por 1,25x o preço de entrada, contra 2x.
+    cache_ttl: Literal["5m", "1h"] = "5m"
+    # Retry server-side num modelo alternativo quando o modelo recusa por política. Só vale
+    # para os modelos da geração 5 (Sonnet 5.5, Opus 5.5); o Haiku 4.5 não aceita.
+    use_refusal_fallbacks: bool = False
     # Origens que podem chamar a API pelo navegador (a página no GitHub Pages).
     cors_origins: tuple[str, ...] = ("https://felipe-nr.github.io",)
 

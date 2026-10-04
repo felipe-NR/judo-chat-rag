@@ -40,8 +40,22 @@ repositório `JUDO_CHAT_API_URL` e rode o workflow de novo.
    grafias variadas e nomes populares (ambíguos devolvem todas as candidatas).
 2. `guardrail.Guardrail` classifica a pergunta em `tecnica`, `historia`, `regras` ou `fora`
    com o Claude Haiku 4.5. Qualquer erro bloqueia a resposta.
-3. `answer.Answerer` chama o Claude Sonnet 5.5 com instruções e corpus num bloco de system
-   cacheado; a pergunta e as técnicas reconhecidas vão na mensagem do usuário.
+3. `answer.Answerer` chama o Claude Haiku 4.5 com instruções e corpus (~27 mil tokens) num
+   bloco de system cacheado por 5 minutos; a pergunta e as técnicas reconhecidas vão na
+   mensagem do usuário.
+
+## Custo
+
+Medido em 2026-10-04 com o Haiku 4.5 (US$ 1/M de entrada, US$ 5/M de saída, cache: gravação
+US$ 1,25/M com TTL de 5 minutos e leitura US$ 0,10/M), dólar a R$ 5, sem IOF:
+
+| Caso | US$ | R$ |
+|-|-|-|
+| Pergunta com cache quente | ~0,005 | ~0,024 |
+| Primeira pergunta após 5 min parado (grava o cache) | ~0,036 | ~0,18 |
+| Pergunta fora do escopo (só o guardrail) | ~0,001 | ~0,005 |
+
+O Sonnet 5.5 dá respostas mais fiéis à base por cerca de 3-4x o custo; veja `.env.example`.
 
 ## Dados
 

@@ -6,8 +6,10 @@ processos. Por isso tudo é ordenado e nenhum set é iterado sem `sorted`.
 
 from judo_chat.corpus.models import Corpus, Document, PopularName, Technique
 
+# Linhas que se repetiriam em quase toda entrada ficam implícitas para encurtar o corpus:
+# tipo "técnica", status "Kodokan" e origem "generated" (declarados no cabeçalho).
+DEFAULT_PROVENANCE = "generated"
 _STATUS = {
-    "kodokan": "técnica da nomenclatura do Kodokan",
     "nonstandard": "fora da nomenclatura do Kodokan",
     "forbidden_ijf": "técnica do Kodokan proibida em competição pela IJF",
 }
@@ -24,8 +26,10 @@ def _sorted_names(names: frozenset[str]) -> str:
 
 
 def render_technique(technique: Technique) -> str:
-    lines = [f"### {technique.name} [{technique.id}]", f"Tipo: {_KIND[technique.kind]}"]
-    if technique.kind == "technique":
+    lines = [f"### {technique.name} [{technique.id}]"]
+    if technique.kind != "technique":
+        lines.append(f"Tipo: {_KIND[technique.kind]}")
+    if technique.status in _STATUS:
         lines.append(f"Status: {_STATUS[technique.status]}")
     if technique.group:
         lines.append(f"Grupo: {technique.group}")
@@ -48,7 +52,8 @@ def render_technique(technique: Technique) -> str:
     if technique.video_url:
         lines.append(f"Vídeo: {technique.video_url}")
     lines.extend(f"Observação: {note}" for note in technique.notes)
-    lines.append(f"Origem do texto: {technique.provenance}")
+    if technique.provenance != DEFAULT_PROVENANCE:
+        lines.append(f"Origem do texto: {technique.provenance}")
     return "\n".join(lines)
 
 
@@ -60,11 +65,17 @@ def render_popular(name: PopularName, corpus: Corpus) -> str:
 
 
 def render_document(document: Document) -> str:
-    return f"### {document.title} [{document.id}]\nOrigem do texto: {document.provenance}\n\n{document.body}"
+    header = f"### {document.title} [{document.id}]"
+    if document.provenance != DEFAULT_PROVENANCE:
+        header += f"\nOrigem do texto: {document.provenance}"
+    return f"{header}\n\n{document.body}"
 
 
 def render_corpus(corpus: Corpus) -> str:
     sections = [
+        'Convenções: sem linha "Tipo", a entrada é uma técnica; sem linha "Status", é técnica da '
+        'nomenclatura do Kodokan; sem linha "Origem do texto", o texto foi redigido automaticamente '
+        f"({DEFAULT_PROVENANCE}) e ainda não foi revisado.",
         "# GLOSSÁRIO DE TÉCNICAS",
         "\n\n".join(render_technique(t) for t in corpus.techniques),
         "# NOMES POPULARES",

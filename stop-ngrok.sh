@@ -28,3 +28,10 @@ stop_pid_file "ngrok" "$RUN_DIR/ngrok.pid"
 stop_pid_file "API" "$RUN_DIR/api.pid"
 
 rm -f "$RUN_DIR/public_url"
+
+# Espera a porta liberar para que um start logo em seguida não a encontre ocupada.
+PORT="${JUDO_CHAT_PORT:-8010}"
+for i in $(seq 1 15); do
+  if ! curl -s -o /dev/null "http://localhost:$PORT/"; then break; fi
+  sleep 1
+done

@@ -52,10 +52,10 @@ Um classificador (Haiku 4.5, saída estruturada) devolve `tecnica|historia|regra
 
 ## Proposta A: LLM com o corpus inteiro no contexto (implementada)
 
-- **Fluxo:** pergunta → reconhecedor → guardrail (Haiku 4.5) → Sonnet 5.5 com instruções e corpus num bloco de system cacheado → resposta.
-- **Corpus no contexto:** cerca de 76 mil caracteres (~22 mil tokens): 124 entradas de glossário (104 técnicas), 41 nomes populares, 4 textos de regras e 3 de história.
-- **Cache:** o bloco de system é montado uma vez no startup e serializado de forma determinística (ordenado, sem set iterado sem `sorted`, sem data). Um teste compara os bytes gerados com `PYTHONHASHSEED` diferentes. As técnicas reconhecidas e os candidatos dos nomes ambíguos vão na mensagem do usuário, depois do breakpoint. TTL de 1 hora; um modelo só para a resposta.
-- **Recusa por política do modelo:** `fallbacks: "default"` (beta `server-side-fallback-2026-07-01`), desligável em `JUDO_CHAT_USE_REFUSAL_FALLBACKS`.
+- **Fluxo:** pergunta → reconhecedor → guardrail (Haiku 4.5) → Haiku 4.5 com instruções e corpus num bloco de system cacheado → resposta. A primeira versão usava o Sonnet 5.5; a troca em 2026-10-04 cortou o custo projetado para 23-30% do anterior (ver README).
+- **Corpus no contexto:** 27 mil tokens no Haiku 4.5 (38 mil no tokenizador do Sonnet 5.5): 124 entradas de glossário (104 técnicas), 41 nomes populares, 4 textos de regras e 3 de história.
+- **Cache:** o bloco de system é montado uma vez no startup e serializado de forma determinística (ordenado, sem set iterado sem `sorted`, sem data). Um teste compara os bytes gerados com `PYTHONHASHSEED` diferentes. As técnicas reconhecidas e os candidatos dos nomes ambíguos vão na mensagem do usuário, depois do breakpoint. TTL de 5 minutos, porque o uso esperado (sessões espaçadas de horas) nunca reaproveitaria o de 1 hora; um modelo só para a resposta.
+- **Recusa por política do modelo:** `fallbacks: "default"` (beta `server-side-fallback-2026-07-01`) só com modelos da geração 5; ligável em `JUDO_CHAT_USE_REFUSAL_FALLBACKS` ao voltar para o Sonnet 5.5.
 - **Prós:** poucas peças e resposta que cruza temas porque o modelo vê tudo. Atualizar o conteúdo é editar a curadoria e rodar o build.
 - **Contras:** o custo cresce com o corpus (o cache reduz a leitura a cerca de 10%). Não escala além do contexto. A citação de fonte é por seção, não por trecho.
 
