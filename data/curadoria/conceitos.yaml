@@ -1,0 +1,180 @@
+# Categorias, conceitos e pegadas do CSV do judo-techniques-bot. Não são técnicas,
+# mas entram no corpus porque usuários perguntam por eles.
+
+- id: nage-waza
+  name: Nage-waza
+  csv: [Nage Waza]
+  kind: category
+  name_pt_br: Técnicas de projeção
+  description_pt_br: >-
+    Grande grupo das técnicas que levam uke ao chão. Divide-se em tachi-waza (tori
+    projeta de pé: te-waza, koshi-waza, ashi-waza) e sutemi-waza (tori se sacrifica
+    caindo: ma-sutemi-waza e yoko-sutemi-waza).
+
+- id: tachi-waza
+  name: Tachi-waza
+  csv: [Tachi Waza]
+  kind: category
+  group: nage-waza
+  name_pt_br: Técnicas de pé
+  description_pt_br: Projeções em que tori permanece de pé. Inclui te-waza, koshi-waza e ashi-waza.
+
+- id: te-waza
+  name: Te-waza
+  csv: [Te Waza]
+  kind: category
+  group: nage-waza/tachi-waza
+  name_pt_br: Técnicas de braço
+  description_pt_br: Projeções em que o trabalho principal é feito com as mãos e os braços, como Seoi-nage e Tai-otoshi.
+
+- id: koshi-waza
+  name: Koshi-waza
+  csv: [Koshi Waza]
+  kind: category
+  group: nage-waza/tachi-waza
+  name_pt_br: Técnicas de quadril
+  description_pt_br: Projeções em que o quadril de tori é o ponto de apoio, como O-goshi e Harai-goshi.
+
+- id: ashi-waza
+  name: Ashi-waza
+  csv: [Ashi Waza]
+  kind: category
+  group: nage-waza/tachi-waza
+  name_pt_br: Técnicas de perna e pé
+  description_pt_br: Projeções feitas com ceifadas, varridas, bloqueios ou ganchos de perna, como Osoto-gari e Deashi-harai.
+
+- id: sutemi-waza
+  name: Sutemi-waza
+  csv: [Sutemi Waza]
+  kind: category
+  group: nage-waza
+  name_pt_br: Técnicas de sacrifício
+  description_pt_br: Projeções em que tori se lança ao chão para projetar uke. Divide-se em ma-sutemi-waza e yoko-sutemi-waza.
+
+- id: ma-sutemi-waza
+  name: Ma-sutemi-waza
+  csv: [Ma Sutemi Waza]
+  kind: category
+  group: nage-waza/sutemi-waza
+  name_pt_br: Técnicas de sacrifício para trás
+  description_pt_br: Tori cai de costas para projetar uke, como no Tomoe-nage e no Sumi-gaeshi.
+
+- id: yoko-sutemi-waza
+  name: Yoko-sutemi-waza
+  csv: [Yoko Sutemi Waza]
+  kind: category
+  group: nage-waza/sutemi-waza
+  name_pt_br: Técnicas de sacrifício lateral
+  description_pt_br: Tori cai de lado para projetar uke, como no Tani-otoshi e no Uki-waza.
+
+- id: katame-waza
+  name: Katame-waza
+  csv: [Katame Waza]
+  kind: category
+  name_pt_br: Técnicas de controle
+  description_pt_br: >-
+    Grande grupo das técnicas de domínio, quase sempre aplicadas no solo. Divide-se em
+    osaekomi-waza (imobilizações), shime-waza (estrangulamentos) e kansetsu-waza
+    (chaves de articulação).
+
+- id: ne-waza
+  name: Ne-waza
+  csv: [Newaza]
+  kind: category
+  name_pt_br: Luta no solo
+  description_pt_br: >-
+    Termo usado para o judô praticado no chão, depois da projeção ou de uma entrada
+    direta. Na prática corresponde às katame-waza.
+
+- id: osaekomi-waza
+  name: Osaekomi-waza
+  csv: [Osaekomi Waza]
+  kind: category
+  group: katame-waza
+  name_pt_br: Imobilizações
+  description_pt_br: >-
+    Técnicas para manter uke de costas no chão sob controle. Pelas regras da IJF, 20
+    segundos de imobilização valem ippon e 10 segundos valem waza-ari.
+
+- id: shime-waza
+  name: Shime-waza
+  csv: [Shime Waza]
+  kind: category
+  group: katame-waza
+  name_pt_br: Estrangulamentos
+  description_pt_br: Técnicas que comprimem o pescoço de uke. O Kodokan lista 12.
+
+- id: kansetsu-waza
+  name: Kansetsu-waza
+  csv: [Kansetsu Waza]
+  kind: category
+  group: katame-waza
+  name_pt_br: Chaves de articulação
+  description_pt_br: >-
+    Técnicas que forçam uma articulação além do limite. Na competição de judô só são
+    permitidas chaves no cotovelo.
+
+- id: kinshi-waza
+  name: Kinshi-waza
+  csv: [Kinshi Waza]
+  kind: category
+  name_pt_br: Técnicas proibidas
+  description_pt_br: >-
+    Técnicas proibidas em competição por risco de lesão, como Kani-basami, Kawazu-gake,
+    Do-jime e chaves fora do cotovelo.
+
+- id: kuzushi
+  name: Kuzushi
+  csv: [Kuzushi]
+  kind: concept
+  name_pt_br: Desequilíbrio
+  description_pt_br: >-
+    Primeira fase de uma projeção: tirar uke do equilíbrio, puxando ou empurrando, em
+    uma das oito direções (happo no kuzushi).
+
+- id: tsukuri
+  name: Tsukuri
+  csv: [Tsukuri]
+  kind: concept
+  name_pt_br: Preparação (encaixe)
+  description_pt_br: >-
+    Segunda fase de uma projeção: tori posiciona o próprio corpo em relação a uke,
+    já desequilibrado, para executar a técnica.
+
+- id: kake
+  name: Kake
+  csv: [Kake]
+  kind: concept
+  name_pt_br: Execução
+  description_pt_br: Terceira fase de uma projeção, em que tori conclui a técnica e projeta uke.
+  video_url: null
+  notes:
+    - O vídeo do CSV de origem para esta linha era um link sem relação com judô e foi removido.
+
+- id: ukemi
+  name: Ukemi
+  csv: [Ukemi]
+  kind: concept
+  name_pt_br: Amortecimento de queda
+  description_pt_br: >-
+    Técnicas de cair sem se machucar: para trás (ushiro-ukemi), para o lado
+    (yoko-ukemi), para a frente (mae-ukemi) e rolando (zenpo-kaiten-ukemi). São as
+    primeiras lições do judô.
+
+- id: ai-yotsu
+  name: Ai-yotsu
+  csv: [Ai Yotsu]
+  kind: grip
+  name_pt_br: Pegada do mesmo lado
+  description_pt_br: >-
+    Situação de kumi-kata em que os dois judocas pegam do mesmo lado (destro contra
+    destro ou canhoto contra canhoto).
+
+- id: kenka-yotsu
+  name: Kenka-yotsu
+  csv: [Kenka Yotsu]
+  kind: grip
+  name_pt_br: Pegada de lados opostos
+  description_pt_br: >-
+    Situação de kumi-kata em que um judoca pega de direita e o outro de esquerda. Muda
+    as técnicas que funcionam melhor para cada um.

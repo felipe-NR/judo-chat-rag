@@ -1,0 +1,77 @@
+"""Serializa o corpus no bloco fixo do system prompt.
+
+O prompt caching é por prefixo: o texto precisa sair idêntico byte a byte entre
+processos. Por isso tudo é ordenado e nenhum set é iterado sem `sorted`.
+"""
+
+from judo_chat.corpus.models import Corpus, Document, PopularName, Technique
+
+_STATUS = {
+    "kodokan": "técnica da nomenclatura do Kodokan",
+    "nonstandard": "fora da nomenclatura do Kodokan",
+    "forbidden_ijf": "técnica do Kodokan proibida em competição pela IJF",
+}
+_KIND = {
+    "technique": "técnica",
+    "category": "categoria de técnicas",
+    "concept": "conceito",
+    "grip": "pegada (kumi-kata)",
+}
+
+
+def _sorted_names(names: frozenset[str]) -> str:
+    return ", ".join(sorted(names, key=str.lower))
+
+
+def render_technique(technique: Technique) -> str:
+    lines = [f"### {technique.name} [{technique.id}]", f"Tipo: {_KIND[technique.kind]}"]
+    if technique.kind == "technique":
+        lines.append(f"Status: {_STATUS[technique.status]}")
+    if technique.group:
+        lines.append(f"Grupo: {technique.group}")
+    if technique.ijf_name:
+        lines.append(f"Nome usado pela IJF: {technique.ijf_name}")
+    if technique.name_pt_br:
+        lines.append(f"Tradução: {technique.name_pt_br}")
+    if technique.popular_names:
+        lines.append(f"Nomes populares: {_sorted_names(technique.popular_names)}")
+    if technique.aliases:
+        lines.append(f"Outras grafias: {', '.join(technique.aliases)}")
+    judo_en = [e.name for e in technique.english_names if e.usage == "judo"]
+    bjj_en = [e.name for e in technique.english_names if e.usage == "bjj"]
+    if judo_en:
+        lines.append(f"Inglês: {', '.join(judo_en)}")
+    if bjj_en:
+        lines.append(f"Nomes no jiu-jitsu (BJJ): {', '.join(bjj_en)}")
+    if technique.description_pt_br:
+        lines.append(f"Descrição: {technique.description_pt_br}")
+    if technique.video_url:
+        lines.append(f"Vídeo: {technique.video_url}")
+    lines.extend(f"Observação: {note}" for note in technique.notes)
+    lines.append(f"Origem do texto: {technique.provenance}")
+    return "\n".join(lines)
+
+
+def render_popular(name: PopularName, corpus: Corpus) -> str:
+    targets = " | ".join(corpus.technique(tid).name for tid in name.technique_ids)
+    marker = "ambíguo" if name.ambiguous else "único"
+    line = f'- "{name.name}" ({name.kind}, {marker}, confiança {name.confidence}) -> {targets}'
+    return f"{line}. {name.note}" if name.note else line
+
+
+def render_document(document: Document) -> str:
+    return f"### {document.title} [{document.id}]\nOrigem do texto: {document.provenance}\n\n{document.body}"
+
+
+def render_corpus(corpus: Corpus) -> str:
+    sections = [
+        "# GLOSSÁRIO DE TÉCNICAS",
+        "\n\n".join(render_technique(t) for t in corpus.techniques),
+        "# NOMES POPULARES",
+        "\n".join(render_popular(p, corpus) for p in corpus.popular_names),
+        "# REGRAS",
+        "\n\n".join(render_document(d) for d in corpus.documents if d.theme == "regras"),
+        "# HISTÓRIA",
+        "\n\n".join(render_document(d) for d in corpus.documents if d.theme == "historia"),
+    ]
+    return "\n\n".join(sections) + "\n"

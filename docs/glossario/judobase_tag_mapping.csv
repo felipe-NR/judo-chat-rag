@@ -1,0 +1,97 @@
+judobase_name,code_short,id_tag,id_group,id_groups,kind,inferred_class,occurrences,score_contexts,csv_display_name,csv_japanese_names,csv_english_names
+Ashi-guruma,ashi_guruma,233,29,"28,29,97,98",technique,ashi-waza,10,Waza-ari:6;Yuko:2;Ippon:2,Ashi Guruma,Ashi Guruma,Leg Wheel
+Avoid-Grip,avoid_grip,310,111,"97,109,110,111",non-technique,,126,Shido:120;HSK (3rd shido):6,,,
+Bend-Opps-Fingers,bend_opps_fingers,311,113,"97,109,110,113",non-technique,,1,Shido:1,,,
+Cancel Ippon,cancel_ippon,193,123,"97,122,123",non-technique,,11,Waza-ari:9;No score:2,,,
+Cancel Shido,cancel_shido,196,123,"97,122,123",non-technique,,27,No score:27,,,
+Cancel Waza-ari,cancel_waza_ari,194,123,"97,122,123",non-technique,,42,No score:24;Ippon:11;Yuko:4;Shido:2;HSK (3rd shido):1,,,
+Cancel Yuko,cancel_yuko,195,123,"97,122,123",non-technique,,21,No score:14;Waza-ari:6;Ippon:1,,,
+Daki-wakare,daki_wakare,290,35,"28,35,97,98",technique,yoko-sutemi-waza,1,Waza-ari:1,Daki Wakare,Daki Wakare,High Lift and Separate
+De-ashi-harai,de_ashi_harai,234,29,"28,29,97,98",technique,ashi-waza,9,Yuko:5;Waza-ari:2;Ippon:2,De Ashi Harai,"De Ashi Harai,De Ashi Barai",Forward Foot Sweep
+Defensive-Posture,defensive_posture,313,112,"97,109,110,112",non-technique,,51,Shido:47;HSK (3rd shido):4,,,
+Escape-With-Head,escape_with_head,350,111,"97,109,110,111",non-technique,,15,Shido:12;HSK (3rd shido):3,,,
+False-Attack,false_attack,320,112,"97,109,110,112",non-technique,,289,Shido:260;HSK (3rd shido):29,,,
+Fingers-Interlocked,fingers_interlocked,322,111,"97,109,110,111",non-technique,,7,Shido:7,,,
+Fusen-Gachi,fusen_gachi,305,121,"97,120,121",non-technique,,12,Ippon:12,,,
+Harai-goshi,harai_goshi,257,30,"28,30,97,98",technique,koshi-waza,3,Ippon:2;Waza-ari:1,Harai Goshi,Harai Goshi,Sweeping Hip Throw
+Harai-goshi-gaeshi,harai_goshi_gaeshi,236,29,"28,29,97,98",technique,ashi-waza,1,Waza-ari:1,Harai Goshi Gaeshi,Harai Goshi Gaeshi,Sweeping Hip
+Harai-makikomi,harai_makikomi,292,35,"28,35,97,98",technique,yoko-sutemi-waza,8,Waza-ari:4;Ippon:2;Yuko:1;Waza-ari-awasete-ippon:1,Harai Makikomi,Harai Makikomi,Sweeping Wrap Around
+Head-Dive,head_dive,325,118,"97,109,117,118",non-technique,,8,Hansoku-make:8,,,
+Hikikomi-gaeshi,hikikomi_gaeshi,267,31,"28,31,97,98",technique,ma-sutemi-waza,22,Waza-ari:13;Ippon:5;Yuko:4,Hikikomi Gaeshi,Hikikomi Gaeshi,Pulling-in Reversal
+Hiza-guruma,hiza_guruma,238,29,"28,29,97,98",technique,ashi-waza,4,Ippon:2;Waza-ari:2,Hiza Guruma,Hiza Guruma,Knee Wheel
+Hold-Sleeve-Ends,hold_sleeve_ends,327,111,"97,109,110,111",non-technique,,4,Shido:4,,,
+Hold-Trouser-Leg,hold_trouser_leg,360,113,"97,109,110,113",non-technique,,48,Shido:43;HSK (3rd shido):5,,,
+Illegal-Grip-Breaking,illegal_grip_breaking,335,111,"97,109,110,111",non-technique,,76,Shido:70;HSK (3rd shido):6,,,
+Illegal-Joint-Lock,illegal_joint_lock_hsk,330,119,"97,109,117,119",non-technique,,1,Hansoku-make:1,,,
+Ippon-seoi-nage,ippon_seoi_nage,273,33,"28,33,97,98",technique,te-waza,12,Waza-ari:8;Yuko:2;Ippon:2,Ippon Seoi Nage,Ippon Seoi Nage,One Arm Shoulder Throw
+Juji-gatame,juji_gatame,201,24,"23,24,97,98",technique,kansetsu-waza,28,Ippon:28,Juji Gatame,Ju Ji Gatame,"Armbar,Cross Lock"
+Kami-shiho-gatame,kami_shiho_gatame,206,25,"23,25,97,98",technique,osaekomi-waza,3,Ippon:2;No score:1,Kami Shiho Gatame,Kami Shiho Gatame,"North South Position,Top four-corner hold"
+Kansetsu waza from tachi waza,kansetsu_waza_from_tachi_waza,394,113,"97,109,110,113",non-technique,,3,Shido:3,,,
+Kata-Guruma,kata_guruma,274,33,"28,33,97,98",technique,te-waza,18,Waza-ari:9;Ippon:7;Yuko:1;Waza-ari-awasete-ippon:1,Kata Guruma,Kata Guruma,"Fireman's Carry,Shoulder Wheel"
+Kata-gatame,kata_gatame,207,25,"23,25,97,98",technique,osaekomi-waza,8,Ippon:5;Waza-ari-awasete-ippon:2;Yuko:1,Kata Gatame,Kata Gatame,"Arm Triangle Choke,Head and Arm Choke,Shoulder hold"
+Kesa-gatame,kesa_gatame,208,25,"23,25,97,98",technique,osaekomi-waza,11,Ippon:5;Yuko:2;No score:2;Waza-ari-awasete-ippon:2,Kesa Gatame,Kesa Gatame,Scarf hold
+Kicking,kicking,336,113,"97,109,110,113",non-technique,,1,Shido:1,,,
+Kiken-gachi,kiken_gachi,306,121,"97,120,121",non-technique,,3,Ippon:3,,,
+Ko-soto-gake,ko_soto_gake,240,29,"28,29,97,98",technique,ashi-waza,40,Ippon:17;Waza-ari:14;Waza-ari-awasete-ippon:5;Yuko:4,Kosoto Gake,Ko Soto Gake,Minor Outer Hook
+Ko-soto-gari,ko_soto_gari,241,29,"28,29,97,98",technique,ashi-waza,17,Waza-ari:10;Yuko:4;Ippon:3,Kosoto Gari,Ko Soto Gari,Minor Outer Reap
+Ko-uchi-gaeshi,ko_uchi_gaeshi,276,33,"28,33,97,98",technique,te-waza,2,Ippon:2,Kouchi Gaeshi,Ko Uchi Gaeshi,Hand Technique
+Ko-uchi-gari,ko_uchi_gari,242,29,"28,29,97,98",technique,ashi-waza,28,Waza-ari:15;Yuko:8;Ippon:4;Waza-ari-awasete-ippon:1,Kouchi Gari,Ko Uchi Gari,Minor Inner Reap
+Ko-uchi-makikomi,ko_uchi_makikomi,293,35,"28,35,97,98",technique,yoko-sutemi-waza,12,Waza-ari:4;Ippon:3;Yuko:3;Waza-ari-awasete-ippon:1;No score:1,Kouchi Makikomi,Ko Uchi Makikomi,Minor Inner Wrap-around Throw
+Koshi-guruma,koshi_guruma,258,30,"28,30,97,98",technique,koshi-waza,3,Waza-ari:2;Ippon:1,Koshi Guruma,Koshi Guruma,"Head Throw,Hip Wheel"
+Kuzure-kami-shiho-gatame,kuzure_kami_shiho_gatame,209,25,"23,25,97,98",technique,osaekomi-waza,29,Ippon:10;Waza-ari-awasete-ippon:8;Waza-ari:7;Yuko:2;No score:2,Kuzure Kami Shiho Gatame,Kuzure Kami Shiho Gatame,"Modified top four-corner hold,North South Position"
+Kuzure-kesa-gatame,kuzure_kesa_gatame,210,25,"23,25,97,98",technique,osaekomi-waza,13,Waza-ari-awasete-ippon:7;No score:3;Ippon:2;Waza-ari:1,Kuzure Kesa Gatame,Kuzure Kesa Gatame,Broken scarf hold
+Left,left,372,126,"97,122,126",non-technique,,181,Ippon:68;Yuko:55;Waza-ari:45;Waza-ari-awasete-ippon:11;No score:2,,,
+Leg-inside-blocking,leg_inside_blocking,371,112,"97,109,110,112",non-technique,,1,Shido:1,,,
+Non-Combativity,non_combativity,338,112,"97,109,110,112",non-technique,,515,Shido:451;HSK (3rd shido):64,,,
+O-goshi,o_goshi,260,30,"28,30,97,98",technique,koshi-waza,4,Waza-ari:3;Yuko:1,O Goshi,O Goshi,"Hip Throw,Major Hip Throw"
+O-soto-gaeshi,o_soto_gaeshi,244,29,"28,29,97,98",technique,ashi-waza,2,Ippon:1;Waza-ari:1,Osoto Gaeshi,O Soto Gaeshi,Foot Technique
+O-soto-gari,o_soto_gari,245,29,"28,29,97,98",technique,ashi-waza,22,Ippon:11;Waza-ari:8;Waza-ari-awasete-ippon:2;Yuko:1,Osoto Gari,O Soto Gari,Major Outer Reaping
+O-soto-makikomi,o_soto_makikomi,247,35,"28,35,97,98",technique,yoko-sutemi-waza,6,Yuko:3;Ippon:2;Waza-ari:1,Osoto Makikomi,Osoto Makikomi,Major Outer Wrap Around
+O-soto-otoshi,o_soto_otoshi,248,29,"28,29,97,98",technique,ashi-waza,8,Waza-ari:6;Ippon:1;Waza-ari-awasete-ippon:1,Osoto Otoshi,O Soto Otoshi,Major Outer Drop
+O-uchi-gaeshi,o_uchi_gaeshi,249,29,"28,29,97,98",technique,ashi-waza,5,Ippon:4;Waza-ari:1,Ouchi Gaeshi,O Uchi Gaeshi,Foot Technique
+O-uchi-gari,o_uchi_gari,250,29,"28,29,97,98",technique,ashi-waza,51,Waza-ari:31;Ippon:9;Yuko:6;Waza-ari-awasete-ippon:5,Ouchi Gari,O Uchi Gari,Major Inner Reap
+Obi-tori-gaeshi,obi_tori_gaeshi,289,33,"28,33,97,98",technique,te-waza,4,Waza-ari:2;Ippon:2,Obi Tori Gaeshi,Obi Tori Gaeshi,Belt Grab Counter
+Okuri-ashi-harai,okuri_ashi_harai,251,29,"28,29,97,98",technique,ashi-waza,2,Yuko:1;Waza-ari:1,Okuriashi Harai,Okuriashi Harai,Following Foot Sweep
+Okuri-eri-jime,okuri_eri_jime,228,27,"23,27,97,98",technique,shime-waza,12,Ippon:12,Okuri Eri Jime,Okuri Eri Jime,Sliding Collar Strangle
+Osaekomi,osaekomi,423,124,"97,122,124",non-technique,,169,Ippon:53;Waza-ari-awasete-ippon:51;No score:26;Waza-ari:24;Yuko:15,,,
+Outside-Contest-Area,outside_contest_area,339,112,"97,109,110,112",non-technique,,39,Shido:36;HSK (3rd shido):3,,,
+Pull-Down,pull_down,341,112,"97,109,110,112",non-technique,,2,Shido:2,,,
+Push-Out,push_out,342,112,"97,109,110,112",non-technique,,2,Shido:1;HSK (3rd shido):1,,,
+Right,right,377,126,"97,122,126",non-technique,,196,Ippon:70;Yuko:57;Waza-ari:48;Waza-ari-awasete-ippon:17;No score:4,,,
+Sankaku-jime,sankaku_jime,230,27,"23,27,97,98",technique,shime-waza,3,Ippon:3,Sankaku Jime,Sankaku Jime,"Triangle Choke,Triangular Strangle"
+Sasae-tsurikomi-ashi,sasae_tsurikomi_ashi,252,29,"28,29,97,98",technique,ashi-waza,9,Waza-ari:5;Yuko:2;Ippon:2,Sasae Tsurikomi Ashi,"Sasae Tsurikomi Ashi,Sasae",Lifting pulling Ankle Block
+Seoi-nage,seoi_nage,280,33,"28,33,97,98",technique,te-waza,52,Waza-ari:22;Ippon:17;Yuko:10;Waza-ari-awasete-ippon:3,Seoi Nage,Seoi Nage,Shoulder Throw
+Seoi-otoshi,seoi_otoshi,281,33,"28,33,97,98",technique,te-waza,34,Waza-ari:22;Ippon:6;Yuko:3;Waza-ari-awasete-ippon:3,Seoi Otoshi,Seoi Otoshi,Shoulder Drop
+Sode-guruma-jime,sode_guruma_jime,231,27,"23,27,97,98",technique,shime-waza,4,Ippon:4,Sode Guruma Jime,Sode Guruma Jime,"Ezequiel Choke,Sleeve wheel Strangle"
+Sode-tsurikomi-goshi,sode_tsurikomi_goshi,261,30,"28,30,97,98",technique,koshi-waza,16,Ippon:5;Waza-ari:5;Yuko:4;Waza-ari-awasete-ippon:2,Sode Tsurikomi Goshi,Sode Tsurikomi Goshi,Sleeve Lifting Pulling Hip
+Soto-makikomi,soto_makikomi,294,35,"28,35,97,98",technique,yoko-sutemi-waza,15,Waza-ari:6;Ippon:4;Yuko:3;No score:1;Waza-ari-awasete-ippon:1,Soto Makikomi,Soto Makikomi,Outer Wrap Around
+Streched-leg,streched_leg,374,113,"97,109,110,113",non-technique,,1,Shido:1,,,
+Sumi-gaeshi,sumi_gaeshi,268,31,"28,31,97,98",technique,ma-sutemi-waza,16,Waza-ari:8;Yuko:4;Waza-ari-awasete-ippon:3;Ippon:1,Sumi Gaeshi,Sumi Gaeshi,Corner Reversal
+Sumi-otoshi,sumi_otoshi,283,33,"28,33,97,98",technique,te-waza,32,Waza-ari:15;Yuko:8;Ippon:6;Waza-ari-awasete-ippon:3,Sumi Otoshi,Sumi Otoshi,Corner Drop
+Tai-otoshi,tai_otoshi,284,33,"28,33,97,98",technique,te-waza,17,Ippon:8;Waza-ari:7;Yuko:1;Waza-ari-awasete-ippon:1,Tai Otoshi,Tai Otoshi,Body Drop
+Tani-otoshi,tani_otoshi,295,35,"28,35,97,98",technique,yoko-sutemi-waza,25,Waza-ari:9;Yuko:8;Ippon:7;Waza-ari-awasete-ippon:1,Tani Otoshi,Tani Otoshi,Valley Drop
+Tate-shiho-gatame,tate_shiho_gatame,214,25,"23,25,97,98",technique,osaekomi-waza,15,Yuko:5;Ippon:4;Waza-ari-awasete-ippon:4;Waza-ari:2,Tate Shiho Gatame,Tate Shiho Gatame,"Full Mount,Straight four-corner hold"
+Tomoe-nage,tomoe_nage,270,31,"28,31,97,98",technique,ma-sutemi-waza,22,Waza-ari:9;Ippon:6;Yuko:5;No score:1;Waza-ari-awasete-ippon:1,Tomoe Nage,Tomoe Nage,Circle Throw
+Tsubame-gaeshi,tsubame_gaeshi,253,29,"28,29,97,98",technique,ashi-waza,1,Ippon:1,Tsubame Gaeshi,Tsubame Gaeshi,Swallows Flight Reversal
+Tsuri-goshi,tsuri_goshi,262,30,"28,30,97,98",technique,koshi-waza,5,Ippon:3;Waza-ari:2,Tsuri Goshi,Tsuri Goshi,Lifting Hip
+Two-hand-grip-avoidance,two_hand_grip_avoidance,401,111,"97,109,110,111",non-technique,,26,Shido:26,,,
+Uchi-makikomi,uchi_makikomi,296,35,"28,35,97,98",technique,yoko-sutemi-waza,3,No score:2;Waza-ari:1,Uchi Makikomi,Uchi Makikomi,Inner Wraparound
+Uchi-mata,uchi_mata,254,29,"28,29,97,98",technique,ashi-waza,42,Waza-ari:24;Ippon:13;Yuko:4;Waza-ari-awasete-ippon:1,Uchi Mata,Uchi Mata,Inner Thigh Throw
+Uchi-mata-gaeshi,uchi_mata_gaeshi,255,29,"28,29,97,98",technique,ashi-waza,2,Yuko:2,Uchi Mata Gaeshi,Uchi Mata Gaeshi,Inner Thigh Reap
+Uchi-mata-makikomi,uchi_mata_makikomi,297,35,"28,35,97,98",technique,yoko-sutemi-waza,4,Waza-ari:2;Yuko:1;Waza-ari-awasete-ippon:1,Uchi Mata Makikomi,Uchi Mata Makikomi,Inner Thigh Wrap Around
+Uchi-mata-sukashi,uchi_mata_sukashi,286,33,"28,33,97,98",technique,te-waza,7,Ippon:5;Waza-ari:2,Uchi Mata Sukashi,Uchi Mata Sukashi,"Inner Thigh Void Throw,Inner Thigh Reaping Throw Slip,Inner Thigh Reaping Throw Slip,Inner Thigh Avoidance Counter"
+Ude-garami,ude_garami,203,24,"23,24,97,98",technique,kansetsu-waza,1,Ippon:1,Ude Garami,Ude Garami,"Americana,Entangled Armlock,Kimura"
+Uki-goshi,uki_goshi,264,30,"28,30,97,98",technique,koshi-waza,2,Ippon:1;Waza-ari-awasete-ippon:1,Uki Goshi,Uki Goshi,Floating Hip
+Uki-otoshi,uki_otoshi,287,33,"28,33,97,98",technique,te-waza,15,Waza-ari:8;Ippon:4;Yuko:2;Waza-ari-awasete-ippon:1,Uki Otoshi,Uki Otoshi,Floating Drop
+Uki-waza,uki_waza,299,35,"28,35,97,98",technique,yoko-sutemi-waza,6,Waza-ari:3;Yuko:2;Ippon:1,Uki Waza,Uki Waza,Floating Technique
+Unorthodox kumi-kata too long,unorthodox_kumi_kata_too_long,416,111,"97,109,110,111",non-technique,,17,Shido:17,,,
+Unsportsmanlike-Conduct,unsportsmanlike_conduct_hsk,348,119,"97,109,117,119",non-technique,,1,Hansoku-make:1,,,
+Ura-gatame,ura_gatame,216,25,"23,25,97,98",technique,osaekomi-waza,6,Waza-ari-awasete-ippon:4;No score:1;Waza-ari:1,Ura Gatame,Ura Gatame,Back hold
+Ura-nage,ura_nage,271,31,"28,31,97,98",technique,ma-sutemi-waza,27,Ippon:10;Waza-ari:10;Yuko:5;No score:1;Waza-ari-awasete-ippon:1,Ura Nage,Ura Nage,"Rear Throw,Suplex"
+Ushiro-goshi,ushiro_goshi,265,30,"28,30,97,98",technique,koshi-waza,1,Ippon:1,Ushiro Goshi,Ushiro Goshi,Rear Hip Throw
+Ushiro-kesa-gatame,ushiro_kesa_gatame,217,25,"23,25,97,98",technique,osaekomi-waza,9,Waza-ari:4;Waza-ari-awasete-ippon:2;Ippon:2;No score:1,Ushiro Kesa Gatame,Ushiro Kesa Gatame,Reverse Scarf Hold
+Utsuri-goshi,utsuri_goshi,266,30,"28,30,97,98",technique,koshi-waza,1,Ippon:1,Utsuri Goshi,Utsuri Goshi,Changing Hip Throw
+Yoko-gake,yoko_gake,300,35,"28,35,97,98",technique,yoko-sutemi-waza,1,Ippon:1,Yoko Gake,Yoko Gake,Side Hook
+Yoko-guruma,yoko_guruma,301,35,"28,35,97,98",technique,yoko-sutemi-waza,3,Waza-ari-awasete-ippon:2;Ippon:1,Yoko Guruma,Yoko Guruma,Side Wheel
+Yoko-otoshi,yoko_otoshi,302,35,"28,35,97,98",technique,yoko-sutemi-waza,2,Ippon:1;Waza-ari:1,Yoko Otoshi,Yoko Otoshi,"Lateral Drop,Side Drop"
+Yoko-shiho-gatame,yoko_shiho_gatame,218,25,"23,25,97,98",technique,osaekomi-waza,75,Ippon:24;Waza-ari-awasete-ippon:22;No score:16;Waza-ari:9;Yuko:4,Yoko Shiho Gatame,Yoko Shiho Gatame,"Side Control,Side four-corner hold"

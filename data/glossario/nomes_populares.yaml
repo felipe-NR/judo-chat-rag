@@ -1,0 +1,282 @@
+# Nomes pelos quais as técnicas são conhecidas no Brasil e que não são grafia do
+# nome oficial. Cada nome aparece uma vez; mais de um technique_id = ambíguo.
+# Fontes: respostas das sessões judobase-db e judo-techniques-bot (2026-10-04),
+# conhecimento dos modelos, NÃO VERIFICADO salvo indicação em `source`.
+# kind: popular (nome japonês impreciso), truncation (nome cortado),
+#       nonstandard (nome fora do Kodokan), pt_br (termo em português), bjj.
+
+# ---------- truncamentos e nomes japoneses imprecisos ----------
+- name: Ashi-barai
+  technique_ids: [deashi-harai, okuriashi-harai]
+  kind: popular
+  confidence: media
+  source: sessões judobase-db e judo-techniques-bot
+  note: >-
+    Deashi-harai varre o pé que avança; Okuriashi-harai varre os dois pés juntos num
+    deslocamento lateral. Às vezes é usado para qualquer varrida de pé.
+
+- name: Seoi
+  technique_ids: [seoi-nage, ippon-seoi-nage]
+  kind: truncation
+  confidence: media
+  source: sessões judobase-db e judo-techniques-bot
+
+- name: Ippon Seoi
+  technique_ids: [ippon-seoi-nage]
+  kind: truncation
+  confidence: alta
+  source: sessão judobase-db
+
+- name: Morote Seoi Nage
+  technique_ids: [seoi-nage]
+  kind: popular
+  confidence: alta
+  source: CSV do judo-techniques-bot; sessões judobase-db e judo-techniques-bot
+  note: No Kodokan, Seoi-nage já é a forma com as duas mãos; "morote" é rótulo popular.
+
+- name: Drop Seoi
+  technique_ids: [seoi-nage, ippon-seoi-nage, seoi-otoshi]
+  kind: popular
+  confidence: media
+  source: CSV do judo-techniques-bot
+  note: >-
+    Seoi feito caindo de joelhos. Pode ser Seoi-nage ou Ippon-seoi-nage de joelhos, e é
+    muitas vezes confundido com Seoi-otoshi.
+
+- name: Drop Seoi Nage
+  technique_ids: [seoi-nage, ippon-seoi-nage, seoi-otoshi]
+  kind: popular
+  confidence: media
+  source: CSV do judo-techniques-bot
+  note: Mesmo uso de "Drop Seoi".
+
+- name: Seoi de joelho
+  technique_ids: [seoi-nage, ippon-seoi-nage, seoi-otoshi]
+  kind: pt_br
+  confidence: media
+  source: sessão judobase-db
+  note: Mesmo uso de "Drop Seoi".
+
+- name: Juji
+  technique_ids: [ude-hishigi-juji-gatame]
+  kind: truncation
+  confidence: alta
+  source: sessão judobase-db
+
+- name: Sasae
+  technique_ids: [sasae-tsurikomi-ashi]
+  kind: truncation
+  confidence: alta
+  source: CSV do judo-techniques-bot
+
+- name: Osoto
+  technique_ids: [osoto-gari]
+  kind: truncation
+  confidence: alta
+  source: sessão judobase-db
+
+- name: Ouchi
+  technique_ids: [ouchi-gari]
+  kind: truncation
+  confidence: alta
+  source: sessão judobase-db
+
+- name: Kosoto
+  technique_ids: [kosoto-gari]
+  kind: truncation
+  confidence: alta
+  source: sessão judobase-db
+
+- name: Kouchi
+  technique_ids: [kouchi-gari]
+  kind: truncation
+  confidence: alta
+  source: sessão judobase-db
+
+- name: Harai
+  technique_ids: [harai-goshi]
+  kind: truncation
+  confidence: media
+  source: sessões judobase-db e judo-techniques-bot
+
+- name: Sode
+  technique_ids: [sode-tsurikomi-goshi]
+  kind: truncation
+  confidence: alta
+  source: sessão judobase-db
+  note: Não confundir com Sode-guruma-jime, o estrangulamento.
+
+- name: Hikikomi
+  technique_ids: [hikikomi-gaeshi]
+  kind: truncation
+  confidence: alta
+  source: sessão judobase-db
+
+- name: Kesa
+  technique_ids: [kesa-gatame]
+  kind: truncation
+  confidence: alta
+  source: sessão judobase-db
+
+- name: Sankaku
+  technique_ids: [sankaku-jime, ude-hishigi-sankaku-gatame]
+  kind: truncation
+  confidence: media
+  source: sessão judobase-db
+  note: Sankaku-jime é o estrangulamento; Ude-hishigi-sankaku-gatame, a chave de braço no mesmo triângulo.
+
+# ---------- nomes fora da nomenclatura do Kodokan ----------
+- name: Yoko-tomoe-nage
+  technique_ids: [tomoe-nage]
+  kind: nonstandard
+  confidence: media
+  source: CSV do judo-techniques-bot; sessão judobase-db
+  note: Tomoe-nage com tori caindo de lado.
+
+- name: Jigoku-jime
+  technique_ids: [okuri-eri-jime, kata-ha-jime]
+  kind: nonstandard
+  confidence: baixa
+  source: CSV do judo-techniques-bot ("AKA Okuri Eri Jime"); sessão judo-techniques-bot
+  note: Fora da lista do Kodokan; associado ora a uma variação de Okuri-eri-jime, ora de Kata-ha-jime.
+
+- name: Kouchi-gake
+  technique_ids: [kouchi-gari]
+  kind: nonstandard
+  confidence: media
+  source: CSV do judo-techniques-bot ("Minor Inner Hook")
+  note: Kouchi-gari em que o pé engancha o calcanhar em vez de ceifar; não consta do Kodokan.
+
+- name: Te-guruma
+  technique_ids: [sukui-nage]
+  kind: nonstandard
+  confidence: media
+  source: sessão judobase-db
+
+- name: Kubi-nage
+  technique_ids: [koshi-guruma]
+  kind: nonstandard
+  confidence: media
+  source: sessão judobase-db
+  note: Variação de Koshi-guruma com o braço no pescoço.
+
+- name: Seoi invertido
+  technique_ids: [reverse-seoi-nage]
+  kind: pt_br
+  confidence: media
+  source: sessão judobase-db
+
+- name: Seoi coreano
+  technique_ids: [reverse-seoi-nage]
+  kind: pt_br
+  confidence: media
+  source: sessão judobase-db
+
+# ---------- termos em português ----------
+- name: Mata-leão
+  technique_ids: [hadaka-jime]
+  kind: pt_br
+  confidence: alta
+  source: sessões judobase-db e judo-techniques-bot
+
+- name: Baiana
+  technique_ids: [morote-gari]
+  kind: pt_br
+  confidence: alta
+  source: sessões judobase-db e judo-techniques-bot
+
+- name: Triângulo
+  technique_ids: [sankaku-jime]
+  kind: pt_br
+  confidence: alta
+  source: sessões judobase-db e judo-techniques-bot
+
+- name: Balão
+  technique_ids: [tomoe-nage]
+  kind: pt_br
+  confidence: media
+  source: sessão judobase-db
+  note: Mais usado no jiu-jitsu.
+
+- name: Tesoura voadora
+  technique_ids: [kani-basami]
+  kind: pt_br
+  confidence: media
+  source: sessão judobase-db
+
+- name: Rasteira
+  technique_ids: [deashi-harai, okuriashi-harai, kouchi-gari]
+  kind: pt_br
+  confidence: media
+  source: sessão judobase-db
+  note: Termo genérico para varridas e ceifadas pequenas de pé.
+
+- name: Chave de braço
+  technique_ids: [ude-hishigi-juji-gatame]
+  kind: pt_br
+  confidence: media
+  source: sessões judobase-db e judo-techniques-bot
+  note: Termo genérico para kansetsu-waza de braço; quase sempre se refere ao Juji-gatame.
+
+- name: Montada
+  technique_ids: [tate-shiho-gatame]
+  kind: pt_br
+  confidence: alta
+  source: sessão judo-techniques-bot
+  note: Posição do jiu-jitsu.
+
+- name: Cem quilos
+  technique_ids: [yoko-shiho-gatame]
+  kind: pt_br
+  confidence: alta
+  source: sessão judo-techniques-bot
+  note: Posição do jiu-jitsu.
+
+- name: Norte-sul
+  technique_ids: [kami-shiho-gatame]
+  kind: pt_br
+  confidence: alta
+  source: sessão judo-techniques-bot
+  note: Posição do jiu-jitsu.
+
+- name: Ezequiel
+  technique_ids: [sode-guruma-jime]
+  kind: pt_br
+  confidence: alta
+  source: sessão judo-techniques-bot
+
+- name: Estrangulamento
+  technique_ids: [shime-waza]
+  kind: pt_br
+  confidence: alta
+  source: sessões judobase-db e judo-techniques-bot
+  note: Categoria, não técnica.
+
+- name: Imobilização
+  technique_ids: [osaekomi-waza]
+  kind: pt_br
+  confidence: alta
+  source: sessão judobase-db
+  note: Categoria, não técnica.
+
+- name: Projeção
+  technique_ids: [nage-waza]
+  kind: pt_br
+  confidence: alta
+  source: sessão judobase-db
+  note: Categoria, não técnica.
+
+# ---------- jiu-jitsu ----------
+- name: Kimura
+  technique_ids: [ude-garami]
+  kind: bjj
+  confidence: alta
+  source: CSV do judo-techniques-bot; sessão judo-techniques-bot
+  note: Ude-garami torcendo o braço para trás.
+
+- name: Americana
+  technique_ids: [ude-garami]
+  kind: bjj
+  confidence: alta
+  source: CSV do judo-techniques-bot; sessão judo-techniques-bot
+  note: Ude-garami torcendo o braço para cima.
