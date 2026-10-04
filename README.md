@@ -24,7 +24,7 @@ O GitHub Pages só serve arquivos estáticos, então a API roda nesta máquina e
 domínio fixo do ngrok da conta (`https://quadrantal-glenda-interstream.ngrok-free.dev`):
 
 ```bash
-./start-ngrok.sh   # sobe a API na porta 8000 e o túnel ngrok em background
+./start-ngrok.sh   # sobe a API na porta 8010 (JUDO_CHAT_PORT) e o túnel ngrok
 ./stop-ngrok.sh    # derruba os dois
 ```
 
