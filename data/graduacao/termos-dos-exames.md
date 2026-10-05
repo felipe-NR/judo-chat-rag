@@ -13,7 +13,7 @@ provenance: generated
 - **Rei-ho**: formas de saudação. Ritsu-rei é a saudação em pé e za-rei, a saudação
   ajoelhado.
 - **Ukemi**: formas de cair (ver o glossário de técnicas).
-- **Tai-sabaki**: giros e deslocamentos do corpo. "Mae-sabaki" é o giro com o pé indo à
+- **Tai-sabaki**: manejo do corpo (giros e deslocamentos). "Mae-sabaki" é o giro com o pé indo à
   frente; "mae-mawari-sabaki", o giro completo à frente.
 - **Nage-no-kata**: a forma (kata) das projeções, com 15 técnicas em 5 grupos (te-waza,
   koshi-waza, ashi-waza, ma-sutemi-waza e yoko-sutemi-waza), feita pelo tori e pelo uke.

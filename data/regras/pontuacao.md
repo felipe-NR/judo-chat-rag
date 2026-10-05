@@ -20,7 +20,7 @@ regulamento oficial publicado pela IJF e adotado pela Confederação Brasileira 
 - 5 segundos valem yuko.
 - O árbitro anuncia "osaekomi" ao começar a contagem e "toketa" quando o uke escapa.
 
-**Estrangulamento e chave de braço**
+**Estrangulamento e luxação (shime-waza e kansetsu-waza)**
 - Quando o uke bate duas vezes no tatame ou no tori (desistência, "maitta"), ou perde a
   consciência num estrangulamento, o tori vence por ippon.
 

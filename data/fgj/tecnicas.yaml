@@ -1,0 +1,1072 @@
+# Gerado por scripts/import_fgj.py a partir do material da FGJ. Não edite à mão.
+- id: seoi-nage
+  tecnica: Seoi-nage
+  kanji: 背負投
+  traducao: PROJEÇÃO COM CARREGAMENTO NAS COSTAS
+  descricao_kodokan: Uma técnica para lançar o oponente sobre o ombro direito, desequilibrando-o para
+    a frente e inserindo o cotovelo direito sob a axila direita para carregá-lo nas costas.
+  principio: NAGE = Movimento em que há uma suspensão do uke para em seguida ser projetado
+  kyo_grupo:
+    original: 1º - TE-WAZA
+    gokyo: 1
+- id: tai-otoshi
+  tecnica: Tai-otoshi
+  kanji: 体落
+  traducao: DERRUBADA BRUSCA DO CORPO
+  descricao_kodokan: Uma técnica para puxar para baixo e arremessar o oponente, quebrando seu equilíbrio
+    para frente e girando o corpo para a esquerda para colocar o pé direito na frente do pé direito dele.
+  principio: OTOSHI = Movimento de uma derrubada brusca, diretamente para baixo, sem suspensão.
+  kyo_grupo:
+    original: 2º - TE-WAZA
+    gokyo: 2
+- id: uki-otoshi
+  tecnica: Uki-otoshi
+  kanji: 浮落
+  traducao: DERRUBADA BRUSCA COM FLUTUAÇÃO
+  descricao_kodokan: Uma técnica para derrubar o oponente quebrando seu equilíbrio para frente e puxando-o
+    para baixo em direção ao canto frontal direito.
+  principio: UKI = Característica na técnica em que o movimento causa uma flutuação, ou seja, uma breve
+    uma suspensão que resulta no desequilíbrio. OTOSHI = Movimento de uma derrubada brusca, diretamente
+    para baixo, sem suspensão.
+  kyo_grupo:
+    original: 4º - TE-WAZA
+    gokyo: 4
+- id: sumi-otoshi
+  tecnica: Sumi-otoshi
+  kanji: 隅落
+  traducao: DERRUBADA BRUSCA PARA O CANTO
+  descricao_kodokan: Uma técnica para empurrar e derrubar o oponente, desequilibrando-o em direção ao
+    canto traseiro direito enquanto pisa na parte externa do pé´ direito com o esquerdo.
+  principio: OTOSHI = Movimento de uma derrubada brusca, diretamente para baixo, sem suspensão
+  kyo_grupo:
+    original: 5º - TE-WAZA
+    gokyo: 5
+- id: kata-guruma
+  tecnica: Kata-guruma
+  kanji: 肩車
+  traducao: ROTAÇÃO PELO OMBRO
+  descricao_kodokan: Tecnica para levantar o oponente sobre os dois ombros, na parte de trás do pescoço,
+    e derrubá-lo, quebrando seu equilíbrio para frente enquanto segura sua coxa direita por dentro com
+    o braço direito.
+  principio: GURUMA = Movimento que causa uma rotação, um giro.
+  kyo_grupo:
+    original: 3º - TE-WAZA
+    gokyo: 3
+- id: sukui-nage
+  tecnica: Sukui-nage
+  kanji: 掬投
+  traducao: PROJEÇÃO COM COLHIMENTO E LEVANTAMENTO
+  descricao_kodokan: Uma técnica para levantar e derrubar o oponente, quebrando seu equilíbrio para trás
+    enquanto pisa atrás dele e segura ambas as coxas pela parte da frente com ambas as mãos ou outra técnica
+    para
+  principio: SUKUI = Movimento de colhida com levantamento,
+  kyo_grupo:
+    original: 4º - TE-WAZA
+    gokyo: 4
+- id: deashi-harai
+  tecnica: De-ashi-harai
+  kanji: 出足払
+  traducao: VARREDURA DO PÉ QUE MOVIMENTOU
+  descricao_kodokan: Uma técnica para varrer o pé direito do oponente com o pé esquerdo e derrubá-lo imediatamente
+    quando ele dá´ um passo à frente e coloca seu peso sobre ele
+  principio: HARAI = varredura como varrer um objeto leve
+  kyo_grupo:
+    original: 1º - ASHI-WAZA
+    gokyo: 1
+- id: okuriashi-harai
+  tecnica: Okuri-ashi-harai
+  kanji: 送足払
+  traducao: VARREDURA COM CONDUÇÃO DA PERNA
+  descricao_kodokan: Uma técnica para derrubar o oponente, empurrando-o para a esquerda e golpeando seu
+    pé direito com o pé esquerdo de modo que ambos os pés fiquem juntos.
+  principio: OKURI = Movimento de levar de um lado para outro, de conduzir. HARAI = varredura como varrer
+    um objeto leve
+  kyo_grupo:
+    original: 2º - ASHI-WAZA
+    gokyo: 2
+- id: hiza-guruma
+  tecnica: Hiza-guruma
+  kanji: 膝車
+  traducao: ROTAÇÃO PELO JOELHO
+  descricao_kodokan: Técnica para derrubar o oponente, desequilibrando-o para frente e segurando seu joelho
+    direito com o pé esquerdo para girá-lo em torno dele
+  principio: GURUMA = Movimento que causa uma rotação, um giro.
+  kyo_grupo:
+    original: 1º - ASHI-WAZA
+    gokyo: 1
+- id: sasae-tsurikomi-ashi
+  tecnica: Sasae-tsurikomi-ashi
+  kanji: 支釣込足
+  traducao: APOIO NA PERNA COM SUSPENSÃO E PUXADA
+  descricao_kodokan: Uma técnica para segurar o tornozelo direito do oponente com o pé esquerdo e derrubá-lo,
+    quebrando seu equilíbrio enquanto o levanta para frente.
+  principio: Tsurikomi = Movimento que caracteriza suspensão e puxada para si
+  kyo_grupo:
+    original: 1º - ASHI-WAZA
+    gokyo: 1
+- id: harai-tsurikomi-ashi
+  tecnica: Harai-tsurikomi-ashi
+  kanji: 払釣込足
+  traducao: VARREDURA DA PERNA COM SUSPENSÃO E PUXADA
+  descricao_kodokan: Uma técnica para varrer o tornozelo do oponente com o pé´ esquerdo pela frente e
+    derrubá-lo, quebrando seu equilíbrio enquanto o levanta para frente.
+  principio: TSURIKOMI = Movimento que caracteriza suspensão e puxada para si
+  kyo_grupo:
+    original: 3º - ASHI-WAZA
+    gokyo: 3
+- id: osoto-gari
+  tecnica: O-soto-gari
+  kanji: 大外刈
+  traducao: CEIFA EXTERIOR MAIOR
+  descricao_kodokan: Uma técnica para arrancar a perna direita do oponente de fora com a perna direita
+    e derrubá-lo, quebrando seu equilíbrio para trás
+  principio: GARI = Movimento quando o peso está na perna a ser ceifada, como o movimento de um corte
+    de uma raiz Desequilibra o uke para o CANTO e CEIFA a perna do uke que está carregando todo seu peso
+  kyo_grupo:
+    original: 1º - ASHI-WAZA
+    gokyo: 1
+- id: osoto-guruma
+  tecnica: O-soto-guruma
+  kanji: 大外車
+  traducao: ROTAÇÃO EXTERIOR MAIOR
+  descricao_kodokan: Uma técnica para derrubar o oponente, desequilibrando-o para trás e colocando a perna
+    direita atrás de ambas as pernas para girá-lo em seu eixo.
+  principio: GURUMA = Movimento que causa uma rotação, um giro.
+  kyo_grupo:
+    original: 5º - ASHI-WAZA
+    gokyo: 5
+- id: kosoto-gari
+  tecnica: Ko-soto-gari
+  kanji: 小外刈
+  traducao: CEIFA EXTERIOR MENOR
+  descricao_kodokan: Uma técnica para arrancar o pé direito do oponente de fora com o pé esquerdo e
+  principio: GARI = Movimento quando o peso está na perna a ser ceifada, como o movimento de um corte
+    de uma raiz
+  kyo_grupo:
+    original: 2º - ASHI-WAZA
+    gokyo: 2
+- id: kosoto-gake
+  tecnica: Ko-soto-gake
+  kanji: 小外掛
+  traducao: ENGANCHAMENTO EXTERIOR MENOR
+  descricao_kodokan: Uma técnica para derrubar o oponente quebrando seu equilíbrio para trás, prendendo
+    o pé ou a perna esquerda de fora na perna direita e levantando seu corpo.
+  principio: 'GAKE: Suspensão do uke, e aplicação de um movimento de baixo para cima como quando arranca
+    uma raiz com um ancinho Enganche a perna do seu oponente com sua perna ou a sola de seu pé, SUSPENDA
+    seu oponente enquanto engancha a perna para derrubá-lo'
+  kyo_grupo:
+    original: 3º - ASHI-WAZA
+    gokyo: 3
+- id: kouchi-gari
+  tecnica: Ko-uchi-gari
+  kanji: 小内刈
+  traducao: CEIFA INTERIOR MENOR
+  descricao_kodokan: Uma técnica para arrancar o pé direito do oponente por dentro com o pé direito e
+    derrubá-lo, quebrando seu equilíbrio para trás.
+  principio: GARI = Movimento quando o peso está na perna a ser ceifada, como o movimento de um corte
+    de uma raiz Ceifa APÓS ele ter DEPOSITADO seu peso no pé de apoio
+  kyo_grupo:
+    original: 2º - ASHI-WAZA
+    gokyo: 2
+- id: ouchi-gari
+  tecnica: O-uchi-gari
+  kanji: 大内刈
+  traducao: CEIFA INTERIOR MAIOR
+  descricao_kodokan: Uma técnica para arrancar a perna esquerda do oponente por dentro com a perna direita
+    e derrubá-lo, quebrando seu equilíbrio para trás.
+  principio: GARI = Movimento quando o peso está na perna a ser ceifada, como o movimento de um corte
+    de uma raiz
+  kyo_grupo:
+    original: 1º - ASHI-WAZA
+    gokyo: 1
+- id: uchi-mata
+  tecnica: Uchi-mata
+  kanji: 内股
+  traducao: PROJEÇÃO PELO INTERIOR DA COXA
+  descricao_kodokan: Uma técnica para varrer a parte interna da coxa esquerda do oponente com a parte
+    de trás da coxa direita e derrubá-lo, desequilibrando-o para a frente.
+  principio: O movimento de uchi-mata é de nage fazendo a suspensão pelo interior da coxa.
+  kyo_grupo:
+    original: 2º - ASHI-WAZA
+    gokyo: 2
+- id: ashi-guruma
+  tecnica: Ashi-guruma
+  kanji: 足車
+  traducao: ROTAÇÃO PELA PERNA
+  descricao_kodokan: Uma técnica para derrubar o oponente quebrando seu equilíbrio para frente, colocando
+    a perna direita sobre o joelho direito e girando-o em seu eixo.
+  principio: GURUMA = Movimento que causa uma rotação, um giro.
+  kyo_grupo:
+    original: 3º - ASHI-WAZA
+    gokyo: 3
+- id: o-guruma
+  tecnica: O-guruma
+  kanji: 大車
+  traducao: ROTAÇÃO MAIOR/GRANDE ROTAÇÃO
+  descricao_kodokan: Tecnica para derrubar o oponente, desequilibrando-o para frente e colocando a perna
+    direita ao redor da área, do abdômen inferior até´ a parte superior das coxas, para girá-lo em seu
+    eixo.
+  principio: GURUMA = Movimento que causa uma rotação, um giro.
+  kyo_grupo:
+    original: 4º - ASHI-WAZA
+    gokyo: 4
+- id: koshi-guruma
+  tecnica: Koshi-guruma
+  kanji: 腰車
+  traducao: ROTAÇÃO PELO QUADRIL
+  descricao_kodokan: Uma técnica para girar o oponente no eixo do quadril e derrubá-lo, quebrando seu
+    equilíbrio para frente e segurando seu pescoço no braço direito enquanto empurra o quadril profundamente.
+  principio: KOSHI = O quadril é a parte do corpo com maior ação na projeção ou como ponto de apoio.
+  kyo_grupo:
+    original: 2º - KOSHI-WAZA
+    gokyo: 2
+- id: o-goshi
+  tecnica: O-goshi
+  kanji: 大腰
+  traducao: PROJEÇÃO DE QUADRIL MAIOR
+  descricao_kodokan: Uma técnica para carregar o oponente na parte de trás do quadril e derrubá-lo, quebrando
+    seu equilíbrio para frente e inserindo o braço direito na axila esquerda enquanto segura seu quadril
+    e o aproxima.
+  principio: O = GRANDE/MAIOR O quadril é a parte do corpo com maior ação na projeção ou como ponto de
+    apoio. ABRACE a cintura e APROXIME O QUADRIL, sem agarrar a faixa,
+  kyo_grupo:
+    original: 1º - KOSHI-WAZA
+    gokyo: 1
+- id: uki-goshi
+  tecnica: Uki-goshi
+  kanji: 浮腰
+  traducao: PROJEÇÃO DE QUADRIL COM FLUTUAÇÃO
+  descricao_kodokan: Uma técnica para derrubar o oponente quebrando seu equilíbrio para frente e inserindo
+    o braço direito através da axila esquerda, enquanto o carrega levemente sobre o quadril e torce o
+    corpo
+  principio: UKI = Característica na técnica em que o movimento causa uma flutuação, ou seja, uma breve
+    uma suspensão que resulta no desequilíbrio.
+  kyo_grupo:
+    original: 1º - KOSHI-WAZA
+    gokyo: 1
+- id: tsuri-goshi
+  tecnica: Tsuri-goshi
+  kanji: 釣腰
+  traducao: PROJEÇÃO DE QUADRIL COM IÇAMENTO
+  descricao_kodokan: Uma técnica para carregar o oponente na parte de trás do quadril e derrubá-lo, quebrando
+    seu equilíbrio para frente e agarrando a parte de trás da faixa para levanta´ - lo.
+  principio: TSURI = PUXADA / IÇAMENTO Agarre a faixa de seu adversário e PUXE PARA CIMA KOSHI = O quadril
+    é a parte do corpo com maior ação na projeção ou como ponto de apoio
+  kyo_grupo:
+    original: 3º - KOSHI-WAZA
+    gokyo: 3
+- id: tsurikomi-goshi
+  tecnica: Tsurikomi-goshi
+  kanji: 釣込腰
+  traducao: PROJEÇÃO DE QUADRIL COM SUSPENSÃO E PUXADA
+  descricao_kodokan: Uma técnica para carregar o oponente na parte de trás do quadril e derrubá-lo, quebrando
+    seu equilíbrio para frente enquanto segura sua lapela frontal esquerda com a mão direita e levantando-a.
+  principio: TSURIKOMI = Movimento que caracteriza suspensão e puxada para si KOSHI = O quadril é a parte
+    do corpo com maior ação na projeção ou como ponto de apoio
+  kyo_grupo:
+    original: 2º - KOSHI-WAZA
+    gokyo: 2
+- id: harai-goshi
+  tecnica: Harai-goshi
+  kanji: 払腰
+  traducao: PROJEÇÃO DE QUADRIL COM VARREDURA
+  descricao_kodokan: Uma técnica para levantar o oponente e derrubá-lo, desequilibrando-o para a frente
+    e jogando-o na parte de trás do quadril direito. com apoio da perna direita
+  principio: KOSHI = O quadril é a parte do corpo com maior ação na projeção ou como ponto de apoio
+  kyo_grupo:
+    original: 2º - KOSHI-WAZA
+    gokyo: 2
+- id: hane-goshi
+  tecnica: Hane-goshi
+  kanji: 跳腰
+  traducao: PROJEÇÃO DE QUADRIL COM IMPULSÃO
+  descricao_kodokan: Uma técnica para levantar o oponente com a parte de trás do quadril direito e a perna
+    direita e derrubá-lo, quebrando seu equilíbrio para a frente.
+  principio: HANE = IMPULSÃO KOSHI = O quadril é a parte do corpo com maior ação na projeção ou como ponto
+    de apoio
+  kyo_grupo:
+    original: 3º - KOSHI-WAZA
+    gokyo: 3
+- id: ushiro-goshi
+  tecnica: Ushiro-goshi
+  kanji: 後腰
+  traducao: PROJEÇÃO DE QUADRIL POR TRÁS
+  descricao_kodokan: Uma técnica para derrubar o oponente verticalmente, neutralizando seu Nage-waza ou
+    outro ataque e segurando e levantando seu quadril.
+  principio: USHIRO = Por trás KOSHI = O quadril é a parte do corpo com maior ação na projeção ou como
+    ponto de apoio
+  kyo_grupo:
+    original: 5º - KOSHI-WAZA
+    gokyo: 5
+- id: utsuri-goshi
+  tecnica: Utsuri-goshi
+  kanji: 移腰
+  traducao: PROJEÇÃO COM TRANSFERÊNCIA PARA QUADRIL
+  descricao_kodokan: Uma técnica para derrubar o oponente neutralizando seu Nage-waza ou outro ataque,
+    segurando e levantando seu quadril com o braço direito e movendo-o para trás do quadril.
+  principio: UTSURI = transferência KOSHI = O quadril é a parte do corpo com maior ação na projeção ou
+    como ponto de apoio
+  kyo_grupo:
+    original: 4º - KOSHI-WAZA
+    gokyo: 4
+- id: tomoe-nage
+  tecnica: Tomoe-nage
+  kanji: 巴投
+  traducao: PROJEÇÃO CIRCULAR
+  descricao_kodokan: Uma técnica para jogar o oponente por cima da cabeça, desequilibrando-o para a frente
+    e colocando a sola direita no abdômen inferior enquanto deita o corpo de costas.
+  principio: 'TOMOE: É um termo originado de um símbolo circular. NAGE = Movimento em que há uma suspensão
+    do uke para em seguida ser projetado'
+  kyo_grupo:
+    original: 3º - MA-SUTEMI-WAZA
+    gokyo: 3
+- id: sumi-gaeshi
+  tecnica: Sumi-gaeshi
+  kanji: 隅返
+  traducao: INVERSÃO PARA O CANTO
+  descricao_kodokan: Uma técnica para jogar o oponente por cima da cabeça, desequilibrando-o para a frente,
+    aproximando a parte superior do corpo, enquanto segura sua lapela ou costas com a mão direita e deita
+    o corpo de costas, levantando a parte interna da coxa esquerda com a perna direita.
+  principio: Tsurite nas costas ou na gola do Uwagi. Encaixar a perna NA PARTE DE TRÁS DO JOELHO MA-SUTEMI
+    = tori se sacrificou totalmente/plenamente, colocando-se de costas, para executar a técnica
+  kyo_grupo:
+    original: 4º - MA-SUTEMI-WAZA
+    gokyo: 4
+- id: ura-nage
+  tecnica: Ura-nage
+  kanji: 裏投
+  traducao: DERRUBADA BRUSCA PARA O CANTO
+  descricao_kodokan: Uma técnica para jogar o oponente por cima do ombro, neutralizando o Nage-waza ou
+    outro ataque do oponente e segurando e levantando a parte superior do corpo enquanto deita o corpo
+    de costas.
+  principio: URA = Retaguarda MA-SUTEMI = tori se sacrificou totalmente/plenamente, colocando-se de costas,
+    para executar a técnica
+  kyo_grupo:
+    original: 5º - MA-SUTEMI-WAZA
+    gokyo: 5
+- id: yoko-guruma
+  tecnica: Yoko-guruma
+  kanji: 横車
+  traducao: ROTAÇÃO LATERAL
+  descricao_kodokan: Uma técnica para girar e derrubar o oponente neutralizando seu Nage-waza ou outro
+    ataque, segurando seu quadril com o braço esquerdo para desequilibrá-lo para frente, deslizando a
+    perna direita entre as pernas pela frente enquanto torce o corpo e deita o corpo sobre o lado esquerdo.
+  principio: Yoko-sutemi = Tori sacrifica sua posição, terminando lateralmente no solo para executar a
+    técnica GURUMA = Movimento que causa uma rotação, um giro.
+  kyo_grupo:
+    original: 5º - YOKO-SUTEMI-WAZA
+    gokyo: 5
+- id: tani-otoshi
+  tecnica: Tani-otoshi
+  kanji: 谷落
+  traducao: DERRUBADA BRUSCA NO VALE
+  descricao_kodokan: Uma técnica para puxar e derrubar o oponente, desequilibrando-o para trás e deitando
+    o corpo sobre o lado esquerdo enquanto desliza a perna esquerda para trás.
+  principio: OTOSHI = Movimento de uma derrubada brusca, diretamente para baixo, sem suspensão.
+  kyo_grupo:
+    original: 4º - YOKO-SUTEMI-WAZA
+    gokyo: 4
+- id: yoko-otoshi
+  tecnica: Yoko-otoshi
+  kanji: 横落
+  traducao: DERRUBADA BRUSCA LATERAL
+  descricao_kodokan: Uma técnica para puxar e derrubar o oponente, desequilibrando-o para a direita e
+    deitando o corpo sobre o lado esquerdo enquanto desliza a perna esquerda em direção à parte externa
+    do pé direito.
+  principio: Otoshi = Movimento de uma derrubada brusca, diretamente para baixo, sem suspensão. Yoko-sutemi
+    = Tori sacrifica sua posição, terminando lateralmente no solo para executar a técnica
+  kyo_grupo:
+    original: 3º - YOKO-SUTEMI-WAZA
+    gokyo: 3
+- id: uki-waza
+  tecnica: Uki-Waza
+  kanji: 浮技
+  traducao: TÉCNICA COM FLUTUAÇÃO
+  descricao_kodokan: técnica para derrubar o oponente, desequilibrando-o em direção ao canto frontal direito
+    e esticando a perna esquerda para colocá-la na parte externa do pé direito, enquanto deita o corpo
+    sobre o lado esquerdo e o gira.
+  principio: UKI = Característica na técnica em que o movimento causa uma flutuação, ou seja, uma breve
+    uma suspensão que resulta no desequilíbrio.
+  kyo_grupo:
+    original: 5º - YOKO-SUTEMI-WAZA
+    gokyo: 5
+- id: soto-makikomi
+  tecnica: Soto-makikomi
+  kanji: 外巻込
+  traducao: ENROLAMENTO POR FORA
+  descricao_kodokan: Uma técnica para envolver o oponente e derrubá-lo, quebrando seu equilíbrio para
+    frente, segurando o braço direito na axila direita e empurrando o quadril profundamente.
+  principio: MAKIKOMI = Movimento em que o tori envolve o uke em si, enrolando-o, para cair junto em movimento
+    de sacrifício
+  kyo_grupo:
+    original: 4º - YOKO-SUTEMI-WAZA
+    gokyo: 4
+- id: hane-makikomi
+  tecnica: Hane-makikomi
+  kanji: 跳巻込
+  traducao: ENROLAMENTO COM IMPULSÃO
+  descricao_kodokan: Uma técnica para envolver o oponente e derrubá-lo aplicando Hane-goshi e segurando
+    seu braço direito na axila direita.
+  principio: MAKIKOMI = Movimento em que o tori envolve o uke em si, enrolando-o, para cair junto em movimento
+    de sacrifício
+  kyo_grupo:
+    original: 4º - YOKO-SUTEMI-WAZA
+    gokyo: 4
+- id: yoko-gake
+  tecnica: Yoko-gake
+  kanji: 横掛
+  traducao: ENGANCHAMENTO LATERAL
+  descricao_kodokan: Técnica para derrubar o oponente quebrando o equilíbrio dele em direção ao dedo mindinho
+    do pé direito e empurrando e varrendo o tornozelo externo direito com o pé
+  principio: 'GAKE: Suspensão do uke, e aplicação de um movimento de baixo para cima como quando arranca
+    uma raiz com um ancinho'
+  kyo_grupo:
+    original: 5º - YOKO-SUTEMI-WAZA
+    gokyo: 5
+- id: yoko-wakare
+  tecnica: Yoko-Wakare
+  kanji: 横分
+  traducao: SEPARAÇÃO LATERAL
+  descricao_kodokan: Uma técnica para derrubar o oponente quebrando seu equilíbrio para frente e pisando
+    com os dois pés na parte externa do pé´ direito enquanto deita o corpo sobre o lado esquerdo e o gira
+    sobre o corpo.
+  principio: Wakare = Movimento que é caracterizado por uma separação com o tori de um lado e o uke de
+    outro.
+  kyo_grupo:
+    original: 5º - YOKO-SUTEMI-WAZA
+    gokyo: 5
+- id: ippon-seoi-nage
+  tecnica: Ippon-seoi-nage
+  kanji: 一本背負投
+  traducao: PROJEÇÃO COM CARREGAMENTO NAS COSTAS POR UM BRAÇO
+  descricao_kodokan: Uma técnica para lançar o oponente sobre o ombro direito, quebrando seu equilíbrio
+    para frente e segurando seu braço direito por dentro com o braço direito para carregá-lo nas costas.
+  principio: NAGE = Movimento em que há uma suspensão do uke para em seguida ser projetado Ippon = 1 (um)
+  kyo_grupo:
+    original: TE-WAZA SHIN-MEISHO-NO-WAZA
+    classe: shinmeisho-no-waza
+- id: seoi-otoshi
+  tecnica: Seoi-otoshi
+  kanji: 背負落
+  traducao: DERRUBADA COM CARREGAMENTO NAS COSTAS
+  descricao_kodokan: Uma técnica para puxar para baixo e arremessar o oponente, desequilibrando-o para
+    frente e caindo sobre um dos joelhos ou ambos enquanto o carrega nas costas.
+  principio: OTOSHI = Movimento de uma derrubada brusca, diretamente para baixo, sem suspensão. Derrubada
+    pode ser realizada com um ou os dois joelhos
+  kyo_grupo:
+    original: TE-WAZA HABUKARETA-WAZA
+    classe: habukareta-waza
+- id: uchi-mata-sukashi
+  tecnica: Uchi-mata-sukashi
+  kanji: 内股すかし
+  traducao: ABERTURA (DE ESPAÇO) PARA UCHI-MATA
+  descricao_kodokan: Uma técnica para repelir a tentativa de Uchi-mata do oponente e derrubá-lo.
+  principio: SUKASHI = abertura de espaço, esquiva. Projeção com membros superiores (TE-WAZA)
+  kyo_grupo:
+    original: TE-WAZA SHIN-MEISHO-NO-WAZA
+    classe: shinmeisho-no-waza
+- id: kouchi-gaeshi
+  tecnica: Ko-uchi-gaeshi
+  kanji: 小内返
+  traducao: CONTRAGOLPE (DA CEIFA) INTERIOR MENOR
+  descricao_kodokan: Uma técnica para desviar da tentativa de Ko-uchi-gari do oponente e derrubá-lo.
+  principio: Contragolpe de uma tentativa de Ko-uchi-gari Projeção com membros superiores (TE-WAZA)
+  kyo_grupo:
+    original: TE-WAZA SHIN-MEISHO-NO-WAZA
+    classe: shinmeisho-no-waza
+- id: yama-arashi
+  tecnica: Yama-arashi
+  kanji: 山嵐
+  traducao: TEMPESTADE DA MONTANHA
+  descricao_kodokan: Uma técnica para varrer a perna direita do oponente com o pé direito e derrubá-lo,
+    agarrando sua manga direita com a mão esquerda e segurando sua gola lateral direita com o polegar
+    direito para dentro, enquanto quebra seu equilíbrio levantando-o para frente.
+  principio: Pegada cruzada, quebrando o equilíbrio do uke para frente. Projeção com membros superiores
+    (TE-WAZA), com varrida de perna como elemento complementar.
+  kyo_grupo:
+    original: TE-WAZA HABUKARETA-WAZA
+    classe: habukareta-waza
+- id: obi-tori-gaeshi
+  tecnica: Obi-tori-gaeshi
+  kanji: 帯取返
+  traducao: INVERSÃO COM PEGADA NA FAIXA
+  descricao_kodokan: Uma técnica para lançar o oponente sobre o ombro direito, agarrando seu cinto sobre
+    o ombro com a mão direita e segurando seu braço ou perna direita com a mão esquerda enquanto o levanta.
+  principio: Domínio cruzado chegando até a faixa, outra mão na calça e projeção com auxílio perna/quadril.
+    Projeção com membros superiores (te-waza)
+  kyo_grupo:
+    original: TE-WAZA SHIN-MEISHO-NO-WAZA
+    classe: shinmeisho-no-waza
+- id: obi-otoshi
+  tecnica: Obi-otoshi
+  kanji: 帯落
+  traducao: DERRUBADA PELA FAIXA
+  descricao_kodokan: Uma técnica para levantar e derrubar o oponente agarrando a parte da frente do cinto
+    dele com a mão direita, puxando-o para frente enquanto pisa atras dele e segura seu quadril pela parte
+    da frente com a mão esquerda para desequilibrar o oponente para trás.
+  principio: OTOSHI = Movimento de uma derrubada brusca, diretamente para baixo, sem suspensão. Uma mão
+    controlando pela faixa e outra segurando quadril. Projeção diretamente para trás
+  kyo_grupo:
+    original: TE-WAZA HABUKARETA-WAZA
+    classe: habukareta-waza
+- id: morote-gari
+  tecnica: Morote-gari
+  kanji: 双手刈
+  traducao: CEIFA COM AS DUAS MÃOS
+  descricao_kodokan: Uma técnica para ceifar e derrubar o oponente segurando ambas as pernas dele pelo
+    lado de fora com as duas mãos.
+  principio: GARI = movimento de um corte de uma raiz Segurar as pernas pelo lado de fora com as duas
+    mãos
+  kyo_grupo:
+    original: TE-WAZA SHIN-MEISHO-NO-WAZA
+    classe: shinmeisho-no-waza
+- id: kuchiki-taoshi
+  tecnica: Kuchiki-taoshi
+  kanji: 朽木倒
+  traducao: TOMBAMENTO DA ÁRVORE APODRECIDA
+  descricao_kodokan: Uma técnica para empurrar o oponente para trás, segurando uma de suas pernas por
+    dentro ou por fora com uma das mãos e puxando-a para cima
+  principio: TAOSHI = tombamento, fazer cair como um dominó Segurar a perna por dentro ou por fora
+  kyo_grupo:
+    original: TE-WAZA SHIN-MEISHO-NO-WAZA
+    classe: shinmeisho-no-waza
+- id: kibisu-gaeshi
+  tecnica: Kibisu-gaeshi
+  kanji: 踵返
+  traducao: INVERSÃO PELO CALCANHAR
+  descricao_kodokan: Uma técnica para arremessar o oponente, golpeando seu calcanhar por dentro ou por
+    fora com uma das mãos.
+  principio: Colha o calcanhar do uke, arrancando do solo e derrubando diretamente quando o uke transfere
+    seu peso Segurar a perna por dentro ou por fora
+  kyo_grupo:
+    original: TE-WAZA SHIN-MEISHO-NO-WAZA
+    classe: shinmeisho-no-waza
+- id: tsubame-gaeshi
+  tecnica: Tsubame-gaeshi
+  kanji: 燕返
+  traducao: CONTRAGOLPE DA ANDORINHA
+  descricao_kodokan: Uma técnica para derrubar o oponente, defendendo-se de sua tentativa de varredura
+    com o pé e contra varrendo com o mesmo pé que estava sendo atacado.
+  principio: Contragolpe de uma tentativa de ashi-harai (de ou okuri)
+  kyo_grupo:
+    original: ASHI-WAZA SHIN-MEISHO-NO-WAZA
+    classe: shinmeisho-no-waza
+- id: ouchi-gaeshi
+  tecnica: O-uchi-gaeshi
+  kanji: 大内返
+  traducao: CONTRAGOLPE (DA CEIFA) INTERIOR MAIOR
+  descricao_kodokan: Uma técnica para derrubar o oponente revidando sua tentativa de O-uchi-gari com a
+    perna que está sendo atacada.
+  principio: Contragolpe de uma tentativa de O-uchi-gari. Podendo varrer uma ou as duas pernas. Projeção
+    com membros inferiores (ASHI-WAZA)
+  kyo_grupo:
+    original: ASHI-WAZA SHIN-MEISHO-NO-WAZA
+    classe: shinmeisho-no-waza
+- id: osoto-otoshi
+  tecnica: O-soto-otoshi
+  kanji: 大外落
+  traducao: DERRUBADA EXTERNA MAIOR
+  descricao_kodokan: Uma técnica para derrubar o oponente verticalmente, desequilibrando-o para trás e
+    deslizando a perna direita na parte de trás da coxa direita.
+  principio: OTOSHI = Movimento de uma derrubada brusca, diretamente para baixo, sem suspensão. Movimento
+    descendente da perna do tori, finalizando com o pé junto ao tatame.
+  kyo_grupo:
+    original: ASHI-WAZA HABUKARETA-WAZA
+    classe: habukareta-waza
+- id: osoto-gaeshi
+  tecnica: O-soto-gaeshi
+  kanji: 大外返
+  traducao: CONTRAGOLPE (DA CEIFA) EXTERIOR MAIOR
+  descricao_kodokan: Uma técnica para derrubar o oponente revidando sua tentativa de O-soto-gari com a
+    perna que está sendo atacada
+  principio: Contragolpe de uma tentativa de O-soto-gari. Pode reverter ainda com a perna do uke na mesma
+    direção ou firmar o pé de apoio e rotacionar o tronco para projetar
+  kyo_grupo:
+    original: ASHI-WAZA SHIN-MEISHO-NO-WAZA
+    classe: shinmeisho-no-waza
+- id: harai-goshi-gaeshi
+  tecnica: Harai-goshi-gaeshi
+  kanji: 払腰返
+  traducao: CONTRAGOLPE (DA PROJEÇÃO PELO) QUADRIL COM VARREDURA
+  descricao_kodokan: Uma técnica para derrubar o oponente neutralizando sua tentativa de Harai-goshi de
+    arrancar ou enganchar seu pé de apoio de fora com o pé ou a perna.
+  principio: Contragolpe de uma tentativa de Harai-goshi. Importante o tai-sabaki (manejo do corpo) impondo
+    a resistência para então contrapor o ataque com a ceifa ou enganche
+  kyo_grupo:
+    original: ASHI-WAZA SHIN-MEISHO-NO-WAZA
+    classe: shinmeisho-no-waza
+- id: uchi-mata-gaeshi
+  tecnica: Uchi-mata-gaeshi
+  kanji: 内股返
+  traducao: CONTRAGOLPE (DA PROJEÇÃO PELO) INTERIOR DA COXA
+  descricao_kodokan: Uma técnica para derrubar o oponente neutralizando sua tentativa de Uchi-mata, seja
+    arrancando ou enganchando seu pé de apoio de fora com o pé ou a perna.
+  principio: Contragolpe de uma tentativa de Uchi-mata. Importante o tai-sabaki (manejo do corpo) impondo
+    a resistência para então contrapor o ataque com a ceifa ou enganche
+  kyo_grupo:
+    original: ASHI-WAZA SHIN-MEISHO-NO-WAZA
+    classe: shinmeisho-no-waza
+- id: hane-goshi-gaeshi
+  tecnica: Hane-goshi-gaeshi
+  kanji: 跳腰返
+  traducao: CONTRAGOLPE (DA PROJEÇÃO PELO) QUADRIL COM IMPULSÃO
+  descricao_kodokan: Uma técnica para derrubar o oponente neutralizando sua tentativa de Hane-goshi de
+    ceifar ou enganchar seu pé de apoio de fora com o pé ou a perna.
+  principio: Contragolpe de uma tentativa de Hane-goshi. Importante o tai-sabaki (manejo do corpo) impondo
+    a resistência para então contrapor o ataque com a ceifa ou enganche
+  kyo_grupo:
+    original: ASHI-WAZA SHIN-MEISHO-NO-WAZA
+    classe: shinmeisho-no-waza
+- id: sode-tsurikomi-goshi
+  tecnica: Sode-tsurikomi-goshi
+  kanji: 袖釣込腰
+  traducao: (PROJEÇÃO PELO) QUADRIL COM SUSPENSÃO E PUXADA PELA MANGA
+  descricao_kodokan: Uma técnica para carregar o oponente na parte de trás do quadril e derrubá-lo, quebrando
+    seu equilíbrio para frente enquanto segura sua manga esquerda com a mão direita e levantando-a.
+  principio: TSURIKOMI = Movimento que caracteriza suspensão e puxada para si. Pela MANGA (sode) com alavanca
+    no quadril (goshi).
+  kyo_grupo:
+    original: KOSHI-WAZA SHIN-MEISHO-NO-WAZA
+    classe: shinmeisho-no-waza
+- id: tawara-gaeshi
+  tecnica: Tawara-Gaeshi
+  kanji: 俵返
+  traducao: INVERSÃO DO FARDO DE PALHA TRANÇADA
+  descricao_kodokan: Uma técnica para jogar o oponente por cima do ombro, desequilibrando-o para a frente,
+    inclinando-se sobre suas costas, segurando e levantando a parte superior do corpo com ambos os braços
+    enquanto deita o corpo de costas.
+  principio: Contraposição a uma tentativa de Morote-gari, criando a resistência, desequilibrando o uke
+    para frente. Domínio da parte superior do corpo e sacrifício pleno para projeção sobre o ombro.
+  kyo_grupo:
+    original: MA-SUTEMI-WAZA HABUKARETA-WAZA
+    classe: habukareta-waza
+- id: hikikomi-gaeshi
+  tecnica: Hikikomi-gaeshi
+  kanji: 引込返
+  traducao: INVERSÃO COM PUXADA PARA SI
+  descricao_kodokan: Uma técnica para jogar o oponente por cima da cabeça, quebrando seu equilíbrio para
+    frente, aproximando a parte superior do corpo, enquanto segura a parte de trás do cinto com a mão
+    direita e deita o corpo de costas, e levanta a parte interna da coxa esquerda com a perna direita.
+  principio: Quebrar o equilíbrio do uke para frente. Agarra a parte de TRÁS DA FAIXA. Não há local especifico
+    para o encaixe da perna desde que na parte interna da coxa.
+  kyo_grupo:
+    original: MA-SUTEMI-WAZA HABUKARETA-WAZA
+    classe: habukareta-waza
+- id: daki-wakare
+  tecnica: Daki-wakare
+  kanji: 抱分
+  traducao: SEPARAÇÃO COM ABRAÇO
+  descricao_kodokan: Uma técnica para lançar o oponente sobre o corpo, segurando a parte superior do corpo
+    dele por trás quando ele estiver prestes a cair no tatame com ambas as mãos e pés e torcendo o corpo
+    enquanto o deita sobre o lado esquerdo.
+  principio: Domínio com abraço deve acontecer antes do corpo do uke estar no solo, realizando sacrífico
+    lateral do corpo com giro.
+  kyo_grupo:
+    original: YOKO-SUTEMI-WAZA HABUKARETA-WAZA
+    classe: habukareta-waza
+- id: harai-makikomi
+  tecnica: Harai-makikomi
+  kanji: 払巻込
+  traducao: ENROLAMENTO COM VARREDURA
+  descricao_kodokan: Uma técnica para envolver o oponente e derruba-lo aplicando Harai-goshi e segurando
+    seu braço direito na axila direita.
+  principio: A ação como de um Harai-Goshi com o enrolamento do braço e realiza o sacrifício lateral da
+    posição do tori.
+  kyo_grupo:
+    original: YOKO-SUTEMI-WAZA SHIN-MEISHO-NO-WAZA
+    classe: shinmeisho-no-waza
+- id: uchi-mata-makikomi
+  tecnica: Uchi-mata-makikomi
+  kanji: 内股巻込
+  traducao: ENROLAMENTO (COM PROJEÇÃO) NO INTERIOR DA COXA
+  descricao_kodokan: Uma técnica para envolver o oponente e derrubá-lo aplicando Uchi-mata e segurando
+    seu braço direito na axila direita
+  principio: A ação como de um Uchi-mata com o enrolamento do braço e realiza o sacrifício lateral da
+    posição do tori.
+  kyo_grupo:
+    original: YOKO-SUTEMI-WAZA SHIN-MEISHO-NO-WAZA
+    classe: shinmeisho-no-waza
+- id: uchi-makikomi
+  tecnica: Uchi-makikomi
+  kanji: 内巻込
+  traducao: ENROLAMENTO INTERIOR
+  descricao_kodokan: Uma técnica para envolver o oponente e derrubá-lo, quebrando seu equilíbrio para
+    frente, segurando o braço direito por dentro no braço direito e empurrando o quadril profundamente.
+  principio: Enrolamento do braço, com saída profunda do quadril e sacrifício lateral do corpo.
+  kyo_grupo:
+    original: YOKO-SUTEMI-WAZA HABUKARETA-WAZA
+    classe: habukareta-waza
+- id: osoto-makikomi
+  tecnica: O-soto-makikomi
+  kanji: 大外巻込
+  traducao: ENROLAMENTO EXTERIOR MAIOR
+  descricao_kodokan: Uma técnica para envolver o oponente e derrubá-lo aplicando O-soto-gari e
+  principio: A ação como de um O-soto-gari com o enrolamento do braço e realiza o sacrifício lateral da
+    posição do tori.
+  kyo_grupo:
+    original: YOKO-SUTEMI-WAZA
+- id: kouchi-makikomi
+  tecnica: Ko-uchi-makikomi
+  kanji: 小内巻込
+  traducao: ENROLAMENTO INTERIOR MENOR
+  descricao_kodokan: Uma técnica para envolver o oponente e derrubá-lo, desequilibrando-o para trás e
+    prendendo a perna direita na perna direita dele por dentro, enquanto deita o corpo para frente.
+  principio: Aprisionamento/enrolamento do interior da perna do uke, com sacrifício lateral
+  kyo_grupo:
+    original: YOKO-SUTEMI-WAZA SHIN-MEISHO-NO-WAZA
+    classe: shinmeisho-no-waza
+- id: kani-basami
+  tecnica: Kani-basami
+  kanji: 蟹挟
+  traducao: PINÇAMENTO DO CARANGUEJO
+  descricao_kodokan: Uma técnica para derrubar o oponente enquanto segura a parte inferior do seu corpo
+    com ambas as pernas, quebrando o equilíbrio para trás, girando o corpo para o lado esquerdo e colocando
+    a perna direita na parte inferior do abdômen e a perna esquerda na parte de trás dos dois joelhos
+    enquanto deita o corpo sobre o lado esquerdo.
+  principio: Uma perna na parte inferior do abdômen e outra perna atrás dos dois joelhos. É permitido
+    o tori apoiar o braço no chão para sua realização.
+  kyo_grupo:
+    original: YOKO-SUTEMI-WAZA SHIN-MEISHO-NO-WAZA
+    classe: shinmeisho-no-waza
+- id: kawazu-gake
+  tecnica: Kawazu-gake
+  kanji: 河津掛
+  traducao: ENGANCHAMENTO DO KAWAZU
+  descricao_kodokan: Uma técnica para derrubar o oponente puxando-o para mais perto, girando o corpo,
+    enganchando a perna direita em volta da perna esquerda por dentro e levantando a perna para frente
+    enquanto deita o corpo com ele
+  principio: Enganchar a perna do uke e levantá-lo, enquanto faz o sacrifício lateral da posição do tori
+  kyo_grupo:
+    original: YOKO-SUTEMI-WAZA SHIN-MEISHO-NO-WAZA
+    classe: shinmeisho-no-waza
+- id: kesa-gatame
+  tecnica: Kesa-gatame
+  kanji: 袈裟固
+  traducao: Domínio pelo manto (kesa é um manto budista – conceito de diagonal)
+  descricao_kodokan: Uma técnica para segurar a parte superior do corpo do oponente sob o lado direito
+    da região do peito, segurando seu braço direito no braço esquerdo do lado direito do oponente deitado
+    de costas e segurando a parte de trás da gola com a mão direita.
+  principio: Domínio em diagonal Controle do braço Mão atrás da gola Posição das pernas
+  kyo_grupo:
+    original: OSAEKOMI-WAZA
+- id: kuzure-kesa-gatame
+  tecnica: Kuzure-kesa-gatame
+  kanji: 崩袈裟固
+  traducao: Domínio pelo manto modificado (kesa é um manto budista – conceito de diagonal)
+  descricao_kodokan: Uma técnica para segurar a parte superior do corpo do oponente sob o lado direito
+    da região do peito, segurando seu braço direito no braço esquerdo do lado direito do oponente deitado
+    de costas e inserindo o braço direito através de sua axila esquerda.
+  principio: Domínio em diagonal Controle do braço Mão dominando o ombro Pressão no plexo solar Posição
+    das pernas
+  kyo_grupo:
+    original: OSAEKOMI-WAZA
+- id: ushiro-kesa-gatame
+  tecnica: Ushiro-kesa-gatame
+  kanji: 後袈裟固
+  traducao: Domínio pelo manto por trás (kesa é um manto budista – conceito de diagonal)
+  descricao_kodokan: Uma técnica para segurar a parte superior do corpo do oponente sob o lado esquerdo
+    da região do peito, colocando o quadril esquerdo no lado direito do corpo do oponente deitado de costas,
+    segurando o braço direito no braço direito e a parte superior do corpo no braço esquerdo.
+  principio: Domínio em diagonal Controle do punho/braço Controle da parte superior do corpo e quadril
+  kyo_grupo:
+    original: OSAEKOMI-WAZA
+- id: kata-gatame
+  tecnica: Kata-gatame
+  kanji: 肩固
+  traducao: Domínio pelo ombro
+  descricao_kodokan: Técnica para segurar o oponente no chão, segurando seu braço direito e pescoço com
+    o lado direito do pescoço e ambos os braços do lado direito do oponente deitado de costas.
+  principio: Controle do braço em direção ao rosto do uke Perna na lateral do corpo do uke Quadril baixo
+  kyo_grupo:
+    original: OSAEKOMI-WAZA
+- id: kami-shiho-gatame
+  tecnica: Kami-shiho-gatame
+  kanji: 上四方固
+  traducao: Domínio dos quatro pontos pela parte superior
+  descricao_kodokan: Uma técnica para segurar a parte superior do corpo do oponente abaixo da região do
+    peito e abdômen, segurando ambos os lados do cinto com as duas mãos, na parte superior da cabeça,
+    enquanto ele está deitado de costas.
+  principio: Duas mãos na lateral da faixa Quadril baixo Apoio do peito contra o peito
+  kyo_grupo:
+    original: OSAEKOMI-WAZA
+- id: kuzure-kami-shiho-gatame
+  tecnica: Kuzure-kami-shiho-gatame
+  kanji: 崩上四方固
+  traducao: Domínio dos quatro pontos pela parte superior modificado
+  descricao_kodokan: Uma técnica para segurar a parte superior do corpo do oponente abaixo da região do
+    peito e abdômen, segurando seu braço direito no braço direito do lado diagonal direito da cabeça e
+    segurando o lado esquerdo do cinto com a mão esquerda enquanto ele está deitado de costas.
+  principio: Envolvimento do braço Segurar a gola atrás do pescoço Outra mão segurando a parte lateral
+    da faixa
+  kyo_grupo:
+    original: OSAEKOMI-WAZA
+- id: yoko-shiho-gatame
+  tecnica: Yoko-shiho-gatame
+  kanji: 横四方固
+  traducao: Domínio dos quatro pontos pela lateral
+  descricao_kodokan: Uma técnica para segurar a parte superior do corpo do oponente sob a região do peito
+    e abdômen, agarrando seu cinto ou calças através de suas pernas com a mão direita do lado direito
+    do oponente deitado de costas e segurando sua gola lateral esquerda através da parte de trás de seu
+    pescoço com a mão esquerda.
+  principio: Domínio da gola por baixo de pescoço do uke Domínio da faixa por baixo do quadril do uke
+    Quadril baixo (tori)
+  kyo_grupo:
+    original: OSAEKOMI-WAZA
+- id: tate-shiho-gatame
+  tecnica: Tate-shiho-gatame
+  kanji: 縦四方固
+  traducao: Domínio dos quatro pontos pela vertical
+  descricao_kodokan: Uma técnica para segurar a parte superior do corpo do oponente sob a região do peito
+    e abdômen, deitando-se de bruços sobre o oponente deitado de costas, segurando seu braço direito e
+    pescoço com ambas as mãos e segurando a parte inferior do corpo com ambas as pernas.
+  principio: Controle do braço em direção ao rosto do uke Montada de bruços Controle dos membros inferiores
+    com as pernas
+  kyo_grupo:
+    original: OSAEKOMI-WAZA
+- id: uki-gatame
+  tecnica: Uki-gatame
+  kanji: 浮固
+  traducao: Domínio com flutuação
+  descricao_kodokan: Técnica para segurar a parte superior do corpo do oponente com a perna direita, segurando
+    seu braço direito com um dos braços ou ambos do lado direito do oponente deitado de costas e esticando
+    a perna esquerda para trás
+  principio: Parte da tentativa de juji-gatame Controle do braço do uke Controle do corpo do uke com perna
+    e quadril
+  kyo_grupo:
+    original: OSAEKOMI-WAZA
+- id: ura-gatame
+  tecnica: Ura-gatame
+  kanji: 裏固
+  traducao: Domínio pela retaguarda
+  descricao_kodokan: Uma técnica para segurar o oponente na região das costas, segurando seu braço direito
+    com o braço direito do lado direito do oponente deitado de costas e agarrando sua perna com a mão
+    esquerda
+  principio: Domínio com as costas Controle do punho/braço Controle da perna ou calça Os dois pés no solo
+  kyo_grupo:
+    original: OSAEKOMI-WAZA
+- id: nami-juji-jime
+  tecnica: Nami-juji-jime
+  kanji: 並十字絞
+  traducao: Estrangulamento cruzado regular
+  descricao_kodokan: Uma técnica para estrangular a região do pescoço do oponente cruzando os pulsos pela
+    frente, segurando as laterais do pescoço com os dois polegares para dentro e empurrando com as duas
+    mãos.
+  principio: Aprofundamento dos polegares Carótidas
+  kyo_grupo:
+    original: SHIME-WAZA
+- id: gyaku-juji-jime
+  tecnica: Gyaku-juji-jime
+  kanji: 逆十字絞
+  traducao: Estrangulamento cruzado invertido
+  descricao_kodokan: Uma técnica para estrangular a região do pescoço do oponente cruzando os pulsos pela
+    frente, segurando as laterais do pescoço com quatro dedos de ambas as mãos para dentro e apertando
+    os braços.
+  principio: Aprofundamento dos 4 dedos Carótidas
+  kyo_grupo:
+    original: SHIME-WAZA
+- id: kata-juji-jime
+  tecnica: Kata-juji-jime
+  kanji: 片十字絞
+  traducao: Estrangulamento cruzado irregular
+  descricao_kodokan: Uma técnica para estrangular a região do pescoço do oponente cruzando os pulsos pela
+    frente, segurando a gola lateral esquerda com quatro dedos da mão esquerda para dentro e a gola lateral
+    direita com o polegar direito para dentro, puxando a mão esquerda e empurrando a mão direita.
+  principio: Uma mão com aprofundamento do polegar e outra com aprofundamento dos 4 dedos Carótidas
+  kyo_grupo:
+    original: SHIME-WAZA
+- id: hadaka-jime
+  tecnica: Hadaka-jime
+  kanji: 裸絞
+  traducao: Estrangulamento desnudo
+  descricao_kodokan: Uma técnica para estrangular a região do pescoço do oponente sem usar judogi, colocando
+    o antebraço direito na garganta do oponente por trás e unindo o braço esquerdo sobre ele.
+  principio: Lâmina do antebraço no pescoço do uke Recuar uma perna e depois a outra (tori) Puxar para
+    trás, sem deixar espaço entre os corpos
+  kyo_grupo:
+    original: SHIME-WAZA
+- id: okuri-eri-jime
+  tecnica: Okuri-eri-jime
+  kanji: 送襟絞
+  traducao: Estrangulamento com condução de gola
+  descricao_kodokan: Uma técnica para estrangular a região do pescoço do oponente segurando sua gola lateral
+    esquerda através de sua garganta com a mão direita e a lapela frontal direita através da axila esquerda
+    com a mão esquerda por trás puxando a mão direita na direção direita-trás e puxando a mão esquerda
+    para baixo.
+  principio: Aprofundamento do punho na gola/carótida Condução de uma gola para lateral e outra para baixo
+    (gravata) Abaixa a cabeça (tori)
+  kyo_grupo:
+    original: SHIME-WAZA
+- id: kata-ha-jime
+  tecnica: Kataha-jime
+  kanji: 片羽絞
+  traducao: Estrangulamento com uma asa
+  descricao_kodokan: Uma técnica para estrangular a região do pescoço do oponente segurando sua gola lateral
+    esquerda através de sua garganta com a mão direita por trás, inserindo o braço esquerdo através da
+    axila esquerda para levantar o braço para cima, puxando a mão direita na direção direita-traseira
+    e empurrando a mão esquerda sob o braço direito
+  principio: Aprofundamento do punho na gola/carótida Deslizar o braço da axila do uke até o antebraço.
+    Mão passa por trás da nuca do uke, até o próprio cotovelo do tori
+  kyo_grupo:
+    original: SHIME-WAZA
+- id: kata-te-jime
+  tecnica: Katate-jime
+  kanji: 片手絞
+  traducao: Estrangulamento com uma mão
+  descricao_kodokan: Uma técnica para estrangular a região do pescoço do oponente segurando sua gola lateral
+    direita com o polegar direito para dentro, do lado esquerdo do oponente deitado de costas.
+  principio: Controle do braço do uke Polegar dentro da gola Antebraço no pescoço
+  kyo_grupo:
+    original: SHIME-WAZA
+- id: ryo-te-jime
+  tecnica: Ryote-jime
+  kanji: 両手絞
+  traducao: Estrangulamento com ambas as mãos
+  descricao_kodokan: Uma técnica para estrangular a região do pescoço do oponente com os punhos pela frente,
+    segurando a gola lateral esquerda com o polegar direito para dentro e a gola lateral direita com o
+    polegar esquerdo para dentro.
+  principio: Polegares para dentro Pressão com os 4 dedos Trazer para perto do corpo
+  kyo_grupo:
+    original: SHIME-WAZA
+- id: sode-guruma-jime
+  tecnica: Sode-guruma-jime
+  kanji: 袖車絞
+  traducao: Estrangulamento com rotação da manga
+  descricao_kodokan: Uma técnica para estrangular a região do pescoço do oponente pela frente, colocando
+    o antebraço direito em sua garganta e o antebraço esquerdo atrás do pescoço para segurar seu pescoço
+    entre eles, segurando o punho direito com a mão esquerda e empurrando a mão direita no lado direito
+    do pescoço.
+  principio: Antebraço na garganta Outro antebraço atrás do pescoço Rotação da manga
+  kyo_grupo:
+    original: SHIME-WAZA
+- id: tsukkomi-jime
+  tecnica: Tsukkomi-jime
+  kanji: 突込絞
+  traducao: Estrangulamento com transpasse
+  descricao_kodokan: Uma técnica para estrangular a região do pescoço do oponente pela frente, segurando
+    sua lapela frontal direita com a mão esquerda e a lapela frontal esquerda com a mão direita e empurrando
+    a mão direita em direção ao lado direito do pescoço
+  principio: Empurra uma gola contra o pescoço e puxa a outra para baixo Transpasse por cima ou por baixo
+  kyo_grupo:
+    original: SHIME-WAZA
+- id: sankaku-jime
+  tecnica: Sankaku-jime
+  kanji: 三角絞
+  traducao: Estrangulamento em triângulo
+  descricao_kodokan: Uma técnica para estrangular a região do pescoço do oponente segurando seu pescoço
+    e axila direita entre as duas pernas e enganchando o pé direito na parte de trás do joelho esquerdo,
+    formando um triângulo.
+  principio: Segurar a gola cruzada Fechamento do triangulo enganchando o pé atrás do outro joelho
+  kyo_grupo:
+    original: SHIME-WAZA
+- id: do-jime
+  tecnica: Do-jime
+  kanji: 胴絞
+  traducao: Estrangulamento do torso
+  descricao_kodokan: Uma técnica para estrangular o oponente segurando a região do tronco dele entre as
+    duas pernas.
+  principio: Guarda-de-pernas fechada Perna entrelaçada Puxar o uke em sua direção
+  kyo_grupo:
+    original: SHIME-WAZA
+- id: ude-garami
+  tecnica: Ude-garami
+  kanji: 腕緘
+  traducao: Entrelaçamento do braço
+  descricao_kodokan: Uma técnica para torcer e travar a articulação do cotovelo do oponente, agarrando
+    seu pulso esquerdo com a mão esquerda do lado direito do oponente deitado de costas e inserindo a
+    mão direita para segurar o pulso esquerdo por baixo do braço.
+  principio: Segurar o punho Entrelaçar o braço Segura o próprio antebraço
+  kyo_grupo:
+    original: KANSETSU-WAZA
+- id: ude-hishigi-juji-gatame
+  tecnica: Ude-hishigi-juji-gatame
+  kanji: 腕挫十字固
+  traducao: Domínio pelo cruzamento com luxação de braço
+  descricao_kodokan: Uma técnica para esticar e travar a articulação do cotovelo do oponente, segurando
+    seu pulso direito com ambas as mãos do lado direito do oponente deitado de costas e segurando seu
+    braço entre as duas coxas.
+  principio: Segurar o punho Um pé na axila e outra por cima da cabeça Unir os joelhos
+  kyo_grupo:
+    original: KANSETSU-WAZA
+- id: ude-hishigi-ude-gatame
+  tecnica: Ude-hishigi-ude-gatame
+  kanji: 腕挫腕固
+  traducao: Domínio pelo braço com luxação de braço
+  descricao_kodokan: Uma técnica para esticar e travar a articulação do cotovelo do oponente com ambas
+    as mãos, segurando seu pulso esquerdo entre o pescoço e o ombro direito, do lado direito do oponente
+    deitado de costas.
+  principio: Prender a mão entre a cabeça e o ombro Mão no cotovelo e outra mão sobre Joelho sobre o abdômen
+    para bloqueio
+  kyo_grupo:
+    original: KANSETSU-WAZA
+- id: ude-hishigi-hiza-gatame
+  tecnica: Ude-hishigi-hiza-gatame
+  kanji: 腕挫膝固
+  traducao: Domínio pelo joelho com luxação de braço
+  descricao_kodokan: Uma técnica para esticar e travar a articulação do cotovelo do oponente com o joelho
+    esquerdo, segurando o braço direito dele sob a axila esquerda pela frente.
+  principio: Envolvimento do braço, trancando a mão na axila e trancando o cotovelo Pé na virilha para
+    tombar Pé na lateral das costas com joelho pressionando cotovelo
+  kyo_grupo:
+    original: KANSETSU-WAZA
+- id: ude-hishigi-waki-gatame
+  tecnica: Ude-hishigi-waki-gatame
+  kanji: 腕挫腋固
+  traducao: Domínio pela axila com luxação de braço
+  descricao_kodokan: Uma técnica para esticar e travar a articulação do cotovelo do oponente segurando
+    seu pulso direito com ambas as mãos e segurando o braço sob a axila esquerda.
+  principio: Controle o pulso com as duas mãos Domínio sob a região da axila Deslocamento diagonal
+  kyo_grupo:
+    original: KANSETSU-WAZA
+- id: ude-hishigi-hara-gatame
+  tecnica: Ude-hishigi-hara-gatame
+  kanji: 腕挫腹固
+  traducao: Domínio pelo abdômen com luxação de braço
+  descricao_kodokan: Uma técnica para esticar e travar a articulação do cotovelo do oponente, agarrando
+    seu pulso direito com a mão direita do lado direito do oponente e pressionando seu braço no abdômen
+  principio: Controle do pulso com uma mão com alavanca de apoio na perna Pressão pelo abdômen
+  kyo_grupo:
+    original: KANSETSU-WAZA
+- id: ude-hishigi-ashi-gatame
+  tecnica: Ude-hishigi-ashi-gatame
+  kanji: 腕挫脚固
+  traducao: Domínio pela perna com luxação de braço
+  descricao_kodokan: Uma técnica para esticar e travar a articulação do cotovelo do oponente, enganchando
+    a perna direita no braço direito do oponente, deitado de bruços.
+  principio: Enlace do braço com a perna Deita-se de bruços Estica e trava a articulação
+  kyo_grupo:
+    original: KANSETSU-WAZA
+- id: ude-hishigi-te-gatame
+  tecnica: Ude-hishigi-te-gatame
+  kanji: 腕挫手固
+  traducao: Domínio pela mão com luxação de braço
+  descricao_kodokan: Uma técnica para esticar e travar a articulação do cotovelo do oponente, inserindo
+    o braço esquerdo do lado direito do oponente através da axila direita para segurar sua lapela frontal
+    esquerda e agarrar seu pulso direito com a mão direita ou outra técnica para travar a articulação
+    do cotovelo do oponente, agarrando seu pulso com uma das mãos ou ambas e torcendo seu pulso atrás
+    as costas.
+  principio: Domínio pelo pulso Alavanca por baixo do cotovelo com ponto de apoio na gola do uke Trava
+    na articulação
+  kyo_grupo:
+    original: KANSETSU-WAZA
+- id: ude-hishigi-sankaku-gatame
+  tecnica: Ude-hishigi-sankaku-gatame
+  kanji: 腕挫三角固
+  traducao: Domínio pelo triângulo com luxação de braço
+  descricao_kodokan: Uma técnica para torcer ou esticar e travar a articulação do cotovelo do oponente
+    segurando seu pescoço e axila direita entre as duas pernas e enganchando o pé direito na parte de
+    trás do joelho esquerdo, formando um triângulo.
+  principio: Tombamento com perna já por baixo do corpo Aproximação para fechamento do triângulo Possibilidade
+    de chave nos dois braços
+  kyo_grupo:
+    original: KANSETSU-WAZA
+- id: ashi-garami
+  tecnica: Ashi-garami
+  kanji: 足緘
+  traducao: Entrelaçamento da perna
+  descricao_kodokan: Uma técnica para esticar e travar a articulação do joelho do oponente, inserindo
+    o pé esquerdo entre as pernas do oponente pela frente e envolvendo a perna esquerda ao redor da perna
+    direita dele por trás para empurrá-la para a parte inferior do abdômen.
+  principio: Tentativa de Tomoe-nage Enlace da perna com encaixe no abdômen Pé no joelho para derrubar
+    uke
+  kyo_grupo:
+    original: KANSETSU-WAZA

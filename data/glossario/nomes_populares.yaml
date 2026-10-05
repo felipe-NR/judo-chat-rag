@@ -13,7 +13,7 @@
   source: sessões judobase-db e judo-techniques-bot
   note: >-
     Deashi-harai varre o pé que avança; Okuriashi-harai varre os dois pés juntos num
-    deslocamento lateral. Às vezes é usado para qualquer varrida de pé.
+    deslocamento lateral. Às vezes é usado para qualquer varredura do pé.
 
 - name: Seoi
   technique_ids: [seoi-nage, ippon-seoi-nage]
@@ -209,7 +209,7 @@
   kind: pt_br
   confidence: media
   source: sessão judobase-db
-  note: Termo genérico para varridas e ceifadas pequenas de pé.
+  note: Termo genérico para varreduras e ceifas menores do pé.
 
 - name: Chave de braço
   technique_ids: [ude-hishigi-juji-gatame]

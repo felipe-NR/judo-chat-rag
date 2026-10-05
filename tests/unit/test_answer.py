@@ -28,3 +28,18 @@ def test_user_message_attaches_the_belt_document(corpus: Corpus, recognizer: Rec
 
 def test_user_message_without_belt_has_no_document(corpus: Corpus, recognizer: Recognizer) -> None:
     assert "Documento da base" not in build_user_message("Quem criou o judô?", [], corpus)
+
+
+def test_user_message_carries_the_fgj_sheet(corpus: Corpus, recognizer: Recognizer) -> None:
+    query = "Como se faz o osoto gari?"
+    message = build_user_message(query, recognizer.find(query), corpus)
+    fgj = corpus.technique("osoto-gari").fgj
+    assert fgj is not None
+    assert f'Descrição Kodokan (FGJ): "{fgj.descricao_kodokan}"' in message
+    assert "Tradução (FGJ): CEIFA EXTERIOR MAIOR" in message
+    assert message.index("Vídeo do Kodokan") < message.index("Vídeo (outra fonte")
+
+
+def test_user_message_carries_pronunciation_guide(corpus: Corpus) -> None:
+    message = build_user_message("Como se pronuncia hiza guruma?", [], corpus)
+    assert "Guia de pronúncia da FGJ" in message

@@ -7,7 +7,8 @@ Status = Literal["kodokan", "nonstandard", "forbidden_ijf"]
 Usage = Literal["judo", "bjj"]
 PopularKind = Literal["popular", "pt_br", "truncation", "nonstandard", "bjj"]
 Confidence = Literal["alta", "media", "baixa"]
-Theme = Literal["regras", "historia", "graduacao"]
+Theme = Literal["regras", "historia", "graduacao", "termos"]
+KyoClass = Literal["habukareta-waza", "shinmeisho-no-waza"]
 VideoSource = Literal["kodokan", "outro"]
 
 _PROVENANCE_PREFIXES = ("local", "translated_from_en", "generated", "reviewed", "web:")
@@ -35,6 +36,33 @@ class Video(_Frozen):
     title: str | None = None
 
 
+class KyoGrupo(_Frozen):
+    # Texto da coluna KYO-GRUPO da FGJ, normalizado só nos espaços ("1º - TE-WAZA").
+    original: str
+    gokyo: int | None = Field(default=None, ge=1, le=5)
+    classe: KyoClass | None = None
+
+
+class FgjTechnique(_Frozen):
+    """Campos do "Curso de Waza FGJ 2026", copiados sem edição: fonte primária para tradução,
+    descrição, princípio e kyo-grupo das 100 técnicas oficiais."""
+
+    tecnica: str
+    kanji: str
+    traducao: str
+    descricao_kodokan: str
+    principio: str
+    kyo_grupo: KyoGrupo
+
+
+class FgjTerm(_Frozen):
+    """Verbete do glossário do "Curso de Waza FGJ 2026", sem edição."""
+
+    termo: str
+    traducao: str
+    conceito: str | None = None
+
+
 class JudobaseRef(_Frozen):
     code_short: str
     id_tag: str
@@ -56,8 +84,11 @@ class Technique(_Frozen):
     videos: tuple[Video, ...] = ()
     judobase: JudobaseRef | None = None
     notes: tuple[str, ...] = ()
-    # Derivado de nomes_populares.yaml pelo loader; não é editado à mão.
+    # Derivados pelo loader; não são editados à mão.
     popular_names: frozenset[str] = frozenset()
+    fgj: FgjTechnique | None = None
+    # Para categorias, conceitos e pegadas: o verbete do glossário da FGJ, quando existe.
+    fgj_term: FgjTerm | None = None
 
     _provenance = field_validator("provenance")(_check_provenance)
 

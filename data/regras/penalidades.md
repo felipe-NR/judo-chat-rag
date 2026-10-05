@@ -35,7 +35,7 @@ judobase, amostra Paris 2024 e Paris Grand Slam 2025) e o que cada um significa:
 | Escape-With-Head | Escapar de projeção ou imobilização usando a cabeça como apoio | Shido |
 | Head-Dive | Mergulhar de cabeça no tatame ao atacar ou defender | Hansoku-make |
 | Illegal-Joint-Lock | Chave em articulação que não seja o cotovelo | Hansoku-make |
-| Kansetsu waza from tachi waza | Chave de braço aplicada caindo de pé (por exemplo, Waki-gatame) | Hansoku-make |
+| Kansetsu waza from tachi waza | Técnica nas articulações aplicada a partir da posição em pé, caindo sobre o braço do uke (por exemplo, Ude-hishigi-waki-gatame) | Hansoku-make |
 | Unsportsmanlike-Conduct | Conduta antidesportiva | Hansoku-make |
 
 A coluna "punição habitual" resume o uso corrente e não substitui o regulamento: algumas

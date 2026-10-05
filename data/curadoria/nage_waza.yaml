@@ -692,10 +692,11 @@
   status: nonstandard
   name_pt_br: Seoi invertido (seoi coreano)
   description_pt_br: >-
-    Variação de seoi-nage com a pegada invertida: o tori gira para o lado oposto ao do
-    braço que prende o uke. Popularizada por judocas sul-coreanos. Não tem nome próprio
-    na nomenclatura do Kodokan e costuma ser registrada como uma das formas de
-    Seoi-nage ou Ippon-seoi-nage.
+    Variação de seoi com a pegada invertida, popularizada por judocas sul-coreanos: uma
+    técnica para lançar o oponente sobre o ombro, girando o corpo para o lado oposto ao
+    do braço que o prende, para carregá-lo nas costas. Não tem nome próprio na
+    nomenclatura do Kodokan e costuma ser registrada como uma das formas de Seoi-nage ou
+    Ippon-seoi-nage. SEOI = carregamento nas costas.
   notes:
     - Classificação oficial incerta; a sessão judo-techniques-bot não tem alvo seguro.
 
@@ -706,9 +707,10 @@
   status: nonstandard
   name_pt_br: Projeção em torre
   description_pt_br: >-
-    O tori, de frente para o uke e com a pegada por cima das costas, o levanta com a
-    perna por dentro da coxa do uke e o projeta de lado. Em inglês é chamada de "front
-    uchi mata". Não consta da nomenclatura do Kodokan.
+    Uma técnica para levantar e projetar o oponente para o lado, de frente para ele, com
+    a pegada por cima das costas e a perna por dentro da coxa dele. Em inglês é chamada
+    de "front uchi mata". Não consta da nomenclatura do Kodokan. NAGE = suspensão do uke
+    para em seguida ser projetado.
   notes:
     - Classificação oficial incerta; a sessão judo-techniques-bot não tem alvo seguro.
 
@@ -718,9 +720,9 @@
   status: nonstandard
   name_pt_br: Abraçar e levantar
   description_pt_br: >-
-    Ação de levantar o uke, que está deitado de costas fazendo guarda, até a altura dos
-    ombros do tori. Não é técnica de projeção da nomenclatura do Kodokan e é proibida
-    em competição.
+    Elevação com abraço: ação de levantar o uke, deitado de costas com guarda-de-pernas,
+    até a altura dos ombros do tori. Não é técnica de projeção da nomenclatura do
+    Kodokan e é proibida em competição. AGE = elevação.
   bjj: [Body Slam]
   notes:
     - Status de regra informado pela sessão judo-techniques-bot; conferir no regulamento vigente.

@@ -83,8 +83,8 @@
   kind: category
   name_pt_br: Luta no solo
   description_pt_br: >-
-    Termo usado para o judô praticado no chão, depois da projeção ou de uma entrada
-    direta. Na prática corresponde às katame-waza.
+    Técnicas no solo: o judô praticado no chão, depois da projeção ou de uma entrada
+    direta. Na prática corresponde às katame-waza (técnicas de domínio).
 
 - id: osaekomi-waza
   name: Osaekomi-waza
@@ -120,8 +120,9 @@
   kind: category
   name_pt_br: Técnicas proibidas
   description_pt_br: >-
-    Técnicas proibidas em competição por risco de lesão, como Kani-basami, Kawazu-gake,
-    Do-jime e chaves fora do cotovelo.
+    Técnicas proibidas em competição por risco de lesão, como Kani-basami (pinçamento do
+    caranguejo), Kawazu-gake (enganchamento do kawazu), Do-jime (estrangulamento do
+    torso) e as técnicas nas articulações fora do cotovelo.
 
 - id: kuzushi
   name: Kuzushi

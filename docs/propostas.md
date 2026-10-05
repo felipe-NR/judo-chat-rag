@@ -10,7 +10,7 @@ O assistente responde em pt-BR a perguntas em linguagem natural de usuários bra
 | `judo-techniques-bot` (bot do Reddit, regex, sem LLM) | 132 linhas com nome japonês, variantes, nomes em inglês e vídeo (`judo_techniques_bot/data/techniques_fixtures.csv`) | Descrições, regras, história, pt-BR. O LICENSE está vazio: reusar o CSV exige permissão do autor (AbundantSalmon). A regex de reconhecimento casa substrings ("Ko-uchi-gari" dispara O-uchi-gari) |
 | `production-agentic-rag-course` (referência de RAG) | Esqueleto FastAPI (lifespan, Depends), guardrail por LLM, busca híbrida no OpenSearch, grafo LangGraph, tracing Langfuse | Avaliação offline, prompts em pt-BR. Os fallbacks do guardrail e do grading falham aberto |
 
-Nenhum repositório tem o texto em pt-BR sobre técnicas, regras e história. Esse corpus foi redigido para a proposta A a partir dos dados locais (`provenance: generated`) e precisa de revisão por alguém do judô.
+Nenhum repositório tem o texto em pt-BR sobre técnicas, regras e história. Desde 2026-10-05, a fonte primária das técnicas é o Curso de Waza da Federação Gaúcha de Judô (FGJ, 2026), com tradução, descrição Kodokan, princípio e kyo-grupo das 100 técnicas oficiais, importado em `data/fgj/`. Esse corpus foi redigido para a proposta A a partir dos dados locais (`provenance: generated`) e precisa de revisão por alguém do judô.
 
 ## Base comum às três propostas
 

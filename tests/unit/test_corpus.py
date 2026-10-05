@@ -16,7 +16,7 @@ def test_corpus_counts(corpus: Corpus) -> None:
     techniques = [t for t in corpus.techniques if t.kind == "technique"]
     assert len(techniques) >= 100
     assert all(t.name_pt_br and t.description_pt_br for t in corpus.techniques)
-    assert {d.theme for d in corpus.documents} == {"regras", "historia", "graduacao"}
+    assert {d.theme for d in corpus.documents} == {"regras", "historia", "graduacao", "termos"}
     assert len([d for d in corpus.documents if d.id.startswith("graduacao/") and "faixa-" in d.id]) == 7
 
 
@@ -78,3 +78,23 @@ def test_loader_rejects_unknown_technique_id(tmp_path: Path) -> None:
     )
     with pytest.raises(CorpusError, match="nao-existe"):
         load_corpus(data)
+
+
+def test_fgj_covers_the_100_official_techniques(corpus: Corpus) -> None:
+    with_fgj = [t for t in corpus.techniques if t.fgj is not None]
+    assert len(with_fgj) == 100
+    assert all(t.status != "nonstandard" for t in with_fgj)
+    assert sum(1 for t in with_fgj if t.fgj and t.fgj.kyo_grupo.gokyo) == 40
+    seoi = corpus.technique("seoi-nage").fgj
+    assert seoi is not None and seoi.kanji == "背負投"
+    assert seoi.traducao == "PROJEÇÃO COM CARREGAMENTO NAS COSTAS"
+
+
+def test_render_uses_fgj_description_verbatim(corpus: Corpus) -> None:
+    from judo_chat.corpus.render import render_technique
+
+    text = render_technique(corpus.technique("osoto-gari"))
+    fgj = corpus.technique("osoto-gari").fgj
+    assert fgj is not None
+    assert f"Descrição Kodokan (FGJ): {fgj.descricao_kodokan}" in text
+    assert "\nDescrição: " not in text

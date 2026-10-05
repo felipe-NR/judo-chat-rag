@@ -1,0 +1,33 @@
+# Gerado por scripts/import_fgj.py a partir do material da FGJ. Não edite à mão.
+- letra: CH
+  som: “tch”
+  exemplo: CHIKAMA
+  pronuncia: TCHIKAMÁ
+- letra: E
+  som: “ê”
+  exemplo: SASAE
+  pronuncia: SSASSAÊ
+- letra: G
+  som: “gá, gue, gui, go, gu”
+  exemplo: NAGE
+  pronuncia: NAGUE
+- letra: H
+  som: “rrá, rré, rrí, rró, rrú”
+  exemplo: HIZA
+  pronuncia: RIZA
+- letra: J
+  som: “dj”
+  exemplo: JU
+  pronuncia: DJU
+- letra: R
+  som: Som de “r” fraco, como o nós usamos no meio da sílaba
+  exemplo: RITSUREI
+  pronuncia: “r” de “aro” não de “raiz
+- letra: S
+  som: Som de “dois s”, nunca som de “z”
+  exemplo: KESA
+  pronuncia: KESSA
+- letra: W
+  som: Som de “u” nunca de V
+  exemplo: WAZA
+  pronuncia: UÁZA

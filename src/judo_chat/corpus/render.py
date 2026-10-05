@@ -25,16 +25,38 @@ def _sorted_names(names: frozenset[str]) -> str:
     return ", ".join(sorted(names, key=str.lower))
 
 
+_KYO_CLASS = {"habukareta-waza": "habukareta-waza", "shinmeisho-no-waza": "shinmeisho-no-waza"}
+
+
+def _kyo(technique: Technique) -> str | None:
+    if technique.fgj is None:
+        return None
+    grupo = technique.fgj.kyo_grupo
+    if grupo.gokyo:
+        return f"{grupo.original} ({grupo.gokyo}º grupo do Gokyo)"
+    return grupo.original
+
+
 def render_technique(technique: Technique) -> str:
     lines = [f"### {technique.name} [{technique.id}]"]
+    fgj = technique.fgj
+    if fgj:
+        lines.append(f"Kanji: {fgj.kanji}")
     if technique.kind != "technique":
         lines.append(f"Tipo: {_KIND[technique.kind]}")
     if technique.status in _STATUS:
         lines.append(f"Status: {_STATUS[technique.status]}")
     if technique.group:
         lines.append(f"Grupo: {technique.group}")
+    if kyo := _kyo(technique):
+        lines.append(f"Kyo-grupo (FGJ): {kyo}")
     if technique.ijf_name:
         lines.append(f"Nome usado pela IJF: {technique.ijf_name}")
+    term = technique.fgj_term
+    if fgj:
+        lines.append(f"Tradução (FGJ): {fgj.traducao}")
+    elif term:
+        lines.append(f"Tradução (FGJ): {term.traducao}")
     if technique.name_pt_br:
         lines.append(f"Significado literal: {technique.name_pt_br}")
     if technique.popular_names:
@@ -47,13 +69,19 @@ def render_technique(technique: Technique) -> str:
         lines.append(f"Inglês: {', '.join(judo_en)}")
     if bjj_en:
         lines.append(f"Nomes no jiu-jitsu (BJJ): {', '.join(bjj_en)}")
-    if technique.description_pt_br:
+    if fgj:
+        # Fonte primária: o texto da FGJ substitui a descrição redigida para o corpus.
+        lines.append(f"Descrição Kodokan (FGJ): {fgj.descricao_kodokan}")
+        lines.append(f"Princípio/ponto de atenção (FGJ): {fgj.principio}")
+    elif term and term.conceito:
+        lines.append(f"Conceito (FGJ): {term.conceito}")
+    elif technique.description_pt_br:
         lines.append(f"Descrição: {technique.description_pt_br}")
     for video in technique.videos:
-        label = "Vídeo do Kodokan" if video.source == "kodokan" else "Vídeo"
+        label = "Vídeo do Kodokan" if video.source == "kodokan" else "Vídeo (outra fonte, não é do Kodokan)"
         lines.append(f"{label}: {video.url}")
     lines.extend(f"Observação: {note}" for note in technique.notes)
-    if technique.provenance != DEFAULT_PROVENANCE:
+    if not fgj and not term and technique.provenance != DEFAULT_PROVENANCE:
         lines.append(f"Origem do texto: {technique.provenance}")
     return "\n".join(lines)
 
@@ -98,5 +126,7 @@ def render_corpus(corpus: Corpus) -> str:
         "\n\n".join(render_document(d) for d in corpus.documents if d.theme == "historia"),
         "# EXAMES DE FAIXA (CINZA A MARROM), GOKYO E SÉRIES",
         "\n\n".join(render_document(d) for d in corpus.documents if d.theme == "graduacao"),
+        "# TERMOS E PRONÚNCIA (FGJ)",
+        "\n\n".join(render_document(d) for d in corpus.documents if d.theme == "termos"),
     ]
     return "\n\n".join(sections) + "\n"

@@ -69,8 +69,9 @@
   - name: Straight Ankle Lock
     usage: bjj
   name_pt_br: Chave de tornozelo reta
-  description_pt_br: Chave reta de tornozelo do jiu-jitsu. Não consta da nomenclatura do Kodokan e, como
-    toda chave fora do cotovelo, é proibida na competição de judô.
+  description_pt_br: 'Luxação de tornozelo do jiu-jitsu: uma técnica para esticar e travar a articulação
+    do tornozelo do oponente. Não consta da nomenclatura do Kodokan e, como toda técnica nas articulações
+    fora do cotovelo, é proibida na competição de judô.'
   provenance: generated
   videos:
   - url: https://www.youtube.com/watch?v=n_djFU-uKS0
@@ -102,8 +103,9 @@
     usage: bjj
   - name: High Lift
   name_pt_br: Abraçar e levantar
-  description_pt_br: Ação de levantar o uke, que está deitado de costas fazendo guarda, até a altura dos
-    ombros do tori. Não é técnica de projeção da nomenclatura do Kodokan e é proibida em competição.
+  description_pt_br: 'Elevação com abraço: ação de levantar o uke, deitado de costas com guarda-de-pernas,
+    até a altura dos ombros do tori. Não é técnica de projeção da nomenclatura do Kodokan e é proibida
+    em competição. AGE = elevação.'
   provenance: generated
   videos:
   - url: https://www.youtube.com/watch?v=5lFXv3crN30
@@ -687,8 +689,9 @@
   english_names:
   - name: Forbidden Technqiues
   name_pt_br: Técnicas proibidas
-  description_pt_br: Técnicas proibidas em competição por risco de lesão, como Kani-basami, Kawazu-gake,
-    Do-jime e chaves fora do cotovelo.
+  description_pt_br: Técnicas proibidas em competição por risco de lesão, como Kani-basami (pinçamento
+    do caranguejo), Kawazu-gake (enganchamento do kawazu), Do-jime (estrangulamento do torso) e as técnicas
+    nas articulações fora do cotovelo.
   provenance: generated
   videos:
   - url: https://www.youtube.com/watch?v=ZLKmsnAODz8
@@ -994,8 +997,8 @@
   english_names:
   - name: Ground Techniques
   name_pt_br: Luta no solo
-  description_pt_br: Termo usado para o judô praticado no chão, depois da projeção ou de uma entrada direta.
-    Na prática corresponde às katame-waza.
+  description_pt_br: 'Técnicas no solo: o judô praticado no chão, depois da projeção ou de uma entrada
+    direta. Na prática corresponde às katame-waza (técnicas de domínio).'
   provenance: generated
 - id: o-goshi
   name: O-goshi
@@ -1305,9 +1308,10 @@
   - name: Korean Seoi Nage
   - name: Reverse Shoulder Throw
   name_pt_br: Seoi invertido (seoi coreano)
-  description_pt_br: 'Variação de seoi-nage com a pegada invertida: o tori gira para o lado oposto ao
-    do braço que prende o uke. Popularizada por judocas sul-coreanos. Não tem nome próprio na nomenclatura
-    do Kodokan e costuma ser registrada como uma das formas de Seoi-nage ou Ippon-seoi-nage.'
+  description_pt_br: 'Variação de seoi com a pegada invertida, popularizada por judocas sul-coreanos:
+    uma técnica para lançar o oponente sobre o ombro, girando o corpo para o lado oposto ao do braço que
+    o prende, para carregá-lo nas costas. Não tem nome próprio na nomenclatura do Kodokan e costuma ser
+    registrada como uma das formas de Seoi-nage ou Ippon-seoi-nage. SEOI = carregamento nas costas.'
   provenance: generated
   videos:
   - url: https://www.youtube.com/watch?v=7ubS5Ktg4zk
@@ -2327,9 +2331,9 @@
   - name: Front Uchi Mata
   - name: Front Inner Thigh Throw
   name_pt_br: Projeção em torre
-  description_pt_br: O tori, de frente para o uke e com a pegada por cima das costas, o levanta com a
-    perna por dentro da coxa do uke e o projeta de lado. Em inglês é chamada de "front uchi mata". Não
-    consta da nomenclatura do Kodokan.
+  description_pt_br: Uma técnica para levantar e projetar o oponente para o lado, de frente para ele,
+    com a pegada por cima das costas e a perna por dentro da coxa dele. Em inglês é chamada de "front
+    uchi mata". Não consta da nomenclatura do Kodokan. NAGE = suspensão do uke para em seguida ser projetado.
   provenance: generated
   videos:
   - url: https://www.youtube.com/watch?v=sSkrQLQy0bs

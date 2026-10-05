@@ -1,77 +1,114 @@
 # Guia de estilo do corpus em pt-BR
 
-Regras para os textos de `data/curadoria/`, `data/regras/`, `data/historia/` e
-`data/graduacao/`. O modelo copia o estilo do corpus nas respostas: um texto duro aqui vira
-uma resposta dura lá.
+Fonte primária (North Star): o material técnico da Federação Gaúcha de Judô (FGJ) enviado
+pelo usuário em 2026-10-05.
+- "Curso de Waza FGJ 2026": técnica, tradução, descrição Kodokan, princípio/ponto de
+  atenção e kyo-grupo das 100 técnicas, além do glossário de termos e do guia de pronúncia.
+  Importado em `data/fgj/` por `scripts/import_fgj.py`.
+- "Técnicas Nage-Waza e Katame-Waza FGJ": lista das 100 técnicas com o kanji.
+- "Material 40 (shodan)": as 40 técnicas do Gokyo no mesmo formato, usado para conferência.
 
-Referências de vocabulário e de visão técnica, por ordem de prioridade:
-1. Projeto Budô: https://projetobudo.com.br/tecnicas-do-judo/ e
-   https://projetobudo.com.br/exames-de-faixa/
-2. FECJU: https://www.fecju.com.br/o-judo (lista oficial do Kodokan e vídeos do canal do
-   Kodokan)
+## Regra geral
 
-## 1. Explique o porquê, não só a sequência de ações
+**Quando a FGJ tem o texto, ele é usado sem edição.** A tradução, a descrição Kodokan, o
+princípio/ponto de atenção e o kyo-grupo das 100 técnicas oficiais vêm de `data/fgj/` tal
+como estão no documento, e o mesmo vale para os termos do glossário da FGJ. Nenhum texto
+redigido para o corpus substitui ou "melhora" esses campos.
 
-As fichas antigas eram listas de ações traduzidas do inglês ("o tori desequilibra o uke
-para trás e ceifa a perna dele"). Diga como o desequilíbrio acontece e para que serve.
+**Quando a FGJ não tem o texto**, o que inclui técnicas fora do Kodokan, conceitos sem
+verbete no glossário, regras, história, exames e respostas do assistente, escreva como o
+material da FGJ. A técnica é explicada pelo significado dos seus termos japoneses, com o
+vocabulário técnico em português que a FGJ usa, em dois registros:
+1. **Descrição:** definição objetiva, no padrão Kodokan;
+2. **Princípio/ponto de atenção:** orientação didática curta.
 
-- Antes: "O tori desequilibra o uke para trás e ceifa por dentro a perna dele."
-- Depois: "O tori movimenta o uke para a frente e depois para trás, ação e reação, para que
-  ele jogue o peso nos calcanhares. Com o uke apoiado nos calcanhares, o tori ceifa..."
+## 1. Vocabulário técnico
 
-## 2. Escolha o verbo pela direção do movimento
+Use o termo em português que a FGJ dá para cada elemento do nome japonês. Ele explica o
+movimento que dá nome à técnica.
 
-| Verbo | Uso |
-|-|-|
-| puxar, trazer | só quando o uke vem na direção do tori |
-| empurrar, conduzir, levar | quando o uke se afasta do tori |
-| movimentar, deslocar | quando o movimento muda de direção (frente e depois trás) |
-| elevar e trazer | tsurikomi; nunca "puxa e levanta" nem "puxando e levantando" |
-| varrer | harai: a sola do pé tira o pé do uke do chão |
-| ceifar | gari: a perna corta o apoio do uke como uma foice |
-| enganchar | gake: o pé ou a perna prende o calcanhar do uke |
-| bloquear | sasae: o pé serve de obstáculo, sem varrer |
+| Termo | Em português (FGJ) | Princípio do movimento (FGJ) |
+|-|-|-|
+| nage | projeção | suspensão do uke para em seguida ser projetado |
+| otoshi | derrubada (brusca) | derrubada brusca, diretamente para baixo, sem suspensão |
+| gari | ceifa | o peso está na perna a ser ceifada, como no corte de uma raiz |
+| harai | varredura | varrer como quem varre um objeto leve |
+| gake | enganchamento | suspensão do uke e movimento de baixo para cima, como quem arranca uma raiz com um ancinho |
+| guruma | rotação | movimento que causa uma rotação, um giro |
+| tsurikomi | suspensão e puxada | suspensão e puxada para si |
+| tsuri | puxada/içamento | puxar para cima |
+| okuri | condução | levar de um lado para outro |
+| sukui | colhimento/levantamento | colhida com levantamento |
+| taoshi | tombamento | empurrão combinado com puxada para baixo; cai como um dominó |
+| uki | flutuação | breve suspensão que resulta no desequilíbrio |
+| hane | impulsão | |
+| utsuri | transferência | |
+| makikomi | enrolamento | o tori envolve o uke em si para cair junto, em sacrifício |
+| wakare | separação | o tori de um lado e o uke de outro |
+| sukashi | abertura de espaço | |
+| gaeshi | contragolpe/inversão | |
+| garami | entrelaçamento | |
+| basami | pinça | |
+| gatame | domínio | |
+| shime, jime | estrangulamento | restrição do fluxo sanguíneo ou das vias aéreas |
+| ude-hishigi | luxação de braço | |
+| kuzushi | desestabilização (quebra do equilíbrio) | deixar o uke como precisamos para projetá-lo |
+| tsukuri / kake | preparação / aplicação, execução | |
+| hikite / tsurite | pegada que puxa (manga) / pegada que suspende (gola) | |
+| ai-yotsu / kenka-yotsu | pegada mútua / pegada disputada | destro x destro / destro x canhoto |
+| o / ko | maior / menor | |
+| soto / uchi | exterior, por fora / interior, por dentro | |
+| ushiro / ura | trás / retaguarda | |
 
-Exemplo de erro: "puxe o uke para a frente e para trás". "Puxar" não serve para os dois
-sentidos; o certo é "movimente o uke para a frente e depois para trás".
+O glossário completo, com 93 termos, está em `data/fgj/termos.yaml`.
 
-## 3. Subjuntivo nas orações de finalidade e consequência
+Consequências práticas:
+- "ceifa" e "varredura" são substantivos diferentes; nunca "ceifada" ou "varrida" no lugar
+  deles;
+- te-waza são "técnicas de membros superiores", ashi-waza "de membros inferiores",
+  ma-sutemi-waza "de sacrifício pleno" e yoko-sutemi-waza "de sacrifício lateral";
+- katame-waza são "técnicas de domínio"; osaekomi-waza "de imobilização ou retenção";
+  kansetsu-waza "técnicas nas articulações".
 
-Depois de "para que", "de modo que", "de forma que", "até que" e "antes que", o verbo vai
-para o subjuntivo.
+## 2. Registro da descrição (padrão Kodokan)
 
-- Certo: "gire o corpo de forma que fique mais perto do uke"; "para que ele jogue o peso
-  nos calcanhares".
-- Errado: "de forma que fica mais perto do uke".
+- Abra com a finalidade, no infinitivo: "Uma técnica para derrubar o oponente...",
+  "Técnica para segurar o oponente no chão...".
+- Na descrição, a outra pessoa é "o oponente"; nas explicações e nos pontos de atenção, use
+  "o tori" e "o uke".
+- Encadeie com gerúndio as ações simultâneas, como faz o Kodokan: "quebrando seu equilíbrio
+  para frente e girando o corpo para a esquerda".
+- A ênclise é a forma do registro: "desequilibrando-o", "derrubá-lo", "carregá-lo nas
+  costas".
+- Deixe lado e direção explícitos, sempre para o tori destro: "pé direito", "com o pé
+  esquerdo", "para o canto frontal direito", "para o canto traseiro direito".
 
-## 4. Tori e uke são papéis, com artigo
+## 3. Registro do princípio/ponto de atenção
 
-"O tori desequilibra o uke", "o pé do uke", "ao uke", "no uke", "pelo uke". Nunca
-"tori desequilibra uke" nem "o pé de uke".
+- Defina pelo termo japonês: "OTOSHI = Movimento de uma derrubada brusca, diretamente para
+  baixo, sem suspensão."
+- Destaque em maiúsculas a ação ou o momento decisivo: "Ceifa APÓS ele ter DEPOSITADO seu
+  peso no pé de apoio"; "ABRACE a cintura e APROXIME O QUADRIL".
+- Nas técnicas de domínio, use listas nominais curtas: "Domínio em diagonal / Controle do
+  braço / Quadril baixo".
+- Nos contragolpes, diga de qual tentativa é o contragolpe e o que o tori faz: "Contragolpe
+  de uma tentativa de O-uchi-gari."
 
-## 5. Nada de "dele" quando há duas pessoas na frase
+## 4. Nomes e pronúncia
 
-O inglês usa "his" sem ambiguidade de gênero gramatical; em português, numa frase com o
-tori e o uke, "o braço dele" pode ser de qualquer um. Repita o papel: "o braço do uke". Use
-"dele" só quando o antecedente for único na frase.
+- Escreva o nome no romaji hifenizado da FGJ e do Kodokan ("O-soto-gari", "Ko-uchi-gari").
+  O nome principal do corpus continua o do Kodokan.
+- Quando houver, dê o kanji.
+- "Tradução (FGJ)" e "Significado literal" são campos diferentes: o primeiro é o da FGJ e o
+  segundo é o significado redigido para o corpus. Mostre os dois.
+- Para orientar a pronúncia, siga o guia da FGJ: ch = "tch"; g sempre duro (nage = "nague");
+  h aspirado (hiza = "riza"); j = "dj"; r fraco; s sempre "ss" (kesa = "kessa"); w = "u"
+  (waza = "uáza").
 
-## 6. Colocação pronominal brasileira
+## 5. Norma culta
 
-- Depois do sujeito, use próclise: "o tori se senta", "o tori o levanta". Evite "o tori
-  senta-se", "levanta-o".
-- Com infinitivo, a ênclise é natural: "em vez de carregá-lo".
-- Na dúvida, repita o substantivo: "levanta o uke".
-
-## 7. Gerúndio só para ação simultânea
-
-"Projetando-o para a frente", "derrubando-o de lado" e cadeias de gerúndio vêm do "-ing"
-inglês. Prefira uma oração nova ("e o projeta para a frente") ou uma oração de finalidade.
-O gerúndio fica quando as ações são de fato simultâneas: "o tori ceifa a perna enquanto
-empurra o tronco", "cai girando".
-
-## 8. Nomes em português são significados, não nomes
-
-No Brasil as técnicas são chamadas pelo nome japonês. O campo `name_pt_br` traz o
-significado literal ("grande ceifada externa") e aparece no corpus como "Significado
-literal". Prefira substantivos a gerúndios ("com elevação e puxada", não "puxando e
-levantando").
+- Tori e uke levam artigo e contração: "o tori", "o pé do uke", "ao uke".
+- Concordância de gênero e número conferida; nomes de técnicas no masculino ("o
+  Uchi-mata").
+- Sem gírias ("pra", "a galera"). Termos de dojô em português, como "mata-leão" e
+  "baiana", entram só como nomes populares.
