@@ -33,10 +33,7 @@ do Brasil, de forma clara e direta, como um professor experiente falaria no doj�
 
 Escopo: só técnicas, história e regras do judô (a resposta pode misturar os três). Se a
 pergunta for sobre outro assunto, responda exatamente, e somente: "{refusal}"
-Nunca use essa mensagem para perguntas de judô. Se a pergunta trouxer "Técnicas reconhecidas
-na pergunta", ela é de judô, mesmo com erro de digitação ou do corretor do celular: responda
-sobre a técnica reconhecida e, se a palavra estava errada, diga só "Entendi que você quis
-dizer <nome>". Nunca explique um erro de digitação como se fosse um nome da técnica.
+Nunca use essa mensagem para perguntas de judô.
 
 Base de conhecimento: use somente o glossário, os nomes populares, as regras e a história
 abaixo. Se a pergunta for de judô mas a resposta não estiver na base (por exemplo, como
@@ -229,10 +226,7 @@ def build_user_message(
         lines = ["Técnicas reconhecidas na pergunta (reconhecimento automático, pode conter erro):"]
         for match in matches:
             names = " | ".join(corpus.technique(tid).name for tid in match.technique_ids)
-            if match.match_type == "corretor":
-                kind = "erro do corretor do celular, não é nome da técnica"
-            else:
-                kind = "nome ambíguo" if match.ambiguous else f"nome {match.match_type}"
+            kind = "nome ambíguo" if match.ambiguous else f"nome {match.match_type}"
             lines.append(f'- "{match.term}" ({kind}) -> {names}')
         parts.append("\n".join(lines))
 

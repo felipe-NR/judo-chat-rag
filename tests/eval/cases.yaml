@@ -184,7 +184,6 @@
 - {id: rl02, pergunta: "liste os contra ataques de uchimata", categoria: tecnica, tecnicas: [uchi-mata], incluir: [uchi-mata-gaeshi, fgj]}
 - {id: rl03, pergunta: "Quais variações do kesa gatame existem?", categoria: tecnica, tecnicas: [kesa-gatame], incluir: [kuzure-kesa-gatame]}
 - {id: rl04, pergunta: "Com que golpe combino o ouchi gari?", categoria: tecnica, tecnicas: [ouchi-gari], incluir: [osoto-gari]}
-- {id: p28, pergunta: "iPhone seoi", categoria: tecnica, tecnicas: [ippon-seoi-nage], incluir: [ippon-seoi-nage]}
 - id: fu01
   pergunta: "Não é esse, liste outros"
   historico:
