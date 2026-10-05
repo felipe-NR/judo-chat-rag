@@ -34,6 +34,8 @@
   .videos { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--border); }
   .videos strong { display: block; margin-bottom: 6px; font-size: .9rem; }
   .videos a { display: block; margin: 4px 0; }
+  .video-inline { margin: 4px 0 10px; font-size: .9rem; }
+  .video-inline a { margin-right: 12px; }
   .badge { font-size: .75rem; padding: 1px 6px; border-radius: 6px; margin-right: 6px;
            background: var(--accent); color: var(--bg); }
   .msg.refused { background: var(--refused); }
@@ -108,32 +110,52 @@
     return html.join("");
   }
 
-  function addMessage(text, kind, tags, videos) {
+  function videoLink(video, label) {
+    const a = document.createElement("a");
+    a.href = video.url; a.target = "_blank"; a.rel = "noopener";
+    if (video.kodokan) {
+      const badge = document.createElement("span");
+      badge.className = "badge"; badge.textContent = "Kodokan";
+      a.appendChild(badge);
+    }
+    a.appendChild(document.createTextNode(label + (video.kodokan ? " (vídeo oficial)" : " (outra fonte)")));
+    return a;
+  }
+
+  // Põe os vídeos de cada técnica logo abaixo do título ou item onde ela é apresentada; os
+  // grupos sem lugar na resposta vão para o bloco "Vídeos" no fim.
+  function placeVideos(div, groups) {
+    const leftovers = [];
+    const candidates = Array.from(div.querySelectorAll("h3, li, p"));
+    for (const group of groups || []) {
+      const anchor = group.anchor && group.anchor.toLowerCase();
+      const target = anchor && candidates.find((el) => el.textContent.toLowerCase().includes(anchor));
+      if (!target) { leftovers.push(group); continue; }
+      const box = document.createElement("div");
+      box.className = "video-inline";
+      for (const video of group.videos) box.appendChild(videoLink(video, group.technique));
+      if (target.tagName === "LI") target.appendChild(box); else target.after(box);
+    }
+    if (!leftovers.length) return;
+    const box = document.createElement("div");
+    box.className = "videos";
+    const title = document.createElement("strong");
+    title.textContent = "Vídeos";
+    box.appendChild(title);
+    for (const group of leftovers) {
+      for (const video of group.videos) box.appendChild(videoLink(video, group.technique));
+    }
+    div.appendChild(box);
+  }
+
+  function addMessage(text, kind, tags, groups) {
     const div = document.createElement("div");
     div.className = "msg " + kind;
     if (kind === "user") {
       div.textContent = text;
     } else {
       div.innerHTML = renderMarkdown(text);
-    }
-    if (videos && videos.length) {
-      const box = document.createElement("div");
-      box.className = "videos";
-      const title = document.createElement("strong");
-      title.textContent = "Vídeos";
-      box.appendChild(title);
-      for (const video of videos) {
-        const a = document.createElement("a");
-        a.href = video.url; a.target = "_blank"; a.rel = "noopener";
-        if (video.kodokan) {
-          const badge = document.createElement("span");
-          badge.className = "badge"; badge.textContent = "Kodokan";
-          a.appendChild(badge);
-        }
-        a.appendChild(document.createTextNode(video.technique + (video.kodokan ? " (vídeo oficial)" : " (outra fonte)")));
-        box.appendChild(a);
-      }
-      div.appendChild(box);
+      placeVideos(div, groups);
     }
     if (tags) {
       const small = document.createElement("div");
@@ -144,6 +166,11 @@
     log.appendChild(div);
     div.scrollIntoView({ behavior: "smooth", block: "end" });
   }
+
+  // Últimas trocas da conversa, enviadas a cada pergunta (o servidor não guarda estado).
+  const MAX_TURNS = 6;
+  const MAX_TURN_CHARS = 1500;
+  let history = [];
 
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
@@ -157,7 +184,7 @@
         method: "POST",
         // Sem este header o ngrok gratuito devolve uma página de aviso em vez da API.
         headers: { "Content-Type": "application/json", "ngrok-skip-browser-warning": "1" },
-        body: JSON.stringify({ query }),
+        body: JSON.stringify({ query, history }),
       });
       const data = await response.json();
       if (!response.ok) {
@@ -166,7 +193,13 @@
       }
       const found = data.techniques_detected.map((t) => t.term + (t.ambiguous ? " (ambíguo)" : ""));
       const tags = found.length ? "Técnicas reconhecidas: " + found.join(", ") : "";
-      addMessage(data.answer, data.refused ? "refused" : "bot", tags, data.videos);
+      addMessage(data.answer, data.refused ? "refused" : "bot", tags, data.video_groups);
+      if (!data.refused) {
+        history = history.concat([
+          { role: "usuario", text: query },
+          { role: "assistente", text: data.answer.slice(0, MAX_TURN_CHARS) },
+        ]).slice(-MAX_TURNS);
+      }
     } catch (error) {
       addMessage("Não foi possível falar com o servidor. Ele pode estar desligado.", "refused");
     } finally {

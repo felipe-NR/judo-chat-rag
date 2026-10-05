@@ -11,7 +11,7 @@ from typing import Literal
 
 from judo_chat.corpus.models import Corpus
 
-MatchType = Literal["oficial", "ijf", "grafia", "popular", "pt_br"]
+MatchType = Literal["oficial", "ijf", "grafia", "popular", "pt_br", "corretor"]
 
 # Rendaku e grafias brasileiras: os dois lados da comparação passam pela mesma troca.
 _SUBSTITUTIONS = (
@@ -28,6 +28,8 @@ _SUBSTITUTIONS = (
     ("ou", "o"),
 )
 _TOKEN = re.compile(r"[a-z0-9]+")
+# Trocas que o corretor do celular faz em nomes japoneses ("Ippon" vira "iPhone").
+_AUTOCORRECT = {"iphone": "ippon", "iphones": "ippon"}
 _WORD = re.compile(r"[^\W_]+")
 _DOUBLE = re.compile(r"(.)\1+")
 _MAX_WINDOW = 6
@@ -39,7 +41,7 @@ def _fold(text: str) -> str:
 
 
 def tokenize(text: str) -> list[str]:
-    return _TOKEN.findall(_fold(text))
+    return [_AUTOCORRECT.get(token, token) for token in _TOKEN.findall(_fold(text))]
 
 
 def canonical(text: str) -> str:
@@ -137,6 +139,9 @@ class Recognizer:
                 continue
             window = spans[position : position + size]
             term = text[window[0][1] : window[-1][2]]
-            matches.append(Match(term, entry.technique_ids, entry.match_type, entry.label))
+            # Se o corretor do celular trocou alguma palavra, o termo não é nome popular.
+            corrected = "".join(t for t, _, _ in window) != "".join(_TOKEN.findall(_fold(term)))
+            match_type: MatchType = "corretor" if corrected else entry.match_type
+            matches.append(Match(term, entry.technique_ids, match_type, entry.label))
             position += size
         return matches

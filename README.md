@@ -71,6 +71,16 @@ grava. Custo: ~16 leituras por dia no máximo, ~R$ 0,28. O log mostra cada re-aq
 
 O Sonnet 5.5 dá respostas mais fiéis à base por cerca de 3-4x o custo; veja `.env.example`.
 
+Detalhes que não passam pelo modelo:
+- **Vídeos:** depois da resposta, o reconhecedor acha as técnicas apresentadas (títulos e
+  itens) e a API devolve os vídeos em `video_groups`, com o do Kodokan primeiro. A página os
+  põe embaixo da seção de cada técnica.
+- **Relações:** `relations.py` liga contragolpes, variações e combinações a partir dos textos
+  da FGJ, dos nomes ("X-gaeshi", "Kuzure-X") e das séries do Projeto Budô. Perguntas sobre
+  contragolpes, variações ou combinações levam as fichas das técnicas relacionadas.
+- **Conversa:** a página envia as últimas 3 trocas em `history`; o servidor não guarda
+  estado. O histórico vai ao modelo como dado, depois do trecho cacheado.
+
 ## Dados
 
 | Caminho | Conteúdo | Editar? |

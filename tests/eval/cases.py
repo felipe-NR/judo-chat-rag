@@ -4,6 +4,7 @@ import yaml
 from pydantic import BaseModel
 
 from judo_chat.guardrail import Category
+from judo_chat.schemas import HistoryTurn
 
 CASES_PATH = Path(__file__).with_name("cases.yaml")
 
@@ -14,6 +15,7 @@ class Case(BaseModel):
     categoria: Category
     tecnicas: list[str | list[str]]
     incluir: list[str] = []
+    historico: list[HistoryTurn] = []
 
     def expected_matches(self) -> list[tuple[str, ...]]:
         return [(item,) if isinstance(item, str) else tuple(item) for item in self.tecnicas]

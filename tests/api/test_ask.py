@@ -3,7 +3,7 @@ from collections.abc import Iterator
 import pytest
 from fastapi.testclient import TestClient
 
-from judo_chat.answer import REFUSAL_MESSAGE, UNAVAILABLE_MESSAGE, Answer
+from judo_chat.answer import REFUSAL_MESSAGE, UNAVAILABLE_MESSAGE, Answer, Turn
 from judo_chat.corpus.models import Corpus
 from judo_chat.dependencies import get_answerer, get_corpus, get_guardrail, get_recognizer
 from judo_chat.guardrail import Category, GuardrailResult
@@ -14,18 +14,21 @@ from judo_chat.normalizer import Match, Recognizer
 class FakeGuardrail:
     def __init__(self, category: Category, failed: bool = False) -> None:
         self.result = GuardrailResult(category=category, reason="teste", failed=failed)
+        self.calls: list[tuple[str, list[str], list[str]]] = []
 
-    async def classify(self, query: str) -> GuardrailResult:
+    async def classify(self, query: str, history: list[str], techniques: list[str]) -> GuardrailResult:
+        self.calls.append((query, list(history), list(techniques)))
         return self.result
 
 
 class FakeAnswerer:
-    def __init__(self) -> None:
-        self.calls: list[tuple[str, list[Match]]] = []
+    def __init__(self, text: str = "resposta") -> None:
+        self.text = text
+        self.calls: list[tuple[str, list[Match], list[Turn]]] = []
 
-    async def answer(self, query: str, matches: list[Match]) -> Answer:
-        self.calls.append((query, matches))
-        return Answer("resposta", False, 0, 0)
+    async def answer(self, query: str, matches: list[Match], history: list[Turn]) -> Answer:
+        self.calls.append((query, matches, list(history)))
+        return Answer(self.text, False, 0, 0)
 
 
 @pytest.fixture
@@ -73,9 +76,11 @@ def test_ambiguous_name_reaches_answerer_with_candidates(client: TestClient, ans
             "ambiguous": True,
         }
     ]
-    [(_, matches)] = answerer.calls
+    [(_, matches, _)] = answerer.calls
     assert matches[0].ambiguous
-    assert body["videos"][0] == {"technique": "Deashi-harai", "url": "https://youtu.be/4BUUvqxi_Kk", "kodokan": True}
+    group = body["video_groups"][0]
+    assert group["technique"] == "Deashi-harai" and group["anchor"] is None
+    assert group["videos"][0] == {"url": "https://youtu.be/4BUUvqxi_Kk", "kodokan": True}
 
 
 def test_rejects_empty_and_long_queries(client: TestClient) -> None:
@@ -100,3 +105,34 @@ def test_cors_preflight_allows_github_pages(client: TestClient) -> None:
 def test_page_and_config_are_served(client: TestClient) -> None:
     assert "Judô Chat" in client.get("/").text
     assert 'JUDO_CHAT_API_URL = ""' in client.get("/config.js").text
+
+
+def test_videos_follow_the_techniques_presented_in_the_answer(client: TestClient, answerer: FakeAnswerer) -> None:
+    app.dependency_overrides[get_guardrail] = lambda: FakeGuardrail("tecnica")
+    answerer.text = "Contragolpes:\n1. **Uchi-mata-gaeshi**: texto\n2. **Uchi-mata-sukashi**: texto"
+    body = client.post("/api/perguntar", json={"query": "contra ataques de uchimata"}).json()
+    groups = [(g["technique"], g["anchor"]) for g in body["video_groups"]]
+    assert groups[:2] == [("Uchi-mata-gaeshi", "Uchi-mata-gaeshi"), ("Uchi-mata-sukashi", "Uchi-mata-sukashi")]
+    assert ("Uchi-mata", None) in groups
+    assert all(g["videos"][0]["kodokan"] for g in body["video_groups"])
+
+
+def test_follow_up_uses_history(client: TestClient, answerer: FakeAnswerer) -> None:
+    guardrail = FakeGuardrail("tecnica")
+    app.dependency_overrides[get_guardrail] = lambda: guardrail
+    history = [
+        {"role": "usuario", "text": "contra ataques de uchimata"},
+        {"role": "assistente", "text": "O Uchi-mata-sukashi..."},
+    ]
+    client.post("/api/perguntar", json={"query": "não é esse, liste outros", "history": history})
+    [(_, matches, sent_history)] = answerer.calls
+    assert [m.technique_ids for m in matches] == [("uchi-mata",)]
+    assert [t.role for t in sent_history] == ["usuario", "assistente"]
+    [(_, guardrail_history, techniques)] = guardrail.calls
+    assert techniques == ["Uchi-mata"] and len(guardrail_history) == 2
+
+
+def test_history_is_limited(client: TestClient) -> None:
+    app.dependency_overrides[get_guardrail] = lambda: FakeGuardrail("tecnica")
+    history = [{"role": "usuario", "text": "x"}] * 7
+    assert client.post("/api/perguntar", json={"query": "oi", "history": history}).status_code == 422

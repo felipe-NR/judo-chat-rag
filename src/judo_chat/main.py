@@ -17,6 +17,7 @@ from judo_chat.errors import register_error_handlers
 from judo_chat.guardrail import Guardrail
 from judo_chat.keepalive import CacheKeepAlive
 from judo_chat.normalizer import Recognizer
+from judo_chat.relations import Relations
 from judo_chat.routers.ask import router as ask_router
 
 logging.basicConfig(level=logging.INFO)
@@ -29,9 +30,9 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
     corpus = load_corpus(settings.data_dir)
     async with AsyncAnthropic() as client:
         app.state.corpus = corpus
-        app.state.recognizer = Recognizer(corpus)
+        app.state.recognizer = recognizer = Recognizer(corpus)
         app.state.guardrail = Guardrail(client, settings.guardrail_model, settings.guardrail_timeout_s)
-        app.state.answerer = Answerer(client, settings, corpus)
+        app.state.answerer = Answerer(client, settings, corpus, Relations(corpus, recognizer))
         task = None
         if settings.keepalive_enabled:
             keepalive = CacheKeepAlive(

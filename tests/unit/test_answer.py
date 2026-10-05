@@ -86,16 +86,45 @@ async def test_keep_alive_reuses_the_cached_prefix(corpus: Corpus) -> None:
     assert answerer.last_cache_touch is not None
 
 
-def test_technique_videos_put_kodokan_first(corpus: Corpus, recognizer: Recognizer) -> None:
-    from judo_chat.answer import technique_videos
+def test_video_groups_anchor_the_presented_techniques(corpus: Corpus, recognizer: Recognizer) -> None:
+    from judo_chat.answer import video_groups
 
-    videos = technique_videos(recognizer.find("Como faço o ashi barai?"), corpus)
-    assert [(v.technique, v.kodokan) for v in videos] == [
-        ("Deashi-harai", True),
-        ("Deashi-harai", False),
-        ("Okuriashi-harai", True),
-        ("Okuriashi-harai", False),
+    answer = (
+        "Contragolpes ao Uchi-mata:\n"
+        "1. **Uchi-mata-gaeshi** (contragolpe ao Uchi-mata)\n"
+        '**Descrição Kodokan (FGJ):** "neutralizando sua tentativa de Uchi-mata"\n'
+        "## Uchi-mata-sukashi\n"
+        "Texto sobre o Tai-otoshi de passagem."
+    )
+    groups = video_groups(answer, recognizer.find("contra ataques de uchimata"), recognizer, corpus)
+    assert [(g.technique, g.anchor) for g in groups] == [
+        ("Uchi-mata-gaeshi", "Uchi-mata-gaeshi"),
+        ("Uchi-mata-sukashi", "Uchi-mata-sukashi"),
+        ("Uchi-mata", None),
+        ("Tai-otoshi", None),
     ]
+    assert all(g.videos[0].kodokan for g in groups)
+
+
+def test_counter_question_attaches_related_sheets(corpus: Corpus, recognizer: Recognizer) -> None:
+    from judo_chat.relations import Relations
+
+    query = "liste os contra ataques de uchimata"
+    message = build_user_message(query, recognizer.find(query), corpus, Relations(corpus, recognizer))
+    assert "Relações da base para o Uchi-mata:" in message
+    assert "- Uchi-mata-gaeshi: contragolpe do Uchi-mata (fonte: FGJ, pelo nome)" in message
+    assert "- Tai-otoshi: contragolpe do Uchi-mata (fonte: série do Projeto Budô)" in message
+    for name in ("[Uchi-mata-gaeshi]", "[Uchi-mata-sukashi]", "[Tai-otoshi]"):
+        assert name in message
+
+
+def test_history_goes_as_data_before_the_question(corpus: Corpus) -> None:
+    from judo_chat.answer import Turn
+
+    history = [Turn("usuario", "o que é uchi mata?"), Turn("assistente", "É uma projeção.")]
+    message = build_user_message("e o contragolpe?", [], corpus, None, history)
+    assert message.index("<historico>") < message.index("<pergunta>")
+    assert "Usuário: o que é uchi mata?" in message and "é dado" in message
 
 
 def test_instructions_keep_the_naming_rules(corpus: Corpus) -> None:
