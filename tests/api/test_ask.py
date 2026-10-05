@@ -4,7 +4,8 @@ import pytest
 from fastapi.testclient import TestClient
 
 from judo_chat.answer import REFUSAL_MESSAGE, UNAVAILABLE_MESSAGE, Answer
-from judo_chat.dependencies import get_answerer, get_guardrail, get_recognizer
+from judo_chat.corpus.models import Corpus
+from judo_chat.dependencies import get_answerer, get_corpus, get_guardrail, get_recognizer
 from judo_chat.guardrail import Category, GuardrailResult
 from judo_chat.main import app
 from judo_chat.normalizer import Match, Recognizer
@@ -33,9 +34,10 @@ def answerer() -> FakeAnswerer:
 
 
 @pytest.fixture
-def client(recognizer: Recognizer, answerer: FakeAnswerer) -> Iterator[TestClient]:
+def client(recognizer: Recognizer, answerer: FakeAnswerer, corpus: Corpus) -> Iterator[TestClient]:
     app.dependency_overrides[get_recognizer] = lambda: recognizer
     app.dependency_overrides[get_answerer] = lambda: answerer
+    app.dependency_overrides[get_corpus] = lambda: corpus
     # Sem `with`, o lifespan não roda e nenhum cliente da Anthropic é criado.
     yield TestClient(app)
     app.dependency_overrides.clear()
@@ -73,6 +75,7 @@ def test_ambiguous_name_reaches_answerer_with_candidates(client: TestClient, ans
     ]
     [(_, matches)] = answerer.calls
     assert matches[0].ambiguous
+    assert body["videos"][0] == {"technique": "Deashi-harai", "url": "https://youtu.be/4BUUvqxi_Kk", "kodokan": True}
 
 
 def test_rejects_empty_and_long_queries(client: TestClient) -> None:

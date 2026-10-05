@@ -37,7 +37,7 @@ def test_user_message_carries_the_fgj_sheet(corpus: Corpus, recognizer: Recogniz
     assert fgj is not None
     assert f'Descrição Kodokan (FGJ): "{fgj.descricao_kodokan}"' in message
     assert "Tradução (FGJ): CEIFA EXTERIOR MAIOR" in message
-    assert message.index("Vídeo do Kodokan") < message.index("Vídeo (outra fonte")
+    assert "youtu" not in message
 
 
 def test_user_message_carries_pronunciation_guide(corpus: Corpus) -> None:
@@ -84,3 +84,22 @@ async def test_keep_alive_reuses_the_cached_prefix(corpus: Corpus) -> None:
     assert call["system"] is answerer._system
     assert call["model"] == Settings().answer_model
     assert answerer.last_cache_touch is not None
+
+
+def test_technique_videos_put_kodokan_first(corpus: Corpus, recognizer: Recognizer) -> None:
+    from judo_chat.answer import technique_videos
+
+    videos = technique_videos(recognizer.find("Como faço o ashi barai?"), corpus)
+    assert [(v.technique, v.kodokan) for v in videos] == [
+        ("Deashi-harai", True),
+        ("Deashi-harai", False),
+        ("Okuriashi-harai", True),
+        ("Okuriashi-harai", False),
+    ]
+
+
+def test_instructions_keep_the_naming_rules(corpus: Corpus) -> None:
+    # Regressão: uma edição do prompt já apagou este bloco sem que nenhum teste percebesse.
+    text = build_system_text(corpus)
+    for rule in ("nome popular", "ambíguo", "Juji-gatame", "proibida em competição", "Não escreva links de vídeo"):
+        assert rule in text, rule

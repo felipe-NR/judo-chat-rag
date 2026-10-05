@@ -64,6 +64,24 @@ Registro do texto que você escreve (o que não vem pronto da FGJ):
 - Norma culta: tori e uke com artigo ("o tori", "o pé do uke"), nomes de técnicas no
   masculino ("o Uchi-mata") e concordância conferida antes de responder.
 
+Nomes de técnicas:
+- Use o nome oficial do Kodokan como nome principal e dê a tradução da FGJ ao lado na
+  primeira menção, por exemplo "Osoto-gari (ceifa exterior maior)". No Brasil as técnicas
+  são chamadas pelo nome japonês; a tradução não é um nome em português.
+- Quando o usuário usar um nome popular, diga qual é o nome oficial e explique que o nome
+  usado é popular, sem tom de correção. Se ele usou o nome oficial, não liste nomes
+  populares nem rótulos internos da base (tipo do nome, confiança, origem do texto).
+- Quando o nome for ambíguo (aponta para mais de uma técnica), não escolha em silêncio:
+  apresente as técnicas candidatas com o que distingue cada uma e responda sobre as duas
+  ou pergunte qual o usuário quis dizer.
+- Quando a IJF usar um nome curto diferente (por exemplo "Juji-gatame"), ele é o padrão
+  de competição e não é erro.
+- Se a técnica for proibida em competição ou estiver fora da nomenclatura do Kodokan,
+  avise.
+- O kanji vem nas fichas anexadas à pergunta.
+- Não escreva links de vídeo: a aplicação anexa os vídeos das técnicas citadas ao final da
+  resposta, com o do Kodokan primeiro.
+
 Exames de faixa: os requisitos da base vêm do Projeto Budô, que segue o programa da
 Federação Paulista de Judô. Ao responder sobre exames, diga isso e avise que os requisitos
 variam entre federações.
@@ -116,8 +134,7 @@ def build_user_message(query: str, matches: list[Match], corpus: Corpus) -> str:
     if sheets:
         parts.append(
             "Fichas da FGJ das técnicas e conceitos reconhecidos. Reproduza a descrição e o conceito "
-            "entre aspas, sem alterar nenhuma palavra; inclua a tradução da FGJ e o vídeo do Kodokan "
-            "antes dos outros:\n" + "\n\n".join(sheets)
+            "entre aspas, sem alterar nenhuma palavra, e inclua a tradução da FGJ:\n" + "\n\n".join(sheets)
         )
     if _PRONUNCIATION.search(unicodedata.normalize("NFKD", query.lower())):
         for document in corpus.documents:
@@ -137,7 +154,8 @@ def _fgj_sheets(matches: list[Match], corpus: Corpus) -> list[str]:
     """Fichas das técnicas citadas, anexadas à pergunta.
 
     Levam o texto da FGJ (com o corpus inteiro no contexto, o Haiku parafraseava a descrição e
-    omitia a tradução) e o kanji e os vídeos, que ficam fora do bloco fixo para não inflá-lo.
+    omitia a tradução) e o kanji, que fica fora do bloco fixo para não inflá-lo. Os vídeos não
+    passam pelo modelo: a API os anexa à resposta (ver `technique_videos`).
     """
     sheets: list[str] = []
     seen: set[str] = set()
@@ -159,12 +177,32 @@ def _fgj_sheets(matches: list[Match], corpus: Corpus) -> list[str]:
                 lines.append(f"Tradução (FGJ): {technique.fgj_term.traducao}")
                 if technique.fgj_term.conceito:
                     lines.append(f'Conceito (FGJ): "{technique.fgj_term.conceito}"')
-            for video in technique.videos:
-                label = "Vídeo do Kodokan" if video.source == "kodokan" else "Vídeo (outra fonte, não é do Kodokan)"
-                lines.append(f"{label}: {video.url}")
             if len(lines) > 1:
                 sheets.append("\n".join(lines))
     return sheets
+
+
+@dataclass(frozen=True)
+class TechniqueVideo:
+    technique: str
+    url: str
+    kodokan: bool
+
+
+def technique_videos(matches: list[Match], corpus: Corpus) -> list[TechniqueVideo]:
+    """Vídeos das técnicas reconhecidas, na ordem da pergunta e com o do Kodokan primeiro em
+    cada técnica. A API os anexa à resposta em vez de pedir ao modelo, que às vezes omitia
+    o link mesmo com ele na ficha."""
+    videos: list[TechniqueVideo] = []
+    seen: set[str] = set()
+    for match in matches:
+        for technique_id in match.technique_ids:
+            if technique_id in seen or len(seen) >= _MAX_SHEETS:
+                continue
+            seen.add(technique_id)
+            technique = corpus.technique(technique_id)
+            videos += [TechniqueVideo(technique.name, v.url, v.source == "kodokan") for v in technique.videos]
+    return videos
 
 
 @dataclass(frozen=True)

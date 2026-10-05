@@ -26,6 +26,16 @@
   .msg { padding: 12px 14px; border-radius: 10px; border: 1px solid var(--border);
          background: var(--surface); white-space: pre-wrap; overflow-wrap: anywhere; }
   .msg.user { background: var(--user); align-self: flex-end; max-width: 85%; }
+  .msg.bot, .msg.refused { white-space: normal; }
+  .msg.bot p, .msg.bot ul, .msg.bot ol { margin: 0 0 10px; }
+  .msg.bot h3 { font-size: 1.05rem; margin: 4px 0 10px; }
+  .msg.bot ul, .msg.bot ol { padding-left: 22px; }
+  .msg.bot hr { border: 0; border-top: 1px solid var(--border); margin: 12px 0; }
+  .videos { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--border); }
+  .videos strong { display: block; margin-bottom: 6px; font-size: .9rem; }
+  .videos a { display: block; margin: 4px 0; }
+  .badge { font-size: .75rem; padding: 1px 6px; border-radius: 6px; margin-right: 6px;
+           background: var(--accent); color: var(--bg); }
   .msg.refused { background: var(--refused); }
   .tags { margin-top: 8px; font-size: .8rem; color: var(--muted); }
   form { display: flex; gap: 8px; position: sticky; bottom: 0; background: var(--bg); padding: 12px 0; }
@@ -58,23 +68,73 @@
   const input = document.getElementById("query");
   const button = document.getElementById("send");
 
-  function linkify(node, text) {
-    const parts = text.split(/(https?:\/\/[^\s)]+)/g);
-    for (const part of parts) {
-      if (/^https?:\/\//.test(part)) {
-        const a = document.createElement("a");
-        a.href = part; a.textContent = part; a.target = "_blank"; a.rel = "noopener";
-        node.appendChild(a);
-      } else {
-        node.appendChild(document.createTextNode(part));
-      }
-    }
+  function escapeHtml(text) {
+    return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   }
 
-  function addMessage(text, kind, tags) {
+  // Markdown mínimo (títulos, negrito, itálico, listas, links, separador). O texto é
+  // escapado antes, então só as marcações abaixo viram HTML.
+  function inline(text) {
+    return text
+      .replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
+      .replace(/(^|[\s(])(https?:\/\/[^\s<)]+)/g, '$1<a href="$2" target="_blank" rel="noopener">$2</a>')
+      .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+      .replace(/(^|[^*])\*([^*\s][^*]*)\*/g, "$1<em>$2</em>");
+  }
+
+  function renderMarkdown(text) {
+    const lines = escapeHtml(text).split("\n");
+    const html = [];
+    let list = null;
+    const closeList = () => { if (list) { html.push(`</${list}>`); list = null; } };
+    for (const raw of lines) {
+      const line = raw.trim();
+      let m;
+      if (!line) { closeList(); continue; }
+      if (/^-{3,}$/.test(line)) { closeList(); html.push("<hr>"); continue; }
+      if ((m = line.match(/^#{1,6}\s+(.*)$/))) { closeList(); html.push(`<h3>${inline(m[1])}</h3>`); continue; }
+      if ((m = line.match(/^[-*]\s+(.*)$/))) {
+        if (list !== "ul") { closeList(); html.push("<ul>"); list = "ul"; }
+        html.push(`<li>${inline(m[1])}</li>`); continue;
+      }
+      if ((m = line.match(/^\d+[.)]\s+(.*)$/))) {
+        if (list !== "ol") { closeList(); html.push("<ol>"); list = "ol"; }
+        html.push(`<li>${inline(m[1])}</li>`); continue;
+      }
+      closeList();
+      html.push(`<p>${inline(line)}</p>`);
+    }
+    closeList();
+    return html.join("");
+  }
+
+  function addMessage(text, kind, tags, videos) {
     const div = document.createElement("div");
     div.className = "msg " + kind;
-    linkify(div, text);
+    if (kind === "user") {
+      div.textContent = text;
+    } else {
+      div.innerHTML = renderMarkdown(text);
+    }
+    if (videos && videos.length) {
+      const box = document.createElement("div");
+      box.className = "videos";
+      const title = document.createElement("strong");
+      title.textContent = "Vídeos";
+      box.appendChild(title);
+      for (const video of videos) {
+        const a = document.createElement("a");
+        a.href = video.url; a.target = "_blank"; a.rel = "noopener";
+        if (video.kodokan) {
+          const badge = document.createElement("span");
+          badge.className = "badge"; badge.textContent = "Kodokan";
+          a.appendChild(badge);
+        }
+        a.appendChild(document.createTextNode(video.technique + (video.kodokan ? " (vídeo oficial)" : " (outra fonte)")));
+        box.appendChild(a);
+      }
+      div.appendChild(box);
+    }
     if (tags) {
       const small = document.createElement("div");
       small.className = "tags";
@@ -106,7 +166,7 @@
       }
       const found = data.techniques_detected.map((t) => t.term + (t.ambiguous ? " (ambíguo)" : ""));
       const tags = found.length ? "Técnicas reconhecidas: " + found.join(", ") : "";
-      addMessage(data.answer, data.refused ? "refused" : "bot", tags);
+      addMessage(data.answer, data.refused ? "refused" : "bot", tags, data.videos);
     } catch (error) {
       addMessage("Não foi possível falar com o servidor. Ele pode estar desligado.", "refused");
     } finally {

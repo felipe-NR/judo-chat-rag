@@ -16,8 +16,16 @@ class DetectedTechnique(BaseModel):
     ambiguous: bool
 
 
+class VideoLink(BaseModel):
+    technique: str
+    url: str
+    kodokan: bool
+
+
 class AskResponse(BaseModel):
     answer: str
     category: Category
     refused: bool
     techniques_detected: list[DetectedTechnique]
+    # Vídeos das técnicas reconhecidas, com o do Kodokan primeiro; vazio quando há recusa.
+    videos: list[VideoLink] = []
