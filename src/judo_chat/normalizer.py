@@ -11,7 +11,7 @@ from typing import Literal
 
 from judo_chat.corpus.models import Corpus
 
-MatchType = Literal["oficial", "ijf", "grafia", "popular", "pt_br"]
+MatchType = Literal["oficial", "ijf", "grafia", "popular", "pt_br", "variante"]
 
 # Rendaku e grafias brasileiras: os dois lados da comparação passam pela mesma troca.
 _SUBSTITUTIONS = (
@@ -75,6 +75,7 @@ _PRIORITY: dict[MatchType, int] = {"oficial": 0, "ijf": 1, "grafia": 2, "pt_br":
 
 class Recognizer:
     def __init__(self, corpus: Corpus) -> None:
+        self._variants = dict(corpus.typo_variants)
         self._index: dict[str, Entry] = {}
         for technique in corpus.techniques:
             ids = (technique.id,)
@@ -121,7 +122,10 @@ class Recognizer:
         mas "uchi mata" cobre mais texto. Em "o soto gari" não há casamento mais longo a
         partir de "soto", e o nome fica Osoto-gari.
         """
-        spans = [("".join(tokenize(m.group())), m.start(), m.end()) for m in _WORD.finditer(text)]
+        spans = []
+        for m in _WORD.finditer(text):
+            token = "".join(tokenize(m.group()))
+            spans.append((self._variants.get(token, token), m.start(), m.end()))
         matches: list[Match] = []
         position = 0
         while position < len(spans):
@@ -137,6 +141,9 @@ class Recognizer:
                 continue
             window = spans[position : position + size]
             term = text[window[0][1] : window[-1][2]]
-            matches.append(Match(term, entry.technique_ids, entry.match_type, entry.label))
+            # Palavra trocada pela lista de variantes: o termo não é nome da técnica.
+            replaced = "".join(t for t, _, _ in window) != "".join(_TOKEN.findall(_fold(term)))
+            match_type: MatchType = "variante" if replaced else entry.match_type
+            matches.append(Match(term, entry.technique_ids, match_type, entry.label))
             position += size
         return matches

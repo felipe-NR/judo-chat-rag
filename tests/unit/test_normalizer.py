@@ -67,6 +67,8 @@ def test_spelling_variants(recognizer: Recognizer, variant: str, expected: str) 
         ("Yoko-tomoe-nage existe?", [("Yoko-tomoe-nage", ("tomoe-nage",))]),
         ("o mata-leão do jiu-jitsu", [("mata-leão", ("hadaka-jime",))]),
         ("quem foi Jigoro Kano?", []),
+        ("iPhone seoi", [("iPhone seoi", ("ippon-seoi-nage",))]),
+        ("conhecida como 100 quilos", [("100 quilos", ("yoko-shiho-gatame",))]),
         ("O que é o uchi mata?", [("uchi mata", ("uchi-mata",))]),
         ("como faço o uchi gari?", [("o uchi gari", ("ouchi-gari",))]),
         ("e o soto gari?", [("o soto gari", ("osoto-gari",))]),
@@ -88,3 +90,9 @@ def test_ambiguous_popular_name_returns_all_candidates(recognizer: Recognizer) -
 def test_canonical_folds_case_accents_and_rendaku() -> None:
     assert canonical("Ōuchi-Gari") == canonical("ouchi kari") == canonical("OOUCHIGARI")
     assert canonical("Okuri Ashi Barai") == canonical("okuriashi-harai")
+
+
+def test_typo_variants_are_flagged(recognizer: Recognizer) -> None:
+    [match] = recognizer.find("iPhone seoi")
+    assert match.match_type == "variante"
+    assert match.technique_ids == ("ippon-seoi-nage",)

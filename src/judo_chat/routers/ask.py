@@ -4,7 +4,14 @@ from fastapi import APIRouter
 
 from judo_chat.answer import REFUSAL_MESSAGE, UNAVAILABLE_MESSAGE, Turn, fgj_quotes_intact, video_groups
 from judo_chat.dependencies import AnswererDep, CorpusDep, GuardrailDep, RecognizerDep
-from judo_chat.schemas import AskRequest, AskResponse, DetectedTechnique, VideoGroupOut, VideoLink
+from judo_chat.schemas import (
+    AskRequest,
+    AskResponse,
+    DetectedTechnique,
+    LegacyVideo,
+    VideoGroupOut,
+    VideoLink,
+)
 
 logger = logging.getLogger(__name__)
 router = APIRouter(prefix="/api", tags=["perguntas"])
@@ -63,4 +70,5 @@ async def ask(
             )
             for g in groups
         ],
+        videos=[LegacyVideo(technique=g.technique, url=v.url, kodokan=v.kodokan) for g in groups for v in g.videos],
     )

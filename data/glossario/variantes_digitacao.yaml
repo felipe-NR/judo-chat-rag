@@ -1,0 +1,6 @@
+# Formas de escrever que o reconhecedor troca antes de comparar: erros do corretor do
+# celular, algarismos no lugar de palavras etc. Uma palavra por linha, sem acento e em
+# minúsculas. Cada exceção nova entra aqui e ganha um caso em tests/eval/cases.yaml.
+iphone: ippon
+iphones: ippon
+"100": cem

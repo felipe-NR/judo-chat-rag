@@ -192,3 +192,7 @@
   categoria: tecnica
   tecnicas: []
   incluir: [uchi-mata-gaeshi]
+
+# ---------- variantes de escrita (data/glossario/variantes_digitacao.yaml) ----------
+- {id: v01, pergunta: "iPhone seoi", categoria: tecnica, tecnicas: [ippon-seoi-nage], incluir: [ippon-seoi-nage]}
+- {id: v02, pergunta: "Como se chama no judô o nome da técnica que no bjj é conhecida como 100 quilos ?", categoria: tecnica, tecnicas: [yoko-shiho-gatame], incluir: [yoko-shiho-gatame]}

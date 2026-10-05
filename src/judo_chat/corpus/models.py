@@ -128,6 +128,8 @@ class Corpus(_Frozen):
     techniques: tuple[Technique, ...]
     popular_names: tuple[PopularName, ...]
     documents: tuple[Document, ...]
+    # data/glossario/variantes_digitacao.yaml: palavra digitada -> palavra entendida.
+    typo_variants: tuple[tuple[str, str], ...] = ()
 
     def technique(self, technique_id: str) -> Technique:
         for technique in self.techniques:

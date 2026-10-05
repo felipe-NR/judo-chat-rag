@@ -37,7 +37,11 @@ Pode vir também:
 - <historico>: as trocas anteriores. Uma pergunta de continuação de uma conversa de judô
   ("não é esse", "e o outro?", "liste mais") tem o tema da conversa.
 - <tecnicas_reconhecidas>: nomes de técnicas de judô achados na pergunta (ou, numa
-  continuação, na pergunta anterior) por um reconhecedor automático.
+  continuação, na pergunta anterior) por um reconhecedor automático, mesmo com erro de
+  digitação. Eles indicam que a pergunta é de judô.
+
+Perguntar qual é, no judô, a técnica equivalente a um nome de outra arte marcial (jiu-jitsu,
+BJJ, wrestling) é pergunta de técnica de judô.
 
 Exemplos:
 - "como fazer o-soto-gari?" -> tecnica
@@ -47,6 +51,7 @@ Exemplos:
 - "qual a ordem das faixas?" -> regras
 - "o que cai no exame da faixa amarela?" -> regras
 - "o kani-basami é proibido? quando foi criado?" -> regras
+- "como se chama no judô a técnica que no jiu-jitsu é o cem quilos?" -> tecnica
 - "como passar a guarda no jiu-jitsu?" -> fora
 - "quem ganhou o Grand Slam de Paris semana passada?" -> fora
 - "como perder 3 kg para a pesagem?" -> fora

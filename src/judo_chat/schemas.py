@@ -30,6 +30,12 @@ class VideoLink(BaseModel):
     kodokan: bool
 
 
+class LegacyVideo(BaseModel):
+    technique: str
+    url: str
+    kodokan: bool
+
+
 class VideoGroupOut(BaseModel):
     technique: str
     # Trecho da resposta (título ou item) onde a página põe os vídeos; null vai para o fim.
@@ -44,3 +50,5 @@ class AskResponse(BaseModel):
     techniques_detected: list[DetectedTechnique]
     # Vídeos das técnicas apresentadas na resposta, com o do Kodokan primeiro em cada técnica.
     video_groups: list[VideoGroupOut] = []
+    # Formato anterior, mantido para páginas ainda em cache no navegador.
+    videos: list[LegacyVideo] = []

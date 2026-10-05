@@ -134,6 +134,11 @@ def load_corpus(data_dir: Path) -> Corpus:
     ]
     documents += _fgj_documents(data_dir / "fgj")
 
+    variants_path = data_dir / "glossario" / "variantes_digitacao.yaml"
+    variants = yaml.safe_load(variants_path.read_text("utf-8")) if variants_path.exists() else {}
+    if not isinstance(variants, dict):
+        raise CorpusError(f"{variants_path}: esperava um mapa palavra -> palavra")
+
     return Corpus(
         techniques=tuple(
             sorted(
@@ -152,4 +157,5 @@ def load_corpus(data_dir: Path) -> Corpus:
         ),
         popular_names=tuple(sorted(popular, key=lambda p: p.name.lower())),
         documents=tuple(documents),
+        typo_variants=tuple(sorted((str(k).lower(), str(v).lower()) for k, v in variants.items())),
     )
