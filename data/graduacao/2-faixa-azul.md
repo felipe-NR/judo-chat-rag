@@ -2,7 +2,6 @@
 title: Exame para a faixa azul
 provenance: web:https://projetobudo.com.br/exames-de-faixa/faixa-azul/
 ---
-Requisitos do exame de graduação para a faixa azul, segundo o Projeto Budô (https://projetobudo.com.br/exames-de-faixa/faixa-azul/). O Projeto Budô segue o programa da Federação Paulista de Judô (FPJ); os requisitos variam entre federações estaduais. As séries citadas (Gokyo, renraku-henka-waza e kaeshi-waza) estão nos documentos próprios desta seção.
 **Carência**
 - 6 meses de faixa Cinza + 240 pts
 

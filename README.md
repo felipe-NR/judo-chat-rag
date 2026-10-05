@@ -47,13 +47,14 @@ repositório `JUDO_CHAT_API_URL` e rode o workflow de novo.
 ## Custo
 
 Medido em 2026-10-05 com o Haiku 4.5 (US$ 1/M de entrada, US$ 5/M de saída, cache: gravação
-US$ 1,25/M com TTL de 5 minutos e leitura US$ 0,10/M), dólar a R$ 5, sem IOF. O corpus tem
-~53 mil tokens desde que entrou o material da FGJ.
+US$ 1,25/M com TTL de 5 minutos e leitura US$ 0,10/M), dólar a R$ 5, sem IOF. O bloco fixo
+tem ~35 mil tokens: o material da FGJ inteiro, sem kanji, vídeos, grafias e nomes em inglês,
+que vão na ficha anexada à pergunta ou só servem ao reconhecedor.
 
 | Caso | US$ | R$ |
 |-|-|-|
-| Pergunta com cache quente | ~0,008 | ~0,04 |
-| Primeira pergunta após 5 min parado (grava o cache) | ~0,07 | ~0,35 |
+| Pergunta com cache quente | ~0,007 | ~0,035 |
+| Primeira pergunta após 5 min parado (grava o cache) | ~0,05 | ~0,25 |
 | Pergunta fora do escopo (só o guardrail) | ~0,001 | ~0,005 |
 
 O Sonnet 5.5 dá respostas mais fiéis à base por cerca de 3-4x o custo; veja `.env.example`.

@@ -2,7 +2,6 @@
 title: Exame para a faixa marrom
 provenance: web:https://projetobudo.com.br/exames-de-faixa/faixa-marrom/
 ---
-Requisitos do exame de graduação para a faixa marrom, segundo o Projeto Budô (https://projetobudo.com.br/exames-de-faixa/faixa-marrom/). O Projeto Budô segue o programa da Federação Paulista de Judô (FPJ); os requisitos variam entre federações estaduais. As séries citadas (Gokyo, renraku-henka-waza e kaeshi-waza) estão nos documentos próprios desta seção.
 **Idade Mínima e Carência**
 - 14 Anos
 - 1 ano de faixa Roxa + 700 pts

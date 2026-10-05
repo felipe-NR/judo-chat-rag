@@ -133,8 +133,11 @@ _MAX_SHEETS = 4
 
 
 def _fgj_sheets(matches: list[Match], corpus: Corpus) -> list[str]:
-    """Repete na mensagem os textos da FGJ das técnicas citadas: com o corpus inteiro no
-    contexto, o Haiku parafraseava a descrição e omitia a tradução e o vídeo."""
+    """Fichas das técnicas citadas, anexadas à pergunta.
+
+    Levam o texto da FGJ (com o corpus inteiro no contexto, o Haiku parafraseava a descrição e
+    omitia a tradução) e o kanji e os vídeos, que ficam fora do bloco fixo para não inflá-lo.
+    """
     sheets: list[str] = []
     seen: set[str] = set()
     for match in matches:
@@ -155,13 +158,11 @@ def _fgj_sheets(matches: list[Match], corpus: Corpus) -> list[str]:
                 lines.append(f"Tradução (FGJ): {technique.fgj_term.traducao}")
                 if technique.fgj_term.conceito:
                     lines.append(f'Conceito (FGJ): "{technique.fgj_term.conceito}"')
-            else:
-                continue
-            lines += [
-                f"{'Vídeo do Kodokan' if v.source == 'kodokan' else 'Vídeo (outra fonte, não é do Kodokan)'}: {v.url}"
-                for v in technique.videos
-            ]
-            sheets.append("\n".join(lines))
+            for video in technique.videos:
+                label = "Vídeo do Kodokan" if video.source == "kodokan" else "Vídeo (outra fonte, não é do Kodokan)"
+                lines.append(f"{label}: {video.url}")
+            if len(lines) > 1:
+                sheets.append("\n".join(lines))
     return sheets
 
 

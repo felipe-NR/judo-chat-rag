@@ -2,7 +2,6 @@
 title: Exame para a faixa laranja
 provenance: web:https://projetobudo.com.br/exames-de-faixa/faixa-laranja/
 ---
-Requisitos do exame de graduação para a faixa laranja, segundo o Projeto Budô (https://projetobudo.com.br/exames-de-faixa/faixa-laranja/). O Projeto Budô segue o programa da Federação Paulista de Judô (FPJ); os requisitos variam entre federações estaduais. As séries citadas (Gokyo, renraku-henka-waza e kaeshi-waza) estão nos documentos próprios desta seção.
 **Carência**
 - 1 ano de faixa Amarela + 400 pts
 

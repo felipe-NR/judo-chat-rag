@@ -56,7 +56,7 @@ def test_render_is_byte_identical_across_hash_seeds() -> None:
 
 def test_render_lists_popular_names_sorted(corpus: Corpus) -> None:
     text = render_corpus(corpus)
-    assert '"Ashi-barai" (nome popular, ambíguo, confiança média) -> Deashi-harai | Okuriashi-harai' in text
+    assert '"Ashi-barai" (ambíguo) -> Deashi-harai | Okuriashi-harai' in text
 
 
 def _copy_data(tmp_path: Path) -> Path:
@@ -98,3 +98,12 @@ def test_render_uses_fgj_description_verbatim(corpus: Corpus) -> None:
     assert fgj is not None
     assert f"Descrição Kodokan (FGJ): {fgj.descricao_kodokan}" in text
     assert "\nDescrição: " not in text
+
+
+def test_block_leaves_out_recognizer_only_fields(corpus: Corpus) -> None:
+    text = render_corpus(corpus)
+    assert "youtu" not in text
+    assert "Outras grafias" not in text and "Inglês:" not in text
+    assert "背負投" not in text
+    # Conceitos com verbete da FGJ aparecem só no glossário de termos.
+    assert "### Kuzushi" not in text and "- KUZUSHI:" in text

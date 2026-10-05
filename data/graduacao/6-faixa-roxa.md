@@ -2,7 +2,6 @@
 title: Exame para a faixa roxa
 provenance: web:https://projetobudo.com.br/exames-de-faixa/faixa-roxa/
 ---
-Requisitos do exame de graduação para a faixa roxa, segundo o Projeto Budô (https://projetobudo.com.br/exames-de-faixa/faixa-roxa/). O Projeto Budô segue o programa da Federação Paulista de Judô (FPJ); os requisitos variam entre federações estaduais. As séries citadas (Gokyo, renraku-henka-waza e kaeshi-waza) estão nos documentos próprios desta seção.
 **Idade Mínima e Carência**
 - 13 Anos
 - 1 ano de faixa Verde + 600 pts
