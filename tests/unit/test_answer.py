@@ -16,3 +16,15 @@ def test_user_message_carries_query_and_candidates(corpus: Corpus, recognizer: R
     assert message.startswith("<pergunta>\nashi barai ou osoto?\n</pergunta>")
     assert '"ashi barai" (nome ambíguo) -> Deashi-harai | Okuriashi-harai' in message
     assert '"osoto" (nome popular) -> Osoto-gari' in message
+
+
+def test_user_message_attaches_the_belt_document(corpus: Corpus, recognizer: Recognizer) -> None:
+    query = "O que cai no exame da faixa amarela?"
+    message = build_user_message(query, recognizer.find(query), corpus)
+    assert "Exame para a faixa amarela" in message
+    assert "Deashi-Harai – Osoto-Gari" in message
+    assert "faixa laranja" not in message.lower()
+
+
+def test_user_message_without_belt_has_no_document(corpus: Corpus, recognizer: Recognizer) -> None:
+    assert "Documento da base" not in build_user_message("Quem criou o judô?", [], corpus)

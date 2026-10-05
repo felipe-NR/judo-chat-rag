@@ -24,6 +24,7 @@ _SUBSTITUTIONS = (
     ("gake", "kake"),
     ("jime", "shime"),
     ("nague", "nage"),
+    ("gui", "gi"),
     ("ou", "o"),
 )
 _TOKEN = re.compile(r"[a-z0-9]+")

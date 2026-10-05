@@ -12,7 +12,9 @@
   description_pt_br: Situação de kumi-kata em que os dois judocas pegam do mesmo lado (destro contra destro
     ou canhoto contra canhoto).
   provenance: generated
-  video_url: https://youtu.be/xYQDQXLzKHc
+  videos:
+  - url: https://youtu.be/xYQDQXLzKHc
+    source: outro
 - id: ashi-garami
   name: Ashi-garami
   kind: technique
@@ -26,10 +28,15 @@
   - name: Single Leg X (SLX)
     usage: bjj
   name_pt_br: Chave de perna enroscada
-  description_pt_br: O tori enrosca as pernas na perna do uke e torce o joelho dele. Na competição de
+  description_pt_br: O tori enrosca as pernas na perna do uke e torce o joelho do uke. Na competição de
     judô só são permitidas chaves no cotovelo, por isso é proibida.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=3YXH_LrcqNc
+  videos:
+  - url: https://youtu.be/BWWb0GoAtZw
+    source: kodokan
+    title: 足緘 /  Ashi-garami
+  - url: https://www.youtube.com/watch?v=3YXH_LrcqNc
+    source: outro
 - id: ashi-guruma
   name: Ashi-guruma
   kind: technique
@@ -42,7 +49,12 @@
   description_pt_br: O tori estende a perna esticada contra o joelho ou a coxa do uke e, girando o tronco,
     roda o uke por cima dela.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=c7pqq2sC8Ng
+  videos:
+  - url: https://youtu.be/ROeayhvom9U
+    source: kodokan
+    title: 足車 / Ashi-guruma
+  - url: https://www.youtube.com/watch?v=c7pqq2sC8Ng
+    source: outro
   judobase:
     code_short: ashi_guruma
     id_tag: '233'
@@ -60,7 +72,9 @@
   description_pt_br: Chave reta de tornozelo do jiu-jitsu. Não consta da nomenclatura do Kodokan e, como
     toda chave fora do cotovelo, é proibida na competição de judô.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=n_djFU-uKS0
+  videos:
+  - url: https://www.youtube.com/watch?v=n_djFU-uKS0
+    source: outro
 - id: ashi-waza
   name: Ashi-waza
   kind: category
@@ -73,7 +87,9 @@
   description_pt_br: Projeções feitas com ceifadas, varridas, bloqueios ou ganchos de perna, como Osoto-gari
     e Deashi-harai.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=sAjqMwqFY_g
+  videos:
+  - url: https://www.youtube.com/watch?v=sAjqMwqFY_g
+    source: outro
 - id: daki-age
   name: Daki-age
   kind: technique
@@ -89,7 +105,9 @@
   description_pt_br: Ação de levantar o uke, que está deitado de costas fazendo guarda, até a altura dos
     ombros do tori. Não é técnica de projeção da nomenclatura do Kodokan e é proibida em competição.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=5lFXv3crN30
+  videos:
+  - url: https://www.youtube.com/watch?v=5lFXv3crN30
+    source: outro
   notes:
   - Status de regra informado pela sessão judo-techniques-bot; conferir no regulamento vigente.
 - id: daki-wakare
@@ -101,10 +119,15 @@
   english_names:
   - name: High Lift and Separate
   name_pt_br: Abraçar e separar
-  description_pt_br: Com o uke de quatro apoios, o tori abraça o tronco dele por cima, levanta-o e cai
-    de lado, girando o uke para trás por cima de si.
+  description_pt_br: Com o uke de quatro apoios, o tori abraça o tronco do uke por cima, o levanta e cai
+    de lado, para que o uke gire para trás por cima do tori.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=858jvGv7pQE
+  videos:
+  - url: https://youtu.be/Hr0cOMGBDYo
+    source: kodokan
+    title: 抱分 / Daki-wakare
+  - url: https://www.youtube.com/watch?v=858jvGv7pQE
+    source: outro
   judobase:
     code_short: daki_wakare
     id_tag: '290'
@@ -119,10 +142,17 @@
   english_names:
   - name: Forward Foot Sweep
   name_pt_br: Varrida no pé que avança
-  description_pt_br: No momento em que o uke avança um pé e ainda não colocou o peso nele, o tori o varre
-    com a sola do pé na direção do movimento, e o uke cai de lado.
+  description_pt_br: 'O tori varre o pé que o uke está trazendo à frente no instante em que ele vai apoiar
+    o peso nesse pé, com a sola do pé contra a parte de fora do tornozelo, na mesma direção do passo.
+    Ao mesmo tempo, as mãos giram o uke para o lado: a da manga traz para baixo e a da gola eleva. Como
+    o pé sai do chão antes de receber o peso, o uke cai de lado. O momento certo vale mais que a força.'
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=gW9LEvVmG2o
+  videos:
+  - url: https://youtu.be/4BUUvqxi_Kk
+    source: kodokan
+    title: 出足払 / De-ashi-harai
+  - url: https://www.youtube.com/watch?v=gW9LEvVmG2o
+    source: outro
   judobase:
     code_short: de_ashi_harai
     id_tag: '234'
@@ -139,7 +169,12 @@
   description_pt_br: O tori aperta o tronco do uke com as pernas cruzadas. Comprime o abdômen e as costelas,
     e não o pescoço, e é proibido em competição.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=5thavLVKDoE
+  videos:
+  - url: https://youtu.be/D_0fFcoIbvY
+    source: kodokan
+    title: 胴絞 /  Do-jime
+  - url: https://www.youtube.com/watch?v=5thavLVKDoE
+    source: outro
 - id: gyaku-juji-jime
   name: Gyaku-juji-jime
   kind: technique
@@ -153,7 +188,12 @@
   description_pt_br: O tori cruza os braços e segura as duas golas com as palmas para cima (dedos por
     dentro) e estrangula puxando os cotovelos para fora.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=6q6lgWeoi4Y
+  videos:
+  - url: https://youtu.be/t3tQriIPdlI
+    source: kodokan
+    title: 逆十字絞 /  Gyaku-juji-jime
+  - url: https://www.youtube.com/watch?v=6q6lgWeoi4Y
+    source: outro
 - id: hadaka-jime
   name: Hadaka-jime
   kind: technique
@@ -165,10 +205,15 @@
   - name: Rear Naked Choke (RNC)
     usage: bjj
   name_pt_br: Estrangulamento nu
-  description_pt_br: O tori, por trás do uke, passa o antebraço pela frente do pescoço dele e aperta sem
-    usar a gola do judogi, por isso "nu". É o "mata-leão" do vocabulário brasileiro.
+  description_pt_br: O tori, por trás do uke, passa o antebraço pela frente do pescoço do uke e aperta
+    sem usar a gola do judogi, por isso "nu". É o "mata-leão" do vocabulário brasileiro.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=kTGDvZQ8sY0
+  videos:
+  - url: https://youtu.be/9f0n8jez7iA
+    source: kodokan
+    title: 裸絞 /  Hadaka-jime
+  - url: https://www.youtube.com/watch?v=kTGDvZQ8sY0
+    source: outro
 - id: hane-goshi
   name: Hane-goshi
   kind: technique
@@ -178,10 +223,15 @@
   english_names:
   - name: Spring Hip Throw
   name_pt_br: Quadril em mola
-  description_pt_br: O tori encaixa o quadril e, com a perna dobrada, levanta a coxa do uke por dentro
-    como uma mola, projetando-o para a frente.
+  description_pt_br: O tori encaixa o quadril e, com a perna dobrada, levanta a coxa do uke por dentro,
+    como uma mola, e o projeta para a frente.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=n7GP5S41Os8
+  videos:
+  - url: https://youtu.be/M9_7De6A1kk
+    source: kodokan
+    title: 跳腰 / Hane-goshi
+  - url: https://www.youtube.com/watch?v=n7GP5S41Os8
+    source: outro
 - id: hane-goshi-gaeshi
   name: Hane-goshi-gaeshi
   kind: technique
@@ -194,7 +244,12 @@
   description_pt_br: Quando o uke ataca com Hane-goshi, o tori bloqueia o quadril, levanta a perna de
     ataque do uke com a própria perna e o projeta para trás.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=vqT3W-ByaEw
+  videos:
+  - url: https://youtu.be/9bZAZSBtnGs
+    source: kodokan
+    title: 跳腰返 / Hane-goshi-gaeshi
+  - url: https://www.youtube.com/watch?v=vqT3W-ByaEw
+    source: outro
 - id: hane-makikomi
   name: Hane-makikomi
   kind: technique
@@ -205,10 +260,15 @@
   - name: Spring Wrap-around Throw
   - name: Wing-Over
   name_pt_br: Enrolamento em mola
-  description_pt_br: O tori enrola o braço do uke em volta do próprio corpo, gira, levanta a perna dele
-    como no Hane-goshi e cai junto, levando o uke ao tatame.
+  description_pt_br: O tori enrola o braço do uke em volta do próprio corpo, gira, levanta a perna do
+    uke como no Hane-goshi e cai junto, levando o uke ao tatame.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=wG5kQT7M8is
+  videos:
+  - url: https://youtu.be/6CRBGLGz9j8
+    source: kodokan
+    title: 跳巻込 / Hane-makikomi
+  - url: https://www.youtube.com/watch?v=wG5kQT7M8is
+    source: outro
 - id: harai-goshi
   name: Harai-goshi
   kind: technique
@@ -218,10 +278,16 @@
   english_names:
   - name: Sweeping Hip Throw
   name_pt_br: Varrida com o quadril
-  description_pt_br: O tori encaixa o quadril, puxa o uke contra o corpo e varre as pernas dele com a
-    parte de trás da coxa estendida, projetando-o para a frente.
+  description_pt_br: O tori desequilibra o uke para a frente, para que ele fique na ponta dos pés, gira
+    e cola o quadril ao quadril do uke. Com a perna estendida, o tori varre pela frente a coxa da perna
+    do uke do lado do giro, com a parte de trás da própria coxa, e o projeta por cima do quadril.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=cs_zkgefvqM
+  videos:
+  - url: https://youtu.be/qTo8HlAAkOo
+    source: kodokan
+    title: 払腰 / Harai-goshi
+  - url: https://www.youtube.com/watch?v=cs_zkgefvqM
+    source: outro
   judobase:
     code_short: harai_goshi
     id_tag: '257'
@@ -234,10 +300,15 @@
   english_names:
   - name: Sweeping Hip Counter
   name_pt_br: Contragolpe ao Harai-goshi
-  description_pt_br: Quando o uke ataca com Harai-goshi, o tori bloqueia o quadril e varre a perna de
-    apoio do uke, projetando-o para trás.
+  description_pt_br: Quando o uke ataca com o Harai-goshi, o tori bloqueia o quadril e varre a perna de
+    apoio do uke, que cai para trás.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=t2hgLa7BZbE
+  videos:
+  - url: https://youtu.be/4U3It-7PPsc
+    source: kodokan
+    title: 払腰返 / Harai-goshi-gaeshi
+  - url: https://www.youtube.com/watch?v=t2hgLa7BZbE
+    source: outro
   judobase:
     code_short: harai_goshi_gaeshi
     id_tag: '236'
@@ -253,7 +324,12 @@
   description_pt_br: O tori entra com Harai-goshi, enrola o braço do uke em volta do próprio corpo e cai
     rodando junto para completar a projeção.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=MWd5CYkm2zI
+  videos:
+  - url: https://youtu.be/VBaHzKaCXss
+    source: kodokan
+    title: 払巻込 /  Harai-makikomi
+  - url: https://www.youtube.com/watch?v=MWd5CYkm2zI
+    source: outro
   judobase:
     code_short: harai_makikomi
     id_tag: '292'
@@ -265,11 +341,17 @@
   - Harai Tsurikomi Ashi
   english_names:
   - name: Lifting Pulling Foot Sweep
-  name_pt_br: Varrida do pé puxando e levantando
-  description_pt_br: O tori puxa e levanta o uke e, em vez de bloquear (como no Sasae-tsurikomi-ashi),
-    varre a frente do tornozelo do uke com a sola do pé.
+  name_pt_br: Varrida do pé com elevação e puxada
+  description_pt_br: O tori eleva e traz o uke para si, como no Sasae-tsurikomi-ashi, mas em vez de bloquear,
+    varre a frente do tornozelo do uke com a sola do pé, para que a perna saia do chão antes de receber
+    o peso.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=23ATiD6TsZs
+  videos:
+  - url: https://youtu.be/gGPXvWL8VbE
+    source: kodokan
+    title: 払釣込足 / Harai-tsurikomi-ashi
+  - url: https://www.youtube.com/watch?v=23ATiD6TsZs
+    source: outro
 - id: hikikomi-gaeshi
   name: Hikikomi-gaeshi
   kind: technique
@@ -279,10 +361,15 @@
   english_names:
   - name: Pulling-in Reversal
   name_pt_br: Reversão puxando para dentro
-  description_pt_br: O tori segura a faixa ou as costas do uke por cima, cai de costas puxando-o e, usando
-    o pé na coxa dele, o projeta por cima de si.
+  description_pt_br: O tori segura a faixa ou as costas do uke por cima e cai de costas, trazendo o uke
+    junto; com o pé na coxa do uke, o tori o projeta por cima de si.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=WV745XfBsgA
+  videos:
+  - url: https://www.youtube.com/watch?v=92zUYWBp5N8
+    source: kodokan
+    title: 引込返 / Hikikomi-gaeshi
+  - url: https://www.youtube.com/watch?v=WV745XfBsgA
+    source: outro
   judobase:
     code_short: hikikomi_gaeshi
     id_tag: '267'
@@ -298,7 +385,12 @@
   description_pt_br: O tori apoia a sola do pé no joelho do uke como ponto de giro e, com as mãos, roda
     o uke por cima desse apoio.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=a1RZvytW3OI
+  videos:
+  - url: https://youtu.be/JPJx9-oAVns
+    source: kodokan
+    title: 膝車 / Hiza-guruma
+  - url: https://www.youtube.com/watch?v=a1RZvytW3OI
+    source: outro
   judobase:
     code_short: hiza_guruma
     id_tag: '238'
@@ -312,10 +404,15 @@
   - name: One Arm Shoulder Throw
   name_pt_br: Projeção pelas costas com um braço
   description_pt_br: Variante do Seoi-nage em que o tori solta a gola, passa o braço por baixo da axila
-    do uke e prende o braço dele contra o próprio ombro antes de girar e projetar. O Kodokan a reconheceu
+    do uke e prende o braço do uke contra o próprio ombro antes de girar e projetar. O Kodokan a reconheceu
     como técnica separada do Seoi-nage em 1997.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=OmKfUXAAdZ0
+  videos:
+  - url: https://youtu.be/FQnOlCxo4oI
+    source: kodokan
+    title: 一本背負投 / Ippon-seoi-nage
+  - url: https://www.youtube.com/watch?v=OmKfUXAAdZ0
+    source: outro
   judobase:
     code_short: ippon_seoi_nage
     id_tag: '273'
@@ -340,10 +437,15 @@
     usage: bjj
   - name: Top four-corner hold
   name_pt_br: Imobilização pelos quatro cantos por cima
-  description_pt_br: O tori deita-se sobre o uke vindo pelo lado da cabeça dele, com o peito sobre o peito
-    do uke, segurando a faixa pelos dois lados por baixo dos braços dele.
+  description_pt_br: O tori se deita sobre o uke vindo pelo lado da cabeça, com o peito sobre o peito
+    do uke, e segura a faixa dos dois lados, passando as mãos por baixo dos braços do uke.
   provenance: generated
-  video_url: https://youtu.be/2evEh7OBnBg
+  videos:
+  - url: https://youtu.be/HFuMjOv0WN8
+    source: kodokan
+    title: 上四方固 /  Kami-shiho-gatame
+  - url: https://youtu.be/2evEh7OBnBg
+    source: outro
   judobase:
     code_short: kami_shiho_gatame
     id_tag: '206'
@@ -358,9 +460,14 @@
   - name: Flying Scissors
   name_pt_br: Tesoura de caranguejo
   description_pt_br: O tori salta de lado e prende o corpo do uke entre as pernas, como uma tesoura, uma
-    perna na frente e outra atrás, derrubando-o para trás. Causou lesões graves e é proibida em competição.
+    perna na frente e outra atrás, e o derruba para trás. Causou lesões graves e é proibida em competição.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=1NFwJBKI-3E
+  videos:
+  - url: https://youtu.be/OR-HGHnarYc
+    source: kodokan
+    title: 蟹挟 /  Kani-basami
+  - url: https://www.youtube.com/watch?v=1NFwJBKI-3E
+    source: outro
 - id: kansetsu-waza
   name: Kansetsu-waza
   kind: category
@@ -373,7 +480,9 @@
   description_pt_br: Técnicas que forçam uma articulação além do limite. Na competição de judô só são
     permitidas chaves no cotovelo.
   provenance: generated
-  video_url: https://youtu.be/QtVipMcTsdw
+  videos:
+  - url: https://youtu.be/QtVipMcTsdw
+    source: outro
 - id: kata-gatame
   name: Kata-gatame
   kind: technique
@@ -387,11 +496,16 @@
     usage: bjj
   - name: Shoulder hold
   name_pt_br: Imobilização pelo ombro
-  description_pt_br: O tori prende a cabeça e um braço do uke juntos, apertando o braço dele contra o
-    pescoço com a própria cabeça e os braços entrelaçados. No judô é uma imobilização; no jiu-jitsu a
+  description_pt_br: O tori prende juntos a cabeça e um braço do uke, apertando esse braço contra o pescoço
+    do uke com a própria cabeça e os braços entrelaçados. No judô é uma imobilização; no jiu-jitsu, a
     mesma posição é usada como estrangulamento.
   provenance: generated
-  video_url: https://youtu.be/TFClghvGD9w
+  videos:
+  - url: https://youtu.be/zQR3IOXxO_Q
+    source: kodokan
+    title: 肩固 /  Kata-gatame
+  - url: https://youtu.be/TFClghvGD9w
+    source: outro
   judobase:
     code_short: kata_gatame
     id_tag: '207'
@@ -410,7 +524,12 @@
     para o lado. A forma clássica com a mão na perna é proibida em competição pela IJF desde a proibição
     de pegadas diretas nas pernas; variantes sem pegar na perna ainda aparecem nos registros da IJF.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=wRiFwMLCjPg
+  videos:
+  - url: https://youtu.be/cnHRhSy8yi4
+    source: kodokan
+    title: 肩車 / Kata-guruma
+  - url: https://www.youtube.com/watch?v=wRiFwMLCjPg
+    source: outro
   judobase:
     code_short: kata_guruma
     id_tag: '274'
@@ -426,7 +545,12 @@
   description_pt_br: O tori, por trás do uke, segura a gola com uma mão e, com o outro braço, levanta
     um braço do uke (a "asa") e o empurra por trás da nuca, estrangulando.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=wcLI263QUdA
+  videos:
+  - url: https://youtu.be/yaTGgRjnwB8
+    source: kodokan
+    title: 片羽絞 /  Kataha-jime
+  - url: https://www.youtube.com/watch?v=wcLI263QUdA
+    source: outro
 - id: kata-juji-jime
   name: Kata-juji-jime
   kind: technique
@@ -440,7 +564,12 @@
   description_pt_br: O tori cruza os braços segurando uma gola com a palma para cima e a outra com a palma
     para baixo.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=nQov7zhsnmc
+  videos:
+  - url: https://youtu.be/3VZVUAmiMD8
+    source: kodokan
+    title: 片十字絞 /  Kata-juji-jime
+  - url: https://www.youtube.com/watch?v=nQov7zhsnmc
+    source: outro
 - id: kata-te-jime
   name: Kata-te-jime
   kind: technique
@@ -450,10 +579,15 @@
   english_names:
   - name: One-Hand Strangle
   name_pt_br: Estrangulamento com uma mão
-  description_pt_br: O tori estrangula segurando a gola do uke com uma única mão e pressionando o antebraço
-    contra o pescoço.
+  description_pt_br: O tori estrangula com uma única mão na gola do uke, pressionando o antebraço contra
+    o pescoço.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=sLZeocx_n7A
+  videos:
+  - url: https://youtu.be/cHeIs-fSqwE
+    source: kodokan
+    title: 片手絞 /  Katate-jime
+  - url: https://www.youtube.com/watch?v=sLZeocx_n7A
+    source: outro
 - id: katame-waza
   name: Katame-waza
   kind: category
@@ -465,7 +599,9 @@
   description_pt_br: Grande grupo das técnicas de domínio, quase sempre aplicadas no solo. Divide-se em
     osaekomi-waza (imobilizações), shime-waza (estrangulamentos) e kansetsu-waza (chaves de articulação).
   provenance: generated
-  video_url: https://youtu.be/i0VLiYjmbzY
+  videos:
+  - url: https://youtu.be/i0VLiYjmbzY
+    source: outro
 - id: kawazu-gake
   name: Kawazu-gake
   kind: technique
@@ -480,7 +616,12 @@
   description_pt_br: O tori enrosca a perna em volta da perna do uke, por fora, e cai para trás junto
     com ele. Pressiona o joelho do uke de forma perigosa e é proibida em competição.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=-SQCIZFscNs
+  videos:
+  - url: https://youtu.be/w6G57bWACi0
+    source: kodokan
+    title: 河津掛 /  Kawazu-gake
+  - url: https://www.youtube.com/watch?v=-SQCIZFscNs
+    source: outro
 - id: kenka-yotsu
   name: Kenka-yotsu
   kind: grip
@@ -494,7 +635,9 @@
   description_pt_br: Situação de kumi-kata em que um judoca pega de direita e o outro de esquerda. Muda
     as técnicas que funcionam melhor para cada um.
   provenance: generated
-  video_url: https://youtu.be/JBSsWN8E2qs
+  videos:
+  - url: https://youtu.be/JBSsWN8E2qs
+    source: outro
 - id: kesa-gatame
   name: Kesa-gatame
   kind: technique
@@ -504,11 +647,16 @@
   english_names:
   - name: Scarf hold
   name_pt_br: Imobilização em faixa diagonal
-  description_pt_br: O tori senta-se ao lado do uke, de frente para a cabeça dele, prende um braço do
-    uke debaixo da axila e envolve o pescoço com o outro braço, mantendo o peso sobre o peito dele. "Kesa"
-    é a faixa diagonal da vestimenta de monge budista.
+  description_pt_br: O tori se senta ao lado do uke, virado para a cabeça do uke, prende um braço do uke
+    debaixo da axila e envolve o pescoço do uke com o outro braço, mantendo o peso sobre o peito do uke.
+    "Kesa" é a faixa diagonal da vestimenta de monge budista.
   provenance: generated
-  video_url: https://youtu.be/3UnJa3bn0h8
+  videos:
+  - url: https://youtu.be/NDaQuJOFBYk
+    source: kodokan
+    title: 袈裟固 /  Kesa-gatame
+  - url: https://youtu.be/3UnJa3bn0h8
+    source: outro
   judobase:
     code_short: kesa_gatame
     id_tag: '208'
@@ -522,10 +670,15 @@
   - name: Ankle Pick
   - name: Heel Trip Reversal
   name_pt_br: Reversão pelo calcanhar
-  description_pt_br: O tori puxa o calcanhar do uke com uma mão enquanto empurra o tronco dele para trás
-    com a outra. Proibida em competição pela IJF por ser pegada direta na perna.
+  description_pt_br: O tori puxa o calcanhar do uke com uma mão enquanto empurra o tronco do uke para
+    trás com a outra. Proibida em competição pela IJF por ser pegada direta na perna.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=3LLBrF4w86Q
+  videos:
+  - url: https://youtu.be/tJylJYfBliA
+    source: kodokan
+    title: 踵返 / Kibisu-gaeshi
+  - url: https://www.youtube.com/watch?v=3LLBrF4w86Q
+    source: outro
 - id: kinshi-waza
   name: Kinshi-waza
   kind: category
@@ -537,7 +690,9 @@
   description_pt_br: Técnicas proibidas em competição por risco de lesão, como Kani-basami, Kawazu-gake,
     Do-jime e chaves fora do cotovelo.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=ZLKmsnAODz8
+  videos:
+  - url: https://www.youtube.com/watch?v=ZLKmsnAODz8
+    source: outro
 - id: koshi-guruma
   name: Koshi-guruma
   kind: technique
@@ -547,10 +702,16 @@
   english_names:
   - name: Hip Wheel
   name_pt_br: Roda pelo quadril
-  description_pt_br: O tori envolve o pescoço do uke com o braço, encaixa o quadril além da linha do quadril
-    dele e o faz girar como uma roda por cima do quadril.
+  description_pt_br: O tori desequilibra o uke para a frente, envolve o pescoço do uke com o braço e encaixa
+    o quadril bem além do quadril do uke, mais do que no O-goshi, para que o uke gire por cima do quadril
+    do tori como uma roda.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=psG_Xx8NiIA
+  videos:
+  - url: https://youtu.be/SU7Id6uVJ44
+    source: kodokan
+    title: 腰車 / Koshi-guruma
+  - url: https://www.youtube.com/watch?v=psG_Xx8NiIA
+    source: outro
   judobase:
     code_short: koshi_guruma
     id_tag: '258'
@@ -565,7 +726,9 @@
   name_pt_br: Técnicas de quadril
   description_pt_br: Projeções em que o quadril do tori é o ponto de apoio, como O-goshi e Harai-goshi.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=3Kf5z0spBXc
+  videos:
+  - url: https://www.youtube.com/watch?v=3Kf5z0spBXc
+    source: outro
 - id: kosoto-gake
   name: Kosoto-gake
   kind: technique
@@ -578,9 +741,14 @@
   - name: Minor Outer Hook
   name_pt_br: Pequeno gancho externo
   description_pt_br: O tori engancha por fora o calcanhar do uke com a perna e o puxa, enquanto empurra
-    o tronco dele para trás e para baixo.
+    o tronco do uke para trás e para baixo.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=jl99iUTlIVY
+  videos:
+  - url: https://youtu.be/8b6kY4s4zH4
+    source: kodokan
+    title: 小外掛 / Ko-soto-gake
+  - url: https://www.youtube.com/watch?v=jl99iUTlIVY
+    source: outro
   judobase:
     code_short: ko_soto_gake
     id_tag: '240'
@@ -595,10 +763,16 @@
   english_names:
   - name: Minor Outer Reap
   name_pt_br: Pequena ceifada externa
-  description_pt_br: O tori ceifa por fora o calcanhar do uke com a sola do pé, na direção em que ele
-    está se movendo, desequilibrando-o para trás.
+  description_pt_br: No momento em que o uke apoia o peso sobre um pé, o tori o desequilibra para a diagonal
+    de trás desse lado e ceifa o calcanhar desse pé por fora e por trás, com a sola do pé, na direção
+    dos dedos do uke. O pé sai do chão justamente quando ia sustentar o corpo, e o uke cai para trás.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=T3rSf8CcHg4
+  videos:
+  - url: https://youtu.be/jeQ541ScLB4
+    source: kodokan
+    title: 小外刈 / Ko-soto-gari
+  - url: https://www.youtube.com/watch?v=T3rSf8CcHg4
+    source: outro
   judobase:
     code_short: ko_soto_gari
     id_tag: '241'
@@ -613,10 +787,15 @@
   english_names:
   - name: Hand Technique
   name_pt_br: Contragolpe ao Kouchi-gari
-  description_pt_br: Quando o uke tenta Kouchi-gari, o tori retira a perna atacada e, girando o tronco,
-    projeta o uke na direção do próprio ataque dele.
+  description_pt_br: Quando o uke tenta o Kouchi-gari, o tori retira a perna atacada e, com uma rotação
+    do tronco, projeta o uke na direção do próprio ataque do uke.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=aENEt9_VmuU
+  videos:
+  - url: https://youtu.be/_MWAdYi_LC4
+    source: kodokan
+    title: 小内返 / Ko-uchi-gaeshi
+  - url: https://www.youtube.com/watch?v=aENEt9_VmuU
+    source: outro
   judobase:
     code_short: ko_uchi_gaeshi
     id_tag: '276'
@@ -631,10 +810,16 @@
   english_names:
   - name: Minor Inner Reap
   name_pt_br: Pequena ceifada interna
-  description_pt_br: O tori ceifa por dentro o calcanhar do uke com a sola do pé, puxando-o na direção
-    dos dedos dele, enquanto empurra o tronco do uke para trás.
+  description_pt_br: Quando o uke dá um passo à frente, o tori ceifa esse pé por dentro, na altura do
+    calcanhar, com a sola do pé, na direção dos dedos do uke, enquanto empurra o tronco do uke para a
+    diagonal de trás desse lado. Sem a perna que ia receber o peso, o uke cai de costas.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=5E20xuzaXNw
+  videos:
+  - url: https://youtu.be/3Jb3tZvr9Ng
+    source: kodokan
+    title: 小内刈 / Ko-uchi-gari
+  - url: https://www.youtube.com/watch?v=5E20xuzaXNw
+    source: outro
   judobase:
     code_short: ko_uchi_gari
     id_tag: '242'
@@ -649,16 +834,18 @@
   english_names:
   - name: Minor Inner Wrap-around Throw
   name_pt_br: Enrolamento do Kouchi-gari
-  description_pt_br: O tori prende o braço do uke debaixo da axila, ceifa por dentro o pé dele como no
-    Kouchi-gari e cai junto, de frente, por cima do uke.
+  description_pt_br: O tori prende o braço do uke debaixo da axila, ceifa o pé do uke por dentro, como
+    no Kouchi-gari, e cai junto, de frente, por cima do uke.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=sSEaC2Y1-e0
+  videos:
+  - url: https://youtu.be/_1eygIXLD_w
+    source: kodokan
+    title: 小内巻込 /  Ko-uchi-makikomi
+  - url: https://www.youtube.com/watch?v=sSEaC2Y1-e0
+    source: outro
   judobase:
     code_short: ko_uchi_makikomi
     id_tag: '293'
-  notes:
-  - Entrada recente na lista do Kodokan, segundo a sessão judo-techniques-bot; conferir contra a lista
-    publicada.
 - id: kuchiki-taoshi
   name: Kuchiki-taoshi
   kind: technique
@@ -669,10 +856,15 @@
   - name: Single Leg Takedown
   name_pt_br: Derrubar a árvore podre
   description_pt_br: O tori segura uma perna do uke por trás do joelho com uma mão e o empurra para trás
-    com a outra, derrubando-o como uma árvore. Proibida em competição pela IJF por ser pegada direta na
-    perna.
+    com a outra, para que ele caia como uma árvore. Proibida em competição pela IJF por ser pegada direta
+    na perna.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=hRuTyKJChsw
+  videos:
+  - url: https://youtu.be/ZNL47q1aJNY
+    source: kodokan
+    title: 朽木倒 / Kuchiki-taoshi
+  - url: https://www.youtube.com/watch?v=hRuTyKJChsw
+    source: outro
 - id: kuzure-kami-shiho-gatame
   name: Kuzure-kami-shiho-gatame
   kind: technique
@@ -687,7 +879,12 @@
   description_pt_br: Variante do Kami-shiho-gatame em que o tori fica em diagonal e passa um braço por
     baixo do braço do uke para segurar a gola nas costas.
   provenance: generated
-  video_url: https://youtu.be/kmeqRY-uFQ8
+  videos:
+  - url: https://youtu.be/YUrogQWdwiY
+    source: kodokan
+    title: 崩上四方固 /  Kuzure-kami-shiho-gatame
+  - url: https://youtu.be/kmeqRY-uFQ8
+    source: outro
   judobase:
     code_short: kuzure_kami_shiho_gatame
     id_tag: '209'
@@ -703,7 +900,12 @@
   description_pt_br: Variante do Kesa-gatame em que o braço do tori passa por baixo da axila do uke, em
     vez de envolver o pescoço.
   provenance: generated
-  video_url: https://youtu.be/GcAh8oFd1PI
+  videos:
+  - url: https://youtu.be/Q2fb9jaoUFQ
+    source: kodokan
+    title: 崩袈裟固 /  Kuzure-kesa-gatame
+  - url: https://youtu.be/GcAh8oFd1PI
+    source: outro
   judobase:
     code_short: kuzure_kesa_gatame
     id_tag: '210'
@@ -716,7 +918,9 @@
   description_pt_br: 'Primeira fase de uma projeção: tirar o uke do equilíbrio, puxando ou empurrando,
     em uma das oito direções (happo no kuzushi).'
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=luK9Eklbn78
+  videos:
+  - url: https://www.youtube.com/watch?v=luK9Eklbn78
+    source: outro
 - id: ma-sutemi-waza
   name: Ma-sutemi-waza
   kind: category
@@ -728,7 +932,9 @@
   name_pt_br: Técnicas de sacrifício para trás
   description_pt_br: O tori cai de costas para projetar o uke, como no Tomoe-nage e no Sumi-gaeshi.
   provenance: generated
-  video_url: https://youtu.be/LnjW67efl00
+  videos:
+  - url: https://youtu.be/LnjW67efl00
+    source: outro
 - id: morote-gari
   name: Morote-gari
   kind: technique
@@ -742,7 +948,12 @@
   description_pt_br: O tori avança, abraça as duas pernas do uke com as mãos e o derruba para trás empurrando
     com o ombro. Proibida em competição pela IJF por ser pegada direta nas pernas.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=JtVbwSfr2DM
+  videos:
+  - url: https://youtu.be/BHLQS4K85bs
+    source: kodokan
+    title: 双手刈 / Morote-gari
+  - url: https://www.youtube.com/watch?v=JtVbwSfr2DM
+    source: outro
 - id: nage-waza
   name: Nage-waza
   kind: category
@@ -768,7 +979,12 @@
   description_pt_br: O tori cruza os braços e segura as duas golas do uke com as palmas para baixo (polegares
     por dentro), estrangulando com os antebraços dos lados do pescoço.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=MkqTg9QCvKA
+  videos:
+  - url: https://youtu.be/k2cHry9HByQ
+    source: kodokan
+    title: 並十字絞 /  Nami-juji-jime
+  - url: https://www.youtube.com/watch?v=MkqTg9QCvKA
+    source: outro
 - id: ne-waza
   name: Ne-waza
   kind: category
@@ -791,10 +1007,17 @@
   - name: Hip Throw
   - name: Major Hip Throw
   name_pt_br: Grande projeção de quadril
-  description_pt_br: O tori passa o braço pela cintura do uke, encaixa o quadril inteiro abaixo do quadril
-    dele, levanta e projeta o uke por cima. É uma das primeiras técnicas ensinadas a iniciantes.
+  description_pt_br: O tori desequilibra o uke para a frente, passa o braço pela cintura do uke e gira
+    até que o próprio quadril fique abaixo e além do quadril do uke, o que diferencia o O-goshi do Uki-goshi.
+    Ao esticar as pernas e girar o tronco, o tori levanta o uke e o projeta por cima do quadril. É uma
+    das primeiras técnicas ensinadas a iniciantes.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=Mwz5At87OxE
+  videos:
+  - url: https://youtu.be/yhu1mfy2vJ4
+    source: kodokan
+    title: 大腰 / O-goshi
+  - url: https://www.youtube.com/watch?v=Mwz5At87OxE
+    source: outro
   judobase:
     code_short: o_goshi
     id_tag: '260'
@@ -810,7 +1033,12 @@
   description_pt_br: O tori estende a perna atravessada na altura do quadril ou da parte de cima da coxa
     do uke e o roda por cima dela, como um eixo.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=ujxkj6EJSb0
+  videos:
+  - url: https://youtu.be/SnZciTAY9vc
+    source: kodokan
+    title: 大車 / O-guruma
+  - url: https://www.youtube.com/watch?v=ujxkj6EJSb0
+    source: outro
 - id: obi-otoshi
   name: Obi-otoshi
   kind: technique
@@ -820,10 +1048,15 @@
   english_names:
   - name: Belt Drop
   name_pt_br: Queda pela faixa
-  description_pt_br: O tori segura a faixa do uke pela frente, bloqueia o corpo dele com o quadril ou
+  description_pt_br: O tori segura a faixa do uke pela frente, bloqueia o corpo do uke com o quadril ou
     a perna e o derruba para trás.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=3dGTN6sGbmk
+  videos:
+  - url: https://youtu.be/ff8U2TVZIYI
+    source: kodokan
+    title: 帯落 / Obi-otoshi
+  - url: https://www.youtube.com/watch?v=3dGTN6sGbmk
+    source: outro
 - id: obi-tori-gaeshi
   name: Obi-tori-gaeshi
   kind: technique
@@ -836,13 +1069,15 @@
   description_pt_br: O tori segura a faixa do uke por cima das costas, geralmente quando o uke ataca baixo,
     e o gira por cima de si para a projeção.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=m8Fe_4U5dP8
+  videos:
+  - url: https://youtu.be/bpc82SrunUU
+    source: kodokan
+    title: 帯取返 / Obi-tori-gaeshi
+  - url: https://www.youtube.com/watch?v=m8Fe_4U5dP8
+    source: outro
   judobase:
     code_short: obi_tori_gaeshi
     id_tag: '289'
-  notes:
-  - Entrada recente na lista do Kodokan, segundo a sessão judo-techniques-bot; conferir contra a lista
-    publicada.
 - id: okuri-eri-jime
   name: Okuri-eri-jime
   kind: technique
@@ -852,10 +1087,15 @@
   english_names:
   - name: Sliding Collar Strangle
   name_pt_br: Estrangulamento deslizando a gola
-  description_pt_br: O tori, por trás do uke, segura a gola dele com as duas mãos (uma passando por baixo
-    da axila) e estrangula puxando as golas em sentidos opostos.
+  description_pt_br: O tori, por trás do uke, segura as duas golas do uke, com uma das mãos passando por
+    baixo da axila, e estrangula ao puxar as golas em sentidos opostos.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=mBRtKyMm6v0
+  videos:
+  - url: https://youtu.be/EiqyoVcIAi8
+    source: kodokan
+    title: 送襟絞 /  Okuri-eri-jime
+  - url: https://www.youtube.com/watch?v=mBRtKyMm6v0
+    source: outro
   judobase:
     code_short: okuri_eri_jime
     id_tag: '228'
@@ -872,9 +1112,16 @@
   - name: Following Foot Sweep
   name_pt_br: Varrida dos dois pés em deslocamento lateral
   description_pt_br: Quando o uke se desloca de lado, juntando um pé ao outro, o tori acompanha o movimento
-    e varre os dois pés juntos com a sola do pé, levantando o uke e derrubando-o de lado.
+    e, no instante em que os pés do uke se aproximam, varre os dois juntos com a sola do pé, na direção
+    do deslocamento. Com as mãos, o tori eleva o uke, para que ele perca o apoio dos dois pés e caia de
+    lado.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=2WHtL7Rzwfs
+  videos:
+  - url: https://youtu.be/nw1ZdRjrdRI
+    source: kodokan
+    title: 送足払 / Okuri-ashi-harai
+  - url: https://www.youtube.com/watch?v=2WHtL7Rzwfs
+    source: outro
   judobase:
     code_short: okuri_ashi_harai
     id_tag: '251'
@@ -890,7 +1137,9 @@
   description_pt_br: Técnicas para manter o uke de costas no chão sob controle. Pelas regras da IJF, 20
     segundos de imobilização valem ippon e 10 segundos valem waza-ari.
   provenance: generated
-  video_url: https://youtu.be/guJ-HlAKEA8
+  videos:
+  - url: https://youtu.be/guJ-HlAKEA8
+    source: outro
 - id: osoto-gaeshi
   name: Osoto-gaeshi
   kind: technique
@@ -900,10 +1149,15 @@
   - O Soto Gaeshi
   - O-soto-gaeshi
   name_pt_br: Contragolpe ao Osoto-gari
-  description_pt_br: Quando o uke ataca com Osoto-gari, o tori resiste, gira e devolve a mesma ceifada
-    externa, projetando o uke.
+  description_pt_br: Quando o uke ataca com o Osoto-gari, o tori resiste, gira e devolve a mesma ceifada
+    externa, e quem cai é o uke.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=FVHAn45Gd6w
+  videos:
+  - url: https://youtu.be/8ZjM3X_EANo
+    source: kodokan
+    title: 大外返 / O-soto-gaeshi
+  - url: https://www.youtube.com/watch?v=FVHAn45Gd6w
+    source: outro
   judobase:
     code_short: o_soto_gaeshi
     id_tag: '244'
@@ -918,10 +1172,18 @@
   english_names:
   - name: Major Outer Reaping
   name_pt_br: Grande ceifada externa
-  description_pt_br: O tori desequilibra o uke para trás, sobre o calcanhar, posiciona-se ao lado dele
-    e ceifa a perna de apoio por fora, de trás para a frente, com a própria perna.
+  description_pt_br: O tori traz a manga do uke para baixo e empurra a gola para trás, desequilibrando
+    o uke para a diagonal de trás, para que todo o peso do uke fique sobre o calcanhar da perna que vai
+    ser ceifada. Com o uke preso nesse apoio, o tori pisa com o pé de apoio ao lado do pé do uke e ceifa
+    essa perna por trás com a outra perna, coxa contra coxa, de trás para a frente. Sem o único apoio,
+    o uke cai de costas.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=93YEMueeF24
+  videos:
+  - url: https://www.youtube.com/watch?v=c-A_nP7mKAc
+    source: kodokan
+    title: 大外刈 / O-soto-gari
+  - url: https://www.youtube.com/watch?v=93YEMueeF24
+    source: outro
   judobase:
     code_short: o_soto_gari
     id_tag: '245'
@@ -934,10 +1196,12 @@
   english_names:
   - name: Major Outer Wheel
   name_pt_br: Grande roda externa
-  description_pt_br: Semelhante ao Osoto-gari, mas a perna do tori passa por trás das duas pernas do uke
-    e funciona como eixo para rodá-lo para trás.
+  description_pt_br: Parecida com o Osoto-gari, mas a perna do tori passa por trás das duas pernas do
+    uke e funciona como eixo para que o uke gire para trás.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=CdjR9VyQaL0
+  videos:
+  - url: https://www.youtube.com/watch?v=CdjR9VyQaL0
+    source: outro
 - id: osoto-makikomi
   name: Osoto-makikomi
   kind: technique
@@ -951,7 +1215,12 @@
   description_pt_br: O tori entra como no Osoto-gari, enrola o braço do uke em volta do próprio corpo
     e cai rodando junto, levando o uke ao tatame.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=-CZO8Mj5cA8
+  videos:
+  - url: https://youtu.be/DGDv2oMwmas
+    source: kodokan
+    title: 大外巻込 / O-soto-makikomi
+  - url: https://www.youtube.com/watch?v=-CZO8Mj5cA8
+    source: outro
   judobase:
     code_short: o_soto_makikomi
     id_tag: '247'
@@ -969,13 +1238,15 @@
   description_pt_br: O tori coloca a perna por trás da perna do uke, como no Osoto-gari, mas em vez de
     ceifar empurra para baixo, derrubando o uke para trás.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=CYH7zR_yqq4
+  videos:
+  - url: https://youtu.be/2DsVvDw7b8g
+    source: kodokan
+    title: 大外落 / O-soto-otoshi
+  - url: https://www.youtube.com/watch?v=CYH7zR_yqq4
+    source: outro
   judobase:
     code_short: o_soto_otoshi
     id_tag: '248'
-  notes:
-  - Entrada recente na lista do Kodokan, segundo a sessão judo-techniques-bot; conferir contra a lista
-    publicada.
 - id: ouchi-gaeshi
   name: Ouchi-gaeshi
   kind: technique
@@ -988,7 +1259,12 @@
   description_pt_br: Quando o uke ataca com Ouchi-gari, o tori levanta a perna atacada, aproveita o impulso
     do uke e o projeta na direção da ceifada.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=V5jQkLDww7g
+  videos:
+  - url: https://youtu.be/dCyZTXyjIXE
+    source: kodokan
+    title: 大内返 / O-uchi-gaeshi
+  - url: https://www.youtube.com/watch?v=V5jQkLDww7g
+    source: outro
   judobase:
     code_short: o_uchi_gaeshi
     id_tag: '249'
@@ -1003,10 +1279,18 @@
   english_names:
   - name: Major Inner Reap
   name_pt_br: Grande ceifada interna
-  description_pt_br: O tori desequilibra o uke para trás e ceifa por dentro a perna dele com a parte de
-    trás da própria perna, num arco de dentro para fora.
+  description_pt_br: Para criar o desequilíbrio, o tori costuma movimentar o uke para a frente e depois
+    para trás, ação e reação, para que ele jogue o peso para trás, sobre o calcanhar da perna que vai
+    ser ceifada. Com o uke apoiado nesse calcanhar e de pernas afastadas, o tori encaixa a perna por dentro,
+    entre as pernas do uke, e ceifa essa perna num arco de dentro para fora, com a parte de trás da perna,
+    enquanto empurra o uke para trás com as mãos e o peito.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=A6-lTECSR3c
+  videos:
+  - url: https://youtu.be/0itJFhV9pDQ
+    source: kodokan
+    title: 大内刈 / O-uchi-gari
+  - url: https://www.youtube.com/watch?v=A6-lTECSR3c
+    source: outro
   judobase:
     code_short: o_uchi_gari
     id_tag: '250'
@@ -1025,7 +1309,9 @@
     do braço que prende o uke. Popularizada por judocas sul-coreanos. Não tem nome próprio na nomenclatura
     do Kodokan e costuma ser registrada como uma das formas de Seoi-nage ou Ippon-seoi-nage.'
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=7ubS5Ktg4zk
+  videos:
+  - url: https://www.youtube.com/watch?v=7ubS5Ktg4zk
+    source: outro
   notes:
   - Classificação oficial incerta; a sessão judo-techniques-bot não tem alvo seguro.
 - id: ryo-te-jime
@@ -1040,7 +1326,12 @@
   description_pt_br: O tori segura as duas golas do uke sem cruzar os braços e estrangula pressionando
     os punhos contra os lados do pescoço.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=EmsHq0ySB20
+  videos:
+  - url: https://youtu.be/-RHC4V7TQiY
+    source: kodokan
+    title: 両手絞 /  Ryote-jime
+  - url: https://www.youtube.com/watch?v=EmsHq0ySB20
+    source: outro
 - id: sankaku-jime
   name: Sankaku-jime
   kind: technique
@@ -1055,7 +1346,12 @@
   description_pt_br: O tori prende a cabeça e um braço do uke entre as pernas, que formam um triângulo,
     e estrangula apertando as coxas. É o "triângulo" do jiu-jitsu.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=dh0QSmL0pEY
+  videos:
+  - url: https://youtu.be/lq1CUBRAm7s
+    source: kodokan
+    title: 三角絞 /  Sankaku-jime
+  - url: https://www.youtube.com/watch?v=dh0QSmL0pEY
+    source: outro
   judobase:
     code_short: sankaku_jime
     id_tag: '230'
@@ -1067,11 +1363,14 @@
   - Sasae Tsurikomi Ashi
   english_names:
   - name: Lifting pulling Ankle Block
-  name_pt_br: Bloqueio do pé puxando e levantando
-  description_pt_br: O tori bloqueia a frente do tornozelo do uke com a sola do pé enquanto puxa e levanta
-    com as mãos, fazendo o uke tropeçar no bloqueio e cair para a frente.
+  name_pt_br: Bloqueio do pé com elevação e puxada
+  description_pt_br: O tori eleva e traz o uke para si com as mãos, para que ele avance o peso sobre a
+    perna da frente, e bloqueia a frente do tornozelo dessa perna com a sola do pé. O uke tropeça no bloqueio
+    e cai para a frente, girando sobre ele.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=MiGljHOokvE
+  videos:
+  - url: https://www.youtube.com/watch?v=MiGljHOokvE
+    source: outro
   judobase:
     code_short: sasae_tsurikomi_ashi
     id_tag: '252'
@@ -1085,13 +1384,19 @@
   - name: Shoulder Throw
   - name: Two Arm Shoulder Throw
   name_pt_br: Projeção carregando nas costas
-  description_pt_br: O tori desequilibra o uke para a frente, gira de costas para ele, encaixa o próprio
-    corpo abaixo do centro de gravidade do uke e o projeta por cima do ombro. Na forma do Kodokan uma
-    mão segura a gola e a outra segura a manga, e os dois braços puxam juntos (por isso o nome popular
-    "morote seoi-nage", seoi com as duas mãos). Na variante Ippon-seoi-nage, o tori solta a gola e passa
-    o braço por baixo da axila do uke.
+  description_pt_br: O tori desequilibra o uke para a frente, para que ele fique na ponta dos pés, gira
+    de costas e encaixa o próprio corpo abaixo do centro de gravidade do uke, com os joelhos flexionados.
+    Na forma do Kodokan, uma mão segura a gola e a outra segura a manga, e os dois braços trazem o uke
+    para as costas do tori. Ao esticar as pernas e inclinar o tronco à frente, o tori projeta o uke por
+    cima do ombro. O nome popular "morote seoi-nage" (seoi com as duas mãos) vem dessa pegada; no Ippon-seoi-nage,
+    o tori solta a gola e passa o braço por baixo da axila do uke.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=_-5Un6jLtRY
+  videos:
+  - url: https://youtu.be/zIq0xI0ogxk
+    source: kodokan
+    title: 背負投 / Seoi-nage
+  - url: https://www.youtube.com/watch?v=_-5Un6jLtRY
+    source: outro
   judobase:
     code_short: seoi_nage
     id_tag: '280'
@@ -1108,7 +1413,12 @@
     a perna do uke com a sua) e derruba o uke para a frente, em vez de carregá-lo sobre as costas. É a
     técnica oficial mais próxima do que se chama popularmente de "drop seoi".
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=ne3i9DoBQU0
+  videos:
+  - url: https://youtu.be/vu1TMVNnq34
+    source: kodokan
+    title: 背負落 / Seoi-otoshi
+  - url: https://www.youtube.com/watch?v=ne3i9DoBQU0
+    source: outro
   judobase:
     code_short: seoi_otoshi
     id_tag: '281'
@@ -1123,7 +1433,9 @@
   name_pt_br: Estrangulamentos
   description_pt_br: Técnicas que comprimem o pescoço do uke. O Kodokan lista 12.
   provenance: generated
-  video_url: https://youtu.be/bq3cwrcS1-c
+  videos:
+  - url: https://youtu.be/bq3cwrcS1-c
+    source: outro
 - id: sode-guruma-jime
   name: Sode-guruma-jime
   kind: technique
@@ -1138,7 +1450,12 @@
   description_pt_br: O tori segura a própria manga por dentro e, com o outro antebraço passando pela frente
     do pescoço do uke, aperta numa roda com as mangas. Conhecido no jiu-jitsu brasileiro como "Ezequiel".
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=-POmmN9jlY4
+  videos:
+  - url: https://youtu.be/E3nvQzClcAU
+    source: kodokan
+    title: 袖車絞 /  Sode-guruma-jime
+  - url: https://www.youtube.com/watch?v=-POmmN9jlY4
+    source: outro
   judobase:
     code_short: sode_guruma_jime
     id_tag: '231'
@@ -1150,11 +1467,16 @@
   - Sode Tsurikomi Goshi
   english_names:
   - name: Sleeve Lifting Pulling Hip
-  name_pt_br: Projeção de quadril puxando e levantando pelas mangas
-  description_pt_br: Variante do Tsurikomi-goshi em que o tori segura as duas mangas e levanta um dos
-    braços do uke para cima antes de encaixar o quadril e projetar.
+  name_pt_br: Projeção de quadril com elevação e puxada pelas mangas
+  description_pt_br: Variante do Tsurikomi-goshi em que o tori segura as duas mangas e eleva um dos braços
+    do uke, para que ele fique na ponta dos pés, antes de encaixar o quadril e projetar.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=KyLgGFs-tEk
+  videos:
+  - url: https://youtu.be/QsmAxpmYLOI
+    source: kodokan
+    title: 袖釣込腰 / Sode-tsurikomi-goshi
+  - url: https://www.youtube.com/watch?v=KyLgGFs-tEk
+    source: outro
   judobase:
     code_short: sode_tsurikomi_goshi
     id_tag: '261'
@@ -1168,9 +1490,14 @@
   - name: Outer Wrap Around
   name_pt_br: Enrolamento externo
   description_pt_br: O tori prende o braço do uke debaixo da axila, solta a outra pegada, gira o corpo
-    por fora e cai rodando, enrolando o uke no próprio corpo.
+    por fora e cai rodando, para que o uke seja enrolado no corpo do tori.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=BcfGFR1CWss
+  videos:
+  - url: https://youtu.be/bWG9O1BVKtQ
+    source: kodokan
+    title: 外巻込 / Soto-makikomi
+  - url: https://www.youtube.com/watch?v=BcfGFR1CWss
+    source: outro
   judobase:
     code_short: soto_makikomi
     id_tag: '294'
@@ -1183,11 +1510,16 @@
   english_names:
   - name: Scoop Throw
   name_pt_br: Projeção em concha
-  description_pt_br: O tori recolhe o uke pelas pernas ou pelo tronco, levanta-o como quem pega algo com
+  description_pt_br: O tori recolhe o uke pelas pernas ou pelo tronco, o levanta como quem pega algo com
     uma concha e o derruba para trás. Também é conhecida como Te-guruma. Pegar nas pernas é proibido em
     competição pela IJF.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=sn13Bu3bxHE
+  videos:
+  - url: https://youtu.be/vU6aJ2kFxoI
+    source: kodokan
+    title: 掬投 / Sukui-nage
+  - url: https://www.youtube.com/watch?v=sn13Bu3bxHE
+    source: outro
 - id: sumi-gaeshi
   name: Sumi-gaeshi
   kind: technique
@@ -1197,10 +1529,15 @@
   english_names:
   - name: Corner Reversal
   name_pt_br: Reversão pelo canto
-  description_pt_br: O tori cai de costas puxando o uke, coloca o peito do pé na parte interna da coxa
-    dele e o levanta, projetando-o para o canto à frente do tori.
+  description_pt_br: O tori cai de costas e traz o uke junto, coloca o peito do pé na parte interna da
+    coxa do uke e o levanta, para que ele seja projetado para o canto à frente do tori.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=4LR49U48iyw
+  videos:
+  - url: https://www.youtube.com/watch?v=5VhduA5xkbA
+    source: kodokan
+    title: 隅返 / Sumi-gaeshi
+  - url: https://www.youtube.com/watch?v=4LR49U48iyw
+    source: outro
   judobase:
     code_short: sumi_gaeshi
     id_tag: '268'
@@ -1216,7 +1553,12 @@
   description_pt_br: O tori desequilibra o uke para o canto de trás (diagonal posterior) usando só as
     mãos, sem contato de perna, e o faz cair para trás.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=CL6tPu1Khc4
+  videos:
+  - url: https://youtu.be/lLU9wv52ni0
+    source: kodokan
+    title: 隅落 / Sumi-otoshi
+  - url: https://www.youtube.com/watch?v=CL6tPu1Khc4
+    source: outro
   judobase:
     code_short: sumi_otoshi
     id_tag: '283'
@@ -1232,7 +1574,9 @@
   description_pt_br: Projeções em que o tori se lança ao chão para projetar o uke. Divide-se em ma-sutemi-waza
     e yoko-sutemi-waza.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=XHuqFd1BHbE
+  videos:
+  - url: https://www.youtube.com/watch?v=XHuqFd1BHbE
+    source: outro
 - id: tachi-waza
   name: Tachi-waza
   kind: category
@@ -1244,7 +1588,9 @@
   name_pt_br: Técnicas de pé
   description_pt_br: Projeções em que o tori permanece de pé. Inclui te-waza, koshi-waza e ashi-waza.
   provenance: generated
-  video_url: https://youtu.be/YEfluR58NMo
+  videos:
+  - url: https://youtu.be/YEfluR58NMo
+    source: outro
 - id: tai-otoshi
   name: Tai-otoshi
   kind: technique
@@ -1254,11 +1600,17 @@
   english_names:
   - name: Body Drop
   name_pt_br: Queda do corpo
-  description_pt_br: O tori gira de frente para a mesma direção do uke, estende uma perna na frente da
-    canela dele como obstáculo e, puxando com as mãos, faz o uke tropeçar e cair para a frente. A perna
-    apenas bloqueia; a força vem das mãos e da rotação do tronco.
+  description_pt_br: 'O tori desequilibra o uke para a frente, gira e fica de lado, voltado para a mesma
+    direção do uke, e coloca uma perna estendida diante da canela do uke, como obstáculo. A perna só bloqueia:
+    quem projeta são as mãos, que trazem o uke para a frente e para baixo, e a rotação do tronco, para
+    que ele tropece na perna e caia à frente.'
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=DUiZ8JZkGx8
+  videos:
+  - url: https://youtu.be/4x6S3Q-Ktv8
+    source: kodokan
+    title: 体落 / Tai-otoshi
+  - url: https://www.youtube.com/watch?v=DUiZ8JZkGx8
+    source: outro
   judobase:
     code_short: tai_otoshi
     id_tag: '284'
@@ -1272,9 +1624,14 @@
   - name: Valley Drop
   name_pt_br: Queda no vale
   description_pt_br: O tori coloca a perna estendida por trás dos calcanhares do uke e se deixa cair de
-    lado, derrubando o uke para trás no "vale" formado atrás dele.
+    lado, para que o uke caia para trás no "vale" que se forma atrás do uke.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=wS9pM3y8YH4
+  videos:
+  - url: https://youtu.be/3b9Me3Fohpk
+    source: kodokan
+    title: 谷落 / Tani-otoshi
+  - url: https://www.youtube.com/watch?v=wS9pM3y8YH4
+    source: outro
   judobase:
     code_short: tani_otoshi
     id_tag: '295'
@@ -1289,10 +1646,15 @@
     usage: bjj
   - name: Straight four-corner hold
   name_pt_br: Imobilização montada pelos quatro cantos
-  description_pt_br: O tori monta sobre o tronco do uke, prende as pernas dele com as próprias pernas
+  description_pt_br: O tori monta sobre o tronco do uke, prende as pernas do uke com as próprias pernas
     e controla a cabeça e um braço.
   provenance: generated
-  video_url: https://youtu.be/XjWzNxlKH1M
+  videos:
+  - url: https://youtu.be/55-rFmBx53g
+    source: kodokan
+    title: 縦四方固 /  Tate-shiho-gatame
+  - url: https://youtu.be/XjWzNxlKH1M
+    source: outro
   judobase:
     code_short: tate_shiho_gatame
     id_tag: '214'
@@ -1305,10 +1667,15 @@
   english_names:
   - name: Rice Bale Reversal
   name_pt_br: Reversão do fardo de arroz
-  description_pt_br: Quando o uke ataca baixo, o tori abraça o tronco dele por cima como quem levanta
+  description_pt_br: Quando o uke ataca baixo, o tori abraça o tronco do uke por cima, como quem levanta
     um fardo de arroz, cai de costas e o projeta por cima da cabeça.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=zORVnrrPnmM
+  videos:
+  - url: https://www.youtube.com/watch?v=TmTWgrmViZc
+    source: kodokan
+    title: 俵返 / Tawara-gaeshi
+  - url: https://www.youtube.com/watch?v=zORVnrrPnmM
+    source: outro
 - id: te-waza
   name: Te-waza
   kind: category
@@ -1321,7 +1688,9 @@
   description_pt_br: Projeções em que o trabalho principal é feito com as mãos e os braços, como Seoi-nage
     e Tai-otoshi.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=FqbdGHcDqDE
+  videos:
+  - url: https://www.youtube.com/watch?v=FqbdGHcDqDE
+    source: outro
 - id: tomoe-nage
   name: Tomoe-nage
   kind: technique
@@ -1331,11 +1700,17 @@
   english_names:
   - name: Circle Throw
   name_pt_br: Projeção em círculo
-  description_pt_br: O tori puxa o uke para a frente, senta-se de costas no tatame entre os pés dele,
-    apoia a sola do pé no abdômen do uke e o projeta por cima da cabeça num arco circular. A variante
-    com o tori caindo de lado é chamada popularmente de "yoko-tomoe-nage".
+  description_pt_br: O tori desequilibra o uke para a frente, para que ele avance o peso, e se senta de
+    costas no tatame, o mais perto possível dos calcanhares do uke. Com a sola do pé apoiada logo abaixo
+    da faixa do uke e as mãos trazendo-o por cima, o tori estende a perna e projeta o uke por cima da
+    própria cabeça, num arco. A variante em que o tori cai de lado é chamada popularmente de "yoko-tomoe-nage".
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=-euJliq9XcY
+  videos:
+  - url: https://www.youtube.com/watch?v=880WbHvHv6A
+    source: kodokan
+    title: 巴投 / Tomoe-nage
+  - url: https://www.youtube.com/watch?v=-euJliq9XcY
+    source: outro
   judobase:
     code_short: tomoe_nage
     id_tag: '270'
@@ -1349,9 +1724,14 @@
   - name: Swallows Flight Reversal
   name_pt_br: Reversão da andorinha
   description_pt_br: 'Contragolpe ao Deashi-harai: o tori desvia o pé da varrida do uke num movimento
-    curto, como o voo de uma andorinha, e varre o pé dele de volta.'
+    curto, como o voo de uma andorinha, e varre de volta o pé do uke.'
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=m_HEibNx3Gw
+  videos:
+  - url: https://youtu.be/GwweWqqFB5g
+    source: kodokan
+    title: 燕返 / Tsubame-gaeshi
+  - url: https://www.youtube.com/watch?v=m_HEibNx3Gw
+    source: outro
   judobase:
     code_short: tsubame_gaeshi
     id_tag: '253'
@@ -1367,7 +1747,12 @@
   description_pt_br: O tori fecha a gola do uke com uma mão e empurra o punho da outra contra o pescoço,
     estrangulando com a pressão.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=p-MRoVb161c
+  videos:
+  - url: https://youtu.be/dKKpnD3eLcY
+    source: kodokan
+    title: 突込絞 /  Tsukkomi-jime
+  - url: https://www.youtube.com/watch?v=p-MRoVb161c
+    source: outro
 - id: tsukuri
   name: Tsukuri
   kind: concept
@@ -1386,10 +1771,15 @@
   english_names:
   - name: Lifting Hip
   name_pt_br: Projeção de quadril levantando pela faixa
-  description_pt_br: O tori segura a faixa do uke por cima (o-tsuri-goshi) ou por baixo do braço (ko-tsuri-goshi),
-    levanta-o e o projeta por cima do quadril.
+  description_pt_br: O tori segura a faixa do uke por cima do braço (o-tsuri-goshi) ou por baixo dele
+    (ko-tsuri-goshi), o levanta e o projeta por cima do quadril.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=_rag76pFL9U
+  videos:
+  - url: https://youtu.be/51Htlp7xEvE
+    source: kodokan
+    title: 釣腰 / Tsuri-goshi
+  - url: https://www.youtube.com/watch?v=_rag76pFL9U
+    source: outro
   judobase:
     code_short: tsuri_goshi
     id_tag: '262'
@@ -1401,12 +1791,18 @@
   - Tsurikomi Goshi
   english_names:
   - name: Lifting Pulling Hip
-  name_pt_br: Projeção de quadril puxando e levantando
-  description_pt_br: O tori puxa e levanta o uke pela gola e pela manga (tsurikomi), encaixa o quadril
-    abaixo dele e o projeta. Na forma baixa (tsurikomi-goshi propriamente dito) o tori flexiona bastante
-    os joelhos.
+  name_pt_br: Projeção de quadril com elevação e puxada
+  description_pt_br: O tori eleva e traz o uke para si pela gola e pela manga (o tsurikomi), para que
+    ele fique na ponta dos pés, encaixa o quadril abaixo do quadril do uke e o projeta à frente. Na forma
+    clássica, o tori flexiona bastante os joelhos, para que o quadril fique bem abaixo do centro de gravidade
+    do uke.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=4HJumX7ArOI
+  videos:
+  - url: https://youtu.be/McfzA0yRVt4
+    source: kodokan
+    title: 釣込腰 / Tsurikomi-goshi
+  - url: https://www.youtube.com/watch?v=4HJumX7ArOI
+    source: outro
 - id: uchi-makikomi
   name: Uchi-makikomi
   kind: technique
@@ -1416,10 +1812,15 @@
   english_names:
   - name: Inner Wraparound
   name_pt_br: Enrolamento interno
-  description_pt_br: O tori passa o braço por cima do braço do uke, gira para dentro e cai rolando, enrolando
-    o uke no próprio corpo.
+  description_pt_br: O tori passa o braço por cima do braço do uke, gira para dentro e cai rolando, para
+    que o uke seja enrolado no corpo do tori.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=-1DeK0IDOg8
+  videos:
+  - url: https://youtu.be/5BowcjduxVc
+    source: kodokan
+    title: 内巻込 / Uchi-makikomi
+  - url: https://www.youtube.com/watch?v=-1DeK0IDOg8
+    source: outro
   judobase:
     code_short: uchi_makikomi
     id_tag: '296'
@@ -1432,10 +1833,17 @@
   english_names:
   - name: Inner Thigh Throw
   name_pt_br: Projeção pela parte interna da coxa
-  description_pt_br: O tori desequilibra o uke para a frente, gira e levanta a parte interna da coxa dele
-    com a parte de trás da própria coxa, projetando-o por cima. É uma das técnicas mais usadas em competição.
+  description_pt_br: O tori desequilibra o uke para a frente, trazendo-o para junto do corpo durante o
+    giro, para que o peso do uke fique na ponta dos pés. Em seguida, o tori levanta a parte interna da
+    coxa do uke com a parte de trás da própria coxa e o projeta por cima, à frente. É uma das técnicas
+    mais usadas em competição.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=7fCvyc_rQTI
+  videos:
+  - url: https://youtu.be/iUpSu5J-bgw
+    source: kodokan
+    title: 内股 / Uchi-mata
+  - url: https://www.youtube.com/watch?v=7fCvyc_rQTI
+    source: outro
   judobase:
     code_short: uchi_mata
     id_tag: '254'
@@ -1451,7 +1859,12 @@
   description_pt_br: Quando o uke ataca com Uchi-mata, o tori bloqueia, levanta a perna de ataque do uke
     e o projeta para trás com uma ceifada.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=rzOSmEiuVtg
+  videos:
+  - url: https://youtu.be/Sy6sLWxkWYw
+    source: kodokan
+    title: 内股返 / Uchi-mata-gaeshi
+  - url: https://www.youtube.com/watch?v=rzOSmEiuVtg
+    source: outro
   judobase:
     code_short: uchi_mata_gaeshi
     id_tag: '255'
@@ -1467,13 +1880,15 @@
   description_pt_br: O tori entra com Uchi-mata, enrola o braço do uke em volta do próprio corpo e cai
     rodando para completar a projeção.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=-1DeK0IDOg8
+  videos:
+  - url: https://youtu.be/jZXENTLpJCI
+    source: kodokan
+    title: 内股巻込 / Uchi-mata-makikomi
+  - url: https://www.youtube.com/watch?v=-1DeK0IDOg8
+    source: outro
   judobase:
     code_short: uchi_mata_makikomi
     id_tag: '297'
-  notes:
-  - Entrada recente na lista do Kodokan, segundo a sessão judo-techniques-bot; conferir contra a lista
-    publicada.
 - id: uchi-mata-sukashi
   name: Uchi-mata-sukashi
   kind: technique
@@ -1485,11 +1900,16 @@
   - name: Inner Thigh Reaping Throw Slip
   - name: Inner Thigh Avoidance Counter
   name_pt_br: Esquiva do Uchi-mata
-  description_pt_br: 'Contragolpe ao Uchi-mata: quando o uke levanta a perna para atacar, o tori esquiva
-    o quadril, deixa a perna passar no vazio e gira o uke por cima, aproveitando o próprio impulso do
-    ataque.'
+  description_pt_br: 'Contragolpe ao Uchi-mata: quando o uke levanta a perna para atacar, o tori recua
+    a perna atacada, deixa a perna do uke passar no vazio e, com as mãos, gira o uke por cima, aproveitando
+    o impulso do próprio ataque. Por isso é uma te-waza: a projeção vem das mãos.'
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=0Fpw60A1_pw
+  videos:
+  - url: https://youtu.be/V-RS3uhtVWM
+    source: kodokan
+    title: 内股すかし / Uchi-mata-sukashi
+  - url: https://www.youtube.com/watch?v=0Fpw60A1_pw
+    source: outro
   judobase:
     code_short: uchi_mata_sukashi
     id_tag: '286'
@@ -1506,11 +1926,16 @@
   - name: Kimura
     usage: bjj
   name_pt_br: Chave de braço enroscada
-  description_pt_br: O tori dobra o braço do uke em ângulo reto e o torce segurando o punho com uma mão,
-    enquanto a outra passa por baixo do braço dele e segura o próprio punho. Torcido para cima é a "americana"
-    do jiu-jitsu; para trás, a "kimura".
+  description_pt_br: 'O tori dobra o braço do uke em ângulo reto e o torce: uma mão segura o punho do
+    uke e a outra passa por baixo do braço do uke e segura o próprio punho do tori. Torcido para cima,
+    é a "americana" do jiu-jitsu; para trás, a "kimura".'
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=3z67tCt3b00
+  videos:
+  - url: https://youtu.be/AIlTvZb4RlE
+    source: kodokan
+    title: 腕緘 /  Ude-garami
+  - url: https://www.youtube.com/watch?v=3z67tCt3b00
+    source: outro
   judobase:
     code_short: ude_garami
     id_tag: '203'
@@ -1524,10 +1949,15 @@
   english_names:
   - name: Side-lying Armbar
   name_pt_br: Chave de braço com a perna
-  description_pt_br: O tori prende o braço esticado do uke e pressiona o cotovelo dele com a perna. Apesar
-    do nome em inglês "Leg Lock" no CSV de origem, é uma chave de cotovelo, não de perna.
+  description_pt_br: O tori prende o braço esticado do uke e pressiona o cotovelo do uke com a perna.
+    Apesar do nome em inglês "Leg Lock" no CSV de origem, é uma chave de cotovelo, não de perna.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=k29RryetGSc
+  videos:
+  - url: https://youtu.be/ClY7g_pX-4s
+    source: kodokan
+    title: 腕挫脚固 /  Ude-hishigi-ashi-gatame
+  - url: https://www.youtube.com/watch?v=k29RryetGSc
+    source: outro
   notes:
   - Forma curta usada pela IJF segundo a sessão judo-techniques-bot; não apareceu na amostra do judobase.
 - id: ude-hishigi-hara-gatame
@@ -1540,9 +1970,14 @@
   english_names:
   - name: Stomach Lock
   name_pt_br: Chave de braço com o abdômen
-  description_pt_br: O tori prende o braço esticado do uke e pressiona o cotovelo dele com o abdômen.
+  description_pt_br: O tori prende o braço esticado do uke e pressiona o cotovelo do uke com o abdômen.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=rAYXWLoKvoE
+  videos:
+  - url: https://youtu.be/ZzEycg8R_9M
+    source: kodokan
+    title: 腕挫腹固 /  Ude-hishigi-hara-gatame
+  - url: https://www.youtube.com/watch?v=rAYXWLoKvoE
+    source: outro
   notes:
   - Forma curta usada pela IJF segundo a sessão judo-techniques-bot; não apareceu na amostra do judobase.
 - id: ude-hishigi-hiza-gatame
@@ -1556,10 +1991,15 @@
   - name: Knee Armbar
   - name: Straight Armbar
   name_pt_br: Chave de braço com o joelho
-  description_pt_br: O tori prende o braço estendido do uke debaixo da axila e pressiona o cotovelo dele
-    com o joelho.
+  description_pt_br: O tori prende debaixo da axila o braço estendido do uke e pressiona o cotovelo do
+    uke com o joelho.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=xoMx9_pWRe4
+  videos:
+  - url: https://youtu.be/H2HtAJdiJcE
+    source: kodokan
+    title: 腕挫膝固 /  Ude-hishigi-hiza-gatame
+  - url: https://www.youtube.com/watch?v=xoMx9_pWRe4
+    source: outro
   notes:
   - Forma curta usada pela IJF segundo a sessão judo-techniques-bot; não apareceu na amostra do judobase.
 - id: ude-hishigi-juji-gatame
@@ -1576,11 +2016,16 @@
     usage: bjj
   - name: Cross Lock
   name_pt_br: Chave de braço em cruz
-  description_pt_br: O tori deita-se perpendicular ao uke, com as pernas sobre o peito e a cabeça dele,
-    prende o braço estendido do uke entre as coxas e hiperestende o cotovelo levantando o quadril. É a
-    chave de braço mais usada no judô; a IJF a registra como "Juji-gatame".
+  description_pt_br: O tori se deita perpendicular ao uke, com as pernas sobre o peito e a cabeça do uke,
+    prende entre as coxas o braço estendido do uke e hiperestende o cotovelo ao levantar o quadril. É
+    a chave de braço mais usada no judô; a IJF a registra como "Juji- gatame".
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=WJReT5ND3s4
+  videos:
+  - url: https://youtu.be/OWgSOlCuMXw
+    source: kodokan
+    title: 腕挫十字固 /  Ude-hishigi-juji-gatame
+  - url: https://www.youtube.com/watch?v=WJReT5ND3s4
+    source: outro
   judobase:
     code_short: juji_gatame
     id_tag: '201'
@@ -1597,10 +2042,12 @@
   description_pt_br: A partir do triângulo de pernas (como no Sankaku-jime), o tori estica o braço do
     uke e hiperestende o cotovelo.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=QmmliwIaee0
-  notes:
-  - Entrada recente na lista do Kodokan, segundo a sessão judo-techniques-bot; conferir contra a lista
-    publicada.
+  videos:
+  - url: https://youtu.be/WefAmW4azhk
+    source: kodokan
+    title: 腕挫三角固 /  Ude-hishigi-sankaku-gatame
+  - url: https://www.youtube.com/watch?v=QmmliwIaee0
+    source: outro
 - id: ude-hishigi-te-gatame
   name: Ude-hishigi-te-gatame
   kind: technique
@@ -1611,10 +2058,15 @@
   english_names:
   - name: Hand Lock
   name_pt_br: Chave de braço com a mão
-  description_pt_br: O tori segura o punho do uke e pressiona o cotovelo esticado dele com a mão ou o
-    antebraço.
+  description_pt_br: O tori segura o punho do uke e pressiona o cotovelo esticado do uke com a mão ou
+    o antebraço.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=5D-W1SVIK4A
+  videos:
+  - url: https://youtu.be/6DnvhY0tQVM
+    source: kodokan
+    title: 腕挫手固 /  Ude-hishigi-te-gatame
+  - url: https://www.youtube.com/watch?v=5D-W1SVIK4A
+    source: outro
   notes:
   - Forma curta usada pela IJF segundo a sessão judo-techniques-bot; não apareceu na amostra do judobase.
 - id: ude-hishigi-ude-gatame
@@ -1630,9 +2082,14 @@
   - name: Straight Armbar
   name_pt_br: Chave de braço com o braço
   description_pt_br: O tori prende o punho do uke contra o próprio ombro ou pescoço e pressiona o cotovelo
-    esticado dele com as duas mãos.
+    esticado do uke com as duas mãos.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=DNoXiXFtNjc
+  videos:
+  - url: https://youtu.be/SBf0aTma1VI
+    source: kodokan
+    title: 腕挫腕固 /  Ude-hishigi-ude-gatame
+  - url: https://www.youtube.com/watch?v=DNoXiXFtNjc
+    source: outro
   notes:
   - Forma curta usada pela IJF segundo a sessão judo-techniques-bot; não apareceu na amostra do judobase.
 - id: ude-hishigi-waki-gatame
@@ -1651,7 +2108,12 @@
     para baixo com o peso do corpo. Aplicada de pé, quando o tori se joga ao solo, é punida pela IJF porque
     provoca lesões.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=qWnSfAUfR1o
+  videos:
+  - url: https://youtu.be/8F5p1zuJRG0
+    source: kodokan
+    title: 腕挫腋固 /  Ude-hishigi-waki-gatame
+  - url: https://www.youtube.com/watch?v=qWnSfAUfR1o
+    source: outro
   notes:
   - Forma curta usada pela IJF segundo a sessão judo-techniques-bot; não apareceu na amostra do judobase.
 - id: ukemi
@@ -1663,7 +2125,9 @@
   description_pt_br: 'Técnicas de cair sem se machucar: para trás (ushiro-ukemi), para o lado (yoko-ukemi),
     para a frente (mae-ukemi) e rolando (zenpo-kaiten-ukemi). São as primeiras lições do judô.'
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=5n_Qjeia2n8
+  videos:
+  - url: https://www.youtube.com/watch?v=5n_Qjeia2n8
+    source: outro
 - id: uki-gatame
   name: Uki-gatame
   kind: technique
@@ -1673,13 +2137,15 @@
   english_names:
   - name: Floating hold
   name_pt_br: Imobilização flutuante
-  description_pt_br: O tori fica ao lado do uke apoiado num joelho sobre o abdômen dele, controlando o
-    braço e o pescoço, numa posição alta e móvel.
+  description_pt_br: O tori fica ao lado do uke, apoiado num joelho sobre o abdômen do uke, e controla
+    o braço e o pescoço numa posição alta e móvel.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=iQMvn-WbWg0
-  notes:
-  - Entrada recente na lista do Kodokan, segundo a sessão judo-techniques-bot; conferir contra a lista
-    publicada.
+  videos:
+  - url: https://youtu.be/e_lAjik1SUM
+    source: kodokan
+    title: 浮固 /  Uki-gatame
+  - url: https://www.youtube.com/watch?v=iQMvn-WbWg0
+    source: outro
 - id: uki-goshi
   name: Uki-goshi
   kind: technique
@@ -1692,7 +2158,12 @@
   description_pt_br: O tori abraça a cintura do uke, encaixa o quadril de lado e gira, fazendo o uke rolar
     por cima do quadril. A rotação substitui a elevação; o uke "flutua" sobre o quadril do tori.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=5jVF6r366Kg
+  videos:
+  - url: https://youtu.be/bPKwtB4lyOQ
+    source: kodokan
+    title: 浮腰 / Uki-goshi
+  - url: https://www.youtube.com/watch?v=5jVF6r366Kg
+    source: outro
   judobase:
     code_short: uki_goshi
     id_tag: '264'
@@ -1705,11 +2176,16 @@
   english_names:
   - name: Floating Drop
   name_pt_br: Queda flutuante
-  description_pt_br: O tori desequilibra o uke para a frente com um puxão forte das mãos enquanto se abaixa
-    sobre um joelho, e o uke cai rodando por cima do próprio pé. É uma técnica quase só de mãos, sem bloqueio
-    de perna ou quadril.
+  description_pt_br: O tori desequilibra o uke para a frente com um puxão forte das mãos e, ao mesmo tempo,
+    se abaixa sobre um joelho, para que o uke caia rodando por cima do próprio pé. É uma técnica quase
+    só de mãos, sem bloqueio de perna ou quadril.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=d8Cmcfvh7M8
+  videos:
+  - url: https://youtu.be/6H5tmncOY4Q
+    source: kodokan
+    title: 浮落 / Uki-otoshi
+  - url: https://www.youtube.com/watch?v=d8Cmcfvh7M8
+    source: outro
   judobase:
     code_short: uki_otoshi
     id_tag: '287'
@@ -1723,9 +2199,14 @@
   - name: Floating Technique
   name_pt_br: Técnica flutuante
   description_pt_br: O tori cai de lado, estende a perna para bloquear o pé do uke e, com um puxão das
-    mãos, o projeta por cima do próprio corpo.
+    mãos, projeta o uke por cima do próprio corpo.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=JtB79Ma4htw
+  videos:
+  - url: https://youtu.be/weVOpJ63gII
+    source: kodokan
+    title: 浮技 / Uki-waza
+  - url: https://www.youtube.com/watch?v=JtB79Ma4htw
+    source: outro
   judobase:
     code_short: uki_waza
     id_tag: '299'
@@ -1738,16 +2219,18 @@
   english_names:
   - name: Back hold
   name_pt_br: Imobilização por trás
-  description_pt_br: O tori controla o uke deitando-se de costas sobre o tronco dele, de lado, prendendo
-    um braço do uke.
+  description_pt_br: O tori se deita de costas sobre o tronco do uke, de lado, e prende um braço do uke
+    para controlá-lo.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=GmUX_4PMBt0
+  videos:
+  - url: https://youtu.be/eeAHZB0v3XY
+    source: kodokan
+    title: 裏固 /  Ura-gatame
+  - url: https://www.youtube.com/watch?v=GmUX_4PMBt0
+    source: outro
   judobase:
     code_short: ura_gatame
     id_tag: '216'
-  notes:
-  - Entrada recente na lista do Kodokan, segundo a sessão judo-techniques-bot; conferir contra a lista
-    publicada.
 - id: ura-nage
   name: Ura-nage
   kind: technique
@@ -1758,10 +2241,15 @@
   - name: Rear Throw
   - name: Suplex
   name_pt_br: Projeção para trás
-  description_pt_br: O tori abraça o uke pela cintura, por trás ou de lado, levanta-o com o quadril e
+  description_pt_br: O tori abraça o uke pela cintura, por trás ou de lado, o levanta com o quadril e
     cai para trás, arremessando o uke por cima do próprio ombro.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=4hzlipey14I
+  videos:
+  - url: https://www.youtube.com/watch?v=Fgi9b8DJ5sQ
+    source: kodokan
+    title: 裏投 / Ura-nage
+  - url: https://www.youtube.com/watch?v=4hzlipey14I
+    source: outro
   judobase:
     code_short: ura_nage
     id_tag: '271'
@@ -1774,10 +2262,15 @@
   english_names:
   - name: Rear Hip Throw
   name_pt_br: Quadril por trás
-  description_pt_br: 'Contragolpe a uma técnica de quadril: o tori segura o uke por trás, levanta-o com
+  description_pt_br: 'Contragolpe a uma técnica de quadril: o tori segura o uke por trás, o levanta com
     o quadril e o derruba de costas no tatame.'
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=sqQ4tr3iERE
+  videos:
+  - url: https://youtu.be/ORIYstuxYT8
+    source: kodokan
+    title: 後腰 / Ushiro-goshi
+  - url: https://www.youtube.com/watch?v=sqQ4tr3iERE
+    source: outro
   judobase:
     code_short: ushiro_goshi
     id_tag: '265'
@@ -1790,16 +2283,18 @@
   english_names:
   - name: Reverse Scarf Hold
   name_pt_br: Imobilização em faixa diagonal invertida
-  description_pt_br: O tori senta-se ao lado do uke de frente para os pés dele, prende o braço mais próximo
-    e controla o tronco pela faixa ou pelo lado oposto.
+  description_pt_br: O tori se senta ao lado do uke, virado para os pés do uke, prende o braço mais próximo
+    e controla o tronco do uke pela faixa ou pelo lado oposto.
   provenance: generated
-  video_url: https://youtu.be/wL1QrvYbyjo
+  videos:
+  - url: https://youtu.be/SBapox2M2dE
+    source: kodokan
+    title: 後袈裟固 /  Ushiro-kesa-gatame
+  - url: https://youtu.be/wL1QrvYbyjo
+    source: outro
   judobase:
     code_short: ushiro_kesa_gatame
     id_tag: '217'
-  notes:
-  - Entrada recente na lista do Kodokan, segundo a sessão judo-techniques-bot; conferir contra a lista
-    publicada.
 - id: utsuri-goshi
   name: Utsuri-goshi
   kind: technique
@@ -1809,10 +2304,15 @@
   english_names:
   - name: Changing Hip Throw
   name_pt_br: Troca de quadril
-  description_pt_br: 'Contragolpe a uma técnica de quadril: o tori levanta o uke, troca a posição do próprio
-    quadril para a frente dele e o derruba por cima.'
+  description_pt_br: 'Contragolpe a uma técnica de quadril: o tori levanta o uke, passa o próprio quadril
+    para a frente do uke e o derruba por cima.'
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=E81rR10wfXU
+  videos:
+  - url: https://youtu.be/4pQd_bEnlf0
+    source: kodokan
+    title: 移腰 / Utsuri-goshi
+  - url: https://www.youtube.com/watch?v=E81rR10wfXU
+    source: outro
   judobase:
     code_short: utsuri_goshi
     id_tag: '266'
@@ -1827,11 +2327,13 @@
   - name: Front Uchi Mata
   - name: Front Inner Thigh Throw
   name_pt_br: Projeção em torre
-  description_pt_br: O tori, de frente para o uke e com pegada por cima das costas, levanta-o colocando
-    a perna por dentro da coxa dele e o projeta de lado. É chamada em inglês de "front uchi mata". Não
+  description_pt_br: O tori, de frente para o uke e com a pegada por cima das costas, o levanta com a
+    perna por dentro da coxa do uke e o projeta de lado. Em inglês é chamada de "front uchi mata". Não
     consta da nomenclatura do Kodokan.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=sSkrQLQy0bs
+  videos:
+  - url: https://www.youtube.com/watch?v=sSkrQLQy0bs
+    source: outro
   notes:
   - Classificação oficial incerta; a sessão judo-techniques-bot não tem alvo seguro.
 - id: yama-arashi
@@ -1843,11 +2345,16 @@
   english_names:
   - name: Mountain Storm
   name_pt_br: Tempestade na montanha
-  description_pt_br: O tori segura gola e manga do mesmo lado do uke, desequilibra-o para a frente e varre
-    a perna dele com um movimento semelhante ao Harai-goshi. Ficou associada a Saigo Shiro, um dos primeiros
-    alunos do Kodokan.
+  description_pt_br: O tori segura a gola e a manga do mesmo lado do uke, o desequilibra para a frente
+    e varre a perna do uke com um movimento parecido com o do Harai-goshi. Ficou associada a Saigo Shiro,
+    um dos primeiros alunos do Kodokan.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=PUCN_gTYhfY
+  videos:
+  - url: https://youtu.be/MGlyKmSuzdc
+    source: kodokan
+    title: 山嵐 / Yama-arashi
+  - url: https://www.youtube.com/watch?v=PUCN_gTYhfY
+    source: outro
 - id: yoko-gake
   name: Yoko-gake
   kind: technique
@@ -1857,10 +2364,15 @@
   english_names:
   - name: Side Hook
   name_pt_br: Gancho lateral
-  description_pt_br: O tori desequilibra o uke para o lado, varre o pé de apoio dele com a sola do pé
+  description_pt_br: O tori desequilibra o uke para o lado, varre o pé de apoio do uke com a sola do pé
     e cai de lado junto com ele.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=YntUIakl428
+  videos:
+  - url: https://youtu.be/tP1Sj1uDfSo
+    source: kodokan
+    title: 横掛 / Yoko-gake
+  - url: https://www.youtube.com/watch?v=YntUIakl428
+    source: outro
   judobase:
     code_short: yoko_gake
     id_tag: '300'
@@ -1876,7 +2388,12 @@
   description_pt_br: 'Contragolpe a um ataque pela frente: o tori desliza a perna entre as pernas do uke,
     cai de lado e o roda por cima do ombro.'
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=BYD0IRZPlxI
+  videos:
+  - url: https://youtu.be/MehP6I5cY2c
+    source: kodokan
+    title: 横車 / Yoko-guruma
+  - url: https://www.youtube.com/watch?v=BYD0IRZPlxI
+    source: outro
   judobase:
     code_short: yoko_guruma
     id_tag: '301'
@@ -1890,10 +2407,15 @@
   - name: Lateral Drop
   - name: Side Drop
   name_pt_br: Queda lateral
-  description_pt_br: O tori desequilibra o uke para o lado, desliza a perna diante dos pés dele e se deixa
-    cair de lado, levando o uke junto para o tatame.
+  description_pt_br: O tori desequilibra o uke para o lado, desliza a perna diante dos pés do uke e se
+    deixa cair de lado, levando o uke junto para o tatame.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=Uu9XXHHYMRo
+  videos:
+  - url: https://youtu.be/MnNG67pF_a0
+    source: kodokan
+    title: 横落 / Yoko-otoshi
+  - url: https://www.youtube.com/watch?v=Uu9XXHHYMRo
+    source: outro
   judobase:
     code_short: yoko_otoshi
     id_tag: '302'
@@ -1908,10 +2430,15 @@
     usage: bjj
   - name: Side four-corner hold
   name_pt_br: Imobilização lateral pelos quatro cantos
-  description_pt_br: O tori deita-se atravessado sobre o uke, pelo lado, com um braço entre as pernas
-    dele e o outro por baixo do pescoço, controlando quadril e ombros.
+  description_pt_br: O tori se deita atravessado sobre o uke, pelo lado, com um braço entre as pernas
+    do uke e o outro por baixo do pescoço, e assim controla o quadril e os ombros.
   provenance: generated
-  video_url: https://youtu.be/1GJn6OEyuO4
+  videos:
+  - url: https://youtu.be/TT7XJVSEQxA
+    source: kodokan
+    title: 横四方固 /  Yoko-shiho-gatame
+  - url: https://youtu.be/1GJn6OEyuO4
+    source: outro
   judobase:
     code_short: yoko_shiho_gatame
     id_tag: '218'
@@ -1926,7 +2453,9 @@
   name_pt_br: Técnicas de sacrifício lateral
   description_pt_br: O tori cai de lado para projetar o uke, como no Tani-otoshi e no Uki-waza.
   provenance: generated
-  video_url: https://youtu.be/ml_eSxz8OMo
+  videos:
+  - url: https://youtu.be/ml_eSxz8OMo
+    source: outro
 - id: yoko-wakare
   name: Yoko-wakare
   kind: technique
@@ -1936,7 +2465,12 @@
   english_names:
   - name: Side Separation
   name_pt_br: Separação lateral
-  description_pt_br: O tori se lança de lado diante do uke, com as pernas esticadas à frente dele, e o
-    puxa por cima do próprio corpo.
+  description_pt_br: O tori se lança de lado diante do uke, com as pernas esticadas à frente do uke, e
+    o traz por cima do próprio corpo.
   provenance: generated
-  video_url: https://www.youtube.com/watch?v=fWlPaLwvBV8
+  videos:
+  - url: https://youtu.be/bp1tscHlePI
+    source: kodokan
+    title: 横分 / Yoko-wakare
+  - url: https://www.youtube.com/watch?v=fWlPaLwvBV8
+    source: outro

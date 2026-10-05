@@ -3,7 +3,9 @@
 Fontes:
 - data/curadoria/*.yaml: nome oficial, grupo, status e textos em pt-BR (editado à mão);
 - CSV do judo-techniques-bot: grafias, nomes em inglês e vídeos;
-- docs/glossario/judobase_tag_mapping.csv: nomes, códigos e classes da IJF.
+- docs/glossario/judobase_tag_mapping.csv: nomes, códigos e classes da IJF;
+- docs/fontes/fecju_kodokan_videos.csv: vídeos do canal do Kodokan listados pela FECJU
+  (https://www.fecju.com.br/o-judo), casados pela técnica que o título do vídeo indica.
 
 O script falha quando uma grafia do CSV não é variante do nome oficial nem consta de
 nomes_populares.yaml, ou quando uma linha de alguma fonte fica sem destino.
@@ -23,6 +25,7 @@ from judo_chat.normalizer import canonical
 ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_BOT_CSV = ROOT.parent / "judo-techniques-bot" / "judo_techniques_bot" / "data" / "techniques_fixtures.csv"
 IJF_CSV = ROOT / "docs" / "glossario" / "judobase_tag_mapping.csv"
+KODOKAN_CSV = ROOT / "docs" / "fontes" / "fecju_kodokan_videos.csv"
 CURADORIA = ROOT / "data" / "curadoria"
 POPULARES = ROOT / "data" / "glossario" / "nomes_populares.yaml"
 OUTPUT = ROOT / "data" / "glossario" / "tecnicas.yaml"
@@ -45,6 +48,32 @@ def _unique(items: list[str]) -> list[str]:
             seen.add(item.lower())
             result.append(item)
     return result
+
+
+def _attach_kodokan_videos(output: list[dict[str, object]]) -> list[str]:
+    """Põe os vídeos do Kodokan à frente dos outros. O casamento usa o título do vídeo
+    ("足車 / Ashi-guruma"), porque na FECJU o rótulo do Osoto-guruma aponta para o O-guruma."""
+    index: dict[str, dict[str, object]] = {}
+    for item in output:
+        for name in [item["name"], item.get("ijf_name"), *item.get("aliases", [])]:
+            if name:
+                index.setdefault(canonical(str(name)), item)
+    errors = []
+    for row in csv.DictReader(KODOKAN_CSV.open(encoding="utf-8")):
+        if row["canal"] != "KODOKAN":
+            continue
+        romaji = row["titulo_video"].split("/")[-1]
+        item = index.get(canonical(romaji))
+        if item is None:
+            errors.append(f"vídeo do Kodokan sem técnica: {row['titulo_video']!r}")
+            continue
+        current = item.get("videos", [])
+        if any(v["url"] == row["url"] for v in current):
+            continue
+        kodokan = [v for v in current if v["source"] == "kodokan"]
+        others = [v for v in current if v["source"] != "kodokan"]
+        item["videos"] = [*kodokan, {"url": row["url"], "source": "kodokan", "title": row["titulo_video"]}, *others]
+    return errors
 
 
 def build(bot_csv: Path) -> list[dict[str, object]]:
@@ -104,9 +133,11 @@ def build(bot_csv: Path) -> list[dict[str, object]]:
         english = [n for row in rows for n in _split(row["english_names"])] + entry.get("english_extra", [])
         english = [n for n in _unique(english + sorted(bjj)) if n not in dropped]
 
+        # `video_url: null` na curadoria descarta o vídeo do CSV do bot.
         video = (
             entry["video_url"] if "video_url" in entry else next((r["video_url"] for r in rows if r["video_url"]), None)
         )
+        videos = [{"url": video, "source": "outro"}] if video else []
 
         item: dict[str, object] = {"id": tid, "name": official, "kind": entry.get("kind", "technique")}
         for key in ("group", "status"):
@@ -121,13 +152,15 @@ def build(bot_csv: Path) -> list[dict[str, object]]:
         item["name_pt_br"] = entry["name_pt_br"]
         item["description_pt_br"] = " ".join(entry["description_pt_br"].split())
         item["provenance"] = "generated"
-        if video:
-            item["video_url"] = video
+        if videos:
+            item["videos"] = videos
         if ijf is not None:
             item["judobase"] = {"code_short": ijf["code_short"], "id_tag": ijf["id_tag"]}
         if entry.get("notes"):
             item["notes"] = entry["notes"]
         output.append(item)
+
+    errors += _attach_kodokan_videos(output)
 
     for name in sorted(set(bot_rows) - used_bot):
         if canonical(name) not in popular_keys:

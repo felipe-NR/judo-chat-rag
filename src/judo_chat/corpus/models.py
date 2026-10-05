@@ -7,7 +7,8 @@ Status = Literal["kodokan", "nonstandard", "forbidden_ijf"]
 Usage = Literal["judo", "bjj"]
 PopularKind = Literal["popular", "pt_br", "truncation", "nonstandard", "bjj"]
 Confidence = Literal["alta", "media", "baixa"]
-Theme = Literal["regras", "historia"]
+Theme = Literal["regras", "historia", "graduacao"]
+VideoSource = Literal["kodokan", "outro"]
 
 _PROVENANCE_PREFIXES = ("local", "translated_from_en", "generated", "reviewed", "web:")
 
@@ -27,6 +28,13 @@ class EnglishName(_Frozen):
     usage: Usage = "judo"
 
 
+class Video(_Frozen):
+    url: str
+    # "kodokan": canal oficial do Kodokan (lista da FECJU); "outro": CSV do judo-techniques-bot.
+    source: VideoSource
+    title: str | None = None
+
+
 class JudobaseRef(_Frozen):
     code_short: str
     id_tag: str
@@ -44,13 +52,22 @@ class Technique(_Frozen):
     name_pt_br: str | None = None
     description_pt_br: str | None = None
     provenance: str = "generated"
-    video_url: str | None = None
+    # Em ordem de exibição: vídeos do Kodokan primeiro.
+    videos: tuple[Video, ...] = ()
     judobase: JudobaseRef | None = None
     notes: tuple[str, ...] = ()
     # Derivado de nomes_populares.yaml pelo loader; não é editado à mão.
     popular_names: frozenset[str] = frozenset()
 
     _provenance = field_validator("provenance")(_check_provenance)
+
+    @field_validator("videos")
+    @classmethod
+    def _kodokan_first(cls, videos: tuple[Video, ...]) -> tuple[Video, ...]:
+        sources = [v.source for v in videos]
+        if sources != sorted(sources, key=lambda s: s != "kodokan"):
+            raise ValueError("vídeos do Kodokan devem vir antes dos outros")
+        return videos
 
 
 class PopularName(_Frozen):

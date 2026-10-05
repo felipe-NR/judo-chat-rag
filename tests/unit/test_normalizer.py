@@ -41,6 +41,8 @@ def test_popular_names_are_derived_on_techniques(corpus: Corpus) -> None:
         ("ipon seoi nage", "ippon-seoi-nage"),
         ("Juji-gatame", "ude-hishigi-juji-gatame"),
         ("Kata-Guruma", "kata-guruma"),
+        ("Ude-hishigui-juji-gatame", "ude-hishigi-juji-gatame"),
+        ("Sassae Tsuri Komi Ashi", "sasae-tsurikomi-ashi"),
     ],
 )
 def test_spelling_variants(recognizer: Recognizer, variant: str, expected: str) -> None:

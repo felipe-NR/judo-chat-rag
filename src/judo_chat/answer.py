@@ -1,12 +1,14 @@
 """Geração da resposta com o corpus inteiro num bloco de system cacheado (proposta A)."""
 
 import logging
+import re
+import unicodedata
 from dataclasses import dataclass
 
 from anthropic import AsyncAnthropic
 
 from judo_chat.config import Settings
-from judo_chat.corpus.models import Corpus
+from judo_chat.corpus.models import Corpus, Document
 from judo_chat.corpus.render import render_corpus
 from judo_chat.normalizer import Match
 
@@ -48,10 +50,18 @@ Gramática:
 - Os nomes de técnicas são masculinos: "o Osoto-gari", "do Seoi-nage", "no Uchi-mata".
 - Confira a concordância de gênero e número entre artigo, substantivo, adjetivo e verbo
   ("uma forma mais moderna", "as duas técnicas são parecidas") antes de responder.
+- Escolha o verbo pela direção do movimento: "puxar" e "trazer" só quando o uke vem para o
+  tori; "empurrar" e "conduzir" quando ele se afasta; "movimentar" quando muda de sentido
+  ("movimente o uke para a frente e depois para trás"). Não troque varrer, ceifar,
+  enganchar e bloquear entre si.
+- Depois de "para que", "de modo que" e "de forma que", use o subjuntivo: "gire o corpo de
+  forma que fique mais perto do uke", "para que ele jogue o peso nos calcanhares".
+- Em frases com o tori e o uke, evite "dele": diga "do uke" ou "do tori".
 
 Nomes de técnicas:
-- Use o nome oficial do Kodokan como nome principal e dê a tradução ao lado na primeira
-  menção, por exemplo "Osoto-gari (grande ceifada externa)".
+- Use o nome oficial do Kodokan como nome principal e dê o significado literal ao lado na
+  primeira menção, por exemplo "Osoto-gari (grande ceifada externa)". No Brasil as técnicas
+  são chamadas pelo nome japonês; o significado não é um nome em português.
 - Quando o usuário usar um nome popular, diga qual é o nome oficial e explique que o nome
   usado é popular, sem tom de correção. Se ele usou o nome oficial, não liste nomes
   populares nem rótulos internos da base (tipo do nome, confiança, origem do texto).
@@ -62,7 +72,12 @@ Nomes de técnicas:
   de competição e não é erro.
 - Se a técnica for proibida em competição ou estiver fora da nomenclatura do Kodokan,
   avise.
-- Inclua o link do vídeo da técnica quando houver.
+- Inclua os vídeos da técnica. Quando houver "Vídeo do Kodokan", cite-o primeiro,
+  identificado como vídeo oficial do Kodokan, e só depois os outros.
+
+Exames de faixa: os requisitos da base vêm do Projeto Budô, que segue o programa da
+Federação Paulista de Judô. Ao responder sobre exames, diga isso e avise que os requisitos
+variam entre federações.
 
 Os textos da base foram redigidos automaticamente e ainda não foram revisados (veja as
 convenções no início da base). Não mencione isso a menos que o usuário pergunte sobre a fonte.
@@ -78,8 +93,28 @@ def build_system_text(corpus: Corpus) -> str:
     return _INSTRUCTIONS.format(refusal=REFUSAL_MESSAGE) + render_corpus(corpus)
 
 
+_BELT = re.compile(r"\bfaixas?\s+(cinza|azul|amarela|laranja|verde|roxa|marrom)\b")
+
+
+def _belt_documents(query: str, corpus: Corpus) -> list[Document]:
+    """Documentos de exame das faixas citadas na pergunta.
+
+    Os 7 documentos de faixa são parecidos e o Haiku chegou a misturar a faixa amarela com a
+    laranja; repetir o documento certo na mensagem do usuário evita a confusão sem mexer no
+    bloco cacheado.
+    """
+    folded = unicodedata.normalize("NFKD", query.lower())
+    belts = dict.fromkeys(_BELT.findall(folded))
+    return [d for belt in belts for d in corpus.documents if d.theme == "graduacao" and d.id.endswith(f"faixa-{belt}")]
+
+
 def build_user_message(query: str, matches: list[Match], corpus: Corpus) -> str:
     parts = [f"<pergunta>\n{query}\n</pergunta>"]
+    for document in _belt_documents(query, corpus):
+        parts.append(
+            f"Documento da base sobre esta faixa ({document.title}). Use exatamente estes requisitos, "
+            f"sem misturar com os de outras faixas:\n{document.body}"
+        )
     if matches:
         lines = ["Técnicas reconhecidas na pergunta (reconhecimento automático, pode conter erro):"]
         for match in matches:

@@ -58,7 +58,7 @@ def load_corpus(data_dir: Path) -> Corpus:
 
     documents = [
         _read_document(path, theme)
-        for theme in ("regras", "historia")
+        for theme in ("regras", "historia", "graduacao")
         for path in sorted((data_dir / theme).glob("*.md"))
     ]
 

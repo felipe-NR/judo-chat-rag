@@ -36,7 +36,7 @@ def render_technique(technique: Technique) -> str:
     if technique.ijf_name:
         lines.append(f"Nome usado pela IJF: {technique.ijf_name}")
     if technique.name_pt_br:
-        lines.append(f"Tradução: {technique.name_pt_br}")
+        lines.append(f"Significado literal: {technique.name_pt_br}")
     if technique.popular_names:
         lines.append(f"Nomes populares: {_sorted_names(technique.popular_names)}")
     if technique.aliases:
@@ -49,8 +49,9 @@ def render_technique(technique: Technique) -> str:
         lines.append(f"Nomes no jiu-jitsu (BJJ): {', '.join(bjj_en)}")
     if technique.description_pt_br:
         lines.append(f"Descrição: {technique.description_pt_br}")
-    if technique.video_url:
-        lines.append(f"Vídeo: {technique.video_url}")
+    for video in technique.videos:
+        label = "Vídeo do Kodokan" if video.source == "kodokan" else "Vídeo"
+        lines.append(f"{label}: {video.url}")
     lines.extend(f"Observação: {note}" for note in technique.notes)
     if technique.provenance != DEFAULT_PROVENANCE:
         lines.append(f"Origem do texto: {technique.provenance}")
@@ -95,5 +96,7 @@ def render_corpus(corpus: Corpus) -> str:
         "\n\n".join(render_document(d) for d in corpus.documents if d.theme == "regras"),
         "# HISTÓRIA",
         "\n\n".join(render_document(d) for d in corpus.documents if d.theme == "historia"),
+        "# EXAMES DE FAIXA (CINZA A MARROM), GOKYO E SÉRIES",
+        "\n\n".join(render_document(d) for d in corpus.documents if d.theme == "graduacao"),
     ]
     return "\n\n".join(sections) + "\n"

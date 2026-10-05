@@ -46,13 +46,14 @@ repositório `JUDO_CHAT_API_URL` e rode o workflow de novo.
 
 ## Custo
 
-Medido em 2026-10-04 com o Haiku 4.5 (US$ 1/M de entrada, US$ 5/M de saída, cache: gravação
-US$ 1,25/M com TTL de 5 minutos e leitura US$ 0,10/M), dólar a R$ 5, sem IOF:
+Medido em 2026-10-05 com o Haiku 4.5 (US$ 1/M de entrada, US$ 5/M de saída, cache: gravação
+US$ 1,25/M com TTL de 5 minutos e leitura US$ 0,10/M), dólar a R$ 5, sem IOF. O corpus tem
+~38 mil tokens desde que entraram os exames de faixa e os vídeos do Kodokan.
 
 | Caso | US$ | R$ |
 |-|-|-|
-| Pergunta com cache quente | ~0,005 | ~0,024 |
-| Primeira pergunta após 5 min parado (grava o cache) | ~0,036 | ~0,18 |
+| Pergunta com cache quente | ~0,006 | ~0,03 |
+| Primeira pergunta após 5 min parado (grava o cache) | ~0,05 | ~0,25 |
 | Pergunta fora do escopo (só o guardrail) | ~0,001 | ~0,005 |
 
 O Sonnet 5.5 dá respostas mais fiéis à base por cerca de 3-4x o custo; veja `.env.example`.
@@ -64,6 +65,8 @@ O Sonnet 5.5 dá respostas mais fiéis à base por cerca de 3-4x o custo; veja `
 | `data/curadoria/*.yaml` | Nome oficial, grupo, status e textos pt-BR de cada técnica | Sim |
 | `data/glossario/nomes_populares.yaml` | Nomes populares, com as técnicas a que se referem | Sim |
 | `data/regras/*.md`, `data/historia/*.md` | Textos de regras e história | Sim |
+| `data/graduacao/*.md` | Exames de faixa (cinza a marrom), Gokyo, sequências e contragolpes, do Projeto Budô | Sim |
+| `docs/fontes/fecju_kodokan_videos.csv` | Vídeos do canal do Kodokan listados pela FECJU | Sim |
 | `data/glossario/tecnicas.yaml` | Glossário final | Não, é gerado |
 
 Depois de editar a curadoria, gere o glossário de novo (o script lê o CSV do
@@ -77,8 +80,9 @@ O build falha quando um nome do CSV não é grafia do nome oficial nem consta de
 `nomes_populares.yaml`, quando uma linha das fontes fica sem destino ou quando duas
 técnicas disputam o mesmo nome.
 
-Todo o texto em pt-BR está com `provenance: generated` e precisa de revisão por alguém do
-judô; as pendências estão no fim de `docs/propostas.md`.
+O estilo dos textos segue `docs/guia-estilo-ptbr.md`; `tests/unit/test_corpus_style.py`
+pega regressões. As fichas de técnica estão com `provenance: generated`; os exames de faixa
+trazem a URL da página do Projeto Budô de onde vieram.
 
 ## Testes
 

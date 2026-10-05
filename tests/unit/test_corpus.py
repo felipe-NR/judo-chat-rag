@@ -16,7 +16,8 @@ def test_corpus_counts(corpus: Corpus) -> None:
     techniques = [t for t in corpus.techniques if t.kind == "technique"]
     assert len(techniques) >= 100
     assert all(t.name_pt_br and t.description_pt_br for t in corpus.techniques)
-    assert {d.theme for d in corpus.documents} == {"regras", "historia"}
+    assert {d.theme for d in corpus.documents} == {"regras", "historia", "graduacao"}
+    assert len([d for d in corpus.documents if d.id.startswith("graduacao/") and "faixa-" in d.id]) == 7
 
 
 def test_kodokan_katame_waza_is_complete(corpus: Corpus) -> None:
@@ -27,7 +28,16 @@ def test_kodokan_katame_waza_is_complete(corpus: Corpus) -> None:
 
 
 def test_unrelated_video_is_removed(corpus: Corpus) -> None:
-    assert all("dQw4w9WgXcQ" not in (t.video_url or "") for t in corpus.techniques)
+    assert all("dQw4w9WgXcQ" not in v.url for t in corpus.techniques for v in t.videos)
+
+
+def test_kodokan_videos_cover_the_official_list(corpus: Corpus) -> None:
+    with_kodokan = [t for t in corpus.techniques if any(v.source == "kodokan" for v in t.videos)]
+    # 100 técnicas oficiais na lista da FECJU; o Sasae-tsurikomi-ashi não tem vídeo lá e o link
+    # do Osoto-guruma aponta para o vídeo do O-guruma.
+    assert len(with_kodokan) == 98
+    assert corpus.technique("osoto-guruma").videos[0].source == "outro"
+    assert corpus.technique("o-guruma").videos[0].source == "kodokan"
 
 
 def _render_in_subprocess(seed: str) -> bytes:

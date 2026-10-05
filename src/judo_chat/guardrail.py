@@ -21,7 +21,7 @@ O assistente só responde sobre três temas:
 - historia: história do judô (Jigoro Kano, Kodokan, judô olímpico, judô no Brasil,
   grandes judocas do passado e medalhistas olímpicos como parte dessa história).
 - regras: regras de competição, pontuação, punições, técnicas proibidas, arbitragem,
-  graduação e faixas.
+  graduação, faixas e exames de faixa (o que é cobrado em cada faixa).
 
 Classifique como "fora" tudo o que não for desses temas, inclusive:
 - outras artes marciais quando a pergunta não for sobre judô (jiu-jitsu, karatê, MMA);
@@ -38,6 +38,7 @@ Exemplos:
 - "quem criou o judô?" -> historia
 - "quantos shidos desclassificam?" -> regras
 - "qual a ordem das faixas?" -> regras
+- "o que cai no exame da faixa amarela?" -> regras
 - "o kani-basami é proibido? quando foi criado?" -> regras
 - "como passar a guarda no jiu-jitsu?" -> fora
 - "quem ganhou o Grand Slam de Paris semana passada?" -> fora
