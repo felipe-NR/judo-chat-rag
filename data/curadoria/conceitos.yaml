@@ -7,8 +7,8 @@
   kind: category
   name_pt_br: Técnicas de projeção
   description_pt_br: >-
-    Grande grupo das técnicas que levam uke ao chão. Divide-se em tachi-waza (tori
-    projeta de pé: te-waza, koshi-waza, ashi-waza) e sutemi-waza (tori se sacrifica
+    Grande grupo das técnicas que levam o uke ao chão. Divide-se em tachi-waza (o tori
+    projeta de pé: te-waza, koshi-waza, ashi-waza) e sutemi-waza (o tori se sacrifica
     caindo: ma-sutemi-waza e yoko-sutemi-waza).
 
 - id: tachi-waza
@@ -17,7 +17,7 @@
   kind: category
   group: nage-waza
   name_pt_br: Técnicas de pé
-  description_pt_br: Projeções em que tori permanece de pé. Inclui te-waza, koshi-waza e ashi-waza.
+  description_pt_br: Projeções em que o tori permanece de pé. Inclui te-waza, koshi-waza e ashi-waza.
 
 - id: te-waza
   name: Te-waza
@@ -33,7 +33,7 @@
   kind: category
   group: nage-waza/tachi-waza
   name_pt_br: Técnicas de quadril
-  description_pt_br: Projeções em que o quadril de tori é o ponto de apoio, como O-goshi e Harai-goshi.
+  description_pt_br: Projeções em que o quadril do tori é o ponto de apoio, como O-goshi e Harai-goshi.
 
 - id: ashi-waza
   name: Ashi-waza
@@ -49,7 +49,7 @@
   kind: category
   group: nage-waza
   name_pt_br: Técnicas de sacrifício
-  description_pt_br: Projeções em que tori se lança ao chão para projetar uke. Divide-se em ma-sutemi-waza e yoko-sutemi-waza.
+  description_pt_br: Projeções em que o tori se lança ao chão para projetar o uke. Divide-se em ma-sutemi-waza e yoko-sutemi-waza.
 
 - id: ma-sutemi-waza
   name: Ma-sutemi-waza
@@ -57,7 +57,7 @@
   kind: category
   group: nage-waza/sutemi-waza
   name_pt_br: Técnicas de sacrifício para trás
-  description_pt_br: Tori cai de costas para projetar uke, como no Tomoe-nage e no Sumi-gaeshi.
+  description_pt_br: O tori cai de costas para projetar o uke, como no Tomoe-nage e no Sumi-gaeshi.
 
 - id: yoko-sutemi-waza
   name: Yoko-sutemi-waza
@@ -65,7 +65,7 @@
   kind: category
   group: nage-waza/sutemi-waza
   name_pt_br: Técnicas de sacrifício lateral
-  description_pt_br: Tori cai de lado para projetar uke, como no Tani-otoshi e no Uki-waza.
+  description_pt_br: O tori cai de lado para projetar o uke, como no Tani-otoshi e no Uki-waza.
 
 - id: katame-waza
   name: Katame-waza
@@ -93,7 +93,7 @@
   group: katame-waza
   name_pt_br: Imobilizações
   description_pt_br: >-
-    Técnicas para manter uke de costas no chão sob controle. Pelas regras da IJF, 20
+    Técnicas para manter o uke de costas no chão sob controle. Pelas regras da IJF, 20
     segundos de imobilização valem ippon e 10 segundos valem waza-ari.
 
 - id: shime-waza
@@ -102,7 +102,7 @@
   kind: category
   group: katame-waza
   name_pt_br: Estrangulamentos
-  description_pt_br: Técnicas que comprimem o pescoço de uke. O Kodokan lista 12.
+  description_pt_br: Técnicas que comprimem o pescoço do uke. O Kodokan lista 12.
 
 - id: kansetsu-waza
   name: Kansetsu-waza
@@ -129,7 +129,7 @@
   kind: concept
   name_pt_br: Desequilíbrio
   description_pt_br: >-
-    Primeira fase de uma projeção: tirar uke do equilíbrio, puxando ou empurrando, em
+    Primeira fase de uma projeção: tirar o uke do equilíbrio, puxando ou empurrando, em
     uma das oito direções (happo no kuzushi).
 
 - id: tsukuri
@@ -138,7 +138,7 @@
   kind: concept
   name_pt_br: Preparação (encaixe)
   description_pt_br: >-
-    Segunda fase de uma projeção: tori posiciona o próprio corpo em relação a uke,
+    Segunda fase de uma projeção: o tori posiciona o próprio corpo em relação ao uke,
     já desequilibrado, para executar a técnica.
 
 - id: kake
@@ -146,7 +146,7 @@
   csv: [Kake]
   kind: concept
   name_pt_br: Execução
-  description_pt_br: Terceira fase de uma projeção, em que tori conclui a técnica e projeta uke.
+  description_pt_br: Terceira fase de uma projeção, em que o tori conclui a técnica e projeta o uke.
   video_url: null
   notes:
     - O vídeo do CSV de origem para esta linha era um link sem relação com judô e foi removido.

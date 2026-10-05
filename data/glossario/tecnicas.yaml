@@ -26,8 +26,8 @@
   - name: Single Leg X (SLX)
     usage: bjj
   name_pt_br: Chave de perna enroscada
-  description_pt_br: Tori enrosca as pernas na perna de uke e torce o joelho dele. Na competição de judô
-    só são permitidas chaves no cotovelo, por isso é proibida.
+  description_pt_br: O tori enrosca as pernas na perna do uke e torce o joelho dele. Na competição de
+    judô só são permitidas chaves no cotovelo, por isso é proibida.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=3YXH_LrcqNc
 - id: ashi-guruma
@@ -39,8 +39,8 @@
   english_names:
   - name: Leg Wheel
   name_pt_br: Roda pela perna
-  description_pt_br: Tori estende a perna esticada contra o joelho ou a coxa de uke e, girando o tronco,
-    roda uke por cima dela.
+  description_pt_br: O tori estende a perna esticada contra o joelho ou a coxa do uke e, girando o tronco,
+    roda o uke por cima dela.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=c7pqq2sC8Ng
   judobase:
@@ -86,8 +86,8 @@
     usage: bjj
   - name: High Lift
   name_pt_br: Abraçar e levantar
-  description_pt_br: Ação de levantar uke, que está deitado de costas fazendo guarda, até a altura dos
-    ombros de tori. Não é técnica de projeção da nomenclatura do Kodokan e é proibida em competição.
+  description_pt_br: Ação de levantar o uke, que está deitado de costas fazendo guarda, até a altura dos
+    ombros do tori. Não é técnica de projeção da nomenclatura do Kodokan e é proibida em competição.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=5lFXv3crN30
   notes:
@@ -101,8 +101,8 @@
   english_names:
   - name: High Lift and Separate
   name_pt_br: Abraçar e separar
-  description_pt_br: Com uke de quatro apoios, tori abraça o tronco dele por cima, levanta-o e cai de
-    lado, girando uke para trás por cima de si.
+  description_pt_br: Com o uke de quatro apoios, o tori abraça o tronco dele por cima, levanta-o e cai
+    de lado, girando o uke para trás por cima de si.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=858jvGv7pQE
   judobase:
@@ -119,8 +119,8 @@
   english_names:
   - name: Forward Foot Sweep
   name_pt_br: Varrida no pé que avança
-  description_pt_br: No momento em que uke avança um pé e ainda não colocou o peso nele, tori o varre
-    com a sola do pé na direção do movimento, e uke cai de lado.
+  description_pt_br: No momento em que o uke avança um pé e ainda não colocou o peso nele, o tori o varre
+    com a sola do pé na direção do movimento, e o uke cai de lado.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=gW9LEvVmG2o
   judobase:
@@ -136,7 +136,7 @@
   english_names:
   - name: Trunk Lock
   name_pt_br: Estrangulamento do tronco
-  description_pt_br: Tori aperta o tronco de uke com as pernas cruzadas. Comprime o abdômen e as costelas,
+  description_pt_br: O tori aperta o tronco do uke com as pernas cruzadas. Comprime o abdômen e as costelas,
     e não o pescoço, e é proibido em competição.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=5thavLVKDoE
@@ -150,8 +150,8 @@
   - name: Double Palm Up Cross Choke
   - name: Reverse Cross Strangle
   name_pt_br: Estrangulamento cruzado invertido
-  description_pt_br: Tori cruza os braços e segura as duas golas com as palmas para cima (dedos por dentro)
-    e estrangula puxando os cotovelos para fora.
+  description_pt_br: O tori cruza os braços e segura as duas golas com as palmas para cima (dedos por
+    dentro) e estrangula puxando os cotovelos para fora.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=6q6lgWeoi4Y
 - id: hadaka-jime
@@ -165,7 +165,7 @@
   - name: Rear Naked Choke (RNC)
     usage: bjj
   name_pt_br: Estrangulamento nu
-  description_pt_br: Tori, por trás de uke, passa o antebraço pela frente do pescoço dele e aperta sem
+  description_pt_br: O tori, por trás do uke, passa o antebraço pela frente do pescoço dele e aperta sem
     usar a gola do judogi, por isso "nu". É o "mata-leão" do vocabulário brasileiro.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=kTGDvZQ8sY0
@@ -178,8 +178,8 @@
   english_names:
   - name: Spring Hip Throw
   name_pt_br: Quadril em mola
-  description_pt_br: Tori encaixa o quadril e, com a perna dobrada, levanta a coxa de uke por dentro como
-    uma mola, projetando-o para a frente.
+  description_pt_br: O tori encaixa o quadril e, com a perna dobrada, levanta a coxa do uke por dentro
+    como uma mola, projetando-o para a frente.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=n7GP5S41Os8
 - id: hane-goshi-gaeshi
@@ -191,8 +191,8 @@
   english_names:
   - name: Spring Hip Counter
   name_pt_br: Contragolpe ao Hane-goshi
-  description_pt_br: Quando uke ataca com Hane-goshi, tori bloqueia o quadril, levanta a perna de ataque
-    de uke com a própria perna e o projeta para trás.
+  description_pt_br: Quando o uke ataca com Hane-goshi, o tori bloqueia o quadril, levanta a perna de
+    ataque do uke com a própria perna e o projeta para trás.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=vqT3W-ByaEw
 - id: hane-makikomi
@@ -205,8 +205,8 @@
   - name: Spring Wrap-around Throw
   - name: Wing-Over
   name_pt_br: Enrolamento em mola
-  description_pt_br: Tori enrola o braço de uke em volta do próprio corpo, gira, levanta a perna dele
-    como no Hane-goshi e cai junto, levando uke ao tatame.
+  description_pt_br: O tori enrola o braço do uke em volta do próprio corpo, gira, levanta a perna dele
+    como no Hane-goshi e cai junto, levando o uke ao tatame.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=wG5kQT7M8is
 - id: harai-goshi
@@ -218,8 +218,8 @@
   english_names:
   - name: Sweeping Hip Throw
   name_pt_br: Varrida com o quadril
-  description_pt_br: Tori encaixa o quadril, puxa uke contra o corpo e varre as pernas dele com a parte
-    de trás da coxa estendida, projetando-o para a frente.
+  description_pt_br: O tori encaixa o quadril, puxa o uke contra o corpo e varre as pernas dele com a
+    parte de trás da coxa estendida, projetando-o para a frente.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=cs_zkgefvqM
   judobase:
@@ -234,8 +234,8 @@
   english_names:
   - name: Sweeping Hip Counter
   name_pt_br: Contragolpe ao Harai-goshi
-  description_pt_br: Quando uke ataca com Harai-goshi, tori bloqueia o quadril e varre a perna de apoio
-    de uke, projetando-o para trás.
+  description_pt_br: Quando o uke ataca com Harai-goshi, o tori bloqueia o quadril e varre a perna de
+    apoio do uke, projetando-o para trás.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=t2hgLa7BZbE
   judobase:
@@ -250,7 +250,7 @@
   english_names:
   - name: Sweeping Wrap Around
   name_pt_br: Enrolamento do Harai-goshi
-  description_pt_br: Tori entra com Harai-goshi, enrola o braço de uke em volta do próprio corpo e cai
+  description_pt_br: O tori entra com Harai-goshi, enrola o braço do uke em volta do próprio corpo e cai
     rodando junto para completar a projeção.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=MWd5CYkm2zI
@@ -266,8 +266,8 @@
   english_names:
   - name: Lifting Pulling Foot Sweep
   name_pt_br: Varrida do pé puxando e levantando
-  description_pt_br: Tori puxa e levanta uke e, em vez de bloquear (como no Sasae-tsurikomi-ashi), varre
-    a frente do tornozelo de uke com a sola do pé.
+  description_pt_br: O tori puxa e levanta o uke e, em vez de bloquear (como no Sasae-tsurikomi-ashi),
+    varre a frente do tornozelo do uke com a sola do pé.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=23ATiD6TsZs
 - id: hikikomi-gaeshi
@@ -279,7 +279,7 @@
   english_names:
   - name: Pulling-in Reversal
   name_pt_br: Reversão puxando para dentro
-  description_pt_br: Tori segura a faixa ou as costas de uke por cima, cai de costas puxando-o e, usando
+  description_pt_br: O tori segura a faixa ou as costas do uke por cima, cai de costas puxando-o e, usando
     o pé na coxa dele, o projeta por cima de si.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=WV745XfBsgA
@@ -295,8 +295,8 @@
   english_names:
   - name: Knee Wheel
   name_pt_br: Roda pelo joelho
-  description_pt_br: Tori apoia a sola do pé no joelho de uke como ponto de giro e, com as mãos, roda
-    uke por cima desse apoio.
+  description_pt_br: O tori apoia a sola do pé no joelho do uke como ponto de giro e, com as mãos, roda
+    o uke por cima desse apoio.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=a1RZvytW3OI
   judobase:
@@ -311,8 +311,8 @@
   english_names:
   - name: One Arm Shoulder Throw
   name_pt_br: Projeção pelas costas com um braço
-  description_pt_br: Variante do Seoi-nage em que tori solta a gola, passa o braço por baixo da axila
-    de uke e prende o braço dele contra o próprio ombro antes de girar e projetar. O Kodokan a reconheceu
+  description_pt_br: Variante do Seoi-nage em que o tori solta a gola, passa o braço por baixo da axila
+    do uke e prende o braço dele contra o próprio ombro antes de girar e projetar. O Kodokan a reconheceu
     como técnica separada do Seoi-nage em 1997.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=OmKfUXAAdZ0
@@ -325,7 +325,7 @@
   english_names:
   - name: The execution and completion of the throw
   name_pt_br: Execução
-  description_pt_br: Terceira fase de uma projeção, em que tori conclui a técnica e projeta uke.
+  description_pt_br: Terceira fase de uma projeção, em que o tori conclui a técnica e projeta o uke.
   provenance: generated
   notes:
   - O vídeo do CSV de origem para esta linha era um link sem relação com judô e foi removido.
@@ -340,8 +340,8 @@
     usage: bjj
   - name: Top four-corner hold
   name_pt_br: Imobilização pelos quatro cantos por cima
-  description_pt_br: Tori deita-se sobre uke vindo pelo lado da cabeça dele, com o peito sobre o peito
-    de uke, segurando a faixa pelos dois lados por baixo dos braços dele.
+  description_pt_br: O tori deita-se sobre o uke vindo pelo lado da cabeça dele, com o peito sobre o peito
+    do uke, segurando a faixa pelos dois lados por baixo dos braços dele.
   provenance: generated
   video_url: https://youtu.be/2evEh7OBnBg
   judobase:
@@ -357,7 +357,7 @@
   english_names:
   - name: Flying Scissors
   name_pt_br: Tesoura de caranguejo
-  description_pt_br: Tori salta de lado e prende o corpo de uke entre as pernas, como uma tesoura, uma
+  description_pt_br: O tori salta de lado e prende o corpo do uke entre as pernas, como uma tesoura, uma
     perna na frente e outra atrás, derrubando-o para trás. Causou lesões graves e é proibida em competição.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=1NFwJBKI-3E
@@ -387,9 +387,9 @@
     usage: bjj
   - name: Shoulder hold
   name_pt_br: Imobilização pelo ombro
-  description_pt_br: Tori prende a cabeça e um braço de uke juntos, apertando o braço dele contra o pescoço
-    com a própria cabeça e os braços entrelaçados. No judô é uma imobilização; no jiu-jitsu a mesma posição
-    é usada como estrangulamento.
+  description_pt_br: O tori prende a cabeça e um braço do uke juntos, apertando o braço dele contra o
+    pescoço com a própria cabeça e os braços entrelaçados. No judô é uma imobilização; no jiu-jitsu a
+    mesma posição é usada como estrangulamento.
   provenance: generated
   video_url: https://youtu.be/TFClghvGD9w
   judobase:
@@ -406,7 +406,7 @@
   - name: Fireman's Carry
   - name: Shoulder Wheel
   name_pt_br: Roda pelos ombros
-  description_pt_br: Tori coloca uke atravessado sobre os ombros, segurando braço e perna, e o projeta
+  description_pt_br: O tori coloca o uke atravessado sobre os ombros, segurando braço e perna, e o projeta
     para o lado. A forma clássica com a mão na perna é proibida em competição pela IJF desde a proibição
     de pegadas diretas nas pernas; variantes sem pegar na perna ainda aparecem nos registros da IJF.
   provenance: generated
@@ -423,8 +423,8 @@
   english_names:
   - name: Single-wing strangle
   name_pt_br: Estrangulamento de uma asa
-  description_pt_br: Tori, por trás de uke, segura a gola com uma mão e, com o outro braço, levanta um
-    braço de uke (a "asa") e o empurra por trás da nuca, estrangulando.
+  description_pt_br: O tori, por trás do uke, segura a gola com uma mão e, com o outro braço, levanta
+    um braço do uke (a "asa") e o empurra por trás da nuca, estrangulando.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=wcLI263QUdA
 - id: kata-juji-jime
@@ -437,7 +437,7 @@
   - name: Half Cross Strangle
   - name: Palm up/Palm Down Cross Choke
   name_pt_br: Estrangulamento meio cruzado
-  description_pt_br: Tori cruza os braços segurando uma gola com a palma para cima e a outra com a palma
+  description_pt_br: O tori cruza os braços segurando uma gola com a palma para cima e a outra com a palma
     para baixo.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=nQov7zhsnmc
@@ -450,7 +450,7 @@
   english_names:
   - name: One-Hand Strangle
   name_pt_br: Estrangulamento com uma mão
-  description_pt_br: Tori estrangula segurando a gola de uke com uma única mão e pressionando o antebraço
+  description_pt_br: O tori estrangula segurando a gola do uke com uma única mão e pressionando o antebraço
     contra o pescoço.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=sLZeocx_n7A
@@ -477,8 +477,8 @@
   - name: Frog Entanglement
   - name: One Leg Entanglement
   name_pt_br: Enlaçamento em perna de sapo
-  description_pt_br: Tori enrosca a perna em volta da perna de uke, por fora, e cai para trás junto com
-    ele. Pressiona o joelho de uke de forma perigosa e é proibida em competição.
+  description_pt_br: O tori enrosca a perna em volta da perna do uke, por fora, e cai para trás junto
+    com ele. Pressiona o joelho do uke de forma perigosa e é proibida em competição.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=-SQCIZFscNs
 - id: kenka-yotsu
@@ -504,8 +504,8 @@
   english_names:
   - name: Scarf hold
   name_pt_br: Imobilização em faixa diagonal
-  description_pt_br: Tori senta-se ao lado de uke, de frente para a cabeça dele, prende um braço de uke
-    debaixo da axila e envolve o pescoço com o outro braço, mantendo o peso sobre o peito dele. "Kesa"
+  description_pt_br: O tori senta-se ao lado do uke, de frente para a cabeça dele, prende um braço do
+    uke debaixo da axila e envolve o pescoço com o outro braço, mantendo o peso sobre o peito dele. "Kesa"
     é a faixa diagonal da vestimenta de monge budista.
   provenance: generated
   video_url: https://youtu.be/3UnJa3bn0h8
@@ -522,7 +522,7 @@
   - name: Ankle Pick
   - name: Heel Trip Reversal
   name_pt_br: Reversão pelo calcanhar
-  description_pt_br: Tori puxa o calcanhar de uke com uma mão enquanto empurra o tronco dele para trás
+  description_pt_br: O tori puxa o calcanhar do uke com uma mão enquanto empurra o tronco dele para trás
     com a outra. Proibida em competição pela IJF por ser pegada direta na perna.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=3LLBrF4w86Q
@@ -547,7 +547,7 @@
   english_names:
   - name: Hip Wheel
   name_pt_br: Roda pelo quadril
-  description_pt_br: Tori envolve o pescoço de uke com o braço, encaixa o quadril além da linha do quadril
+  description_pt_br: O tori envolve o pescoço do uke com o braço, encaixa o quadril além da linha do quadril
     dele e o faz girar como uma roda por cima do quadril.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=psG_Xx8NiIA
@@ -563,7 +563,7 @@
   english_names:
   - name: Hip Techniques (Throwing)
   name_pt_br: Técnicas de quadril
-  description_pt_br: Projeções em que o quadril de tori é o ponto de apoio, como O-goshi e Harai-goshi.
+  description_pt_br: Projeções em que o quadril do tori é o ponto de apoio, como O-goshi e Harai-goshi.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=3Kf5z0spBXc
 - id: kosoto-gake
@@ -577,7 +577,7 @@
   english_names:
   - name: Minor Outer Hook
   name_pt_br: Pequeno gancho externo
-  description_pt_br: Tori engancha por fora o calcanhar de uke com a perna e o puxa, enquanto empurra
+  description_pt_br: O tori engancha por fora o calcanhar do uke com a perna e o puxa, enquanto empurra
     o tronco dele para trás e para baixo.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=jl99iUTlIVY
@@ -595,8 +595,8 @@
   english_names:
   - name: Minor Outer Reap
   name_pt_br: Pequena ceifada externa
-  description_pt_br: Tori ceifa por fora o calcanhar de uke com a sola do pé, na direção em que ele está
-    se movendo, desequilibrando-o para trás.
+  description_pt_br: O tori ceifa por fora o calcanhar do uke com a sola do pé, na direção em que ele
+    está se movendo, desequilibrando-o para trás.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=T3rSf8CcHg4
   judobase:
@@ -613,8 +613,8 @@
   english_names:
   - name: Hand Technique
   name_pt_br: Contragolpe ao Kouchi-gari
-  description_pt_br: Quando uke tenta Kouchi-gari, tori retira a perna atacada e, girando o tronco, projeta
-    uke na direção do próprio ataque dele.
+  description_pt_br: Quando o uke tenta Kouchi-gari, o tori retira a perna atacada e, girando o tronco,
+    projeta o uke na direção do próprio ataque dele.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=aENEt9_VmuU
   judobase:
@@ -631,8 +631,8 @@
   english_names:
   - name: Minor Inner Reap
   name_pt_br: Pequena ceifada interna
-  description_pt_br: Tori ceifa por dentro o calcanhar de uke com a sola do pé, puxando-o na direção dos
-    dedos dele, enquanto empurra o tronco de uke para trás.
+  description_pt_br: O tori ceifa por dentro o calcanhar do uke com a sola do pé, puxando-o na direção
+    dos dedos dele, enquanto empurra o tronco do uke para trás.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=5E20xuzaXNw
   judobase:
@@ -649,8 +649,8 @@
   english_names:
   - name: Minor Inner Wrap-around Throw
   name_pt_br: Enrolamento do Kouchi-gari
-  description_pt_br: Tori prende o braço de uke debaixo da axila, ceifa por dentro o pé dele como no Kouchi-gari
-    e cai junto, de frente, por cima de uke.
+  description_pt_br: O tori prende o braço do uke debaixo da axila, ceifa por dentro o pé dele como no
+    Kouchi-gari e cai junto, de frente, por cima do uke.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=sSEaC2Y1-e0
   judobase:
@@ -668,7 +668,7 @@
   english_names:
   - name: Single Leg Takedown
   name_pt_br: Derrubar a árvore podre
-  description_pt_br: Tori segura uma perna de uke por trás do joelho com uma mão e o empurra para trás
+  description_pt_br: O tori segura uma perna do uke por trás do joelho com uma mão e o empurra para trás
     com a outra, derrubando-o como uma árvore. Proibida em competição pela IJF por ser pegada direta na
     perna.
   provenance: generated
@@ -684,8 +684,8 @@
   - name: North South Position
     usage: bjj
   name_pt_br: Imobilização pelos quatro cantos por cima modificada
-  description_pt_br: Variante do Kami-shiho-gatame em que tori fica em diagonal e passa um braço por baixo
-    do braço de uke para segurar a gola nas costas.
+  description_pt_br: Variante do Kami-shiho-gatame em que o tori fica em diagonal e passa um braço por
+    baixo do braço do uke para segurar a gola nas costas.
   provenance: generated
   video_url: https://youtu.be/kmeqRY-uFQ8
   judobase:
@@ -700,7 +700,7 @@
   english_names:
   - name: Broken scarf hold
   name_pt_br: Imobilização em faixa diagonal modificada
-  description_pt_br: Variante do Kesa-gatame em que o braço de tori passa por baixo da axila de uke, em
+  description_pt_br: Variante do Kesa-gatame em que o braço do tori passa por baixo da axila do uke, em
     vez de envolver o pescoço.
   provenance: generated
   video_url: https://youtu.be/GcAh8oFd1PI
@@ -713,8 +713,8 @@
   english_names:
   - name: Unbalancing
   name_pt_br: Desequilíbrio
-  description_pt_br: 'Primeira fase de uma projeção: tirar uke do equilíbrio, puxando ou empurrando, em
-    uma das oito direções (happo no kuzushi).'
+  description_pt_br: 'Primeira fase de uma projeção: tirar o uke do equilíbrio, puxando ou empurrando,
+    em uma das oito direções (happo no kuzushi).'
   provenance: generated
   video_url: https://www.youtube.com/watch?v=luK9Eklbn78
 - id: ma-sutemi-waza
@@ -726,7 +726,7 @@
   english_names:
   - name: Rear Sacrifice Techniques
   name_pt_br: Técnicas de sacrifício para trás
-  description_pt_br: Tori cai de costas para projetar uke, como no Tomoe-nage e no Sumi-gaeshi.
+  description_pt_br: O tori cai de costas para projetar o uke, como no Tomoe-nage e no Sumi-gaeshi.
   provenance: generated
   video_url: https://youtu.be/LnjW67efl00
 - id: morote-gari
@@ -739,7 +739,7 @@
   - name: Double Leg Takedown
   - name: Two Hand Reap
   name_pt_br: Ceifada com as duas mãos
-  description_pt_br: Tori avança, abraça as duas pernas de uke com as mãos e o derruba para trás empurrando
+  description_pt_br: O tori avança, abraça as duas pernas do uke com as mãos e o derruba para trás empurrando
     com o ombro. Proibida em competição pela IJF por ser pegada direta nas pernas.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=JtVbwSfr2DM
@@ -751,8 +751,9 @@
   english_names:
   - name: Throwing Techniques
   name_pt_br: Técnicas de projeção
-  description_pt_br: 'Grande grupo das técnicas que levam uke ao chão. Divide-se em tachi-waza (tori projeta
-    de pé: te-waza, koshi-waza, ashi-waza) e sutemi-waza (tori se sacrifica caindo: ma-sutemi-waza e yoko-sutemi-waza).'
+  description_pt_br: 'Grande grupo das técnicas que levam o uke ao chão. Divide-se em tachi-waza (o tori
+    projeta de pé: te-waza, koshi-waza, ashi-waza) e sutemi-waza (o tori se sacrifica caindo: ma-sutemi-waza
+    e yoko-sutemi-waza).'
   provenance: generated
 - id: nami-juji-jime
   name: Nami-juji-jime
@@ -764,7 +765,7 @@
   - name: Double Palm Down Cross Choke
   - name: Normal Cross Strangle
   name_pt_br: Estrangulamento cruzado normal
-  description_pt_br: Tori cruza os braços e segura as duas golas de uke com as palmas para baixo (polegares
+  description_pt_br: O tori cruza os braços e segura as duas golas do uke com as palmas para baixo (polegares
     por dentro), estrangulando com os antebraços dos lados do pescoço.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=MkqTg9QCvKA
@@ -790,8 +791,8 @@
   - name: Hip Throw
   - name: Major Hip Throw
   name_pt_br: Grande projeção de quadril
-  description_pt_br: Tori passa o braço pela cintura de uke, encaixa o quadril inteiro abaixo do quadril
-    dele, levanta e projeta uke por cima. É uma das primeiras técnicas ensinadas a iniciantes.
+  description_pt_br: O tori passa o braço pela cintura do uke, encaixa o quadril inteiro abaixo do quadril
+    dele, levanta e projeta o uke por cima. É uma das primeiras técnicas ensinadas a iniciantes.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=Mwz5At87OxE
   judobase:
@@ -806,8 +807,8 @@
   english_names:
   - name: Major Wheel
   name_pt_br: Grande roda
-  description_pt_br: Tori estende a perna atravessada na altura do quadril ou da parte de cima da coxa
-    de uke e o roda por cima dela, como um eixo.
+  description_pt_br: O tori estende a perna atravessada na altura do quadril ou da parte de cima da coxa
+    do uke e o roda por cima dela, como um eixo.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=ujxkj6EJSb0
 - id: obi-otoshi
@@ -819,8 +820,8 @@
   english_names:
   - name: Belt Drop
   name_pt_br: Queda pela faixa
-  description_pt_br: Tori segura a faixa de uke pela frente, bloqueia o corpo dele com o quadril ou a
-    perna e o derruba para trás.
+  description_pt_br: O tori segura a faixa do uke pela frente, bloqueia o corpo dele com o quadril ou
+    a perna e o derruba para trás.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=3dGTN6sGbmk
 - id: obi-tori-gaeshi
@@ -832,7 +833,7 @@
   english_names:
   - name: Belt Grab Counter
   name_pt_br: Reversão pegando a faixa
-  description_pt_br: Tori segura a faixa de uke por cima das costas, geralmente quando uke ataca baixo,
+  description_pt_br: O tori segura a faixa do uke por cima das costas, geralmente quando o uke ataca baixo,
     e o gira por cima de si para a projeção.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=m8Fe_4U5dP8
@@ -851,7 +852,7 @@
   english_names:
   - name: Sliding Collar Strangle
   name_pt_br: Estrangulamento deslizando a gola
-  description_pt_br: Tori, por trás de uke, segura a gola dele com as duas mãos (uma passando por baixo
+  description_pt_br: O tori, por trás do uke, segura a gola dele com as duas mãos (uma passando por baixo
     da axila) e estrangula puxando as golas em sentidos opostos.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=mBRtKyMm6v0
@@ -870,8 +871,8 @@
   english_names:
   - name: Following Foot Sweep
   name_pt_br: Varrida dos dois pés em deslocamento lateral
-  description_pt_br: Quando uke se desloca de lado, juntando um pé ao outro, tori acompanha o movimento
-    e varre os dois pés juntos com a sola do pé, levantando uke e derrubando-o de lado.
+  description_pt_br: Quando o uke se desloca de lado, juntando um pé ao outro, o tori acompanha o movimento
+    e varre os dois pés juntos com a sola do pé, levantando o uke e derrubando-o de lado.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=2WHtL7Rzwfs
   judobase:
@@ -886,7 +887,7 @@
   english_names:
   - name: Pin/Hold Down Techniques
   name_pt_br: Imobilizações
-  description_pt_br: Técnicas para manter uke de costas no chão sob controle. Pelas regras da IJF, 20
+  description_pt_br: Técnicas para manter o uke de costas no chão sob controle. Pelas regras da IJF, 20
     segundos de imobilização valem ippon e 10 segundos valem waza-ari.
   provenance: generated
   video_url: https://youtu.be/guJ-HlAKEA8
@@ -899,8 +900,8 @@
   - O Soto Gaeshi
   - O-soto-gaeshi
   name_pt_br: Contragolpe ao Osoto-gari
-  description_pt_br: Quando uke ataca com Osoto-gari, tori resiste, gira e devolve a mesma ceifada externa,
-    projetando uke.
+  description_pt_br: Quando o uke ataca com Osoto-gari, o tori resiste, gira e devolve a mesma ceifada
+    externa, projetando o uke.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=FVHAn45Gd6w
   judobase:
@@ -917,8 +918,8 @@
   english_names:
   - name: Major Outer Reaping
   name_pt_br: Grande ceifada externa
-  description_pt_br: Tori desequilibra uke para trás, sobre o calcanhar, posiciona-se ao lado dele e ceifa
-    a perna de apoio por fora, de trás para a frente, com a própria perna.
+  description_pt_br: O tori desequilibra o uke para trás, sobre o calcanhar, posiciona-se ao lado dele
+    e ceifa a perna de apoio por fora, de trás para a frente, com a própria perna.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=93YEMueeF24
   judobase:
@@ -933,7 +934,7 @@
   english_names:
   - name: Major Outer Wheel
   name_pt_br: Grande roda externa
-  description_pt_br: Semelhante ao Osoto-gari, mas a perna de tori passa por trás das duas pernas de uke
+  description_pt_br: Semelhante ao Osoto-gari, mas a perna do tori passa por trás das duas pernas do uke
     e funciona como eixo para rodá-lo para trás.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=CdjR9VyQaL0
@@ -947,8 +948,8 @@
   english_names:
   - name: Major Outer Wrap Around
   name_pt_br: Grande enrolamento externo
-  description_pt_br: Tori entra como no Osoto-gari, enrola o braço de uke em volta do próprio corpo e
-    cai rodando junto, levando uke ao tatame.
+  description_pt_br: O tori entra como no Osoto-gari, enrola o braço do uke em volta do próprio corpo
+    e cai rodando junto, levando o uke ao tatame.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=-CZO8Mj5cA8
   judobase:
@@ -965,8 +966,8 @@
   english_names:
   - name: Major Outer Drop
   name_pt_br: Grande queda externa
-  description_pt_br: Tori coloca a perna por trás da perna de uke, como no Osoto-gari, mas em vez de ceifar
-    empurra para baixo, derrubando uke para trás.
+  description_pt_br: O tori coloca a perna por trás da perna do uke, como no Osoto-gari, mas em vez de
+    ceifar empurra para baixo, derrubando o uke para trás.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=CYH7zR_yqq4
   judobase:
@@ -984,8 +985,8 @@
   - O Uchi Gaeshi
   - O-uchi-gaeshi
   name_pt_br: Contragolpe ao Ouchi-gari
-  description_pt_br: Quando uke ataca com Ouchi-gari, tori levanta a perna atacada, aproveita o impulso
-    de uke e o projeta na direção da ceifada.
+  description_pt_br: Quando o uke ataca com Ouchi-gari, o tori levanta a perna atacada, aproveita o impulso
+    do uke e o projeta na direção da ceifada.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=V5jQkLDww7g
   judobase:
@@ -1002,8 +1003,8 @@
   english_names:
   - name: Major Inner Reap
   name_pt_br: Grande ceifada interna
-  description_pt_br: Tori desequilibra uke para trás e ceifa por dentro a perna dele com a parte de trás
-    da própria perna, num arco de dentro para fora.
+  description_pt_br: O tori desequilibra o uke para trás e ceifa por dentro a perna dele com a parte de
+    trás da própria perna, num arco de dentro para fora.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=A6-lTECSR3c
   judobase:
@@ -1020,8 +1021,8 @@
   - name: Korean Seoi Nage
   - name: Reverse Shoulder Throw
   name_pt_br: Seoi invertido (seoi coreano)
-  description_pt_br: 'Variação de seoi-nage com a pegada invertida: tori gira para o lado oposto ao do
-    braço que prende uke. Popularizada por judocas sul-coreanos. Não tem nome próprio na nomenclatura
+  description_pt_br: 'Variação de seoi-nage com a pegada invertida: o tori gira para o lado oposto ao
+    do braço que prende o uke. Popularizada por judocas sul-coreanos. Não tem nome próprio na nomenclatura
     do Kodokan e costuma ser registrada como uma das formas de Seoi-nage ou Ippon-seoi-nage.'
   provenance: generated
   video_url: https://www.youtube.com/watch?v=7ubS5Ktg4zk
@@ -1036,8 +1037,8 @@
   english_names:
   - name: Two-Hands Strangle
   name_pt_br: Estrangulamento com as duas mãos
-  description_pt_br: Tori segura as duas golas de uke sem cruzar os braços e estrangula pressionando os
-    punhos contra os lados do pescoço.
+  description_pt_br: O tori segura as duas golas do uke sem cruzar os braços e estrangula pressionando
+    os punhos contra os lados do pescoço.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=EmsHq0ySB20
 - id: sankaku-jime
@@ -1051,7 +1052,7 @@
     usage: bjj
   - name: Triangular Strangle
   name_pt_br: Estrangulamento em triângulo
-  description_pt_br: Tori prende a cabeça e um braço de uke entre as pernas, que formam um triângulo,
+  description_pt_br: O tori prende a cabeça e um braço do uke entre as pernas, que formam um triângulo,
     e estrangula apertando as coxas. É o "triângulo" do jiu-jitsu.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=dh0QSmL0pEY
@@ -1067,8 +1068,8 @@
   english_names:
   - name: Lifting pulling Ankle Block
   name_pt_br: Bloqueio do pé puxando e levantando
-  description_pt_br: Tori bloqueia a frente do tornozelo de uke com a sola do pé enquanto puxa e levanta
-    com as mãos, fazendo uke tropeçar no bloqueio e cair para a frente.
+  description_pt_br: O tori bloqueia a frente do tornozelo do uke com a sola do pé enquanto puxa e levanta
+    com as mãos, fazendo o uke tropeçar no bloqueio e cair para a frente.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=MiGljHOokvE
   judobase:
@@ -1084,11 +1085,11 @@
   - name: Shoulder Throw
   - name: Two Arm Shoulder Throw
   name_pt_br: Projeção carregando nas costas
-  description_pt_br: Tori desequilibra uke para a frente, gira de costas para ele, encaixa o próprio corpo
-    abaixo do centro de gravidade de uke e o projeta por cima do ombro. Na forma do Kodokan uma mão segura
-    a gola e a outra segura a manga, e os dois braços puxam juntos (por isso o nome popular "morote seoi-nage",
-    seoi com as duas mãos). Na variante Ippon-seoi-nage, tori solta a gola e passa o braço por baixo da
-    axila de uke.
+  description_pt_br: O tori desequilibra o uke para a frente, gira de costas para ele, encaixa o próprio
+    corpo abaixo do centro de gravidade do uke e o projeta por cima do ombro. Na forma do Kodokan uma
+    mão segura a gola e a outra segura a manga, e os dois braços puxam juntos (por isso o nome popular
+    "morote seoi-nage", seoi com as duas mãos). Na variante Ippon-seoi-nage, o tori solta a gola e passa
+    o braço por baixo da axila do uke.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=_-5Un6jLtRY
   judobase:
@@ -1103,9 +1104,9 @@
   english_names:
   - name: Shoulder Drop
   name_pt_br: Queda pelas costas
-  description_pt_br: Parecida com o Seoi-nage, mas tori desce sobre um ou os dois joelhos (ou bloqueia
-    a perna de uke com a sua) e derruba uke para a frente, em vez de carregá-lo sobre as costas. É a técnica
-    oficial mais próxima do que se chama popularmente de "drop seoi".
+  description_pt_br: Parecida com o Seoi-nage, mas o tori desce sobre um ou os dois joelhos (ou bloqueia
+    a perna do uke com a sua) e derruba o uke para a frente, em vez de carregá-lo sobre as costas. É a
+    técnica oficial mais próxima do que se chama popularmente de "drop seoi".
   provenance: generated
   video_url: https://www.youtube.com/watch?v=ne3i9DoBQU0
   judobase:
@@ -1120,7 +1121,7 @@
   english_names:
   - name: Choke/Strangle Techniques
   name_pt_br: Estrangulamentos
-  description_pt_br: Técnicas que comprimem o pescoço de uke. O Kodokan lista 12.
+  description_pt_br: Técnicas que comprimem o pescoço do uke. O Kodokan lista 12.
   provenance: generated
   video_url: https://youtu.be/bq3cwrcS1-c
 - id: sode-guruma-jime
@@ -1134,8 +1135,8 @@
     usage: bjj
   - name: Sleeve wheel Strangle
   name_pt_br: Estrangulamento em roda com a manga
-  description_pt_br: Tori segura a própria manga por dentro e, com o outro antebraço passando pela frente
-    do pescoço de uke, aperta numa roda com as mangas. Conhecido no jiu-jitsu brasileiro como "Ezequiel".
+  description_pt_br: O tori segura a própria manga por dentro e, com o outro antebraço passando pela frente
+    do pescoço do uke, aperta numa roda com as mangas. Conhecido no jiu-jitsu brasileiro como "Ezequiel".
   provenance: generated
   video_url: https://www.youtube.com/watch?v=-POmmN9jlY4
   judobase:
@@ -1150,8 +1151,8 @@
   english_names:
   - name: Sleeve Lifting Pulling Hip
   name_pt_br: Projeção de quadril puxando e levantando pelas mangas
-  description_pt_br: Variante do Tsurikomi-goshi em que tori segura as duas mangas e levanta um dos braços
-    de uke para cima antes de encaixar o quadril e projetar.
+  description_pt_br: Variante do Tsurikomi-goshi em que o tori segura as duas mangas e levanta um dos
+    braços do uke para cima antes de encaixar o quadril e projetar.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=KyLgGFs-tEk
   judobase:
@@ -1166,8 +1167,8 @@
   english_names:
   - name: Outer Wrap Around
   name_pt_br: Enrolamento externo
-  description_pt_br: Tori prende o braço de uke debaixo da axila, solta a outra pegada, gira o corpo por
-    fora e cai rodando, enrolando uke no próprio corpo.
+  description_pt_br: O tori prende o braço do uke debaixo da axila, solta a outra pegada, gira o corpo
+    por fora e cai rodando, enrolando o uke no próprio corpo.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=BcfGFR1CWss
   judobase:
@@ -1182,9 +1183,9 @@
   english_names:
   - name: Scoop Throw
   name_pt_br: Projeção em concha
-  description_pt_br: Tori recolhe uke pelas pernas ou pelo tronco, levanta-o como quem pega algo com uma
-    concha e o derruba para trás. Também é conhecida como Te-guruma. Pegar nas pernas é proibido em competição
-    pela IJF.
+  description_pt_br: O tori recolhe o uke pelas pernas ou pelo tronco, levanta-o como quem pega algo com
+    uma concha e o derruba para trás. Também é conhecida como Te-guruma. Pegar nas pernas é proibido em
+    competição pela IJF.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=sn13Bu3bxHE
 - id: sumi-gaeshi
@@ -1196,8 +1197,8 @@
   english_names:
   - name: Corner Reversal
   name_pt_br: Reversão pelo canto
-  description_pt_br: Tori cai de costas puxando uke, coloca o peito do pé na parte interna da coxa dele
-    e o levanta, projetando-o para o canto à frente de tori.
+  description_pt_br: O tori cai de costas puxando o uke, coloca o peito do pé na parte interna da coxa
+    dele e o levanta, projetando-o para o canto à frente do tori.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=4LR49U48iyw
   judobase:
@@ -1212,8 +1213,8 @@
   english_names:
   - name: Corner Drop
   name_pt_br: Queda no canto
-  description_pt_br: Tori desequilibra uke para o canto de trás (diagonal posterior) usando só as mãos,
-    sem contato de perna, e o faz cair para trás.
+  description_pt_br: O tori desequilibra o uke para o canto de trás (diagonal posterior) usando só as
+    mãos, sem contato de perna, e o faz cair para trás.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=CL6tPu1Khc4
   judobase:
@@ -1228,7 +1229,7 @@
   english_names:
   - name: Sacrifice Techniques
   name_pt_br: Técnicas de sacrifício
-  description_pt_br: Projeções em que tori se lança ao chão para projetar uke. Divide-se em ma-sutemi-waza
+  description_pt_br: Projeções em que o tori se lança ao chão para projetar o uke. Divide-se em ma-sutemi-waza
     e yoko-sutemi-waza.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=XHuqFd1BHbE
@@ -1241,7 +1242,7 @@
   english_names:
   - name: Standing Techniques
   name_pt_br: Técnicas de pé
-  description_pt_br: Projeções em que tori permanece de pé. Inclui te-waza, koshi-waza e ashi-waza.
+  description_pt_br: Projeções em que o tori permanece de pé. Inclui te-waza, koshi-waza e ashi-waza.
   provenance: generated
   video_url: https://youtu.be/YEfluR58NMo
 - id: tai-otoshi
@@ -1253,9 +1254,9 @@
   english_names:
   - name: Body Drop
   name_pt_br: Queda do corpo
-  description_pt_br: Tori gira de frente para a mesma direção de uke, estende uma perna na frente da canela
-    dele como obstáculo e, puxando com as mãos, faz uke tropeçar e cair para a frente. A perna apenas
-    bloqueia; a força vem das mãos e da rotação do tronco.
+  description_pt_br: O tori gira de frente para a mesma direção do uke, estende uma perna na frente da
+    canela dele como obstáculo e, puxando com as mãos, faz o uke tropeçar e cair para a frente. A perna
+    apenas bloqueia; a força vem das mãos e da rotação do tronco.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=DUiZ8JZkGx8
   judobase:
@@ -1270,8 +1271,8 @@
   english_names:
   - name: Valley Drop
   name_pt_br: Queda no vale
-  description_pt_br: Tori coloca a perna estendida por trás dos calcanhares de uke e se deixa cair de
-    lado, derrubando uke para trás no "vale" formado atrás dele.
+  description_pt_br: O tori coloca a perna estendida por trás dos calcanhares do uke e se deixa cair de
+    lado, derrubando o uke para trás no "vale" formado atrás dele.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=wS9pM3y8YH4
   judobase:
@@ -1288,8 +1289,8 @@
     usage: bjj
   - name: Straight four-corner hold
   name_pt_br: Imobilização montada pelos quatro cantos
-  description_pt_br: Tori monta sobre o tronco de uke, prende as pernas dele com as próprias pernas e
-    controla a cabeça e um braço.
+  description_pt_br: O tori monta sobre o tronco do uke, prende as pernas dele com as próprias pernas
+    e controla a cabeça e um braço.
   provenance: generated
   video_url: https://youtu.be/XjWzNxlKH1M
   judobase:
@@ -1304,8 +1305,8 @@
   english_names:
   - name: Rice Bale Reversal
   name_pt_br: Reversão do fardo de arroz
-  description_pt_br: Quando uke ataca baixo, tori abraça o tronco dele por cima como quem levanta um fardo
-    de arroz, cai de costas e o projeta por cima da cabeça.
+  description_pt_br: Quando o uke ataca baixo, o tori abraça o tronco dele por cima como quem levanta
+    um fardo de arroz, cai de costas e o projeta por cima da cabeça.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=zORVnrrPnmM
 - id: te-waza
@@ -1330,9 +1331,9 @@
   english_names:
   - name: Circle Throw
   name_pt_br: Projeção em círculo
-  description_pt_br: Tori puxa uke para a frente, senta-se de costas no tatame entre os pés dele, apoia
-    a sola do pé no abdômen de uke e o projeta por cima da cabeça num arco circular. A variante com tori
-    caindo de lado é chamada popularmente de "yoko-tomoe-nage".
+  description_pt_br: O tori puxa o uke para a frente, senta-se de costas no tatame entre os pés dele,
+    apoia a sola do pé no abdômen do uke e o projeta por cima da cabeça num arco circular. A variante
+    com o tori caindo de lado é chamada popularmente de "yoko-tomoe-nage".
   provenance: generated
   video_url: https://www.youtube.com/watch?v=-euJliq9XcY
   judobase:
@@ -1347,8 +1348,8 @@
   english_names:
   - name: Swallows Flight Reversal
   name_pt_br: Reversão da andorinha
-  description_pt_br: 'Contragolpe ao Deashi-harai: tori desvia o pé da varrida de uke num movimento curto,
-    como o voo de uma andorinha, e varre o pé dele de volta.'
+  description_pt_br: 'Contragolpe ao Deashi-harai: o tori desvia o pé da varrida do uke num movimento
+    curto, como o voo de uma andorinha, e varre o pé dele de volta.'
   provenance: generated
   video_url: https://www.youtube.com/watch?v=m_HEibNx3Gw
   judobase:
@@ -1363,7 +1364,7 @@
   english_names:
   - name: Thrusting Strangle
   name_pt_br: Estrangulamento empurrando
-  description_pt_br: Tori fecha a gola de uke com uma mão e empurra o punho da outra contra o pescoço,
+  description_pt_br: O tori fecha a gola do uke com uma mão e empurra o punho da outra contra o pescoço,
     estrangulando com a pressão.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=p-MRoVb161c
@@ -1373,8 +1374,8 @@
   english_names:
   - name: The act of turning in and fitting into the throw
   name_pt_br: Preparação (encaixe)
-  description_pt_br: 'Segunda fase de uma projeção: tori posiciona o próprio corpo em relação a uke, já
-    desequilibrado, para executar a técnica.'
+  description_pt_br: 'Segunda fase de uma projeção: o tori posiciona o próprio corpo em relação ao uke,
+    já desequilibrado, para executar a técnica.'
   provenance: generated
 - id: tsuri-goshi
   name: Tsuri-goshi
@@ -1385,7 +1386,7 @@
   english_names:
   - name: Lifting Hip
   name_pt_br: Projeção de quadril levantando pela faixa
-  description_pt_br: Tori segura a faixa de uke por cima (o-tsuri-goshi) ou por baixo do braço (ko-tsuri-goshi),
+  description_pt_br: O tori segura a faixa do uke por cima (o-tsuri-goshi) ou por baixo do braço (ko-tsuri-goshi),
     levanta-o e o projeta por cima do quadril.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=_rag76pFL9U
@@ -1401,8 +1402,9 @@
   english_names:
   - name: Lifting Pulling Hip
   name_pt_br: Projeção de quadril puxando e levantando
-  description_pt_br: Tori puxa e levanta uke pela gola e pela manga (tsurikomi), encaixa o quadril abaixo
-    dele e o projeta. Na forma baixa (tsurikomi-goshi propriamente dito) tori flexiona bastante os joelhos.
+  description_pt_br: O tori puxa e levanta o uke pela gola e pela manga (tsurikomi), encaixa o quadril
+    abaixo dele e o projeta. Na forma baixa (tsurikomi-goshi propriamente dito) o tori flexiona bastante
+    os joelhos.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=4HJumX7ArOI
 - id: uchi-makikomi
@@ -1414,8 +1416,8 @@
   english_names:
   - name: Inner Wraparound
   name_pt_br: Enrolamento interno
-  description_pt_br: Tori passa o braço por cima do braço de uke, gira para dentro e cai rolando, enrolando
-    uke no próprio corpo.
+  description_pt_br: O tori passa o braço por cima do braço do uke, gira para dentro e cai rolando, enrolando
+    o uke no próprio corpo.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=-1DeK0IDOg8
   judobase:
@@ -1430,7 +1432,7 @@
   english_names:
   - name: Inner Thigh Throw
   name_pt_br: Projeção pela parte interna da coxa
-  description_pt_br: Tori desequilibra uke para a frente, gira e levanta a parte interna da coxa dele
+  description_pt_br: O tori desequilibra o uke para a frente, gira e levanta a parte interna da coxa dele
     com a parte de trás da própria coxa, projetando-o por cima. É uma das técnicas mais usadas em competição.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=7fCvyc_rQTI
@@ -1446,8 +1448,8 @@
   english_names:
   - name: Inner Thigh Counter
   name_pt_br: Contragolpe ao Uchi-mata
-  description_pt_br: Quando uke ataca com Uchi-mata, tori bloqueia, levanta a perna de ataque de uke e
-    o projeta para trás com uma ceifada.
+  description_pt_br: Quando o uke ataca com Uchi-mata, o tori bloqueia, levanta a perna de ataque do uke
+    e o projeta para trás com uma ceifada.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=rzOSmEiuVtg
   judobase:
@@ -1462,8 +1464,8 @@
   english_names:
   - name: Inner Thigh Wrap Around
   name_pt_br: Enrolamento do Uchi-mata
-  description_pt_br: Tori entra com Uchi-mata, enrola o braço de uke em volta do próprio corpo e cai rodando
-    para completar a projeção.
+  description_pt_br: O tori entra com Uchi-mata, enrola o braço do uke em volta do próprio corpo e cai
+    rodando para completar a projeção.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=-1DeK0IDOg8
   judobase:
@@ -1483,8 +1485,9 @@
   - name: Inner Thigh Reaping Throw Slip
   - name: Inner Thigh Avoidance Counter
   name_pt_br: Esquiva do Uchi-mata
-  description_pt_br: 'Contragolpe ao Uchi-mata: quando uke levanta a perna para atacar, tori esquiva o
-    quadril, deixa a perna passar no vazio e gira uke por cima, aproveitando o próprio impulso do ataque.'
+  description_pt_br: 'Contragolpe ao Uchi-mata: quando o uke levanta a perna para atacar, o tori esquiva
+    o quadril, deixa a perna passar no vazio e gira o uke por cima, aproveitando o próprio impulso do
+    ataque.'
   provenance: generated
   video_url: https://www.youtube.com/watch?v=0Fpw60A1_pw
   judobase:
@@ -1503,7 +1506,7 @@
   - name: Kimura
     usage: bjj
   name_pt_br: Chave de braço enroscada
-  description_pt_br: Tori dobra o braço de uke em ângulo reto e o torce segurando o punho com uma mão,
+  description_pt_br: O tori dobra o braço do uke em ângulo reto e o torce segurando o punho com uma mão,
     enquanto a outra passa por baixo do braço dele e segura o próprio punho. Torcido para cima é a "americana"
     do jiu-jitsu; para trás, a "kimura".
   provenance: generated
@@ -1521,7 +1524,7 @@
   english_names:
   - name: Side-lying Armbar
   name_pt_br: Chave de braço com a perna
-  description_pt_br: Tori prende o braço esticado de uke e pressiona o cotovelo dele com a perna. Apesar
+  description_pt_br: O tori prende o braço esticado do uke e pressiona o cotovelo dele com a perna. Apesar
     do nome em inglês "Leg Lock" no CSV de origem, é uma chave de cotovelo, não de perna.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=k29RryetGSc
@@ -1537,7 +1540,7 @@
   english_names:
   - name: Stomach Lock
   name_pt_br: Chave de braço com o abdômen
-  description_pt_br: Tori prende o braço esticado de uke e pressiona o cotovelo dele com o abdômen.
+  description_pt_br: O tori prende o braço esticado do uke e pressiona o cotovelo dele com o abdômen.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=rAYXWLoKvoE
   notes:
@@ -1553,7 +1556,7 @@
   - name: Knee Armbar
   - name: Straight Armbar
   name_pt_br: Chave de braço com o joelho
-  description_pt_br: Tori prende o braço estendido de uke debaixo da axila e pressiona o cotovelo dele
+  description_pt_br: O tori prende o braço estendido do uke debaixo da axila e pressiona o cotovelo dele
     com o joelho.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=xoMx9_pWRe4
@@ -1573,9 +1576,9 @@
     usage: bjj
   - name: Cross Lock
   name_pt_br: Chave de braço em cruz
-  description_pt_br: Tori deita-se perpendicular a uke, com as pernas sobre o peito e a cabeça dele, prende
-    o braço estendido de uke entre as coxas e hiperestende o cotovelo levantando o quadril. É a chave
-    de braço mais usada no judô; a IJF a registra como "Juji-gatame".
+  description_pt_br: O tori deita-se perpendicular ao uke, com as pernas sobre o peito e a cabeça dele,
+    prende o braço estendido do uke entre as coxas e hiperestende o cotovelo levantando o quadril. É a
+    chave de braço mais usada no judô; a IJF a registra como "Juji-gatame".
   provenance: generated
   video_url: https://www.youtube.com/watch?v=WJReT5ND3s4
   judobase:
@@ -1591,8 +1594,8 @@
   english_names:
   - name: Triangular Lock
   name_pt_br: Chave de braço em triângulo
-  description_pt_br: A partir do triângulo de pernas (como no Sankaku-jime), tori estica o braço de uke
-    e hiperestende o cotovelo.
+  description_pt_br: A partir do triângulo de pernas (como no Sankaku-jime), o tori estica o braço do
+    uke e hiperestende o cotovelo.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=QmmliwIaee0
   notes:
@@ -1608,7 +1611,8 @@
   english_names:
   - name: Hand Lock
   name_pt_br: Chave de braço com a mão
-  description_pt_br: Tori segura o punho de uke e pressiona o cotovelo esticado dele com a mão ou o antebraço.
+  description_pt_br: O tori segura o punho do uke e pressiona o cotovelo esticado dele com a mão ou o
+    antebraço.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=5D-W1SVIK4A
   notes:
@@ -1625,7 +1629,7 @@
   - name: Armlock
   - name: Straight Armbar
   name_pt_br: Chave de braço com o braço
-  description_pt_br: Tori prende o punho de uke contra o próprio ombro ou pescoço e pressiona o cotovelo
+  description_pt_br: O tori prende o punho do uke contra o próprio ombro ou pescoço e pressiona o cotovelo
     esticado dele com as duas mãos.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=DNoXiXFtNjc
@@ -1643,9 +1647,9 @@
   - name: Armpit Lock
   - name: Armpit Armbar
   name_pt_br: Chave de braço com a axila
-  description_pt_br: Tori prende o braço esticado de uke debaixo da própria axila e força o cotovelo para
-    baixo com o peso do corpo. Aplicada de pé, quando tori se joga ao solo, é punida pela IJF porque provoca
-    lesões.
+  description_pt_br: O tori prende o braço esticado do uke debaixo da própria axila e força o cotovelo
+    para baixo com o peso do corpo. Aplicada de pé, quando o tori se joga ao solo, é punida pela IJF porque
+    provoca lesões.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=qWnSfAUfR1o
   notes:
@@ -1669,8 +1673,8 @@
   english_names:
   - name: Floating hold
   name_pt_br: Imobilização flutuante
-  description_pt_br: Tori fica ao lado de uke apoiado num joelho sobre o abdômen dele, controlando o braço
-    e o pescoço, numa posição alta e móvel.
+  description_pt_br: O tori fica ao lado do uke apoiado num joelho sobre o abdômen dele, controlando o
+    braço e o pescoço, numa posição alta e móvel.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=iQMvn-WbWg0
   notes:
@@ -1685,8 +1689,8 @@
   english_names:
   - name: Floating Hip
   name_pt_br: Quadril flutuante
-  description_pt_br: Tori abraça a cintura de uke, encaixa o quadril de lado e gira, fazendo uke rolar
-    por cima do quadril. A rotação substitui a elevação; uke "flutua" sobre o quadril de tori.
+  description_pt_br: O tori abraça a cintura do uke, encaixa o quadril de lado e gira, fazendo o uke rolar
+    por cima do quadril. A rotação substitui a elevação; o uke "flutua" sobre o quadril do tori.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=5jVF6r366Kg
   judobase:
@@ -1701,8 +1705,8 @@
   english_names:
   - name: Floating Drop
   name_pt_br: Queda flutuante
-  description_pt_br: Tori desequilibra uke para a frente com um puxão forte das mãos enquanto se abaixa
-    sobre um joelho, e uke cai rodando por cima do próprio pé. É uma técnica quase só de mãos, sem bloqueio
+  description_pt_br: O tori desequilibra o uke para a frente com um puxão forte das mãos enquanto se abaixa
+    sobre um joelho, e o uke cai rodando por cima do próprio pé. É uma técnica quase só de mãos, sem bloqueio
     de perna ou quadril.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=d8Cmcfvh7M8
@@ -1718,8 +1722,8 @@
   english_names:
   - name: Floating Technique
   name_pt_br: Técnica flutuante
-  description_pt_br: Tori cai de lado, estende a perna para bloquear o pé de uke e, com um puxão das mãos,
-    o projeta por cima do próprio corpo.
+  description_pt_br: O tori cai de lado, estende a perna para bloquear o pé do uke e, com um puxão das
+    mãos, o projeta por cima do próprio corpo.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=JtB79Ma4htw
   judobase:
@@ -1734,8 +1738,8 @@
   english_names:
   - name: Back hold
   name_pt_br: Imobilização por trás
-  description_pt_br: Tori controla uke deitando-se de costas sobre o tronco dele, de lado, prendendo um
-    braço de uke.
+  description_pt_br: O tori controla o uke deitando-se de costas sobre o tronco dele, de lado, prendendo
+    um braço do uke.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=GmUX_4PMBt0
   judobase:
@@ -1754,8 +1758,8 @@
   - name: Rear Throw
   - name: Suplex
   name_pt_br: Projeção para trás
-  description_pt_br: Tori abraça uke pela cintura, por trás ou de lado, levanta-o com o quadril e cai
-    para trás, arremessando uke por cima do próprio ombro.
+  description_pt_br: O tori abraça o uke pela cintura, por trás ou de lado, levanta-o com o quadril e
+    cai para trás, arremessando o uke por cima do próprio ombro.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=4hzlipey14I
   judobase:
@@ -1770,8 +1774,8 @@
   english_names:
   - name: Rear Hip Throw
   name_pt_br: Quadril por trás
-  description_pt_br: 'Contragolpe a uma técnica de quadril: tori segura uke por trás, levanta-o com o
-    quadril e o derruba de costas no tatame.'
+  description_pt_br: 'Contragolpe a uma técnica de quadril: o tori segura o uke por trás, levanta-o com
+    o quadril e o derruba de costas no tatame.'
   provenance: generated
   video_url: https://www.youtube.com/watch?v=sqQ4tr3iERE
   judobase:
@@ -1786,7 +1790,7 @@
   english_names:
   - name: Reverse Scarf Hold
   name_pt_br: Imobilização em faixa diagonal invertida
-  description_pt_br: Tori senta-se ao lado de uke de frente para os pés dele, prende o braço mais próximo
+  description_pt_br: O tori senta-se ao lado do uke de frente para os pés dele, prende o braço mais próximo
     e controla o tronco pela faixa ou pelo lado oposto.
   provenance: generated
   video_url: https://youtu.be/wL1QrvYbyjo
@@ -1805,7 +1809,7 @@
   english_names:
   - name: Changing Hip Throw
   name_pt_br: Troca de quadril
-  description_pt_br: 'Contragolpe a uma técnica de quadril: tori levanta uke, troca a posição do próprio
+  description_pt_br: 'Contragolpe a uma técnica de quadril: o tori levanta o uke, troca a posição do próprio
     quadril para a frente dele e o derruba por cima.'
   provenance: generated
   video_url: https://www.youtube.com/watch?v=E81rR10wfXU
@@ -1823,9 +1827,9 @@
   - name: Front Uchi Mata
   - name: Front Inner Thigh Throw
   name_pt_br: Projeção em torre
-  description_pt_br: Tori, de frente para uke e com pegada por cima das costas, levanta-o colocando a
-    perna por dentro da coxa dele e o projeta de lado. É chamada em inglês de "front uchi mata". Não consta
-    da nomenclatura do Kodokan.
+  description_pt_br: O tori, de frente para o uke e com pegada por cima das costas, levanta-o colocando
+    a perna por dentro da coxa dele e o projeta de lado. É chamada em inglês de "front uchi mata". Não
+    consta da nomenclatura do Kodokan.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=sSkrQLQy0bs
   notes:
@@ -1839,7 +1843,7 @@
   english_names:
   - name: Mountain Storm
   name_pt_br: Tempestade na montanha
-  description_pt_br: Tori segura gola e manga do mesmo lado de uke, desequilibra-o para a frente e varre
+  description_pt_br: O tori segura gola e manga do mesmo lado do uke, desequilibra-o para a frente e varre
     a perna dele com um movimento semelhante ao Harai-goshi. Ficou associada a Saigo Shiro, um dos primeiros
     alunos do Kodokan.
   provenance: generated
@@ -1853,8 +1857,8 @@
   english_names:
   - name: Side Hook
   name_pt_br: Gancho lateral
-  description_pt_br: Tori desequilibra uke para o lado, varre o pé de apoio dele com a sola do pé e cai
-    de lado junto com ele.
+  description_pt_br: O tori desequilibra o uke para o lado, varre o pé de apoio dele com a sola do pé
+    e cai de lado junto com ele.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=YntUIakl428
   judobase:
@@ -1869,7 +1873,7 @@
   english_names:
   - name: Side Wheel
   name_pt_br: Roda lateral
-  description_pt_br: 'Contragolpe a um ataque pela frente: tori desliza a perna entre as pernas de uke,
+  description_pt_br: 'Contragolpe a um ataque pela frente: o tori desliza a perna entre as pernas do uke,
     cai de lado e o roda por cima do ombro.'
   provenance: generated
   video_url: https://www.youtube.com/watch?v=BYD0IRZPlxI
@@ -1886,8 +1890,8 @@
   - name: Lateral Drop
   - name: Side Drop
   name_pt_br: Queda lateral
-  description_pt_br: Tori desequilibra uke para o lado, desliza a perna diante dos pés dele e se deixa
-    cair de lado, levando uke junto para o tatame.
+  description_pt_br: O tori desequilibra o uke para o lado, desliza a perna diante dos pés dele e se deixa
+    cair de lado, levando o uke junto para o tatame.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=Uu9XXHHYMRo
   judobase:
@@ -1904,8 +1908,8 @@
     usage: bjj
   - name: Side four-corner hold
   name_pt_br: Imobilização lateral pelos quatro cantos
-  description_pt_br: Tori deita-se atravessado sobre uke, pelo lado, com um braço entre as pernas dele
-    e o outro por baixo do pescoço, controlando quadril e ombros.
+  description_pt_br: O tori deita-se atravessado sobre o uke, pelo lado, com um braço entre as pernas
+    dele e o outro por baixo do pescoço, controlando quadril e ombros.
   provenance: generated
   video_url: https://youtu.be/1GJn6OEyuO4
   judobase:
@@ -1920,7 +1924,7 @@
   english_names:
   - name: Side Sacrifice Techniques
   name_pt_br: Técnicas de sacrifício lateral
-  description_pt_br: Tori cai de lado para projetar uke, como no Tani-otoshi e no Uki-waza.
+  description_pt_br: O tori cai de lado para projetar o uke, como no Tani-otoshi e no Uki-waza.
   provenance: generated
   video_url: https://youtu.be/ml_eSxz8OMo
 - id: yoko-wakare
@@ -1932,7 +1936,7 @@
   english_names:
   - name: Side Separation
   name_pt_br: Separação lateral
-  description_pt_br: Tori se lança de lado diante de uke, com as pernas esticadas à frente dele, e o puxa
-    por cima do próprio corpo.
+  description_pt_br: O tori se lança de lado diante do uke, com as pernas esticadas à frente dele, e o
+    puxa por cima do próprio corpo.
   provenance: generated
   video_url: https://www.youtube.com/watch?v=fWlPaLwvBV8

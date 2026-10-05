@@ -131,7 +131,7 @@
   kind: nonstandard
   confidence: media
   source: CSV do judo-techniques-bot; sessão judobase-db
-  note: Tomoe-nage com tori caindo de lado.
+  note: Tomoe-nage com o tori caindo de lado.
 
 - name: Jigoku-jime
   technique_ids: [okuri-eri-jime, kata-ha-jime]

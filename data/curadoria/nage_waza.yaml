@@ -11,11 +11,11 @@
   group: nage-waza/te-waza
   name_pt_br: Projeção carregando nas costas
   description_pt_br: >-
-    Tori desequilibra uke para a frente, gira de costas para ele, encaixa o próprio
-    corpo abaixo do centro de gravidade de uke e o projeta por cima do ombro. Na forma
+    O tori desequilibra o uke para a frente, gira de costas para ele, encaixa o próprio
+    corpo abaixo do centro de gravidade do uke e o projeta por cima do ombro. Na forma
     do Kodokan uma mão segura a gola e a outra segura a manga, e os dois braços puxam
     juntos (por isso o nome popular "morote seoi-nage", seoi com as duas mãos). Na
-    variante Ippon-seoi-nage, tori solta a gola e passa o braço por baixo da axila de uke.
+    variante Ippon-seoi-nage, o tori solta a gola e passa o braço por baixo da axila do uke.
 
 - id: ippon-seoi-nage
   name: Ippon-seoi-nage
@@ -23,8 +23,8 @@
   group: nage-waza/te-waza
   name_pt_br: Projeção pelas costas com um braço
   description_pt_br: >-
-    Variante do Seoi-nage em que tori solta a gola, passa o braço por baixo da axila
-    de uke e prende o braço dele contra o próprio ombro antes de girar e projetar.
+    Variante do Seoi-nage em que o tori solta a gola, passa o braço por baixo da axila
+    do uke e prende o braço dele contra o próprio ombro antes de girar e projetar.
     O Kodokan a reconheceu como técnica separada do Seoi-nage em 1997.
 
 - id: seoi-otoshi
@@ -33,8 +33,8 @@
   group: nage-waza/te-waza
   name_pt_br: Queda pelas costas
   description_pt_br: >-
-    Parecida com o Seoi-nage, mas tori desce sobre um ou os dois joelhos (ou bloqueia
-    a perna de uke com a sua) e derruba uke para a frente, em vez de carregá-lo
+    Parecida com o Seoi-nage, mas o tori desce sobre um ou os dois joelhos (ou bloqueia
+    a perna do uke com a sua) e derruba o uke para a frente, em vez de carregá-lo
     sobre as costas. É a técnica oficial mais próxima do que se chama popularmente
     de "drop seoi".
 
@@ -44,8 +44,8 @@
   group: nage-waza/te-waza
   name_pt_br: Queda do corpo
   description_pt_br: >-
-    Tori gira de frente para a mesma direção de uke, estende uma perna na frente da
-    canela dele como obstáculo e, puxando com as mãos, faz uke tropeçar e cair para
+    O tori gira de frente para a mesma direção do uke, estende uma perna na frente da
+    canela dele como obstáculo e, puxando com as mãos, faz o uke tropeçar e cair para
     a frente. A perna apenas bloqueia; a força vem das mãos e da rotação do tronco.
 
 - id: kata-guruma
@@ -54,7 +54,7 @@
   group: nage-waza/te-waza
   name_pt_br: Roda pelos ombros
   description_pt_br: >-
-    Tori coloca uke atravessado sobre os ombros, segurando braço e perna, e o
+    O tori coloca o uke atravessado sobre os ombros, segurando braço e perna, e o
     projeta para o lado. A forma clássica com a mão na perna é proibida em competição
     pela IJF desde a proibição de pegadas diretas nas pernas; variantes sem pegar na
     perna ainda aparecem nos registros da IJF.
@@ -65,7 +65,7 @@
   group: nage-waza/te-waza
   name_pt_br: Projeção em concha
   description_pt_br: >-
-    Tori recolhe uke pelas pernas ou pelo tronco, levanta-o como quem pega algo com
+    O tori recolhe o uke pelas pernas ou pelo tronco, levanta-o como quem pega algo com
     uma concha e o derruba para trás. Também é conhecida como Te-guruma. Pegar nas
     pernas é proibido em competição pela IJF.
 
@@ -75,7 +75,7 @@
   group: nage-waza/te-waza
   name_pt_br: Queda pela faixa
   description_pt_br: >-
-    Tori segura a faixa de uke pela frente, bloqueia o corpo dele com o quadril ou a
+    O tori segura a faixa do uke pela frente, bloqueia o corpo dele com o quadril ou a
     perna e o derruba para trás.
 
 - id: yama-arashi
@@ -84,7 +84,7 @@
   group: nage-waza/te-waza
   name_pt_br: Tempestade na montanha
   description_pt_br: >-
-    Tori segura gola e manga do mesmo lado de uke, desequilibra-o para a frente e
+    O tori segura gola e manga do mesmo lado do uke, desequilibra-o para a frente e
     varre a perna dele com um movimento semelhante ao Harai-goshi. Ficou associada a
     Saigo Shiro, um dos primeiros alunos do Kodokan.
 
@@ -94,7 +94,7 @@
   group: nage-waza/te-waza
   name_pt_br: Ceifada com as duas mãos
   description_pt_br: >-
-    Tori avança, abraça as duas pernas de uke com as mãos e o derruba para trás
+    O tori avança, abraça as duas pernas do uke com as mãos e o derruba para trás
     empurrando com o ombro. Proibida em competição pela IJF por ser pegada direta nas
     pernas.
 
@@ -104,7 +104,7 @@
   group: nage-waza/te-waza
   name_pt_br: Derrubar a árvore podre
   description_pt_br: >-
-    Tori segura uma perna de uke por trás do joelho com uma mão e o empurra para trás
+    O tori segura uma perna do uke por trás do joelho com uma mão e o empurra para trás
     com a outra, derrubando-o como uma árvore. Proibida em competição pela IJF por ser
     pegada direta na perna.
 
@@ -114,7 +114,7 @@
   group: nage-waza/te-waza
   name_pt_br: Reversão pelo calcanhar
   description_pt_br: >-
-    Tori puxa o calcanhar de uke com uma mão enquanto empurra o tronco dele para trás
+    O tori puxa o calcanhar do uke com uma mão enquanto empurra o tronco dele para trás
     com a outra. Proibida em competição pela IJF por ser pegada direta na perna.
 
 - id: uchi-mata-sukashi
@@ -123,8 +123,8 @@
   group: nage-waza/te-waza
   name_pt_br: Esquiva do Uchi-mata
   description_pt_br: >-
-    Contragolpe ao Uchi-mata: quando uke levanta a perna para atacar, tori esquiva o
-    quadril, deixa a perna passar no vazio e gira uke por cima, aproveitando o próprio
+    Contragolpe ao Uchi-mata: quando o uke levanta a perna para atacar, o tori esquiva o
+    quadril, deixa a perna passar no vazio e gira o uke por cima, aproveitando o próprio
     impulso do ataque.
 
 - id: kouchi-gaeshi
@@ -133,8 +133,8 @@
   group: nage-waza/te-waza
   name_pt_br: Contragolpe ao Kouchi-gari
   description_pt_br: >-
-    Quando uke tenta Kouchi-gari, tori retira a perna atacada e, girando o tronco,
-    projeta uke na direção do próprio ataque dele.
+    Quando o uke tenta Kouchi-gari, o tori retira a perna atacada e, girando o tronco,
+    projeta o uke na direção do próprio ataque dele.
 
 - id: uki-otoshi
   name: Uki-otoshi
@@ -142,8 +142,8 @@
   group: nage-waza/te-waza
   name_pt_br: Queda flutuante
   description_pt_br: >-
-    Tori desequilibra uke para a frente com um puxão forte das mãos enquanto se
-    abaixa sobre um joelho, e uke cai rodando por cima do próprio pé. É uma técnica
+    O tori desequilibra o uke para a frente com um puxão forte das mãos enquanto se
+    abaixa sobre um joelho, e o uke cai rodando por cima do próprio pé. É uma técnica
     quase só de mãos, sem bloqueio de perna ou quadril.
 
 - id: sumi-otoshi
@@ -152,7 +152,7 @@
   group: nage-waza/te-waza
   name_pt_br: Queda no canto
   description_pt_br: >-
-    Tori desequilibra uke para o canto de trás (diagonal posterior) usando só as mãos,
+    O tori desequilibra o uke para o canto de trás (diagonal posterior) usando só as mãos,
     sem contato de perna, e o faz cair para trás.
 
 - id: obi-tori-gaeshi
@@ -161,7 +161,7 @@
   group: nage-waza/te-waza
   name_pt_br: Reversão pegando a faixa
   description_pt_br: >-
-    Tori segura a faixa de uke por cima das costas, geralmente quando uke ataca baixo,
+    O tori segura a faixa do uke por cima das costas, geralmente quando o uke ataca baixo,
     e o gira por cima de si para a projeção.
   notes:
     - Entrada recente na lista do Kodokan, segundo a sessão judo-techniques-bot; conferir contra a lista publicada.
@@ -173,9 +173,9 @@
   group: nage-waza/koshi-waza
   name_pt_br: Quadril flutuante
   description_pt_br: >-
-    Tori abraça a cintura de uke, encaixa o quadril de lado e gira, fazendo uke rolar
-    por cima do quadril. A rotação substitui a elevação; uke "flutua" sobre o
-    quadril de tori.
+    O tori abraça a cintura do uke, encaixa o quadril de lado e gira, fazendo o uke rolar
+    por cima do quadril. A rotação substitui a elevação; o uke "flutua" sobre o
+    quadril do tori.
 
 - id: o-goshi
   name: O-goshi
@@ -183,8 +183,8 @@
   group: nage-waza/koshi-waza
   name_pt_br: Grande projeção de quadril
   description_pt_br: >-
-    Tori passa o braço pela cintura de uke, encaixa o quadril inteiro abaixo do
-    quadril dele, levanta e projeta uke por cima. É uma das primeiras técnicas
+    O tori passa o braço pela cintura do uke, encaixa o quadril inteiro abaixo do
+    quadril dele, levanta e projeta o uke por cima. É uma das primeiras técnicas
     ensinadas a iniciantes.
 
 - id: koshi-guruma
@@ -193,7 +193,7 @@
   group: nage-waza/koshi-waza
   name_pt_br: Roda pelo quadril
   description_pt_br: >-
-    Tori envolve o pescoço de uke com o braço, encaixa o quadril além da linha do
+    O tori envolve o pescoço do uke com o braço, encaixa o quadril além da linha do
     quadril dele e o faz girar como uma roda por cima do quadril.
   drop_english: [Head Throw]
 
@@ -203,8 +203,8 @@
   group: nage-waza/koshi-waza
   name_pt_br: Projeção de quadril puxando e levantando
   description_pt_br: >-
-    Tori puxa e levanta uke pela gola e pela manga (tsurikomi), encaixa o quadril
-    abaixo dele e o projeta. Na forma baixa (tsurikomi-goshi propriamente dito) tori
+    O tori puxa e levanta o uke pela gola e pela manga (tsurikomi), encaixa o quadril
+    abaixo dele e o projeta. Na forma baixa (tsurikomi-goshi propriamente dito) o tori
     flexiona bastante os joelhos.
 
 - id: sode-tsurikomi-goshi
@@ -213,8 +213,8 @@
   group: nage-waza/koshi-waza
   name_pt_br: Projeção de quadril puxando e levantando pelas mangas
   description_pt_br: >-
-    Variante do Tsurikomi-goshi em que tori segura as duas mangas e levanta um dos
-    braços de uke para cima antes de encaixar o quadril e projetar.
+    Variante do Tsurikomi-goshi em que o tori segura as duas mangas e levanta um dos
+    braços do uke para cima antes de encaixar o quadril e projetar.
 
 - id: harai-goshi
   name: Harai-goshi
@@ -222,7 +222,7 @@
   group: nage-waza/koshi-waza
   name_pt_br: Varrida com o quadril
   description_pt_br: >-
-    Tori encaixa o quadril, puxa uke contra o corpo e varre as pernas dele com a parte
+    O tori encaixa o quadril, puxa o uke contra o corpo e varre as pernas dele com a parte
     de trás da coxa estendida, projetando-o para a frente.
 
 - id: tsuri-goshi
@@ -231,7 +231,7 @@
   group: nage-waza/koshi-waza
   name_pt_br: Projeção de quadril levantando pela faixa
   description_pt_br: >-
-    Tori segura a faixa de uke por cima (o-tsuri-goshi) ou por baixo do braço
+    O tori segura a faixa do uke por cima (o-tsuri-goshi) ou por baixo do braço
     (ko-tsuri-goshi), levanta-o e o projeta por cima do quadril.
 
 - id: hane-goshi
@@ -240,7 +240,7 @@
   group: nage-waza/koshi-waza
   name_pt_br: Quadril em mola
   description_pt_br: >-
-    Tori encaixa o quadril e, com a perna dobrada, levanta a coxa de uke por dentro
+    O tori encaixa o quadril e, com a perna dobrada, levanta a coxa do uke por dentro
     como uma mola, projetando-o para a frente.
 
 - id: utsuri-goshi
@@ -249,7 +249,7 @@
   group: nage-waza/koshi-waza
   name_pt_br: Troca de quadril
   description_pt_br: >-
-    Contragolpe a uma técnica de quadril: tori levanta uke, troca a posição do próprio
+    Contragolpe a uma técnica de quadril: o tori levanta o uke, troca a posição do próprio
     quadril para a frente dele e o derruba por cima.
 
 - id: ushiro-goshi
@@ -258,7 +258,7 @@
   group: nage-waza/koshi-waza
   name_pt_br: Quadril por trás
   description_pt_br: >-
-    Contragolpe a uma técnica de quadril: tori segura uke por trás, levanta-o com o
+    Contragolpe a uma técnica de quadril: o tori segura o uke por trás, levanta-o com o
     quadril e o derruba de costas no tatame.
 
 # ---------- ashi-waza (técnicas de perna/pé) ----------
@@ -268,8 +268,8 @@
   group: nage-waza/ashi-waza
   name_pt_br: Varrida no pé que avança
   description_pt_br: >-
-    No momento em que uke avança um pé e ainda não colocou o peso nele, tori o varre
-    com a sola do pé na direção do movimento, e uke cai de lado.
+    No momento em que o uke avança um pé e ainda não colocou o peso nele, o tori o varre
+    com a sola do pé na direção do movimento, e o uke cai de lado.
 
 - id: hiza-guruma
   name: Hiza-guruma
@@ -277,8 +277,8 @@
   group: nage-waza/ashi-waza
   name_pt_br: Roda pelo joelho
   description_pt_br: >-
-    Tori apoia a sola do pé no joelho de uke como ponto de giro e, com as mãos, roda
-    uke por cima desse apoio.
+    O tori apoia a sola do pé no joelho do uke como ponto de giro e, com as mãos, roda
+    o uke por cima desse apoio.
 
 - id: sasae-tsurikomi-ashi
   name: Sasae-tsurikomi-ashi
@@ -286,8 +286,8 @@
   group: nage-waza/ashi-waza
   name_pt_br: Bloqueio do pé puxando e levantando
   description_pt_br: >-
-    Tori bloqueia a frente do tornozelo de uke com a sola do pé enquanto puxa e
-    levanta com as mãos, fazendo uke tropeçar no bloqueio e cair para a frente.
+    O tori bloqueia a frente do tornozelo do uke com a sola do pé enquanto puxa e
+    levanta com as mãos, fazendo o uke tropeçar no bloqueio e cair para a frente.
 
 - id: osoto-gari
   name: Osoto-gari
@@ -295,7 +295,7 @@
   group: nage-waza/ashi-waza
   name_pt_br: Grande ceifada externa
   description_pt_br: >-
-    Tori desequilibra uke para trás, sobre o calcanhar, posiciona-se ao lado dele e
+    O tori desequilibra o uke para trás, sobre o calcanhar, posiciona-se ao lado dele e
     ceifa a perna de apoio por fora, de trás para a frente, com a própria perna.
 
 - id: ouchi-gari
@@ -304,7 +304,7 @@
   group: nage-waza/ashi-waza
   name_pt_br: Grande ceifada interna
   description_pt_br: >-
-    Tori desequilibra uke para trás e ceifa por dentro a perna dele com a parte de
+    O tori desequilibra o uke para trás e ceifa por dentro a perna dele com a parte de
     trás da própria perna, num arco de dentro para fora.
 
 - id: kosoto-gari
@@ -313,7 +313,7 @@
   group: nage-waza/ashi-waza
   name_pt_br: Pequena ceifada externa
   description_pt_br: >-
-    Tori ceifa por fora o calcanhar de uke com a sola do pé, na direção em que ele
+    O tori ceifa por fora o calcanhar do uke com a sola do pé, na direção em que ele
     está se movendo, desequilibrando-o para trás.
 
 - id: kouchi-gari
@@ -322,8 +322,8 @@
   group: nage-waza/ashi-waza
   name_pt_br: Pequena ceifada interna
   description_pt_br: >-
-    Tori ceifa por dentro o calcanhar de uke com a sola do pé, puxando-o na direção
-    dos dedos dele, enquanto empurra o tronco de uke para trás.
+    O tori ceifa por dentro o calcanhar do uke com a sola do pé, puxando-o na direção
+    dos dedos dele, enquanto empurra o tronco do uke para trás.
 
 - id: okuriashi-harai
   name: Okuriashi-harai
@@ -331,8 +331,8 @@
   group: nage-waza/ashi-waza
   name_pt_br: Varrida dos dois pés em deslocamento lateral
   description_pt_br: >-
-    Quando uke se desloca de lado, juntando um pé ao outro, tori acompanha o
-    movimento e varre os dois pés juntos com a sola do pé, levantando uke e
+    Quando o uke se desloca de lado, juntando um pé ao outro, o tori acompanha o
+    movimento e varre os dois pés juntos com a sola do pé, levantando o uke e
     derrubando-o de lado.
 
 - id: uchi-mata
@@ -341,7 +341,7 @@
   group: nage-waza/ashi-waza
   name_pt_br: Projeção pela parte interna da coxa
   description_pt_br: >-
-    Tori desequilibra uke para a frente, gira e levanta a parte interna da coxa dele
+    O tori desequilibra o uke para a frente, gira e levanta a parte interna da coxa dele
     com a parte de trás da própria coxa, projetando-o por cima. É uma das técnicas mais
     usadas em competição.
 
@@ -351,7 +351,7 @@
   group: nage-waza/ashi-waza
   name_pt_br: Pequeno gancho externo
   description_pt_br: >-
-    Tori engancha por fora o calcanhar de uke com a perna e o puxa, enquanto empurra
+    O tori engancha por fora o calcanhar do uke com a perna e o puxa, enquanto empurra
     o tronco dele para trás e para baixo.
 
 - id: ashi-guruma
@@ -360,8 +360,8 @@
   group: nage-waza/ashi-waza
   name_pt_br: Roda pela perna
   description_pt_br: >-
-    Tori estende a perna esticada contra o joelho ou a coxa de uke e, girando o tronco,
-    roda uke por cima dela.
+    O tori estende a perna esticada contra o joelho ou a coxa do uke e, girando o tronco,
+    roda o uke por cima dela.
 
 - id: harai-tsurikomi-ashi
   name: Harai-tsurikomi-ashi
@@ -369,8 +369,8 @@
   group: nage-waza/ashi-waza
   name_pt_br: Varrida do pé puxando e levantando
   description_pt_br: >-
-    Tori puxa e levanta uke e, em vez de bloquear (como no Sasae-tsurikomi-ashi),
-    varre a frente do tornozelo de uke com a sola do pé.
+    O tori puxa e levanta o uke e, em vez de bloquear (como no Sasae-tsurikomi-ashi),
+    varre a frente do tornozelo do uke com a sola do pé.
 
 - id: o-guruma
   name: O-guruma
@@ -378,8 +378,8 @@
   group: nage-waza/ashi-waza
   name_pt_br: Grande roda
   description_pt_br: >-
-    Tori estende a perna atravessada na altura do quadril ou da parte de cima da coxa
-    de uke e o roda por cima dela, como um eixo.
+    O tori estende a perna atravessada na altura do quadril ou da parte de cima da coxa
+    do uke e o roda por cima dela, como um eixo.
 
 - id: osoto-guruma
   name: Osoto-guruma
@@ -387,7 +387,7 @@
   group: nage-waza/ashi-waza
   name_pt_br: Grande roda externa
   description_pt_br: >-
-    Semelhante ao Osoto-gari, mas a perna de tori passa por trás das duas pernas de
+    Semelhante ao Osoto-gari, mas a perna do tori passa por trás das duas pernas do
     uke e funciona como eixo para rodá-lo para trás.
 
 - id: osoto-otoshi
@@ -396,8 +396,8 @@
   group: nage-waza/ashi-waza
   name_pt_br: Grande queda externa
   description_pt_br: >-
-    Tori coloca a perna por trás da perna de uke, como no Osoto-gari, mas em vez de
-    ceifar empurra para baixo, derrubando uke para trás.
+    O tori coloca a perna por trás da perna do uke, como no Osoto-gari, mas em vez de
+    ceifar empurra para baixo, derrubando o uke para trás.
   notes:
     - Entrada recente na lista do Kodokan, segundo a sessão judo-techniques-bot; conferir contra a lista publicada.
 
@@ -407,7 +407,7 @@
   group: nage-waza/ashi-waza
   name_pt_br: Reversão da andorinha
   description_pt_br: >-
-    Contragolpe ao Deashi-harai: tori desvia o pé da varrida de uke num movimento
+    Contragolpe ao Deashi-harai: o tori desvia o pé da varrida do uke num movimento
     curto, como o voo de uma andorinha, e varre o pé dele de volta.
 
 - id: osoto-gaeshi
@@ -416,8 +416,8 @@
   group: nage-waza/ashi-waza
   name_pt_br: Contragolpe ao Osoto-gari
   description_pt_br: >-
-    Quando uke ataca com Osoto-gari, tori resiste, gira e devolve a mesma ceifada
-    externa, projetando uke.
+    Quando o uke ataca com Osoto-gari, o tori resiste, gira e devolve a mesma ceifada
+    externa, projetando o uke.
   drop_english: [Foot Technique]
 
 - id: ouchi-gaeshi
@@ -426,8 +426,8 @@
   group: nage-waza/ashi-waza
   name_pt_br: Contragolpe ao Ouchi-gari
   description_pt_br: >-
-    Quando uke ataca com Ouchi-gari, tori levanta a perna atacada, aproveita o impulso
-    de uke e o projeta na direção da ceifada.
+    Quando o uke ataca com Ouchi-gari, o tori levanta a perna atacada, aproveita o impulso
+    do uke e o projeta na direção da ceifada.
   drop_english: [Foot Technique]
 
 - id: hane-goshi-gaeshi
@@ -436,8 +436,8 @@
   group: nage-waza/ashi-waza
   name_pt_br: Contragolpe ao Hane-goshi
   description_pt_br: >-
-    Quando uke ataca com Hane-goshi, tori bloqueia o quadril, levanta a perna de
-    ataque de uke com a própria perna e o projeta para trás.
+    Quando o uke ataca com Hane-goshi, o tori bloqueia o quadril, levanta a perna de
+    ataque do uke com a própria perna e o projeta para trás.
   drop_english: [Spring Hip]
   english_extra: [Spring Hip Counter]
 
@@ -447,8 +447,8 @@
   group: nage-waza/ashi-waza
   name_pt_br: Contragolpe ao Harai-goshi
   description_pt_br: >-
-    Quando uke ataca com Harai-goshi, tori bloqueia o quadril e varre a perna de apoio
-    de uke, projetando-o para trás.
+    Quando o uke ataca com Harai-goshi, o tori bloqueia o quadril e varre a perna de apoio
+    do uke, projetando-o para trás.
   drop_english: [Sweeping Hip]
   english_extra: [Sweeping Hip Counter]
 
@@ -458,7 +458,7 @@
   group: nage-waza/ashi-waza
   name_pt_br: Contragolpe ao Uchi-mata
   description_pt_br: >-
-    Quando uke ataca com Uchi-mata, tori bloqueia, levanta a perna de ataque de uke e
+    Quando o uke ataca com Uchi-mata, o tori bloqueia, levanta a perna de ataque do uke e
     o projeta para trás com uma ceifada.
   drop_english: [Inner Thigh Reap]
   english_extra: [Inner Thigh Counter]
@@ -470,9 +470,9 @@
   group: nage-waza/ma-sutemi-waza
   name_pt_br: Projeção em círculo
   description_pt_br: >-
-    Tori puxa uke para a frente, senta-se de costas no tatame entre os pés dele, apoia
-    a sola do pé no abdômen de uke e o projeta por cima da cabeça num arco circular.
-    A variante com tori caindo de lado é chamada popularmente de "yoko-tomoe-nage".
+    O tori puxa o uke para a frente, senta-se de costas no tatame entre os pés dele, apoia
+    a sola do pé no abdômen do uke e o projeta por cima da cabeça num arco circular.
+    A variante com o tori caindo de lado é chamada popularmente de "yoko-tomoe-nage".
 
 - id: sumi-gaeshi
   name: Sumi-gaeshi
@@ -480,8 +480,8 @@
   group: nage-waza/ma-sutemi-waza
   name_pt_br: Reversão pelo canto
   description_pt_br: >-
-    Tori cai de costas puxando uke, coloca o peito do pé na parte interna da coxa dele
-    e o levanta, projetando-o para o canto à frente de tori.
+    O tori cai de costas puxando o uke, coloca o peito do pé na parte interna da coxa dele
+    e o levanta, projetando-o para o canto à frente do tori.
 
 - id: hikikomi-gaeshi
   name: Hikikomi-gaeshi
@@ -489,7 +489,7 @@
   group: nage-waza/ma-sutemi-waza
   name_pt_br: Reversão puxando para dentro
   description_pt_br: >-
-    Tori segura a faixa ou as costas de uke por cima, cai de costas puxando-o e,
+    O tori segura a faixa ou as costas do uke por cima, cai de costas puxando-o e,
     usando o pé na coxa dele, o projeta por cima de si.
 
 - id: tawara-gaeshi
@@ -498,7 +498,7 @@
   group: nage-waza/ma-sutemi-waza
   name_pt_br: Reversão do fardo de arroz
   description_pt_br: >-
-    Quando uke ataca baixo, tori abraça o tronco dele por cima como quem levanta um
+    Quando o uke ataca baixo, o tori abraça o tronco dele por cima como quem levanta um
     fardo de arroz, cai de costas e o projeta por cima da cabeça.
 
 - id: ura-nage
@@ -507,8 +507,8 @@
   group: nage-waza/ma-sutemi-waza
   name_pt_br: Projeção para trás
   description_pt_br: >-
-    Tori abraça uke pela cintura, por trás ou de lado, levanta-o com o quadril e cai
-    para trás, arremessando uke por cima do próprio ombro.
+    O tori abraça o uke pela cintura, por trás ou de lado, levanta-o com o quadril e cai
+    para trás, arremessando o uke por cima do próprio ombro.
 
 # ---------- yoko-sutemi-waza (sacrifício lateral) ----------
 - id: yoko-otoshi
@@ -517,8 +517,8 @@
   group: nage-waza/yoko-sutemi-waza
   name_pt_br: Queda lateral
   description_pt_br: >-
-    Tori desequilibra uke para o lado, desliza a perna diante dos pés dele e se deixa
-    cair de lado, levando uke junto para o tatame.
+    O tori desequilibra o uke para o lado, desliza a perna diante dos pés dele e se deixa
+    cair de lado, levando o uke junto para o tatame.
 
 - id: tani-otoshi
   name: Tani-otoshi
@@ -526,8 +526,8 @@
   group: nage-waza/yoko-sutemi-waza
   name_pt_br: Queda no vale
   description_pt_br: >-
-    Tori coloca a perna estendida por trás dos calcanhares de uke e se deixa cair de
-    lado, derrubando uke para trás no "vale" formado atrás dele.
+    O tori coloca a perna estendida por trás dos calcanhares do uke e se deixa cair de
+    lado, derrubando o uke para trás no "vale" formado atrás dele.
 
 - id: hane-makikomi
   name: Hane-makikomi
@@ -535,8 +535,8 @@
   group: nage-waza/yoko-sutemi-waza
   name_pt_br: Enrolamento em mola
   description_pt_br: >-
-    Tori enrola o braço de uke em volta do próprio corpo, gira, levanta a perna dele
-    como no Hane-goshi e cai junto, levando uke ao tatame.
+    O tori enrola o braço do uke em volta do próprio corpo, gira, levanta a perna dele
+    como no Hane-goshi e cai junto, levando o uke ao tatame.
 
 - id: soto-makikomi
   name: Soto-makikomi
@@ -544,8 +544,8 @@
   group: nage-waza/yoko-sutemi-waza
   name_pt_br: Enrolamento externo
   description_pt_br: >-
-    Tori prende o braço de uke debaixo da axila, solta a outra pegada, gira o corpo
-    por fora e cai rodando, enrolando uke no próprio corpo.
+    O tori prende o braço do uke debaixo da axila, solta a outra pegada, gira o corpo
+    por fora e cai rodando, enrolando o uke no próprio corpo.
 
 - id: uki-waza
   name: Uki-waza
@@ -553,7 +553,7 @@
   group: nage-waza/yoko-sutemi-waza
   name_pt_br: Técnica flutuante
   description_pt_br: >-
-    Tori cai de lado, estende a perna para bloquear o pé de uke e, com um puxão das
+    O tori cai de lado, estende a perna para bloquear o pé do uke e, com um puxão das
     mãos, o projeta por cima do próprio corpo.
 
 - id: yoko-wakare
@@ -562,7 +562,7 @@
   group: nage-waza/yoko-sutemi-waza
   name_pt_br: Separação lateral
   description_pt_br: >-
-    Tori se lança de lado diante de uke, com as pernas esticadas à frente dele, e o
+    O tori se lança de lado diante do uke, com as pernas esticadas à frente dele, e o
     puxa por cima do próprio corpo.
 
 - id: yoko-guruma
@@ -571,7 +571,7 @@
   group: nage-waza/yoko-sutemi-waza
   name_pt_br: Roda lateral
   description_pt_br: >-
-    Contragolpe a um ataque pela frente: tori desliza a perna entre as pernas de uke,
+    Contragolpe a um ataque pela frente: o tori desliza a perna entre as pernas do uke,
     cai de lado e o roda por cima do ombro.
 
 - id: yoko-gake
@@ -580,7 +580,7 @@
   group: nage-waza/yoko-sutemi-waza
   name_pt_br: Gancho lateral
   description_pt_br: >-
-    Tori desequilibra uke para o lado, varre o pé de apoio dele com a sola do pé e cai
+    O tori desequilibra o uke para o lado, varre o pé de apoio dele com a sola do pé e cai
     de lado junto com ele.
 
 - id: daki-wakare
@@ -589,8 +589,8 @@
   group: nage-waza/yoko-sutemi-waza
   name_pt_br: Abraçar e separar
   description_pt_br: >-
-    Com uke de quatro apoios, tori abraça o tronco dele por cima, levanta-o e cai de
-    lado, girando uke para trás por cima de si.
+    Com o uke de quatro apoios, o tori abraça o tronco dele por cima, levanta-o e cai de
+    lado, girando o uke para trás por cima de si.
 
 - id: uchi-makikomi
   name: Uchi-makikomi
@@ -598,8 +598,8 @@
   group: nage-waza/yoko-sutemi-waza
   name_pt_br: Enrolamento interno
   description_pt_br: >-
-    Tori passa o braço por cima do braço de uke, gira para dentro e cai rolando,
-    enrolando uke no próprio corpo.
+    O tori passa o braço por cima do braço do uke, gira para dentro e cai rolando,
+    enrolando o uke no próprio corpo.
 
 - id: kani-basami
   name: Kani-basami
@@ -608,7 +608,7 @@
   status: forbidden_ijf
   name_pt_br: Tesoura de caranguejo
   description_pt_br: >-
-    Tori salta de lado e prende o corpo de uke entre as pernas, como uma tesoura, uma
+    O tori salta de lado e prende o corpo do uke entre as pernas, como uma tesoura, uma
     perna na frente e outra atrás, derrubando-o para trás. Causou lesões graves e é
     proibida em competição.
 
@@ -618,8 +618,8 @@
   group: nage-waza/yoko-sutemi-waza
   name_pt_br: Grande enrolamento externo
   description_pt_br: >-
-    Tori entra como no Osoto-gari, enrola o braço de uke em volta do próprio corpo e
-    cai rodando junto, levando uke ao tatame.
+    O tori entra como no Osoto-gari, enrola o braço do uke em volta do próprio corpo e
+    cai rodando junto, levando o uke ao tatame.
 
 - id: uchi-mata-makikomi
   name: Uchi-mata-makikomi
@@ -627,7 +627,7 @@
   group: nage-waza/yoko-sutemi-waza
   name_pt_br: Enrolamento do Uchi-mata
   description_pt_br: >-
-    Tori entra com Uchi-mata, enrola o braço de uke em volta do próprio corpo e cai
+    O tori entra com Uchi-mata, enrola o braço do uke em volta do próprio corpo e cai
     rodando para completar a projeção.
   notes:
     - Entrada recente na lista do Kodokan, segundo a sessão judo-techniques-bot; conferir contra a lista publicada.
@@ -638,7 +638,7 @@
   group: nage-waza/yoko-sutemi-waza
   name_pt_br: Enrolamento do Harai-goshi
   description_pt_br: >-
-    Tori entra com Harai-goshi, enrola o braço de uke em volta do próprio corpo e cai
+    O tori entra com Harai-goshi, enrola o braço do uke em volta do próprio corpo e cai
     rodando junto para completar a projeção.
 
 - id: kouchi-makikomi
@@ -647,8 +647,8 @@
   group: nage-waza/yoko-sutemi-waza
   name_pt_br: Enrolamento do Kouchi-gari
   description_pt_br: >-
-    Tori prende o braço de uke debaixo da axila, ceifa por dentro o pé dele como no
-    Kouchi-gari e cai junto, de frente, por cima de uke.
+    O tori prende o braço do uke debaixo da axila, ceifa por dentro o pé dele como no
+    Kouchi-gari e cai junto, de frente, por cima do uke.
   notes:
     - Entrada recente na lista do Kodokan, segundo a sessão judo-techniques-bot; conferir contra a lista publicada.
 
@@ -659,8 +659,8 @@
   status: forbidden_ijf
   name_pt_br: Enlaçamento em perna de sapo
   description_pt_br: >-
-    Tori enrosca a perna em volta da perna de uke, por fora, e cai para trás junto com
-    ele. Pressiona o joelho de uke de forma perigosa e é proibida em competição.
+    O tori enrosca a perna em volta da perna do uke, por fora, e cai para trás junto com
+    ele. Pressiona o joelho do uke de forma perigosa e é proibida em competição.
 
 # ---------- fora da nomenclatura do Kodokan ----------
 - id: reverse-seoi-nage
@@ -670,8 +670,8 @@
   status: nonstandard
   name_pt_br: Seoi invertido (seoi coreano)
   description_pt_br: >-
-    Variação de seoi-nage com a pegada invertida: tori gira para o lado oposto ao do
-    braço que prende uke. Popularizada por judocas sul-coreanos. Não tem nome próprio
+    Variação de seoi-nage com a pegada invertida: o tori gira para o lado oposto ao do
+    braço que prende o uke. Popularizada por judocas sul-coreanos. Não tem nome próprio
     na nomenclatura do Kodokan e costuma ser registrada como uma das formas de
     Seoi-nage ou Ippon-seoi-nage.
   notes:
@@ -684,7 +684,7 @@
   status: nonstandard
   name_pt_br: Projeção em torre
   description_pt_br: >-
-    Tori, de frente para uke e com pegada por cima das costas, levanta-o colocando a
+    O tori, de frente para o uke e com pegada por cima das costas, levanta-o colocando a
     perna por dentro da coxa dele e o projeta de lado. É chamada em inglês de "front
     uchi mata". Não consta da nomenclatura do Kodokan.
   notes:
@@ -696,8 +696,8 @@
   status: nonstandard
   name_pt_br: Abraçar e levantar
   description_pt_br: >-
-    Ação de levantar uke, que está deitado de costas fazendo guarda, até a altura dos
-    ombros de tori. Não é técnica de projeção da nomenclatura do Kodokan e é proibida
+    Ação de levantar o uke, que está deitado de costas fazendo guarda, até a altura dos
+    ombros do tori. Não é técnica de projeção da nomenclatura do Kodokan e é proibida
     em competição.
   bjj: [Body Slam]
   notes:

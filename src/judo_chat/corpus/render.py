@@ -57,10 +57,21 @@ def render_technique(technique: Technique) -> str:
     return "\n".join(lines)
 
 
+_POPULAR_KIND = {
+    "popular": "nome popular",
+    "truncation": "abreviação",
+    "nonstandard": "nome fora do Kodokan",
+    "pt_br": "termo em português",
+    "bjj": "termo do jiu-jitsu",
+}
+_CONFIDENCE = {"alta": "alta", "media": "média", "baixa": "baixa"}
+
+
 def render_popular(name: PopularName, corpus: Corpus) -> str:
     targets = " | ".join(corpus.technique(tid).name for tid in name.technique_ids)
     marker = "ambíguo" if name.ambiguous else "único"
-    line = f'- "{name.name}" ({name.kind}, {marker}, confiança {name.confidence}) -> {targets}'
+    kind = _POPULAR_KIND[name.kind]
+    line = f'- "{name.name}" ({kind}, {marker}, confiança {_CONFIDENCE[name.confidence]}) -> {targets}'
     return f"{line}. {name.note}" if name.note else line
 
 

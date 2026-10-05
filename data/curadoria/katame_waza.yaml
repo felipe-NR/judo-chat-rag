@@ -10,7 +10,7 @@
   group: katame-waza/osaekomi-waza
   name_pt_br: Imobilização em faixa diagonal
   description_pt_br: >-
-    Tori senta-se ao lado de uke, de frente para a cabeça dele, prende um braço de
+    O tori senta-se ao lado do uke, de frente para a cabeça dele, prende um braço do
     uke debaixo da axila e envolve o pescoço com o outro braço, mantendo o peso sobre
     o peito dele. "Kesa" é a faixa diagonal da vestimenta de monge budista.
 
@@ -20,7 +20,7 @@
   group: katame-waza/osaekomi-waza
   name_pt_br: Imobilização em faixa diagonal modificada
   description_pt_br: >-
-    Variante do Kesa-gatame em que o braço de tori passa por baixo da axila de uke,
+    Variante do Kesa-gatame em que o braço do tori passa por baixo da axila do uke,
     em vez de envolver o pescoço.
 
 - id: ushiro-kesa-gatame
@@ -29,7 +29,7 @@
   group: katame-waza/osaekomi-waza
   name_pt_br: Imobilização em faixa diagonal invertida
   description_pt_br: >-
-    Tori senta-se ao lado de uke de frente para os pés dele, prende o braço mais
+    O tori senta-se ao lado do uke de frente para os pés dele, prende o braço mais
     próximo e controla o tronco pela faixa ou pelo lado oposto.
   notes:
     - Entrada recente na lista do Kodokan, segundo a sessão judo-techniques-bot; conferir contra a lista publicada.
@@ -40,7 +40,7 @@
   group: katame-waza/osaekomi-waza
   name_pt_br: Imobilização pelo ombro
   description_pt_br: >-
-    Tori prende a cabeça e um braço de uke juntos, apertando o braço dele contra o
+    O tori prende a cabeça e um braço do uke juntos, apertando o braço dele contra o
     pescoço com a própria cabeça e os braços entrelaçados. No judô é uma
     imobilização; no jiu-jitsu a mesma posição é usada como estrangulamento.
   bjj: [Arm Triangle Choke, Head and Arm Choke]
@@ -51,8 +51,8 @@
   group: katame-waza/osaekomi-waza
   name_pt_br: Imobilização pelos quatro cantos por cima
   description_pt_br: >-
-    Tori deita-se sobre uke vindo pelo lado da cabeça dele, com o peito sobre o peito
-    de uke, segurando a faixa pelos dois lados por baixo dos braços dele.
+    O tori deita-se sobre o uke vindo pelo lado da cabeça dele, com o peito sobre o peito
+    do uke, segurando a faixa pelos dois lados por baixo dos braços dele.
   bjj: [North South Position]
 
 - id: kuzure-kami-shiho-gatame
@@ -61,8 +61,8 @@
   group: katame-waza/osaekomi-waza
   name_pt_br: Imobilização pelos quatro cantos por cima modificada
   description_pt_br: >-
-    Variante do Kami-shiho-gatame em que tori fica em diagonal e passa um braço por
-    baixo do braço de uke para segurar a gola nas costas.
+    Variante do Kami-shiho-gatame em que o tori fica em diagonal e passa um braço por
+    baixo do braço do uke para segurar a gola nas costas.
   bjj: [North South Position]
 
 - id: yoko-shiho-gatame
@@ -71,7 +71,7 @@
   group: katame-waza/osaekomi-waza
   name_pt_br: Imobilização lateral pelos quatro cantos
   description_pt_br: >-
-    Tori deita-se atravessado sobre uke, pelo lado, com um braço entre as pernas dele
+    O tori deita-se atravessado sobre o uke, pelo lado, com um braço entre as pernas dele
     e o outro por baixo do pescoço, controlando quadril e ombros.
   bjj: [Side Control]
 
@@ -81,7 +81,7 @@
   group: katame-waza/osaekomi-waza
   name_pt_br: Imobilização montada pelos quatro cantos
   description_pt_br: >-
-    Tori monta sobre o tronco de uke, prende as pernas dele com as próprias pernas e
+    O tori monta sobre o tronco do uke, prende as pernas dele com as próprias pernas e
     controla a cabeça e um braço.
   bjj: [Full Mount]
 
@@ -91,7 +91,7 @@
   group: katame-waza/osaekomi-waza
   name_pt_br: Imobilização flutuante
   description_pt_br: >-
-    Tori fica ao lado de uke apoiado num joelho sobre o abdômen dele, controlando o
+    O tori fica ao lado do uke apoiado num joelho sobre o abdômen dele, controlando o
     braço e o pescoço, numa posição alta e móvel.
   notes:
     - Entrada recente na lista do Kodokan, segundo a sessão judo-techniques-bot; conferir contra a lista publicada.
@@ -102,8 +102,8 @@
   group: katame-waza/osaekomi-waza
   name_pt_br: Imobilização por trás
   description_pt_br: >-
-    Tori controla uke deitando-se de costas sobre o tronco dele, de lado, prendendo um
-    braço de uke.
+    O tori controla o uke deitando-se de costas sobre o tronco dele, de lado, prendendo um
+    braço do uke.
   notes:
     - Entrada recente na lista do Kodokan, segundo a sessão judo-techniques-bot; conferir contra a lista publicada.
 
@@ -114,7 +114,7 @@
   group: katame-waza/shime-waza
   name_pt_br: Estrangulamento cruzado normal
   description_pt_br: >-
-    Tori cruza os braços e segura as duas golas de uke com as palmas para baixo
+    O tori cruza os braços e segura as duas golas do uke com as palmas para baixo
     (polegares por dentro), estrangulando com os antebraços dos lados do pescoço.
 
 - id: gyaku-juji-jime
@@ -123,7 +123,7 @@
   group: katame-waza/shime-waza
   name_pt_br: Estrangulamento cruzado invertido
   description_pt_br: >-
-    Tori cruza os braços e segura as duas golas com as palmas para cima (dedos por
+    O tori cruza os braços e segura as duas golas com as palmas para cima (dedos por
     dentro) e estrangula puxando os cotovelos para fora.
 
 - id: kata-juji-jime
@@ -132,7 +132,7 @@
   group: katame-waza/shime-waza
   name_pt_br: Estrangulamento meio cruzado
   description_pt_br: >-
-    Tori cruza os braços segurando uma gola com a palma para cima e a outra com a
+    O tori cruza os braços segurando uma gola com a palma para cima e a outra com a
     palma para baixo.
 
 - id: hadaka-jime
@@ -141,7 +141,7 @@
   group: katame-waza/shime-waza
   name_pt_br: Estrangulamento nu
   description_pt_br: >-
-    Tori, por trás de uke, passa o antebraço pela frente do pescoço dele e aperta sem
+    O tori, por trás do uke, passa o antebraço pela frente do pescoço dele e aperta sem
     usar a gola do judogi, por isso "nu". É o "mata-leão" do vocabulário brasileiro.
   bjj: [Rear Naked Choke (RNC)]
 
@@ -151,7 +151,7 @@
   group: katame-waza/shime-waza
   name_pt_br: Estrangulamento deslizando a gola
   description_pt_br: >-
-    Tori, por trás de uke, segura a gola dele com as duas mãos (uma passando por baixo
+    O tori, por trás do uke, segura a gola dele com as duas mãos (uma passando por baixo
     da axila) e estrangula puxando as golas em sentidos opostos.
 
 - id: kata-ha-jime
@@ -160,8 +160,8 @@
   group: katame-waza/shime-waza
   name_pt_br: Estrangulamento de uma asa
   description_pt_br: >-
-    Tori, por trás de uke, segura a gola com uma mão e, com o outro braço, levanta um
-    braço de uke (a "asa") e o empurra por trás da nuca, estrangulando.
+    O tori, por trás do uke, segura a gola com uma mão e, com o outro braço, levanta um
+    braço do uke (a "asa") e o empurra por trás da nuca, estrangulando.
 
 - id: do-jime
   name: Do-jime
@@ -170,7 +170,7 @@
   status: forbidden_ijf
   name_pt_br: Estrangulamento do tronco
   description_pt_br: >-
-    Tori aperta o tronco de uke com as pernas cruzadas. Comprime o abdômen e as
+    O tori aperta o tronco do uke com as pernas cruzadas. Comprime o abdômen e as
     costelas, e não o pescoço, e é proibido em competição.
 
 - id: sode-guruma-jime
@@ -179,8 +179,8 @@
   group: katame-waza/shime-waza
   name_pt_br: Estrangulamento em roda com a manga
   description_pt_br: >-
-    Tori segura a própria manga por dentro e, com o outro antebraço passando pela
-    frente do pescoço de uke, aperta numa roda com as mangas. Conhecido no jiu-jitsu
+    O tori segura a própria manga por dentro e, com o outro antebraço passando pela
+    frente do pescoço do uke, aperta numa roda com as mangas. Conhecido no jiu-jitsu
     brasileiro como "Ezequiel".
   bjj: [Ezequiel Choke]
 
@@ -190,7 +190,7 @@
   group: katame-waza/shime-waza
   name_pt_br: Estrangulamento com uma mão
   description_pt_br: >-
-    Tori estrangula segurando a gola de uke com uma única mão e pressionando o
+    O tori estrangula segurando a gola do uke com uma única mão e pressionando o
     antebraço contra o pescoço.
 
 - id: ryo-te-jime
@@ -199,7 +199,7 @@
   group: katame-waza/shime-waza
   name_pt_br: Estrangulamento com as duas mãos
   description_pt_br: >-
-    Tori segura as duas golas de uke sem cruzar os braços e estrangula pressionando os
+    O tori segura as duas golas do uke sem cruzar os braços e estrangula pressionando os
     punhos contra os lados do pescoço.
 
 - id: tsukkomi-jime
@@ -208,7 +208,7 @@
   group: katame-waza/shime-waza
   name_pt_br: Estrangulamento empurrando
   description_pt_br: >-
-    Tori fecha a gola de uke com uma mão e empurra o punho da outra contra o pescoço,
+    O tori fecha a gola do uke com uma mão e empurra o punho da outra contra o pescoço,
     estrangulando com a pressão.
 
 - id: sankaku-jime
@@ -217,7 +217,7 @@
   group: katame-waza/shime-waza
   name_pt_br: Estrangulamento em triângulo
   description_pt_br: >-
-    Tori prende a cabeça e um braço de uke entre as pernas, que formam um triângulo,
+    O tori prende a cabeça e um braço do uke entre as pernas, que formam um triângulo,
     e estrangula apertando as coxas. É o "triângulo" do jiu-jitsu.
   bjj: [Triangle Choke]
 
@@ -228,7 +228,7 @@
   group: katame-waza/kansetsu-waza
   name_pt_br: Chave de braço enroscada
   description_pt_br: >-
-    Tori dobra o braço de uke em ângulo reto e o torce segurando o punho com uma mão,
+    O tori dobra o braço do uke em ângulo reto e o torce segurando o punho com uma mão,
     enquanto a outra passa por baixo do braço dele e segura o próprio punho. Torcido
     para cima é a "americana" do jiu-jitsu; para trás, a "kimura".
   bjj: [Americana, Kimura]
@@ -240,8 +240,8 @@
   group: katame-waza/kansetsu-waza
   name_pt_br: Chave de braço em cruz
   description_pt_br: >-
-    Tori deita-se perpendicular a uke, com as pernas sobre o peito e a cabeça dele,
-    prende o braço estendido de uke entre as coxas e hiperestende o cotovelo
+    O tori deita-se perpendicular ao uke, com as pernas sobre o peito e a cabeça dele,
+    prende o braço estendido do uke entre as coxas e hiperestende o cotovelo
     levantando o quadril. É a chave de braço mais usada no judô; a IJF a registra
     como "Juji-gatame".
   bjj: [Armbar]
@@ -253,7 +253,7 @@
   group: katame-waza/kansetsu-waza
   name_pt_br: Chave de braço com o braço
   description_pt_br: >-
-    Tori prende o punho de uke contra o próprio ombro ou pescoço e pressiona o
+    O tori prende o punho do uke contra o próprio ombro ou pescoço e pressiona o
     cotovelo esticado dele com as duas mãos.
   notes:
     - Forma curta usada pela IJF segundo a sessão judo-techniques-bot; não apareceu na amostra do judobase.
@@ -265,7 +265,7 @@
   group: katame-waza/kansetsu-waza
   name_pt_br: Chave de braço com o joelho
   description_pt_br: >-
-    Tori prende o braço estendido de uke debaixo da axila e pressiona o cotovelo dele
+    O tori prende o braço estendido do uke debaixo da axila e pressiona o cotovelo dele
     com o joelho.
   notes:
     - Forma curta usada pela IJF segundo a sessão judo-techniques-bot; não apareceu na amostra do judobase.
@@ -277,8 +277,8 @@
   group: katame-waza/kansetsu-waza
   name_pt_br: Chave de braço com a axila
   description_pt_br: >-
-    Tori prende o braço esticado de uke debaixo da própria axila e força o cotovelo
-    para baixo com o peso do corpo. Aplicada de pé, quando tori se joga ao solo, é
+    O tori prende o braço esticado do uke debaixo da própria axila e força o cotovelo
+    para baixo com o peso do corpo. Aplicada de pé, quando o tori se joga ao solo, é
     punida pela IJF porque provoca lesões.
   notes:
     - Forma curta usada pela IJF segundo a sessão judo-techniques-bot; não apareceu na amostra do judobase.
@@ -290,7 +290,7 @@
   group: katame-waza/kansetsu-waza
   name_pt_br: Chave de braço com o abdômen
   description_pt_br: >-
-    Tori prende o braço esticado de uke e pressiona o cotovelo dele com o abdômen.
+    O tori prende o braço esticado do uke e pressiona o cotovelo dele com o abdômen.
   notes:
     - Forma curta usada pela IJF segundo a sessão judo-techniques-bot; não apareceu na amostra do judobase.
 
@@ -301,7 +301,7 @@
   group: katame-waza/kansetsu-waza
   name_pt_br: Chave de braço com a perna
   description_pt_br: >-
-    Tori prende o braço esticado de uke e pressiona o cotovelo dele com a perna. Apesar
+    O tori prende o braço esticado do uke e pressiona o cotovelo dele com a perna. Apesar
     do nome em inglês "Leg Lock" no CSV de origem, é uma chave de cotovelo, não de
     perna.
   drop_english: [Leg Lock]
@@ -315,7 +315,7 @@
   group: katame-waza/kansetsu-waza
   name_pt_br: Chave de braço com a mão
   description_pt_br: >-
-    Tori segura o punho de uke e pressiona o cotovelo esticado dele com a mão ou o
+    O tori segura o punho do uke e pressiona o cotovelo esticado dele com a mão ou o
     antebraço.
   notes:
     - Forma curta usada pela IJF segundo a sessão judo-techniques-bot; não apareceu na amostra do judobase.
@@ -327,7 +327,7 @@
   group: katame-waza/kansetsu-waza
   name_pt_br: Chave de braço em triângulo
   description_pt_br: >-
-    A partir do triângulo de pernas (como no Sankaku-jime), tori estica o braço de uke
+    A partir do triângulo de pernas (como no Sankaku-jime), o tori estica o braço do uke
     e hiperestende o cotovelo.
   notes:
     - Entrada recente na lista do Kodokan, segundo a sessão judo-techniques-bot; conferir contra a lista publicada.
@@ -339,7 +339,7 @@
   status: forbidden_ijf
   name_pt_br: Chave de perna enroscada
   description_pt_br: >-
-    Tori enrosca as pernas na perna de uke e torce o joelho dele. Na competição de
+    O tori enrosca as pernas na perna do uke e torce o joelho dele. Na competição de
     judô só são permitidas chaves no cotovelo, por isso é proibida.
   bjj: [Entangled Leg Lock, Single Leg X (SLX)]
 

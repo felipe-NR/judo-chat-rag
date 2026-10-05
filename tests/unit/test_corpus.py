@@ -46,7 +46,7 @@ def test_render_is_byte_identical_across_hash_seeds() -> None:
 
 def test_render_lists_popular_names_sorted(corpus: Corpus) -> None:
     text = render_corpus(corpus)
-    assert '"Ashi-barai" (popular, ambíguo, confiança media) -> Deashi-harai | Okuriashi-harai' in text
+    assert '"Ashi-barai" (nome popular, ambíguo, confiança média) -> Deashi-harai | Okuriashi-harai' in text
 
 
 def _copy_data(tmp_path: Path) -> Path:
