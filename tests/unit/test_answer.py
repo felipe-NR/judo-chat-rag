@@ -43,3 +43,44 @@ def test_user_message_carries_the_fgj_sheet(corpus: Corpus, recognizer: Recogniz
 def test_user_message_carries_pronunciation_guide(corpus: Corpus) -> None:
     message = build_user_message("Como se pronuncia hiza guruma?", [], corpus)
     assert "Guia de pronúncia da FGJ" in message
+
+
+class _Usage:
+    cache_read_input_tokens = 34899
+    cache_creation_input_tokens = 0
+
+
+class _Response:
+    usage = _Usage()
+
+
+class _Messages:
+    def __init__(self) -> None:
+        self.calls: list[dict[str, object]] = []
+
+    async def create(self, **kwargs: object) -> _Response:
+        self.calls.append(kwargs)
+        return _Response()
+
+
+class _Client:
+    def __init__(self) -> None:
+        self.messages = _Messages()
+
+    def with_options(self, **_: object) -> "_Client":
+        return self
+
+
+async def test_keep_alive_reuses_the_cached_prefix(corpus: Corpus) -> None:
+    from judo_chat.answer import Answerer
+    from judo_chat.config import Settings
+
+    client = _Client()
+    answerer = Answerer(client, Settings(), corpus)  # type: ignore[arg-type]
+    assert answerer.last_cache_touch is None
+    assert await answerer.keep_alive() == (34899, 0)
+    [call] = client.messages.calls
+    assert call["max_tokens"] == 0
+    assert call["system"] is answerer._system
+    assert call["model"] == Settings().answer_model
+    assert answerer.last_cache_touch is not None

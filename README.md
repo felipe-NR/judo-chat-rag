@@ -46,16 +46,28 @@ repositório `JUDO_CHAT_API_URL` e rode o workflow de novo.
 
 ## Custo
 
-Medido em 2026-10-05 com o Haiku 4.5 (US$ 1/M de entrada, US$ 5/M de saída, cache: gravação
-US$ 1,25/M com TTL de 5 minutos e leitura US$ 0,10/M), dólar a R$ 5, sem IOF. O bloco fixo
-tem ~35 mil tokens: o material da FGJ inteiro, sem kanji, vídeos, grafias e nomes em inglês,
-que vão na ficha anexada à pergunta ou só servem ao reconhecedor.
+Medido em 2026-10-05 com o Haiku 4.5 (US$ 1/M de entrada, US$ 5/M de saída), dólar a R$ 5,
+sem IOF. O bloco fixo tem ~35 mil tokens e fica em cache com TTL de 1 hora (gravação a
+US$ 2/M, leitura a US$ 0,10/M).
 
 | Caso | US$ | R$ |
 |-|-|-|
 | Pergunta com cache quente | ~0,007 | ~0,035 |
-| Primeira pergunta após 5 min parado (grava o cache) | ~0,05 | ~0,25 |
+| Gravação do cache (1 vez por dia, ou quando o corpus muda) | ~0,07 | ~0,35 |
+| Re-aquecimento (leitura com `max_tokens: 0`) | ~0,0035 | ~0,017 |
 | Pergunta fora do escopo (só o guardrail) | ~0,001 | ~0,005 |
+
+### Re-aquecimento do cache
+
+`src/judo_chat/keepalive.py` roda dentro da API. Das 07h às 23h (horário de Brasília), se
+ninguém perguntou nos últimos 55 minutos, ele lê o cache com `max_tokens: 0` para renovar o
+TTL de 1 hora. Assim o corpus é gravado uma vez por dia (no primeiro re-aquecimento depois
+das 07h) e de novo só quando o corpus, as instruções ou o modelo mudam; reiniciar a API não
+grava. Custo: ~16 leituras por dia no máximo, ~R$ 0,28. O log mostra cada re-aquecimento
+(`re-aquecimento: cache_read=... cache_write=...`). Configuração no `.env`:
+`JUDO_CHAT_KEEPALIVE_ENABLED`, `JUDO_CHAT_KEEPALIVE_INTERVAL_S`,
+`JUDO_CHAT_KEEPALIVE_WINDOW_START`, `JUDO_CHAT_KEEPALIVE_WINDOW_END`,
+`JUDO_CHAT_KEEPALIVE_TIMEZONE`.
 
 O Sonnet 5.5 dá respostas mais fiéis à base por cerca de 3-4x o custo; veja `.env.example`.
 

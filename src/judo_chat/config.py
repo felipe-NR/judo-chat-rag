@@ -1,3 +1,4 @@
+from datetime import time
 from functools import lru_cache
 from pathlib import Path
 from typing import Literal
@@ -21,9 +22,15 @@ class Settings(BaseSettings):
     answer_max_tokens: int = 4000
     guardrail_timeout_s: float = 15.0
     answer_timeout_s: float = 90.0
-    # Uso esporádico (sessões a cada poucas horas) nunca reaproveita o cache de 1h; o de 5min
-    # grava por 1,25x o preço de entrada, contra 2x.
-    cache_ttl: Literal["5m", "1h"] = "5m"
+    # 1h combinado com o re-aquecimento: grava 1 vez por dia (2x o preço de entrada) e lê a
+    # cada ~55 min parado (0,1x). Com 5 min seriam ~13 re-aquecimentos por hora.
+    cache_ttl: Literal["5m", "1h"] = "1h"
+    keepalive_enabled: bool = True
+    # Abaixo dos 60 min do TTL, com folga para a checagem que roda a cada minuto.
+    keepalive_interval_s: float = 55 * 60
+    keepalive_window_start: time = time(7, 0)
+    keepalive_window_end: time = time(23, 0)
+    keepalive_timezone: str = "America/Sao_Paulo"
     # Retry server-side num modelo alternativo quando o modelo recusa por política. Só vale
     # para os modelos da geração 5 (Sonnet 5.5, Opus 5.5); o Haiku 4.5 não aceita.
     use_refusal_fallbacks: bool = False

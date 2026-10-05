@@ -100,26 +100,43 @@ class Recognizer:
         """Igualdade da forma canônica; serve para nomes inteiros como EventTag.name."""
         return self._index.get(canonical(name))
 
+    def _longest_at(self, spans: list[tuple[str, int, int]], position: int) -> tuple[int, Entry] | None:
+        for size in range(min(_MAX_WINDOW, len(spans) - position), 0, -1):
+            tokens = [token for token, _, _ in spans[position : position + size]]
+            key = canonical("".join(tokens))
+            entry = self._index.get(key)
+            # Uma palavra de borda que some na canonização ("é", "ou") não entra no termo.
+            if entry is not None and size > 1:
+                if key in (canonical("".join(tokens[1:])), canonical("".join(tokens[:-1]))):
+                    entry = None
+            if entry is not None:
+                return size, entry
+        return None
+
     def find(self, text: str) -> list[Match]:
-        """Casamentos em texto livre, do mais longo para o mais curto, sem sobreposição."""
+        """Casamentos em texto livre, do mais longo para o mais curto, sem sobreposição.
+
+        Se o casamento que começa na palavra seguinte termina mais adiante, a palavra atual
+        fica de fora: em "o uchi mata", o artigo "o" com "uchi" daria "Ouchi" (Ouchi-gari),
+        mas "uchi mata" cobre mais texto. Em "o soto gari" não há casamento mais longo a
+        partir de "soto", e o nome fica Osoto-gari.
+        """
         spans = [("".join(tokenize(m.group())), m.start(), m.end()) for m in _WORD.finditer(text)]
         matches: list[Match] = []
         position = 0
         while position < len(spans):
-            for size in range(min(_MAX_WINDOW, len(spans) - position), 0, -1):
-                window = spans[position : position + size]
-                tokens = [token for token, _, _ in window]
-                key = canonical("".join(tokens))
-                entry = self._index.get(key)
-                # Uma palavra de borda que some na canonização ("é", "ou") não entra no termo.
-                if entry is not None and size > 1:
-                    if key in (canonical("".join(tokens[1:])), canonical("".join(tokens[:-1]))):
-                        entry = None
-                if entry is not None:
-                    term = text[window[0][1] : window[-1][2]]
-                    matches.append(Match(term, entry.technique_ids, entry.match_type, entry.label))
-                    position += size
-                    break
-            else:
+            here = self._longest_at(spans, position)
+            if here is None:
                 position += 1
+                continue
+            size, entry = here
+            # Só há disputa quando o casamento atual cobre a palavra seguinte (size > 1).
+            following = self._longest_at(spans, position + 1) if size > 1 else None
+            if following is not None and position + 1 + following[0] > position + size:
+                position += 1
+                continue
+            window = spans[position : position + size]
+            term = text[window[0][1] : window[-1][2]]
+            matches.append(Match(term, entry.technique_ids, entry.match_type, entry.label))
+            position += size
         return matches

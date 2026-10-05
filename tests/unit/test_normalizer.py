@@ -67,6 +67,9 @@ def test_spelling_variants(recognizer: Recognizer, variant: str, expected: str) 
         ("Yoko-tomoe-nage existe?", [("Yoko-tomoe-nage", ("tomoe-nage",))]),
         ("o mata-leão do jiu-jitsu", [("mata-leão", ("hadaka-jime",))]),
         ("quem foi Jigoro Kano?", []),
+        ("O que é o uchi mata?", [("uchi mata", ("uchi-mata",))]),
+        ("como faço o uchi gari?", [("o uchi gari", ("ouchi-gari",))]),
+        ("e o soto gari?", [("o soto gari", ("osoto-gari",))]),
     ],
 )
 def test_find_prefers_longest_match(

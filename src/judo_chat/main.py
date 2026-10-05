@@ -1,3 +1,5 @@
+import asyncio
+import contextlib
 import logging
 from collections.abc import AsyncIterator
 from contextlib import asynccontextmanager
@@ -13,6 +15,7 @@ from judo_chat.config import get_settings
 from judo_chat.corpus.loader import load_corpus
 from judo_chat.errors import register_error_handlers
 from judo_chat.guardrail import Guardrail
+from judo_chat.keepalive import CacheKeepAlive
 from judo_chat.normalizer import Recognizer
 from judo_chat.routers.ask import router as ask_router
 
@@ -29,7 +32,23 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
         app.state.recognizer = Recognizer(corpus)
         app.state.guardrail = Guardrail(client, settings.guardrail_model, settings.guardrail_timeout_s)
         app.state.answerer = Answerer(client, settings, corpus)
-        yield
+        task = None
+        if settings.keepalive_enabled:
+            keepalive = CacheKeepAlive(
+                app.state.answerer,
+                interval_s=settings.keepalive_interval_s,
+                start=settings.keepalive_window_start,
+                end=settings.keepalive_window_end,
+                timezone=settings.keepalive_timezone,
+            )
+            task = asyncio.create_task(keepalive.run())
+        try:
+            yield
+        finally:
+            if task is not None:
+                task.cancel()
+                with contextlib.suppress(asyncio.CancelledError):
+                    await task
 
 
 app = FastAPI(title="Judô Chat", lifespan=lifespan)

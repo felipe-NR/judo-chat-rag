@@ -2,6 +2,7 @@
 
 import logging
 import re
+import time
 import unicodedata
 from dataclasses import dataclass
 
@@ -187,24 +188,34 @@ class Answerer:
                 "cache_control": {"type": "ephemeral", "ttl": settings.cache_ttl},
             }
         ]
+        # Momento (time.monotonic) da última requisição que leu ou gravou o cache.
+        self.last_cache_touch: float | None = None
+
+    def _request(self, content: str, max_tokens: int) -> dict[str, object]:
+        """Monta a requisição. O re-aquecimento usa a mesma forma das perguntas reais: modelo,
+        system, TTL e effort fazem parte do prefixo cacheado, e qualquer diferença gravaria
+        um cache que as perguntas nunca leriam."""
+        request: dict[str, object] = {
+            "model": self._settings.answer_model,
+            "max_tokens": max_tokens,
+            "system": self._system,
+            "messages": [{"role": "user", "content": content}],
+        }
+        if self._settings.answer_effort is not None:
+            request["output_config"] = {"effort": self._settings.answer_effort}
+        return request
 
     async def answer(self, query: str, matches: list[Match]) -> Answer:
         settings = self._settings
         client = self._client.with_options(timeout=settings.answer_timeout_s)
-        request = {
-            "model": settings.answer_model,
-            "max_tokens": settings.answer_max_tokens,
-            "system": self._system,
-            "messages": [{"role": "user", "content": build_user_message(query, matches, self._corpus)}],
-        }
-        if settings.answer_effort is not None:
-            request["output_config"] = {"effort": settings.answer_effort}
+        request = self._request(build_user_message(query, matches, self._corpus), settings.answer_max_tokens)
         if settings.use_refusal_fallbacks:
             response = await client.beta.messages.create(
                 **request, betas=["server-side-fallback-2026-07-01"], fallbacks="default"
             )
         else:
             response = await client.messages.create(**request)
+        self.last_cache_touch = time.monotonic()
 
         usage = response.usage
         cache_read = usage.cache_read_input_tokens or 0
@@ -225,3 +236,15 @@ class Answerer:
         if not text:
             return Answer(REFUSAL_MESSAGE, True, cache_read, cache_write)
         return Answer(text, text == REFUSAL_MESSAGE, cache_read, cache_write)
+
+    async def keep_alive(self) -> tuple[int, int]:
+        """Lê o cache com max_tokens=0 para renovar o TTL: não gera resposta nem cobra saída.
+        Devolve (cache_read, cache_write); cache_write > 0 indica que o cache tinha expirado."""
+        client = self._client.with_options(timeout=self._settings.answer_timeout_s)
+        response = await client.messages.create(**self._request("keep-alive", 0))
+        self.last_cache_touch = time.monotonic()
+        usage = response.usage
+        cache_read = usage.cache_read_input_tokens or 0
+        cache_write = usage.cache_creation_input_tokens or 0
+        logger.info("re-aquecimento: cache_read=%d cache_write=%d", cache_read, cache_write)
+        return cache_read, cache_write
