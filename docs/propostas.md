@@ -44,18 +44,18 @@ A forma canônica de comparação usa minúsculas, remove diacríticos, espaço 
 
 ### Guardrail que falha fechado
 
-Um classificador (Haiku 4.5, saída estruturada) devolve `tecnica|historia|regras|fora`. Exceção, timeout, saída fora do schema, `stop_reason` diferente de `end_turn` ou resposta vazia bloqueiam a resposta. Quando o bloqueio vem de falha, a mensagem é de indisponibilidade, e não de fora do escopo. A pergunta vai delimitada em `<pergunta>` e é tratada como dado.
+Um classificador (Haiku 5.5 com effort `low`, saída estruturada) devolve `tecnica|historia|regras|fora`. Exceção, timeout, saída fora do schema, `stop_reason` diferente de `end_turn` ou resposta vazia bloqueiam a resposta. Quando o bloqueio vem de falha, a mensagem é de indisponibilidade, e não de fora do escopo. A pergunta vai delimitada em `<pergunta>` e é tratada como dado.
 
 ### Avaliação
 
-`tests/eval/cases.yaml` tem 157 perguntas: 122 dentro do escopo (técnica com grafias variadas, nomes populares e ambíguos, conceitos, regras, história, misto) e 35 fora (25 temas gerais e 10 adversariais). O reconhecedor roda contra todas sem rede, no CI. Guardrail e resposta rodam com `pytest -m eval`, com as metas de falso-aceite adversarial igual a 0, recusa correta de 95% ou mais e falsa recusa de 5% ou menos.
+`tests/eval/cases.yaml` tem 164 perguntas: 129 dentro do escopo (técnica com grafias variadas, nomes populares e ambíguos, conceitos, regras, história, misto) e 35 fora (25 temas gerais e 10 adversariais). O reconhecedor roda contra todas sem rede, no CI. Guardrail e resposta rodam com `pytest -m eval`, com as metas de falso-aceite adversarial igual a 0, recusa correta de 95% ou mais e falsa recusa de 5% ou menos.
 
 ## Proposta A: LLM com o corpus inteiro no contexto (implementada)
 
-- **Fluxo:** pergunta → reconhecedor → guardrail (Haiku 4.5) → Haiku 4.5 com instruções e corpus num bloco de system cacheado → resposta. A primeira versão usava o Sonnet 5.5; a troca em 2026-10-04 cortou o custo projetado para 23-30% do anterior (ver README).
-- **Corpus no contexto:** 27 mil tokens no Haiku 4.5 (38 mil no tokenizador do Sonnet 5.5): 124 entradas de glossário (104 técnicas), 41 nomes populares, 4 textos de regras e 3 de história.
-- **Cache:** o bloco de system é montado uma vez no startup e serializado de forma determinística (ordenado, sem set iterado sem `sorted`, sem data). Um teste compara os bytes gerados com `PYTHONHASHSEED` diferentes. As técnicas reconhecidas e os candidatos dos nomes ambíguos vão na mensagem do usuário, depois do breakpoint. TTL de 5 minutos, porque o uso esperado (sessões espaçadas de horas) nunca reaproveitaria o de 1 hora; um modelo só para a resposta.
-- **Recusa por política do modelo:** `fallbacks: "default"` (beta `server-side-fallback-2026-07-01`) só com modelos da geração 5; ligável em `JUDO_CHAT_USE_REFUSAL_FALLBACKS` ao voltar para o Sonnet 5.5.
+- **Fluxo:** pergunta → reconhecedor → guardrail (Haiku 5.5) → Haiku 5.5 com instruções e corpus num bloco de system cacheado → resposta. A primeira versão usava o Sonnet 5.5; a troca pelo Haiku 4.5 em 2026-10-04 cortou o custo projetado para 23-30% do anterior, e a troca pelo Haiku 5.5 em 2026-10-07 levou a pergunta com cache quente de ~US$ 0,007 para ~US$ 0,001 (ver README).
+- **Corpus no contexto:** o bloco de system (instruções e corpus) tem 46 mil tokens no Haiku 5.5 (36 mil no Haiku 4.5), abaixo dos 100 mil que mudam a tabela de preço: 124 entradas de glossário (104 técnicas), 41 nomes populares, 4 textos de regras e 3 de história.
+- **Cache:** o bloco de system é montado uma vez no startup e serializado de forma determinística (ordenado, sem set iterado sem `sorted`, sem data). Um teste compara os bytes gerados com `PYTHONHASHSEED` diferentes. As técnicas reconhecidas e os candidatos dos nomes ambíguos vão na mensagem do usuário, depois do breakpoint. TTL de 1 hora, renovado pelo re-aquecimento (`keepalive.py`) das 07h às 23h; um modelo só para a resposta.
+- **Recusa por política do modelo:** o Haiku 5.5 não tem fallback no servidor; a recusa vira a mensagem de indisponibilidade e o log registra a categoria. `fallbacks: "default"` (beta `server-side-fallback-2026-07-01`) vale para o Sonnet 5.5 e o Opus 5.5; ligável em `JUDO_CHAT_USE_REFUSAL_FALLBACKS` ao voltar para o Sonnet 5.5, e a configuração recusa a combinação com o Haiku.
 - **Prós:** poucas peças e resposta que cruza temas porque o modelo vê tudo. Atualizar o conteúdo é editar a curadoria e rodar o build.
 - **Contras:** o custo cresce com o corpus (o cache reduz a leitura a cerca de 10%). Não escala além do contexto. A citação de fonte é por seção, não por trecho.
 

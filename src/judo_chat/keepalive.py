@@ -1,8 +1,8 @@
 """Mantém o cache do corpus vivo dentro de uma janela de horário.
 
 Com TTL de 1 hora, uma leitura com max_tokens=0 a cada ~55 minutos sem perguntas renova o
-cache por ~R$ 0,017; sem ela, a primeira pergunta depois de 1 hora parado grava o corpus de
-novo (~R$ 0,35). Fora da janela o cache expira, e o primeiro re-aquecimento do dia grava.
+cache por ~R$ 0,0023; sem ela, a primeira pergunta depois de 1 hora parado grava o corpus de
+novo (~R$ 0,046). Fora da janela o cache expira, e o primeiro re-aquecimento do dia grava.
 """
 
 import asyncio

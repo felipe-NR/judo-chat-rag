@@ -31,7 +31,13 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
     async with AsyncAnthropic() as client:
         app.state.corpus = corpus
         app.state.recognizer = recognizer = Recognizer(corpus)
-        app.state.guardrail = Guardrail(client, settings.guardrail_model, settings.guardrail_timeout_s)
+        app.state.guardrail = Guardrail(
+            client,
+            settings.guardrail_model,
+            settings.guardrail_timeout_s,
+            effort=settings.guardrail_effort,
+            max_tokens=settings.guardrail_max_tokens,
+        )
         app.state.answerer = Answerer(client, settings, corpus, Relations(corpus, recognizer))
         task = None
         if settings.keepalive_enabled:

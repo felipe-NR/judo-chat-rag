@@ -12,6 +12,7 @@ from pydantic import BaseModel
 logger = logging.getLogger(__name__)
 
 Category = Literal["tecnica", "historia", "regras", "fora"]
+Effort = Literal["low", "medium", "high"]
 
 GUARDRAIL_SYSTEM = """\
 Você classifica perguntas enviadas a um assistente de judô para usuários brasileiros.
@@ -38,7 +39,8 @@ Pode vir também:
   ("não é esse", "e o outro?", "liste mais") tem o tema da conversa.
 - <tecnicas_reconhecidas>: nomes de técnicas de judô achados na pergunta (ou, numa
   continuação, na pergunta anterior) por um reconhecedor automático, mesmo com erro de
-  digitação. Eles indicam que a pergunta é de judô.
+  digitação. Eles indicam que a pergunta é de judô. A exceção é o pedido de como executar
+  a técnica dentro de outra arte marcial (por exemplo, numa luta de MMA): esse continua fora.
 
 Perguntar qual é, no judô, a técnica equivalente a um nome de outra arte marcial (jiu-jitsu,
 BJJ, wrestling) é pergunta de técnica de judô.
@@ -79,10 +81,14 @@ def _closed(kind: str) -> GuardrailResult:
 
 
 class Guardrail:
-    def __init__(self, client: AsyncAnthropic, model: str, timeout_s: float) -> None:
+    def __init__(
+        self, client: AsyncAnthropic, model: str, timeout_s: float, *, effort: Effort, max_tokens: int
+    ) -> None:
         self._client = client
         self._model = model
         self._timeout_s = timeout_s
+        self._effort: Effort = effort
+        self._max_tokens = max_tokens
 
     async def classify(
         self, query: str, history: Sequence[str] = (), techniques: Sequence[str] = ()
@@ -95,10 +101,11 @@ class Guardrail:
         try:
             response = await self._client.with_options(timeout=self._timeout_s, max_retries=1).messages.parse(
                 model=self._model,
-                max_tokens=300,
+                max_tokens=self._max_tokens,
                 system=GUARDRAIL_SYSTEM,
                 messages=[{"role": "user", "content": content}],
                 output_format=GuardrailOutput,
+                output_config={"effort": self._effort},
             )
         except anthropic.APIError as error:
             logger.warning("guardrail: erro da API: %s", type(error).__name__)
@@ -110,6 +117,9 @@ class Guardrail:
             logger.exception("guardrail: erro inesperado")
             return _closed("unexpected")
 
+        if response.stop_reason == "refusal":
+            category = response.stop_details.category if response.stop_details else None
+            logger.warning("guardrail: recusa do modelo: categoria=%s", category)
         if response.stop_reason != "end_turn":
             return _closed(f"stop_reason:{response.stop_reason}")
         parsed = response.parsed_output

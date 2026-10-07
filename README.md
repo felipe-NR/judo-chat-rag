@@ -39,23 +39,25 @@ repositório `JUDO_CHAT_API_URL` e rode o workflow de novo.
 1. `normalizer.Recognizer` acha nomes de técnica na pergunta: nome oficial, nome da IJF,
    grafias variadas e nomes populares (ambíguos devolvem todas as candidatas).
 2. `guardrail.Guardrail` classifica a pergunta em `tecnica`, `historia`, `regras` ou `fora`
-   com o Claude Haiku 4.5. Qualquer erro bloqueia a resposta.
-3. `answer.Answerer` chama o Claude Haiku 4.5 com instruções e corpus (~27 mil tokens) num
-   bloco de system cacheado por 5 minutos; a pergunta e as técnicas reconhecidas vão na
+   com o Claude Haiku 5.5. Qualquer erro bloqueia a resposta.
+3. `answer.Answerer` chama o Claude Haiku 5.5 com instruções e corpus (~46 mil tokens) num
+   bloco de system cacheado por 1 hora; a pergunta e as técnicas reconhecidas vão na
    mensagem do usuário.
 
 ## Custo
 
-Medido em 2026-10-05 com o Haiku 4.5 (US$ 1/M de entrada, US$ 5/M de saída), dólar a R$ 5,
-sem IOF. O bloco fixo tem ~35 mil tokens e fica em cache com TTL de 1 hora (gravação a
-US$ 2/M, leitura a US$ 0,10/M).
+Calculado em 2026-10-07 com os tokens medidos na avaliação (effort `low`) e a tabela do
+Haiku 5.5 para prompts de até 100 mil tokens (US$ 0,10/M de entrada, US$ 0,50/M de saída),
+dólar a R$ 5, sem IOF. O bloco fixo tem ~46 mil tokens e fica em cache com TTL de 1 hora
+(gravação a US$ 0,20/M, leitura a US$ 0,01/M). Uma resposta tem em média ~650 tokens de
+saída, contando o pensamento; o guardrail, ~1.400 de entrada e ~55 de saída.
 
 | Caso | US$ | R$ |
 |-|-|-|
-| Pergunta com cache quente | ~0,007 | ~0,035 |
-| Gravação do cache (1 vez por dia, ou quando o corpus muda) | ~0,07 | ~0,35 |
-| Re-aquecimento (leitura com `max_tokens: 0`) | ~0,0035 | ~0,017 |
-| Pergunta fora do escopo (só o guardrail) | ~0,001 | ~0,005 |
+| Pergunta com cache quente | ~0,001 | ~0,005 |
+| Gravação do cache (1 vez por dia, ou quando o corpus muda) | ~0,009 | ~0,046 |
+| Re-aquecimento (leitura com `max_tokens: 0`) | ~0,0005 | ~0,0023 |
+| Pergunta fora do escopo (só o guardrail) | ~0,0002 | ~0,0009 |
 
 ### Re-aquecimento do cache
 
@@ -63,13 +65,13 @@ US$ 2/M, leitura a US$ 0,10/M).
 ninguém perguntou nos últimos 55 minutos, ele lê o cache com `max_tokens: 0` para renovar o
 TTL de 1 hora. Assim o corpus é gravado uma vez por dia (no primeiro re-aquecimento depois
 das 07h) e de novo só quando o corpus, as instruções ou o modelo mudam; reiniciar a API não
-grava. Custo: ~16 leituras por dia no máximo, ~R$ 0,28. O log mostra cada re-aquecimento
+grava. Custo: ~16 leituras por dia no máximo, ~R$ 0,04. O log mostra cada re-aquecimento
 (`re-aquecimento: cache_read=... cache_write=...`). Configuração no `.env`:
 `JUDO_CHAT_KEEPALIVE_ENABLED`, `JUDO_CHAT_KEEPALIVE_INTERVAL_S`,
 `JUDO_CHAT_KEEPALIVE_WINDOW_START`, `JUDO_CHAT_KEEPALIVE_WINDOW_END`,
 `JUDO_CHAT_KEEPALIVE_TIMEZONE`.
 
-O Sonnet 5.5 dá respostas mais fiéis à base por cerca de 3-4x o custo; veja `.env.example`.
+O Sonnet 5.5 custa 20 vezes o Haiku 5.5 por token; para usá-lo, veja `.env.example`.
 
 Detalhes que não passam pelo modelo:
 - **Vídeos:** depois da resposta, o reconhecedor acha as técnicas apresentadas (títulos e

@@ -8,9 +8,15 @@ from judo_chat.guardrail import Guardrail, GuardrailOutput
 
 
 @dataclass
+class FakeStopDetails:
+    category: str | None
+
+
+@dataclass
 class FakeParsed:
     stop_reason: str
     parsed_output: GuardrailOutput | None
+    stop_details: FakeStopDetails | None = None
 
 
 class FakeMessages:
@@ -35,15 +41,19 @@ class FakeClient:
 
 def _guardrail(result: FakeParsed | Exception) -> tuple[Guardrail, FakeClient]:
     client = FakeClient(result)
-    return Guardrail(client, "claude-haiku-4-5", 5.0), client  # type: ignore[arg-type]
+    guardrail = Guardrail(client, "claude-haiku-5-5", 5.0, effort="low", max_tokens=1024)  # type: ignore[arg-type]
+    return guardrail, client
 
 
 async def test_allows_in_scope_category() -> None:
     guardrail, client = _guardrail(FakeParsed("end_turn", GuardrailOutput(category="tecnica", reason="técnica")))
     result = await guardrail.classify("como faço osoto-gari?")
     assert result.allowed and result.category == "tecnica" and not result.failed
-    sent = client.messages.calls[0]["messages"]
-    assert sent == [{"role": "user", "content": "<pergunta>\ncomo faço osoto-gari?\n</pergunta>"}]
+    [call] = client.messages.calls
+    assert call["messages"] == [{"role": "user", "content": "<pergunta>\ncomo faço osoto-gari?\n</pergunta>"}]
+    # O pensamento conta no max_tokens: com pouco espaço a classificação termina sem JSON.
+    assert call["output_config"] == {"effort": "low"}
+    assert call["max_tokens"] == 1024
 
 
 @pytest.mark.parametrize(
@@ -53,7 +63,7 @@ async def test_allows_in_scope_category() -> None:
         anthropic.APITimeoutError(request=httpx.Request("POST", "https://api.anthropic.com")),
         RuntimeError("bug"),
         FakeParsed("max_tokens", None),
-        FakeParsed("refusal", None),
+        FakeParsed("refusal", None, FakeStopDetails("general_harms")),
         FakeParsed("end_turn", None),
     ],
 )
