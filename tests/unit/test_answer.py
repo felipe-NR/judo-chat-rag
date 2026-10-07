@@ -169,3 +169,21 @@ def test_instructions_keep_the_naming_rules(corpus: Corpus) -> None:
     text = build_system_text(corpus)
     for rule in ("nome popular", "ambíguo", "Juji-gatame", "proibida em competição", "Não escreva links de vídeo"):
         assert rule in text, rule
+
+
+def test_video_groups_cover_every_presented_technique(corpus: Corpus, recognizer: Recognizer) -> None:
+    from judo_chat.answer import video_groups
+
+    names = [
+        "Deashi-harai",
+        "Hiza-guruma",
+        "Uki-goshi",
+        "Osoto-gari",
+        "O-goshi",
+        "Ouchi-gari",
+        "Seoi-nage",
+        "Tai-otoshi",
+    ]
+    answer = "Exame para a faixa laranja:\n" + "\n".join(f"{i}. {name}" for i, name in enumerate(names, 1))
+    groups = video_groups(answer, [], recognizer, corpus)
+    assert [g.anchor for g in groups] == names

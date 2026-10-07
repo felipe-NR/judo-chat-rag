@@ -289,7 +289,6 @@ class VideoGroup:
 
 _HEADLINE = re.compile(r"^\s*(#{1,6}\s|[-*]\s|\d+[.)]\s|\*\*)")
 _LABEL = re.compile(r"^\s*\*\*([^*]+)\*\*")
-_MAX_VIDEO_GROUPS = 6
 
 
 def _is_headline(line: str, term: str) -> bool:
@@ -332,7 +331,7 @@ def video_groups(
             continue
         videos = tuple(TechniqueVideo(v.url, v.source == "kodokan") for v in technique.videos)
         groups.append(VideoGroup(technique_id, technique.name, anchored.get(technique_id), videos))
-    return groups[:_MAX_VIDEO_GROUPS]
+    return groups
 
 
 def fgj_quotes_intact(answer_text: str, groups: list[VideoGroup], corpus: Corpus) -> dict[str, bool]:
