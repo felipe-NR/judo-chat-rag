@@ -97,6 +97,5 @@ Um classificador (Haiku 4.5, saída estruturada) devolve `tecnica|historia|regra
 - **Mecânica revisada:** 18 fichas reescritas e revisadas pela sessão do judo-techniques-bot em 2026-10-05; o Harai-tsurikomi-ashi e o pé exato do Okuriashi-harai ficaram com confiança baixa e devem ser conferidos nos vídeos do Kodokan.
 - **Nomes populares de confiança média ou baixa:** conferir nas fontes autorizadas pelo usuário (sites das federações estaduais, Projeto Budô, @rafaelsilvajudo, @judoparatodosoficial). Reverse seoi-nage, Yagura-nage e Jigoku-jime continuam sem classificação oficial segura.
 - **Vídeo removido:** a linha "Kake" do CSV do bot apontava para um vídeo sem relação com judô (`dQw4w9WgXcQ`).
-- **ai-memory:** o `judo-chat-rag` não tem `.ai-memory.toml`.
 
 Os arquivos de evidência das sessões estão em `docs/glossario/`: `judobase_tag_mapping.csv` (96 rótulos da IJF com o casamento com o CSV do bot) e `match_test.py` (teste da regex do bot, roda a partir da raiz do judo-techniques-bot).
