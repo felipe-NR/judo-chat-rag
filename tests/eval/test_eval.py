@@ -65,7 +65,13 @@ async def test_eval(corpus: Corpus, recognizer: Recognizer) -> None:
     cases = load_cases()
     semaphore = asyncio.Semaphore(CONCURRENCY)
     async with AsyncAnthropic() as client:
-        guardrail = Guardrail(client, settings.guardrail_model, settings.guardrail_timeout_s)
+        guardrail = Guardrail(
+            client,
+            settings.guardrail_model,
+            settings.guardrail_timeout_s,
+            effort=settings.guardrail_effort,
+            max_tokens=settings.guardrail_max_tokens,
+        )
         answerer = Answerer(client, settings, corpus, Relations(corpus, recognizer))
         # Uma primeira resposta grava o cache antes das chamadas paralelas.
         await answerer.answer("O que é kuzushi?", recognizer.find("O que é kuzushi?"))

@@ -1,4 +1,9 @@
-from judo_chat.answer import REFUSAL_MESSAGE, build_system_text, build_user_message
+from dataclasses import dataclass, field
+
+import pytest
+
+from judo_chat.answer import REFUSAL_MESSAGE, UNAVAILABLE_MESSAGE, Answerer, build_system_text, build_user_message
+from judo_chat.config import Settings
 from judo_chat.corpus.models import Corpus
 from judo_chat.normalizer import Recognizer
 
@@ -48,42 +53,74 @@ def test_user_message_carries_pronunciation_guide(corpus: Corpus) -> None:
 class _Usage:
     cache_read_input_tokens = 34899
     cache_creation_input_tokens = 0
+    input_tokens = 120
+    output_tokens = 0
 
 
+@dataclass
+class _Text:
+    text: str
+    type: str = "text"
+
+
+@dataclass
+class _StopDetails:
+    category: str | None
+
+
+@dataclass
 class _Response:
-    usage = _Usage()
+    stop_reason: str = "end_turn"
+    content: list[_Text] = field(default_factory=list)
+    stop_details: _StopDetails | None = None
+    model: str = "claude-haiku-5-5"
+    usage: _Usage = field(default_factory=_Usage)
 
 
 class _Messages:
-    def __init__(self) -> None:
+    def __init__(self, response: _Response) -> None:
+        self.response = response
         self.calls: list[dict[str, object]] = []
 
     async def create(self, **kwargs: object) -> _Response:
         self.calls.append(kwargs)
-        return _Response()
+        return self.response
 
 
 class _Client:
-    def __init__(self) -> None:
-        self.messages = _Messages()
+    def __init__(self, response: _Response | None = None) -> None:
+        self.messages = _Messages(response or _Response())
 
     def with_options(self, **_: object) -> "_Client":
         return self
 
 
 async def test_keep_alive_reuses_the_cached_prefix(corpus: Corpus) -> None:
-    from judo_chat.answer import Answerer
-    from judo_chat.config import Settings
-
-    client = _Client()
+    client = _Client(_Response(content=[_Text("O kuzushi é a desestabilização.")]))
     answerer = Answerer(client, Settings(), corpus)  # type: ignore[arg-type]
     assert answerer.last_cache_touch is None
     assert await answerer.keep_alive() == (34899, 0)
-    [call] = client.messages.calls
-    assert call["max_tokens"] == 0
-    assert call["system"] is answerer._system
-    assert call["model"] == Settings().answer_model
+    await answerer.answer("O que é kuzushi?", [])
+    keep_alive, question = client.messages.calls
+    assert keep_alive["max_tokens"] == 0
+    assert keep_alive["system"] is answerer._system
+    assert keep_alive["model"] == Settings().answer_model
+    # O effort faz parte do prefixo cacheado: o re-aquecimento tem de usar o mesmo.
+    assert keep_alive["output_config"] == question["output_config"] == {"effort": Settings().answer_effort}
     assert answerer.last_cache_touch is not None
+
+
+@pytest.mark.parametrize(
+    "response",
+    [
+        _Response(stop_reason="refusal", stop_details=_StopDetails("general_harms")),
+        _Response(stop_reason="end_turn", content=[]),
+    ],
+)
+async def test_model_refusal_is_unavailable_not_out_of_scope(corpus: Corpus, response: _Response) -> None:
+    answer = await Answerer(_Client(response), Settings(), corpus).answer("Como se faz o hadaka-jime?", [])  # type: ignore[arg-type]
+    assert answer.refused
+    assert answer.text == UNAVAILABLE_MESSAGE
 
 
 def test_video_groups_anchor_the_presented_techniques(corpus: Corpus, recognizer: Recognizer) -> None:
