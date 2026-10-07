@@ -70,7 +70,7 @@ fi
 echo "$PUBLIC_URL" > "$RUN_DIR/public_url"
 echo ""
 echo "API pública em:        $PUBLIC_URL"
-echo "Página (GitHub Pages): https://felipe-nr.github.io/judo-chat-rag/"
+echo "Página (GitHub Pages): https://felipe-nr.github.io/judoka-assistant/"
 echo "Painel local do ngrok: http://localhost:4040"
 echo "Logs: $RUN_DIR/api.log, $RUN_DIR/ngrok.log"
 echo "Parar: ./stop-ngrok.sh"

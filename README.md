@@ -18,7 +18,7 @@ A página de chat fica em http://localhost:8000 e a API em `POST /api/perguntar`
 
 ## Publicar (GitHub Pages + API local via ngrok)
 
-A página de chat fica em https://felipe-nr.github.io/judo-chat-rag/, publicada pelo
+A página de chat fica em https://felipe-nr.github.io/judoka-assistant/, publicada pelo
 workflow `.github/workflows/pages.yml` a cada push que mexe em `src/judo_chat/static/`.
 O GitHub Pages só serve arquivos estáticos, então a API roda nesta máquina e é exposta pelo
 domínio fixo do ngrok da conta (`https://quadrantal-glenda-interstream.ngrok-free.dev`):
